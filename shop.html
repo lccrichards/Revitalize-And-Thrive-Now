@@ -4,301 +4,318 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shop — Revitalize and Thrive Now</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --cream: #FAF7F2;
-      --terracotta: #C8714A;
-      --sage: #7A8C6E;
-      --gold: #D4A853;
-      --espresso: #2C1810;
-      --charcoal: #3D3028;
-      --muted: #8C7B6E;
+      --ivory:        #FDF9F5;
+      --nude:         #F2EBE2;
+      --nude-deep:    #E8D8CC;
+      --seafoam:      #7BBDB5;
+      --seafoam-deep: #5A9E96;
+      --seafoam-pale: #EAF5F3;
+      --seafoam-mid:  #C2DED9;
+      --blush:        #EDD5C8;
+      --sage:         #A8C4BC;
+      --gold:         #C8B49A;
+      --text:         #4A6360;
+      --text-soft:    #8AABA6;
+      --text-light:   #B0C8C4;
+      --white:        #FFFFFF;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--cream); color: var(--charcoal); font-family: 'Lato', sans-serif; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { background:var(--ivory); color:var(--text); font-family:'Jost',sans-serif; font-weight:300; }
 
-    /* NAV */
+    /* ── NAV ── */
     nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 1.2rem 4rem; background: var(--espresso); position: sticky; top: 0; z-index: 100;
+      position:sticky; top:0; z-index:100;
+      background:rgba(253,249,245,0.96); backdrop-filter:blur(12px);
+      padding:0 4rem; height:72px; display:flex; align-items:center;
+      justify-content:space-between;
+      border-bottom:1px solid var(--seafoam-mid);
     }
-    .nav-logo { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 1.1rem; letter-spacing: 0.04em; text-decoration: none; }
-    .nav-links { display: flex; gap: 2rem; }
-    .nav-links a { color: #E8DDD4; font-size: 0.85rem; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--gold); }
+    .nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:400; color:var(--seafoam-deep); letter-spacing:0.04em; text-decoration:none; }
+    .nav-links { display:flex; gap:2.5rem; align-items:center; }
+    .nav-links a { color:var(--text-soft); font-size:0.82rem; text-decoration:none; letter-spacing:0.1em; text-transform:uppercase; transition:color 0.2s; }
+    .nav-links a:hover { color:var(--seafoam); }
+    .nav-cta { background:var(--seafoam); color:var(--white) !important; padding:0.55rem 1.4rem; border-radius:2rem; font-size:0.78rem !important; letter-spacing:0.12em !important; transition:all 0.2s !important; }
+    .nav-cta:hover { background:var(--seafoam-deep) !important; transform:translateY(-1px); }
 
-    /* HERO */
+    /* ── HERO ── */
     .hero {
-      background: var(--espresso);
-      padding: 6rem 4rem 5rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+      background: linear-gradient(160deg, var(--seafoam-pale) 0%, var(--nude) 60%, var(--blush) 100%);
+      padding: 6rem 4rem 5rem; text-align:center; position:relative; overflow:hidden;
     }
     .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 30% 50%, rgba(200,113,74,0.15) 0%, transparent 60%),
-                  radial-gradient(ellipse at 70% 30%, rgba(212,168,83,0.1) 0%, transparent 50%);
+      content:''; position:absolute; inset:0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(123,189,181,0.15) 0%, transparent 55%),
+                  radial-gradient(ellipse at 80% 20%, rgba(237,213,200,0.25) 0%, transparent 50%);
+      pointer-events:none;
     }
-    .hero-tag { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; position: relative; }
-    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem); color: #FAF7F2; line-height: 1.2; position: relative; }
-    .hero h1 em { color: var(--terracotta); font-style: italic; }
-    .hero p { color: #C4B4A8; font-size: 1.1rem; margin-top: 1.2rem; max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.7; position: relative; }
-    .hero-line { width: 60px; height: 2px; background: var(--gold); margin: 2rem auto 0; position: relative; }
+    .hero-inner { position:relative; z-index:2; }
+    .hero-badge {
+      display:inline-block; background:rgba(123,189,181,0.15); border:1px solid var(--seafoam-mid);
+      color:var(--seafoam-deep); font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase;
+      padding:0.5rem 1.5rem; border-radius:2rem; margin-bottom:1.8rem;
+    }
+    .hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(2.8rem,6vw,5rem); font-weight:300; color:var(--seafoam-deep); line-height:1.15; margin-bottom:0.6rem; }
+    .hero h1 em { font-style:italic; color:var(--seafoam); }
+    .hero p { font-size:1rem; color:var(--text-soft); max-width:540px; margin:0 auto 2.5rem; line-height:1.85; font-weight:300; }
+    .hero-line { width:48px; height:1px; background:var(--seafoam-mid); margin:0 auto; }
 
-    /* FILTER TABS */
-    .filter-bar { display: flex; justify-content: center; gap: 0.75rem; padding: 2.5rem 4rem 1rem; flex-wrap: wrap; }
+    /* ── FILTER TABS ── */
+    .filter-bar { display:flex; justify-content:center; gap:0.6rem; padding:2.5rem 4rem 1rem; flex-wrap:wrap; }
     .filter-btn {
-      padding: 0.5rem 1.4rem; border-radius: 2rem; border: 1.5px solid var(--muted);
-      background: transparent; color: var(--muted); font-family: 'Lato', sans-serif;
-      font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: all 0.2s;
+      padding:0.5rem 1.3rem; border-radius:2rem; border:1px solid var(--seafoam-mid);
+      background:transparent; color:var(--text-soft); font-family:'Jost',sans-serif;
+      font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all 0.2s;
     }
-    .filter-btn:hover, .filter-btn.active { background: var(--espresso); color: var(--gold); border-color: var(--espresso); }
+    .filter-btn:hover, .filter-btn.active { background:var(--seafoam); color:var(--white); border-color:var(--seafoam); }
 
-    /* PRODUCT GRID */
-    .shop-section { padding: 2rem 4rem 6rem; }
-    .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+    /* ── SHOP GRID ── */
+    .shop-section { padding:2rem 4rem 6rem; }
+    .shop-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1.8rem; max-width:1200px; margin:0 auto; }
 
     .product-card {
-      background: #fff; border-radius: 16px; overflow: hidden;
-      box-shadow: 0 2px 16px rgba(44,24,16,0.07);
-      transition: transform 0.25s, box-shadow 0.25s;
-      display: flex; flex-direction: column;
+      background:var(--white); border-radius:20px; overflow:hidden;
+      box-shadow:0 2px 20px rgba(90,158,150,0.08);
+      transition:transform 0.25s, box-shadow 0.25s;
+      display:flex; flex-direction:column; border:1px solid var(--seafoam-pale);
     }
-    .product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(44,24,16,0.13); }
-
-    .card-banner {
-      height: 8px;
-    }
-    .card-body { padding: 1.8rem; flex: 1; display: flex; flex-direction: column; }
-    .card-tag { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.6rem; }
-    .card-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--espresso); line-height: 1.3; margin-bottom: 0.6rem; }
-    .card-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; flex: 1; }
-    .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid #F0EAE3; }
-    .card-price { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--charcoal); }
+    .product-card:hover { transform:translateY(-6px); box-shadow:0 16px 40px rgba(90,158,150,0.14); }
+    .card-banner { height:5px; }
+    .card-body { padding:1.8rem; flex:1; display:flex; flex-direction:column; }
+    .card-tag { font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-light); margin-bottom:0.7rem; }
+    .card-title { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:400; color:var(--seafoam-deep); line-height:1.3; margin-bottom:0.7rem; }
+    .card-desc { font-size:0.85rem; color:var(--text-soft); line-height:1.75; flex:1; font-weight:300; }
+    .card-footer { display:flex; align-items:center; justify-content:space-between; margin-top:1.5rem; padding-top:1.2rem; border-top:1px solid var(--seafoam-pale); }
+    .card-price { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; color:var(--seafoam-deep); }
     .card-btn {
-      display: inline-block; padding: 0.6rem 1.4rem; border-radius: 2rem;
-      font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-      text-decoration: none; font-weight: 700; transition: all 0.2s;
-      background: var(--espresso); color: var(--gold);
+      display:inline-block; padding:0.55rem 1.3rem; border-radius:2rem;
+      font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase;
+      text-decoration:none; font-weight:500; transition:all 0.2s;
+      background:var(--seafoam-pale); color:var(--seafoam-deep); border:1px solid var(--seafoam-mid);
     }
-    .card-btn:hover { background: var(--terracotta); color: #fff; }
+    .card-btn:hover { background:var(--seafoam); color:var(--white); border-color:var(--seafoam); }
 
-    /* PROMISE BANNER */
-    .promise { background: var(--sage); padding: 3rem 4rem; text-align: center; }
-    .promise h2 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.8rem; margin-bottom: 0.8rem; }
-    .promise p { color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    /* ── PROMISE ── */
+    .promise {
+      background:linear-gradient(135deg, var(--seafoam-pale) 0%, var(--nude) 100%);
+      padding:4rem; text-align:center; border-top:1px solid var(--seafoam-mid); border-bottom:1px solid var(--seafoam-mid);
+    }
+    .promise h2 { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--seafoam-deep); margin-bottom:0.8rem; }
+    .promise p { color:var(--text-soft); max-width:560px; margin:0 auto; line-height:1.8; font-size:0.95rem; font-weight:300; }
 
-    /* FOOTER */
-    footer { background: var(--espresso); color: #8C7B6E; text-align: center; padding: 2.5rem; font-size: 0.82rem; line-height: 1.8; }
-    footer a { color: var(--gold); text-decoration: none; }
+    /* ── FOOTER ── */
+    footer {
+      background:var(--seafoam-pale); color:var(--text-soft);
+      text-align:center; padding:3rem 4rem; font-size:0.8rem; line-height:2;
+      border-top:1px solid var(--seafoam-mid);
+    }
+    footer a { color:var(--seafoam); text-decoration:none; }
+    .footer-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--seafoam-deep); display:block; margin-bottom:0.5rem; }
 
-    @media (max-width: 768px) {
-      nav { padding: 1rem 1.5rem; }
-      .hero { padding: 4rem 1.5rem 3rem; }
-      .shop-section { padding: 1.5rem 1.5rem 4rem; }
-      .filter-bar { padding: 2rem 1.5rem 0; }
+    /* ── FLOATING ORBS ── */
+    .orb {
+      position:absolute; border-radius:50%; pointer-events:none; opacity:0.4;
+    }
+
+    @media(max-width:768px) {
+      nav { padding:0 1.5rem; }
+      .hero { padding:4rem 1.5rem 3rem; }
+      .shop-section { padding:1.5rem 1.5rem 4rem; }
+      .filter-bar { padding:2rem 1.5rem 0; }
+      .promise { padding:3rem 1.5rem; }
+      footer { padding:2.5rem 1.5rem; }
     }
   </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Revitalize & Thrive Now</a>
+  <a href="index.html" class="nav-logo">✦ Revitalize & Thrive Now</a>
   <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="index.html">Shop</a>
+    <a href="index.html">Home</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
+    <a href="https://rivitalize.gumroad.com/l/nlkuz" target="_blank" class="nav-cta">30-Day Program</a>
   </div>
 </nav>
 
 <section class="hero">
-  <p class="hero-tag">The Wellness Collection</p>
-  <h1>Tools to Help You <em>Thrive</em><br>at Every Stage of Midlife</h1>
-  <p>Holistic digital programs, workbooks, and journals designed exclusively for women ready to reclaim their energy, confidence, and joy.</p>
-  <div class="hero-line"></div>
+  <div class="hero-inner">
+    <p class="hero-badge">✦ The Wellness Collection</p>
+    <h1>Programs Designed<br/>for Your <em>Whole</em> Wellbeing</h1>
+    <p>Holistic digital workbooks, journals, and programs crafted exclusively for women navigating midlife with grace, intention, and joy.</p>
+    <div class="hero-line"></div>
+  </div>
 </section>
 
 <div class="filter-bar">
-  <button class="filter-btn active">All Products</button>
-  <button class="filter-btn">Mindset</button>
-  <button class="filter-btn">Nutrition</button>
-  <button class="filter-btn">Movement</button>
-  <button class="filter-btn">Sleep</button>
-  <button class="filter-btn">Stress</button>
-  <button class="filter-btn">Connection</button>
+  <button class="filter-btn active" onclick="filterCards('all',this)">All Products</button>
+  <button class="filter-btn" onclick="filterCards('mindset',this)">Mindset</button>
+  <button class="filter-btn" onclick="filterCards('nutrition',this)">Nutrition</button>
+  <button class="filter-btn" onclick="filterCards('movement',this)">Movement</button>
+  <button class="filter-btn" onclick="filterCards('sleep',this)">Sleep</button>
+  <button class="filter-btn" onclick="filterCards('stress',this)">Stress</button>
+  <button class="filter-btn" onclick="filterCards('connection',this)">Connection</button>
 </div>
 
 <section class="shop-section">
-  <div class="shop-grid">
+  <div class="shop-grid" id="shopGrid">
 
-    <!-- 1. Mindset Reset -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#9B8EA8;"></div>
+    <div class="product-card" data-cat="mindset">
+      <div class="card-banner" style="background:linear-gradient(90deg,#A8B8D0,#C2D4E8);"></div>
       <div class="card-body">
         <p class="card-tag">Mindset · 30 Days</p>
         <h2 class="card-title">30-Day Mindset Reset</h2>
-        <p class="card-desc">A powerful workbook and journal bundle to rewire limiting beliefs, build daily mental resilience, and rediscover your inner confidence.</p>
+        <p class="card-desc">Rewire limiting beliefs, build daily mental resilience, and rediscover your inner confidence — one gentle day at a time.</p>
         <div class="card-footer">
           <span class="card-price">$37</span>
-          <a href="mindset-reset.html" class="card-btn">Learn More</a>
+          <a href="mindset-reset.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 2. Confidence Rebuild -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#D4A853;"></div>
+    <div class="product-card" data-cat="mindset">
+      <div class="card-banner" style="background:linear-gradient(90deg,#C8B49A,#DDD0BE);"></div>
       <div class="card-body">
         <p class="card-tag">Mindset · 6 Weeks</p>
         <h2 class="card-title">Midlife Confidence & Identity Rebuild</h2>
-        <p class="card-desc">A 6-week self-discovery guide to help you answer "Who am I now?" and step boldly into your most empowered chapter.</p>
+        <p class="card-desc">A 6-week self-discovery guide to answer "Who am I now?" and step boldly into your most empowered chapter.</p>
         <div class="card-footer">
           <span class="card-price">$47</span>
-          <a href="confidence-rebuild.html" class="card-btn">Learn More</a>
+          <a href="confidence-rebuild.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 3. Hormone Meal Plan -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#7A8C6E;"></div>
+    <div class="product-card" data-cat="nutrition">
+      <div class="card-banner" style="background:linear-gradient(90deg,#A8C4BC,#C2D8D2);"></div>
       <div class="card-body">
         <p class="card-tag">Nutrition · 30 Days</p>
         <h2 class="card-title">Hormone-Balancing Meal Plan & Recipe Guide</h2>
-        <p class="card-desc">30 days of anti-inflammatory meals, 50+ recipes, and a daily food-mood journal designed around your hormonal needs.</p>
+        <p class="card-desc">30 days of anti-inflammatory meals, 50+ hormone-friendly recipes, and a daily food-mood journal.</p>
         <div class="card-footer">
           <span class="card-price">$47</span>
-          <a href="hormone-meal-plan.html" class="card-btn">Learn More</a>
+          <a href="hormone-meal-plan.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 4. Gut Health Reset -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#C8714A;"></div>
+    <div class="product-card" data-cat="nutrition">
+      <div class="card-banner" style="background:linear-gradient(90deg,#C4A898,#D8BEB2);"></div>
       <div class="card-body">
         <p class="card-tag">Nutrition · 21 Days</p>
         <h2 class="card-title">Gut Health Reset for Women 40+</h2>
-        <p class="card-desc">A 21-day gut reset protocol with daily digestion journaling, food sensitivity tracking, and a probiotic supplement log.</p>
+        <p class="card-desc">A 21-day gut reset protocol with daily digestion journaling, food sensitivity tracking, and a supplement log.</p>
         <div class="card-footer">
           <span class="card-price">$37</span>
-          <a href="gut-health-reset.html" class="card-btn">Learn More</a>
+          <a href="gut-health-reset.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 5. Sleep Fix -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#4A5580;"></div>
+    <div class="product-card" data-cat="sleep">
+      <div class="card-banner" style="background:linear-gradient(90deg,#9AAEC8,#B8C8DC);"></div>
       <div class="card-body">
         <p class="card-tag">Sleep · 21 Days</p>
         <h2 class="card-title">The Midlife Sleep Fix</h2>
-        <p class="card-desc">A 21-day sleep transformation program with nightly journals, bedtime routine builders, and sleep quality tracking sheets.</p>
+        <p class="card-desc">A 21-day sleep transformation program with nightly journals, bedtime routine builders, and sleep quality tracking.</p>
         <div class="card-footer">
           <span class="card-price">$37</span>
-          <a href="sleep-fix.html" class="card-btn">Learn More</a>
+          <a href="sleep-fix.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 6. Strength & Longevity -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#B87340;"></div>
+    <div class="product-card" data-cat="movement">
+      <div class="card-banner" style="background:linear-gradient(90deg,#B8A888,#CEC0A4);"></div>
       <div class="card-body">
         <p class="card-tag">Movement · 12 Weeks</p>
         <h2 class="card-title">Low-Impact Strength & Longevity Guide</h2>
-        <p class="card-desc">A 12-week progressive movement plan with workout tracking, energy logs, and non-scale victory journaling for lasting strength.</p>
+        <p class="card-desc">A 12-week progressive movement plan with workout tracking, energy logs, and non-scale victory journaling.</p>
         <div class="card-footer">
           <span class="card-price">$57</span>
-          <a href="strength-longevity.html" class="card-btn">Learn More</a>
+          <a href="strength-longevity.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 7. Burnout Recovery -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#C4846E;"></div>
+    <div class="product-card" data-cat="stress">
+      <div class="card-banner" style="background:linear-gradient(90deg,#C4A8A0,#D8C0B8);"></div>
       <div class="card-body">
         <p class="card-tag">Stress · 6 Weeks</p>
         <h2 class="card-title">Adrenal Reset & Burnout Recovery</h2>
         <p class="card-desc">A 6-week burnout recovery protocol with daily stress journaling, cortisol rhythm awareness, and boundary-setting worksheets.</p>
         <div class="card-footer">
           <span class="card-price">$47</span>
-          <a href="burnout-recovery.html" class="card-btn">Learn More</a>
+          <a href="burnout-recovery.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 8. Relationships Guide -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#5A8C8A;"></div>
+    <div class="product-card" data-cat="connection">
+      <div class="card-banner" style="background:linear-gradient(90deg,#7BBDB5,#9ECEC8);"></div>
       <div class="card-body">
         <p class="card-tag">Connection · Ongoing</p>
         <h2 class="card-title">Reclaim Your Relationships Guide</h2>
         <p class="card-desc">A midlife connection workbook with relationship quality trackers, boundary logs, and a friendship investment planner.</p>
         <div class="card-footer">
           <span class="card-price">$37</span>
-          <a href="relationships-guide.html" class="card-btn">Learn More</a>
+          <a href="relationships-guide.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 9. Masterclass Series -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#C4954A;"></div>
+    <div class="product-card" data-cat="mindset nutrition movement sleep stress connection">
+      <div class="card-banner" style="background:linear-gradient(90deg,#C8B49A,#A8C4BC,#9AAEC8);"></div>
       <div class="card-body">
         <p class="card-tag">All 6 Pillars · Signature Program</p>
         <h2 class="card-title">The Revitalize & Thrive Masterclass Series</h2>
-        <p class="card-desc">Our flagship 6-module course covering every wellness pillar, with a master habit tracker, pillar journals, and a personal wellness vision guide.</p>
+        <p class="card-desc">Our flagship 6-module written course covering every wellness pillar, with a master habit tracker, pillar journals, and personal wellness vision guide.</p>
         <div class="card-footer">
           <span class="card-price">$75</span>
-          <a href="masterclass-series.html" class="card-btn">Learn More</a>
+          <a href="masterclass-series.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 10. Wellness Planner -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#A08090;"></div>
+    <div class="product-card" data-cat="mindset nutrition movement sleep stress connection">
+      <div class="card-banner" style="background:linear-gradient(90deg,#C0B4C4,#D4C8D8);"></div>
       <div class="card-body">
         <p class="card-tag">All Pillars · 12 Months</p>
         <h2 class="card-title">The Midlife Wellness Planner</h2>
         <p class="card-desc">A 12-month printable digital planner with monthly goal pages, weekly habit trackers, and daily gratitude and intention journals.</p>
         <div class="card-footer">
           <span class="card-price">$25</span>
-          <a href="wellness-planner.html" class="card-btn">Learn More</a>
+          <a href="wellness-planner.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 11. Perimenopause Guide -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#D4846A;"></div>
+    <div class="product-card" data-cat="nutrition stress">
+      <div class="card-banner" style="background:linear-gradient(90deg,#D4A8A0,#E0C0B8);"></div>
       <div class="card-body">
         <p class="card-tag">Hormones · Comprehensive Guide</p>
         <h2 class="card-title">Perimenopause Survival Guide</h2>
         <p class="card-desc">A compassionate, science-backed guide to navigating perimenopause with daily symptom journals, hormone logs, and doctor prep worksheets.</p>
         <div class="card-footer">
           <span class="card-price">$47</span>
-          <a href="perimenopause-guide.html" class="card-btn">Learn More</a>
+          <a href="perimenopause-guide.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
 
-    <!-- 12. Energy Challenge -->
-    <div class="product-card">
-      <div class="card-banner" style="background:#6A8C5A;"></div>
+    <div class="product-card" data-cat="mindset nutrition movement sleep stress connection">
+      <div class="card-banner" style="background:linear-gradient(90deg,#A8C4A0,#C2D8BC);"></div>
       <div class="card-body">
-        <p class="card-tag">All Pillars · 30 Days</p>
+        <p class="card-tag">All Pillars · Free → $37</p>
         <h2 class="card-title">5-Day Energy Reset Challenge</h2>
-        <p class="card-desc">Start with a FREE 5-day energy challenge, then upgrade to the full 30-Day Energy Transformation Guide with daily journals and trackers.</p>
+        <p class="card-desc">Start free with a 5-day energy challenge, then upgrade to the full 30-Day Energy Transformation Guide with journals and trackers.</p>
         <div class="card-footer">
           <span class="card-price">Free → $37</span>
-          <a href="energy-challenge.html" class="card-btn">Learn More</a>
+          <a href="energy-challenge.html" class="card-btn">Explore →</a>
         </div>
       </div>
     </div>
@@ -307,16 +324,27 @@
 </section>
 
 <div class="promise">
-  <h2>Every Product Is Built for You</h2>
-  <p>Each program is thoughtfully designed for women navigating midlife with intention — blending holistic science, daily journaling, and actionable tracking so you can see real progress, every step of the way.</p>
+  <h2>Every Program Is Built for You</h2>
+  <p>Thoughtfully crafted for women navigating midlife with intention — blending holistic wellness science, daily journaling, and gentle accountability so you can see real, lasting transformation.</p>
 </div>
 
 <footer>
-  <p><strong style="color:#E8DDD4; font-family:'Playfair Display',serif;">Revitalize and Thrive Now</strong></p>
-  <p style="margin-top:0.5rem;">All products are digital downloads. <strong>All sales are final — no refunds.</strong></p>
-  <p style="margin-top:0.5rem;">Questions? <a href="mailto:hello@revitalizeandthrivenow.com">hello@revitalizeandthrivenow.com</a></p>
-  <p style="margin-top:1rem;">© 2025 Revitalize and Thrive Now. All rights reserved.</p>
+  <span class="footer-logo">✦ Revitalize and Thrive Now</span>
+  <p>All products are digital downloads. <strong style="color:var(--text);">All sales are final — no refunds.</strong></p>
+  <p style="margin-top:0.4rem;">Questions? <a href="mailto:hello@revitalizeandthrivenow.com">hello@revitalizeandthrivenow.com</a></p>
+  <p style="margin-top:1rem; font-size:0.72rem; color:var(--text-light);">© 2025 Revitalize and Thrive Now. All rights reserved.</p>
 </footer>
+
+<script>
+function filterCards(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.product-card').forEach(card => {
+    const cats = card.dataset.cat || '';
+    card.style.display = (cat === 'all' || cats.includes(cat)) ? '' : 'none';
+  });
+}
+</script>
 
 </body>
 </html>
