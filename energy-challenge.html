@@ -3,73 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>5-Day Energy Reset Challenge — Revitalize and Thrive Now</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>The 5-Day Energy Reset Challenge — Revitalize and Thrive Now</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
-    :root { --accent:#6A8C5A; --cream:#FAF7F2; --espresso:#2C1810; --charcoal:#3D3028; --muted:#8C7B6E; --gold:#D4A853; }
+
+    :root {
+      --ivory:        #FDF9F5;
+      --nude:         #F2EBE2;
+      --nude-deep:    #E8D8CC;
+      --seafoam:      #7BBDB5;
+      --seafoam-deep: #5A9E96;
+      --seafoam-pale: #EAF5F3;
+      --seafoam-mid:  #C2DED9;
+      --blush:        #EDD5C8;
+      --sage:         #A8C4BC;
+      --gold:         #C8B49A;
+      --text:         #4A6360;
+      --text-soft:    #8AABA6;
+      --text-light:   #B0C8C4;
+      --white:        #FFFFFF;
+    }
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { background:var(--cream); color:var(--charcoal); font-family:'Lato',sans-serif; }
-    nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 4rem; background:var(--espresso); }
-    .nav-logo { font-family:'Playfair Display',serif; color:var(--gold); font-size:1.1rem; text-decoration:none; }
-    .nav-back { color:#C4B4A8; font-size:0.82rem; text-decoration:none; letter-spacing:0.08em; text-transform:uppercase; }
-    .nav-back:hover { color:var(--gold); }
-    .hero { background:var(--espresso); padding:5rem 4rem 4rem; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; max-width:1200px; margin:0 auto; }
-    .hero-text .tag { font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem; }
-    .hero-text h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3.2rem); color:#FAF7F2; line-height:1.25; }
-    .hero-text h1 em { color:var(--accent); font-style:italic; }
-    .hero-text p { color:#C4B4A8; margin-top:1.2rem; line-height:1.75; font-size:1rem; }
-    .hero-price-box { background:rgba(255,255,255,0.05); border:1px solid rgba(200,200,200,0.15); border-radius:20px; padding:2.5rem; text-align:center; }
-    .price-label { font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); }
-    .price-amount { font-family:'Playfair Display',serif; font-size:3.5rem; color:#FAF7F2; margin:0.5rem 0; }
-    .buy-btn { display:block; width:100%; padding:1rem; border-radius:50px; background:var(--accent); color:#fff; font-size:0.9rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; text-decoration:none; margin-top:1.5rem; transition:all 0.2s; text-align:center; }
-    .buy-btn:hover { opacity:0.85; transform:translateY(-2px); }
-    .no-refund { font-size:0.75rem; color:#8C7B6E; margin-top:1rem; line-height:1.5; }
+    body { background:var(--ivory); color:var(--text); font-family:'Jost',sans-serif; font-weight:300; }
+
+    nav { position:sticky; top:0; z-index:100; background:rgba(253,249,245,0.96); backdrop-filter:blur(12px); padding:0 4rem; height:72px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--seafoam-mid); }
+    .nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:400; color:var(--seafoam-deep); text-decoration:none; }
+    .nav-back { color:var(--text-soft); font-size:0.75rem; text-decoration:none; letter-spacing:0.1em; text-transform:uppercase; transition:color 0.2s; }
+    .nav-back:hover { color:var(--seafoam); }
+
+    .hero-wrap { background:linear-gradient(160deg, var(--seafoam-pale) 0%, var(--nude) 60%, var(--blush) 100%); }
+    .hero { max-width:1200px; margin:0 auto; padding:5rem 4rem 4.5rem; display:grid; grid-template-columns:1fr 400px; gap:5rem; align-items:center; }
+
+    .hero-text .tag { font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:#A8C4A0; margin-bottom:1rem; display:block; }
+    .hero-text h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(2.2rem,4.5vw,3.8rem); font-weight:300; color:var(--seafoam-deep); line-height:1.2; }
+    .hero-text h1 em { font-style:italic; color:#A8C4A0; }
+    .hero-text p { color:var(--text-soft); margin-top:1.2rem; line-height:1.85; font-size:0.95rem; max-width:460px; }
+
+    .price-box { background:rgba(255,255,255,0.7); backdrop-filter:blur(8px); border:1px solid var(--seafoam-mid); border-radius:24px; padding:2.5rem; text-align:center; }
+    .price-label { font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-light); margin-bottom:0.5rem; }
+    .price-amount { font-family:'Cormorant Garamond',serif; font-size:4rem; font-weight:300; color:var(--seafoam-deep); line-height:1; }
+    .price-sub { font-size:0.78rem; color:var(--text-light); margin-top:0.3rem; margin-bottom:1.5rem; }
+    .buy-btn { display:block; width:100%; padding:1rem; border-radius:50px; background:var(--seafoam); color:var(--white); font-family:'Jost',sans-serif; font-size:0.82rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:500; text-decoration:none; transition:all 0.2s; }
+    .buy-btn:hover { background:var(--seafoam-deep); transform:translateY(-2px); }
+    .no-refund { font-size:0.72rem; color:var(--text-light); margin-top:1rem; line-height:1.6; }
+
     .content { max-width:900px; margin:0 auto; padding:5rem 4rem; }
-    .section-title { font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--espresso); margin-bottom:2rem; }
-    .section-title span { color:var(--accent); }
+    .sec-label { font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase; color:#A8C4A0; margin-bottom:0.8rem; display:block; }
+    .sec-title { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--seafoam-deep); margin-bottom:1.8rem; }
+
     .includes-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin-bottom:4rem; }
-    .include-item { background:#fff; border-radius:14px; padding:1.5rem; border-left:4px solid var(--accent); box-shadow:0 2px 12px rgba(44,24,16,0.06); }
-    .include-item h3 { font-family:'Playfair Display',serif; font-size:1rem; color:var(--espresso); margin-bottom:0.4rem; }
-    .include-item p { font-size:0.85rem; color:var(--muted); line-height:1.6; }
-    .for-you { background:var(--espresso); border-radius:20px; padding:3rem; margin-bottom:4rem; }
-    .for-you h2 { font-family:'Playfair Display',serif; color:#FAF7F2; margin-bottom:1.5rem; font-size:1.6rem; }
+    .include-item { background:var(--white); border-radius:16px; padding:1.5rem; border-left:3px solid #A8C4A0; box-shadow:0 2px 16px rgba(90,158,150,0.06); }
+    .include-item h3 { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:400; color:var(--seafoam-deep); margin-bottom:0.4rem; }
+    .include-item p { font-size:0.82rem; color:var(--text-soft); line-height:1.65; font-weight:300; }
+
+    .for-you { background:linear-gradient(135deg, var(--seafoam-pale), var(--nude)); border-radius:20px; padding:3rem; margin-bottom:4rem; border:1px solid var(--seafoam-mid); }
+    .for-you h2 { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:300; color:var(--seafoam-deep); margin-bottom:1.5rem; }
     .for-you ul { list-style:none; }
-    .for-you ul li { color:#C4B4A8; padding:0.5rem 0; padding-left:1.5rem; position:relative; font-size:0.95rem; }
-    .for-you ul li::before { content:'✦'; position:absolute; left:0; color:var(--accent); font-size:0.7rem; top:0.6rem; }
-    .refund-box { background:#FFF8F5; border:1px solid #F0DDD4; border-radius:14px; padding:2rem; margin-bottom:3rem; }
-    .refund-box h3 { font-family:'Playfair Display',serif; color:var(--espresso); margin-bottom:0.75rem; }
-    .refund-box p { font-size:0.88rem; color:var(--muted); line-height:1.7; }
-    .bottom-cta { text-align:center; padding:4rem 0 2rem; }
-    .bottom-cta h2 { font-family:'Playfair Display',serif; font-size:2rem; color:var(--espresso); margin-bottom:1rem; }
+    .for-you ul li { color:var(--text-soft); padding:0.5rem 0 0.5rem 1.5rem; position:relative; font-size:0.9rem; line-height:1.65; border-bottom:1px solid rgba(194,222,217,0.4); }
+    .for-you ul li:last-child { border-bottom:none; }
+    .for-you ul li::before { content:'✦'; position:absolute; left:0; color:#A8C4A0; font-size:0.6rem; top:0.7rem; }
+
+    .refund-box { background:var(--nude); border:1px solid var(--nude-deep); border-radius:14px; padding:1.8rem; margin-bottom:3rem; }
+    .refund-box h3 { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400; color:var(--seafoam-deep); margin-bottom:0.6rem; }
+    .refund-box p { font-size:0.84rem; color:var(--text-soft); line-height:1.75; font-weight:300; }
+
+    .bottom-cta { text-align:center; padding:3rem 0 2rem; }
+    .bottom-cta h2 { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--seafoam-deep); margin-bottom:0.8rem; }
+    .bottom-cta p { color:var(--text-soft); margin-bottom:2rem; font-size:0.9rem; }
     .bottom-cta .buy-btn { display:inline-block; width:auto; padding:1rem 3rem; }
-    footer { background:var(--espresso); color:#8C7B6E; text-align:center; padding:2.5rem; font-size:0.82rem; line-height:1.8; }
-    footer a { color:var(--gold); text-decoration:none; }
-    @media(max-width:768px) { nav{padding:1rem 1.5rem;} .hero{grid-template-columns:1fr;padding:3rem 1.5rem;gap:2rem;} .includes-grid{grid-template-columns:1fr;} .content{padding:3rem 1.5rem;} }
+
+    footer { background:var(--seafoam-pale); color:var(--text-soft); text-align:center; padding:2.5rem; font-size:0.78rem; line-height:2; border-top:1px solid var(--seafoam-mid); }
+    footer a { color:var(--seafoam); text-decoration:none; }
+
+    @media(max-width:768px) {
+      nav { padding:0 1.5rem; }
+      .hero { grid-template-columns:1fr; padding:3rem 1.5rem; gap:2.5rem; }
+      .includes-grid { grid-template-columns:1fr; }
+      .content { padding:3rem 1.5rem; }
+    }
+
   </style>
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-logo">Revitalize & Thrive Now</a>
-  <a href="index.html" class="nav-back">← Back to Shop</a>
+  <a href="index.html" class="nav-logo">✦ Revitalize & Thrive Now</a>
+  <a href="shop.html" class="nav-back">← Back to Shop</a>
 </nav>
-<div style="background:var(--espresso);">
+
+<div class="hero-wrap">
   <div class="hero">
     <div class="hero-text">
-      <p class="tag">All Pillars · Free Challenge + $37 Upgrade</p>
-      <h1>The 5-Day<br><em>Energy Reset Challenge</em></h1>
+      <span class="tag">All Pillars · Free Challenge</span>
+      <h1>The 5-Day<br/><em>Energy Reset Challenge</em></h1>
       <p>Start FREE with our 5-Day Energy Challenge, then unlock the full 30-Day Energy Transformation Guide with comprehensive daily journals and progress trackers.</p>
     </div>
-    <div class="hero-price-box">
+    <div class="price-box">
       <p class="price-label">One-Time Investment</p>
       <p class="price-amount">Free → $37</p>
-      <p style="color:#8C7B6E;font-size:0.85rem;">Instant Digital Download</p>
-      <a href="#" class="buy-btn">Get Instant Access</a>
-      <p class="no-refund">⚠ All sales are final. Due to the instant digital delivery of this product, we do not offer refunds, exchanges, or transfers.</p>
+      <p class="price-sub">Instant Digital Download</p>
+      <a href="https://rivitalize.gumroad.com/l/energy-challenge" target="_blank" class="buy-btn">Get Instant Access</a>
+      <p class="no-refund">All sales are final. Due to the instant digital delivery of this product, we do not offer refunds, exchanges, or transfers.</p>
     </div>
   </div>
 </div>
+
 <div class="content">
-  <h2 class="section-title">Everything <span>Included</span></h2>
+  <span class="sec-label">What's Inside</span>
+  <h2 class="sec-title">Everything Included</h2>
   <div class="includes-grid">
     <div class="include-item">
       <h3>🎁 FREE: 5-Day Energy Challenge Workbook</h3>
@@ -77,7 +117,7 @@
     </div>
     <div class="include-item">
       <h3>📓 FREE: Daily Energy Audit Journal (5 Days)</h3>
-      <p>Track your energy morning, midday, and evening for five days to understand your personal patterns.</p>
+      <p>Track your energy morning, midday, and evening for five days to understand your patterns.</p>
     </div>
     <div class="include-item">
       <h3>🔥 UPGRADE: 30-Day Energy Transformation Guide</h3>
@@ -85,7 +125,7 @@
     </div>
     <div class="include-item">
       <h3>⚡ UPGRADE: Sleep, Nutrition & Movement Correlation Tracker</h3>
-      <p>Connect your lifestyle choices to your energy levels across 30 days with a color-coded tracker.</p>
+      <p>Connect your lifestyle choices to your energy levels across 30 days.</p>
     </div>
     <div class="include-item">
       <h3>📊 UPGRADE: Weekly Momentum Check-In Pages</h3>
@@ -96,6 +136,7 @@
       <p>Set your energy vision and map the daily actions that will get you there.</p>
     </div>
   </div>
+
   <div class="for-you">
     <h2>This Program Is For You If…</h2>
     <ul>
@@ -106,21 +147,24 @@
       <li>You're ready to feel alive, vibrant, and energized in your midlife body</li>
     </ul>
   </div>
+
   <div class="refund-box">
-    <h3>📋 No Refund Policy</h3>
+    <h3>No Refund Policy</h3>
     <p>Because this is an instant digital download, all sales are final. Once your purchase is complete, you will receive immediate access to all materials. We do not offer refunds, exchanges, or credits under any circumstances. Please review the product description carefully before purchasing.</p>
   </div>
+
   <div class="bottom-cta">
     <h2>Start Free. Transform Everything.</h2>
-    <p style="color:var(--muted);margin-bottom:2rem;">Five days is all it takes to start feeling like yourself again.</p>
-    <a href="#" class="buy-btn" style="background:var(--accent);color:#fff;">Start the Free Challenge</a>
+    <p>Five days is all it takes to start feeling like yourself again.</p>
+    <a href="https://rivitalize.gumroad.com/l/energy-challenge" target="_blank" class="buy-btn">Start the Free Challenge</a>
   </div>
 </div>
+
 <footer>
-  <p><strong style="color:#E8DDD4;font-family:'Playfair Display',serif;">Revitalize and Thrive Now</strong></p>
-  <p style="margin-top:0.5rem;">All products are digital downloads. All sales are final — no refunds.</p>
-  <p style="margin-top:0.5rem;"><a href="index.html">← Back to Shop</a></p>
-  <p style="margin-top:1rem;">© 2025 Revitalize and Thrive Now. All rights reserved.</p>
+  <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--seafoam-deep);">✦ Revitalize and Thrive Now</p>
+  <p style="margin-top:0.4rem;">All products are digital downloads. <strong style="color:var(--text);">All sales are final — no refunds.</strong></p>
+  <p style="margin-top:0.4rem;"><a href="shop.html">← Back to Shop</a></p>
+  <p style="margin-top:1rem;font-size:0.7rem;color:var(--text-light);">© 2025 Revitalize and Thrive Now. All rights reserved.</p>
 </footer>
 </body>
 </html>
