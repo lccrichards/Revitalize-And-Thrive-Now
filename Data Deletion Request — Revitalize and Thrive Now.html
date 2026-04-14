@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Deletion Request — Revitalize and Thrive Now</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ivory:        #FDF9F5;
+      --nude:         #F2EBE2;
+      --nude-deep:    #E8D8CC;
+      --seafoam:      #7BBDB5;
+      --seafoam-deep: #5A9E96;
+      --seafoam-pale: #EAF5F3;
+      --seafoam-mid:  #C2DED9;
+      --blush:        #EDD5C8;
+      --text:         #4A6360;
+      --text-soft:    #8AABA6;
+      --text-light:   #B0C8C4;
+      --white:        #FFFFFF;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--ivory); color:var(--text); font-family:'Jost',sans-serif; font-weight:300; min-height:100vh; display:flex; flex-direction:column; }
+
+    /* NAV */
+    nav {
+      background:rgba(253,249,245,0.97); backdrop-filter:blur(12px);
+      padding:0 4rem; height:72px; display:flex; align-items:center;
+      justify-content:space-between; border-bottom:1px solid var(--seafoam-mid);
+    }
+    .nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:400; color:var(--seafoam-deep); text-decoration:none; }
+    .nav-back { color:var(--text-soft); font-size:0.75rem; text-decoration:none; letter-spacing:0.1em; text-transform:uppercase; transition:color 0.2s; }
+    .nav-back:hover { color:var(--seafoam); }
+
+    /* HERO BAND */
+    .hero-band {
+      background:linear-gradient(160deg, var(--seafoam-pale) 0%, var(--nude) 60%, var(--blush) 100%);
+      padding:4rem 4rem 3.5rem; text-align:center;
+      border-bottom:1px solid var(--seafoam-mid);
+    }
+    .badge {
+      display:inline-block; background:rgba(123,189,181,0.15); border:1px solid var(--seafoam-mid);
+      color:var(--seafoam-deep); font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+      padding:0.45rem 1.4rem; border-radius:2rem; margin-bottom:1.4rem; font-weight:500;
+    }
+    .hero-band h1 {
+      font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,4vw,3rem);
+      font-weight:300; color:var(--seafoam-deep); line-height:1.2; margin-bottom:0.8rem;
+    }
+    .hero-band p { font-size:0.95rem; color:var(--text-soft); max-width:520px; margin:0 auto; line-height:1.85; }
+
+    /* MAIN CONTENT */
+    main { max-width:760px; margin:0 auto; padding:4rem 2rem; flex:1; width:100%; }
+
+    .card {
+      background:var(--white); border-radius:20px; border:1px solid var(--seafoam-mid);
+      padding:2.5rem; margin-bottom:2rem; box-shadow:0 2px 20px rgba(90,158,150,0.06);
+    }
+    .card-label {
+      font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase;
+      color:var(--seafoam); font-weight:500; display:block; margin-bottom:0.8rem;
+    }
+    .card h2 {
+      font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:400;
+      color:var(--seafoam-deep); margin-bottom:1rem;
+    }
+    .card p { font-size:0.9rem; color:var(--text-soft); line-height:1.85; margin-bottom:0.8rem; font-weight:300; }
+    .card p:last-child { margin-bottom:0; }
+
+    /* STEPS */
+    .steps { list-style:none; margin-top:0.5rem; }
+    .steps li {
+      display:flex; gap:1rem; align-items:flex-start;
+      padding:0.9rem 0; border-bottom:1px solid var(--seafoam-pale); font-size:0.88rem;
+      color:var(--text); line-height:1.7; font-weight:300;
+    }
+    .steps li:last-child { border-bottom:none; }
+    .step-num {
+      width:28px; height:28px; border-radius:50%; background:var(--seafoam-pale);
+      border:1px solid var(--seafoam-mid); color:var(--seafoam-deep);
+      font-size:0.75rem; font-weight:500; display:flex; align-items:center;
+      justify-content:center; flex-shrink:0; margin-top:2px;
+    }
+
+    /* FORM */
+    .form-group { margin-bottom:1.2rem; }
+    .form-group label {
+      display:block; font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase;
+      color:var(--seafoam-deep); font-weight:500; margin-bottom:0.5rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width:100%; padding:0.8rem 1rem;
+      border:1px solid var(--seafoam-mid); border-radius:10px;
+      font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300;
+      color:var(--text); background:var(--ivory); outline:none; transition:border 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color:var(--seafoam); }
+    .form-group textarea { resize:vertical; min-height:100px; }
+
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+
+    .submit-btn {
+      width:100%; padding:1rem; border-radius:50px; background:var(--seafoam);
+      color:var(--white); font-family:'Jost',sans-serif; font-size:0.82rem;
+      letter-spacing:0.12em; text-transform:uppercase; font-weight:500;
+      border:none; cursor:pointer; transition:all 0.2s; margin-top:0.5rem;
+    }
+    .submit-btn:hover { background:var(--seafoam-deep); transform:translateY(-2px); }
+
+    /* CONFIRMATION BOX */
+    .confirm-box {
+      display:none; background:var(--seafoam-pale); border:1px solid var(--seafoam-mid);
+      border-radius:16px; padding:2rem; text-align:center; margin-top:1.5rem;
+    }
+    .confirm-box .check {
+      width:48px; height:48px; border-radius:50%; background:var(--seafoam);
+      display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;
+      font-size:1.2rem; color:var(--white);
+    }
+    .confirm-box h3 { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:400; color:var(--seafoam-deep); margin-bottom:0.5rem; }
+    .confirm-box p { font-size:0.85rem; color:var(--text-soft); line-height:1.75; }
+
+    /* DIVIDER */
+    .divider { height:1px; background:var(--seafoam-mid); margin:2rem 0; opacity:0.4; }
+
+    /* FOOTER */
+    footer {
+      background:var(--seafoam-pale); color:var(--text-soft);
+      text-align:center; padding:2rem 4rem; font-size:0.78rem; line-height:2;
+      border-top:1px solid var(--seafoam-mid);
+    }
+    footer a { color:var(--seafoam); text-decoration:none; }
+    .footer-logo { font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--seafoam-deep); display:block; margin-bottom:0.3rem; }
+
+    @media(max-width:768px) {
+      nav { padding:0 1.5rem; }
+      .hero-band { padding:3rem 1.5rem 2.5rem; }
+      main { padding:2.5rem 1.5rem; }
+      .form-row { grid-template-columns:1fr; }
+      footer { padding:2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">✦ Revitalize & Thrive Now</a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="hero-band">
+  <p class="badge">✦ Privacy & Your Data</p>
+  <h1>Data Deletion Request</h1>
+  <p>We respect your privacy completely. Use this page to request the deletion of any personal data associated with your account or purchase.</p>
+</div>
+
+<main>
+
+  <!-- WHAT WE STORE -->
+  <div class="card">
+    <span class="card-label">What We Collect</span>
+    <h2>Your Data at Revitalize and Thrive Now</h2>
+    <p>When you purchase a product from our Gumroad store, Gumroad collects your name, email address, and payment information to process your order. We may receive your name and email address to fulfill your order and send you your digital product.</p>
+    <p>We do not store credit card numbers, sell your personal information, or share your data with third parties beyond what is required to process your purchase and deliver your product.</p>
+  </div>
+
+  <!-- HOW TO REQUEST -->
+  <div class="card">
+    <span class="card-label">How to Request Deletion</span>
+    <h2>Your Deletion Options</h2>
+    <ul class="steps">
+      <li>
+        <div class="step-num">1</div>
+        <div><strong>Submit the form below</strong> — Fill in your name and the email address used at purchase. We will process your request within 30 days and confirm via email.</div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div><strong>Email us directly</strong> — Send a deletion request to <a href="mailto:hello@revitalizeandthrivenow.com" style="color:var(--seafoam);">hello@revitalizeandthrivenow.com</a> with the subject line "Data Deletion Request" and your purchase email address.</div>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <div><strong>Request via Gumroad</strong> — Since purchases are processed through Gumroad, you may also submit a data deletion request directly at <a href="https://gumroad.com/privacy" target="_blank" style="color:var(--seafoam);">gumroad.com/privacy</a>.</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DELETION FORM -->
+  <div class="card">
+    <span class="card-label">Submit a Request</span>
+    <h2>Data Deletion Form</h2>
+    <p style="margin-bottom:1.5rem;">Complete the form below and we will process your deletion request within 30 days. You will receive a confirmation email once your data has been removed.</p>
+
+    <form id="deletionForm" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Your first name" required />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Your last name" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address Used at Purchase</label>
+        <input type="email" placeholder="your@email.com" required />
+      </div>
+
+      <div class="form-group">
+        <label>What would you like deleted?</label>
+        <select required>
+          <option value="" disabled selected>Please select…</option>
+          <option>All personal data associated with my account</option>
+          <option>My email address and marketing data only</option>
+          <option>My purchase history only</option>
+          <option>All data — I would like to be completely removed</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Additional Notes (Optional)</label>
+        <textarea placeholder="Any additional information about your request…"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Deletion Request</button>
+    </form>
+
+    <div class="confirm-box" id="confirmBox">
+      <div class="check">✓</div>
+      <h3>Request Received</h3>
+      <p>Thank you. We have received your data deletion request and will process it within 30 days. A confirmation will be sent to the email address you provided.</p>
+    </div>
+  </div>
+
+  <!-- POLICY NOTE -->
+  <div class="card">
+    <span class="card-label">Our Commitment</span>
+    <h2>What Happens After You Request Deletion</h2>
+    <p>Once we receive your request, we will review and process it within 30 calendar days. You will receive a confirmation email when your data has been deleted.</p>
+    <p>Please note that we may need to retain certain information for legal or financial compliance purposes — for example, records required by tax law. Any data retained for legal reasons will not be used for marketing or any other purpose.</p>
+    <p>If you have questions about this process, please contact us at <a href="mailto:hello@revitalizeandthrivenow.com" style="color:var(--seafoam);">hello@revitalizeandthrivenow.com</a>.</p>
+  </div>
+
+</main>
+
+<footer>
+  <span class="footer-logo">✦ Revitalize and Thrive Now</span>
+  <p>We respect your privacy and your right to control your personal data.</p>
+  <p style="margin-top:0.3rem;font-size:0.7rem;color:var(--text-light);">© 2025 Revitalize and Thrive Now. All rights reserved.</p>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('deletionForm').style.display = 'none';
+  document.getElementById('confirmBox').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
