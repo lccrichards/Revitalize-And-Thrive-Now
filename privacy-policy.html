@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Revitalize and Thrive Now</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ivory:        #FDF9F5;
+      --nude:         #F2EBE2;
+      --nude-deep:    #E8D8CC;
+      --seafoam:      #7BBDB5;
+      --seafoam-deep: #5A9E96;
+      --seafoam-pale: #EAF5F3;
+      --seafoam-mid:  #C2DED9;
+      --blush:        #EDD5C8;
+      --text:         #4A6360;
+      --text-soft:    #8AABA6;
+      --text-light:   #B0C8C4;
+      --white:        #FFFFFF;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--ivory); color:var(--text); font-family:'Jost',sans-serif; font-weight:300; min-height:100vh; display:flex; flex-direction:column; }
+
+    /* NAV */
+    nav {
+      background:rgba(253,249,245,0.97); backdrop-filter:blur(12px);
+      padding:0 4rem; height:72px; display:flex; align-items:center;
+      justify-content:space-between; border-bottom:1px solid var(--seafoam-mid);
+    }
+    .nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:400; color:var(--seafoam-deep); text-decoration:none; }
+    .nav-back { color:var(--text-soft); font-size:0.75rem; text-decoration:none; letter-spacing:0.1em; text-transform:uppercase; transition:color 0.2s; }
+    .nav-back:hover { color:var(--seafoam); }
+
+    /* HERO BAND */
+    .hero-band {
+      background:linear-gradient(160deg, var(--seafoam-pale) 0%, var(--nude) 60%, var(--blush) 100%);
+      padding:4rem 4rem 3.5rem; text-align:center;
+      border-bottom:1px solid var(--seafoam-mid);
+    }
+    .badge {
+      display:inline-block; background:rgba(123,189,181,0.15); border:1px solid var(--seafoam-mid);
+      color:var(--seafoam-deep); font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+      padding:0.45rem 1.4rem; border-radius:2rem; margin-bottom:1.4rem; font-weight:500;
+    }
+    .hero-band h1 {
+      font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,4vw,3rem);
+      font-weight:300; color:var(--seafoam-deep); line-height:1.2; margin-bottom:0.8rem;
+    }
+    .hero-band p { font-size:0.9rem; color:var(--text-soft); max-width:520px; margin:0 auto; line-height:1.85; }
+    .effective-date {
+      display:inline-block; margin-top:1.2rem; font-size:0.75rem; letter-spacing:0.1em;
+      color:var(--text-light); text-transform:uppercase;
+    }
+
+    /* MAIN */
+    main { max-width:800px; margin:0 auto; padding:4rem 2rem; flex:1; width:100%; }
+
+    /* TABLE OF CONTENTS */
+    .toc {
+      background:var(--seafoam-pale); border:1px solid var(--seafoam-mid);
+      border-radius:16px; padding:1.8rem 2rem; margin-bottom:2.5rem;
+    }
+    .toc h3 {
+      font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400;
+      color:var(--seafoam-deep); margin-bottom:1rem;
+    }
+    .toc ol { padding-left:1.2rem; }
+    .toc ol li { margin-bottom:0.5rem; }
+    .toc ol li a {
+      font-size:0.85rem; color:var(--seafoam); text-decoration:none;
+      font-weight:300; transition:color 0.2s; letter-spacing:0.02em;
+    }
+    .toc ol li a:hover { color:var(--seafoam-deep); }
+
+    /* POLICY SECTIONS */
+    .policy-section {
+      background:var(--white); border-radius:20px; border:1px solid var(--seafoam-mid);
+      padding:2.5rem; margin-bottom:1.5rem; box-shadow:0 2px 16px rgba(90,158,150,0.05);
+      scroll-margin-top:100px;
+    }
+    .section-num {
+      font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase;
+      color:var(--seafoam); font-weight:500; display:block; margin-bottom:0.6rem;
+    }
+    .policy-section h2 {
+      font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:400;
+      color:var(--seafoam-deep); margin-bottom:1.2rem;
+      padding-bottom:0.8rem; border-bottom:1px solid var(--seafoam-pale);
+    }
+    .policy-section p {
+      font-size:0.88rem; color:var(--text-soft); line-height:1.9;
+      margin-bottom:0.9rem; font-weight:300;
+    }
+    .policy-section p:last-child { margin-bottom:0; }
+    .policy-section h3 {
+      font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400;
+      color:var(--seafoam-deep); margin:1.4rem 0 0.6rem;
+    }
+
+    /* BULLET LIST */
+    .policy-list { list-style:none; margin:0.8rem 0 1rem; }
+    .policy-list li {
+      font-size:0.88rem; color:var(--text-soft); line-height:1.8;
+      padding:0.4rem 0 0.4rem 1.5rem; position:relative; font-weight:300;
+    }
+    .policy-list li::before {
+      content:'✦'; position:absolute; left:0; color:var(--seafoam);
+      font-size:0.55rem; top:0.65rem;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight {
+      background:var(--nude); border-left:3px solid var(--seafoam);
+      border-radius:0 10px 10px 0; padding:1.2rem 1.5rem; margin:1.2rem 0;
+    }
+    .highlight p { font-size:0.86rem; color:var(--text); margin:0; line-height:1.8; }
+
+    /* CONTACT CARD */
+    .contact-card {
+      background:linear-gradient(135deg, var(--seafoam-pale), var(--nude));
+      border:1px solid var(--seafoam-mid); border-radius:16px;
+      padding:2rem; text-align:center; margin-top:2rem;
+    }
+    .contact-card h3 {
+      font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:400;
+      color:var(--seafoam-deep); margin-bottom:0.6rem;
+    }
+    .contact-card p { font-size:0.85rem; color:var(--text-soft); line-height:1.8; margin-bottom:0.4rem; }
+    .contact-card a { color:var(--seafoam); text-decoration:none; font-weight:500; }
+    .contact-card a:hover { color:var(--seafoam-deep); }
+
+    /* FOOTER */
+    footer {
+      background:var(--seafoam-pale); color:var(--text-soft);
+      text-align:center; padding:2rem 4rem; font-size:0.78rem; line-height:2;
+      border-top:1px solid var(--seafoam-mid);
+    }
+    footer a { color:var(--seafoam); text-decoration:none; }
+    .footer-logo { font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--seafoam-deep); display:block; margin-bottom:0.3rem; }
+    .footer-links { display:flex; justify-content:center; gap:2rem; margin-top:0.5rem; flex-wrap:wrap; }
+
+    @media(max-width:768px) {
+      nav { padding:0 1.5rem; }
+      .hero-band { padding:3rem 1.5rem 2.5rem; }
+      main { padding:2.5rem 1.5rem; }
+      footer { padding:2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">✦ Revitalize & Thrive Now</a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="hero-band">
+  <p class="badge">✦ Your Privacy Matters</p>
+  <h1>Privacy Policy</h1>
+  <p>We are committed to protecting your personal information and being transparent about how we use it.</p>
+  <span class="effective-date">Effective Date: January 1, 2025</span>
+</div>
+
+<main>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#who-we-are">Who We Are</a></li>
+      <li><a href="#information-we-collect">Information We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Information</a></li>
+      <li><a href="#sharing">How We Share Your Information</a></li>
+      <li><a href="#cookies">Cookies and Tracking</a></li>
+      <li><a href="#data-retention">Data Retention</a></li>
+      <li><a href="#your-rights">Your Rights</a></li>
+      <li><a href="#childrens-privacy">Children's Privacy</a></li>
+      <li><a href="#third-party">Third-Party Links</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- 1. WHO WE ARE -->
+  <div class="policy-section" id="who-we-are">
+    <span class="section-num">Section 1</span>
+    <h2>Who We Are</h2>
+    <p>Revitalize and Thrive Now is a digital wellness brand offering holistic programs, workbooks, and journals designed exclusively for women navigating midlife. Our products are sold through our website at <strong>lccrichards.github.io/revitalize-and-thrive-now</strong> and our Gumroad storefront at <strong>rivitalize.gumroad.com</strong>.</p>
+    <p>This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website, purchase our products, or interact with us in any way.</p>
+    <div class="highlight">
+      <p>By using our website or purchasing our products, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+    </div>
+  </div>
+
+  <!-- 2. INFORMATION WE COLLECT -->
+  <div class="policy-section" id="information-we-collect">
+    <span class="section-num">Section 2</span>
+    <h2>Information We Collect</h2>
+
+    <h3>Information You Provide Directly</h3>
+    <p>When you purchase a product or contact us, we may collect:</p>
+    <ul class="policy-list">
+      <li>Your first and last name</li>
+      <li>Your email address</li>
+      <li>Your billing address (collected by Gumroad, not stored by us)</li>
+      <li>Any messages or inquiries you send us directly</li>
+    </ul>
+
+    <h3>Information Collected Automatically</h3>
+    <p>When you visit our website, standard web technology may collect:</p>
+    <ul class="policy-list">
+      <li>Your IP address and general geographic location</li>
+      <li>Browser type and version</li>
+      <li>Pages you visit and time spent on each page</li>
+      <li>The website that referred you to us</li>
+      <li>Device type (desktop, mobile, tablet)</li>
+    </ul>
+
+    <h3>Information from Third Parties</h3>
+    <p>When you complete a purchase through Gumroad, Gumroad processes your payment and may share your name and email address with us so we can fulfill your order. We do not receive or store your payment card details at any time.</p>
+  </div>
+
+  <!-- 3. HOW WE USE -->
+  <div class="policy-section" id="how-we-use">
+    <span class="section-num">Section 3</span>
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul class="policy-list">
+      <li>To process and fulfill your digital product orders</li>
+      <li>To send you your purchased digital downloads</li>
+      <li>To respond to your questions, comments, or support requests</li>
+      <li>To send you updates about your order or product</li>
+      <li>To send you wellness content, product updates, or promotional emails — only if you have opted in</li>
+      <li>To improve our website and understand how visitors use it</li>
+      <li>To comply with legal obligations</li>
+    </ul>
+    <div class="highlight">
+      <p>We will never sell your personal information to third parties. We will never use your data for purposes beyond those listed above without obtaining your explicit consent first.</p>
+    </div>
+  </div>
+
+  <!-- 4. SHARING -->
+  <div class="policy-section" id="sharing">
+    <span class="section-num">Section 4</span>
+    <h2>How We Share Your Information</h2>
+    <p>We do not sell, trade, or rent your personal information. We may share your information only in the following limited circumstances:</p>
+
+    <h3>Service Providers</h3>
+    <p>We work with a small number of trusted third-party services to operate our business:</p>
+    <ul class="policy-list">
+      <li><strong>Gumroad</strong> — our e-commerce platform that processes payments and delivers digital products. Gumroad's privacy policy applies to information they collect during checkout.</li>
+      <li><strong>Email service providers</strong> — if you subscribe to our mailing list, we use an email platform to send communications.</li>
+      <li><strong>GitHub Pages</strong> — our website hosting provider. GitHub's privacy policy applies to site hosting.</li>
+    </ul>
+
+    <h3>Legal Requirements</h3>
+    <p>We may disclose your information if required to do so by law or in response to valid legal requests from public authorities, such as a court order or government agency.</p>
+
+    <h3>Business Transfers</h3>
+    <p>In the unlikely event that Revitalize and Thrive Now is acquired or merges with another business, your personal information may be transferred as part of that transaction. We will notify you before your information becomes subject to a different privacy policy.</p>
+  </div>
+
+  <!-- 5. COOKIES -->
+  <div class="policy-section" id="cookies">
+    <span class="section-num">Section 5</span>
+    <h2>Cookies and Tracking</h2>
+    <p>Our website may use cookies — small text files stored on your device — to improve your browsing experience. Cookies help us understand how visitors use our site so we can improve it over time.</p>
+
+    <h3>Types of Cookies We Use</h3>
+    <ul class="policy-list">
+      <li><strong>Essential cookies</strong> — required for the website to function properly</li>
+      <li><strong>Analytics cookies</strong> — help us understand visitor behavior and improve our site</li>
+      <li><strong>Marketing cookies</strong> — only used if you have explicitly consented, to show relevant ads on platforms like Facebook or Instagram</li>
+    </ul>
+
+    <h3>Your Cookie Choices</h3>
+    <p>You can control and delete cookies through your browser settings at any time. Note that disabling certain cookies may affect the functionality of our website. Most browsers allow you to refuse cookies or alert you when cookies are being sent.</p>
+
+    <h3>Meta Pixel</h3>
+    <p>Our website may use the Meta Pixel (formerly Facebook Pixel) to measure the effectiveness of our advertising campaigns. This tool may collect information about your actions on our website. You can opt out of Meta's data collection at <a href="https://www.facebook.com/privacy/explanation" target="_blank" style="color:var(--seafoam);">facebook.com/privacy</a>.</p>
+  </div>
+
+  <!-- 6. DATA RETENTION -->
+  <div class="policy-section" id="data-retention">
+    <span class="section-num">Section 6</span>
+    <h2>Data Retention</h2>
+    <p>We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+    <ul class="policy-list">
+      <li>Purchase records are retained for up to 7 years for tax and legal compliance purposes</li>
+      <li>Email marketing data is retained until you unsubscribe or request deletion</li>
+      <li>Customer service correspondence is retained for up to 2 years</li>
+      <li>Website analytics data is retained for up to 26 months</li>
+    </ul>
+    <p>When your data is no longer needed, we will securely delete or anonymize it. You may request deletion of your data at any time — see Section 7 below.</p>
+  </div>
+
+  <!-- 7. YOUR RIGHTS -->
+  <div class="policy-section" id="your-rights">
+    <span class="section-num">Section 7</span>
+    <h2>Your Rights</h2>
+    <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+
+    <h3>Right to Access</h3>
+    <p>You have the right to request a copy of the personal information we hold about you.</p>
+
+    <h3>Right to Correction</h3>
+    <p>You have the right to request that we correct any inaccurate or incomplete personal information we hold about you.</p>
+
+    <h3>Right to Deletion</h3>
+    <p>You have the right to request that we delete your personal information. To submit a deletion request, visit our <a href="data-deletion.html" style="color:var(--seafoam);">Data Deletion Request page</a> or email us at hello@revitalizeandthrivenow.com.</p>
+
+    <h3>Right to Opt Out of Marketing</h3>
+    <p>You can unsubscribe from our marketing emails at any time by clicking the unsubscribe link at the bottom of any email we send you, or by contacting us directly.</p>
+
+    <h3>Right to Data Portability</h3>
+    <p>You have the right to receive your personal data in a structured, commonly used format and to transfer it to another controller.</p>
+
+    <div class="highlight">
+      <p>California residents have additional rights under the California Consumer Privacy Act (CCPA). Florida residents and residents of other US states with active privacy legislation also have specific rights. Contact us to learn more about your state-specific rights.</p>
+    </div>
+  </div>
+
+  <!-- 8. CHILDREN'S PRIVACY -->
+  <div class="policy-section" id="childrens-privacy">
+    <span class="section-num">Section 8</span>
+    <h2>Children's Privacy</h2>
+    <p>Our website and products are designed exclusively for adults, specifically women in midlife (ages 35 and above). We do not knowingly collect personal information from anyone under the age of 18.</p>
+    <p>If you believe that a child under 18 has provided us with personal information, please contact us immediately at hello@revitalizeandthrivenow.com and we will take steps to delete that information promptly.</p>
+  </div>
+
+  <!-- 9. THIRD PARTY LINKS -->
+  <div class="policy-section" id="third-party">
+    <span class="section-num">Section 9</span>
+    <h2>Third-Party Links</h2>
+    <p>Our website may contain links to third-party websites, including our Gumroad storefront, social media platforms such as Instagram and Facebook, and other wellness resources we recommend.</p>
+    <p>This Privacy Policy applies only to our website. When you click a link to a third-party site, that site's own privacy policy will govern how your information is handled. We encourage you to review the privacy policy of any site you visit.</p>
+    <p>We are not responsible for the privacy practices or the content of any third-party websites.</p>
+  </div>
+
+  <!-- 10. CHANGES -->
+  <div class="policy-section" id="changes">
+    <span class="section-num">Section 10</span>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or for other operational reasons. When we make material changes, we will update the Effective Date at the top of this page.</p>
+    <p>We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information. Your continued use of our website after any changes constitutes your acceptance of the updated policy.</p>
+  </div>
+
+  <!-- 11. CONTACT -->
+  <div class="policy-section" id="contact">
+    <span class="section-num">Section 11</span>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please do not hesitate to reach out. We are committed to addressing your concerns promptly and transparently.</p>
+
+    <div class="contact-card">
+      <h3>Get in Touch</h3>
+      <p><strong>Revitalize and Thrive Now</strong></p>
+      <p>Email: <a href="mailto:hello@revitalizeandthrivenow.com">hello@revitalizeandthrivenow.com</a></p>
+      <p style="margin-top:0.8rem; font-size:0.8rem;">We aim to respond to all privacy-related inquiries within 5 business days.</p>
+      <p style="margin-top:0.8rem;">
+        <a href="data-deletion.html" style="display:inline-block; margin-top:0.5rem; background:var(--seafoam); color:var(--white); padding:0.6rem 1.6rem; border-radius:2rem; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; text-decoration:none;">Submit a Data Deletion Request</a>
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <span class="footer-logo">✦ Revitalize and Thrive Now</span>
+  <p>Your privacy is important to us. We are committed to protecting your personal information.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="data-deletion.html">Data Deletion</a>
+    <a href="mailto:hello@revitalizeandthrivenow.com">Contact</a>
+  </div>
+  <p style="margin-top:0.8rem; font-size:0.7rem; color:var(--text-light);">© 2025 Revitalize and Thrive Now. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
