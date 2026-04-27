@@ -1,950 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop — Revitalize &amp; Thrive Now</title>
-<meta name="description" content="Holistic digital workbooks and programs for women 35 to 55 navigating midlife. Start with the 30-Day Wellness Transformation Workbook.">
-<meta name="theme-color" content="#FAF6EE">
-
-<meta property="og:title" content="Shop — Revitalize &amp; Thrive Now">
-<meta property="og:description" content="Start where you are. Begin with the 30-Day Wellness Transformation Workbook — $79. Or go deeper with the full six-pillar Masterclass.">
-<meta property="og:type" content="website">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shop — Revitalize and Thrive Now</title>
+<meta name="description" content="The complete collection of digital programs, workbooks, and journals for women navigating midlife with intention.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Dancing+Script:wght@700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
-  :root {
-    --ivory:        #FAF6EE;
-    --ivory-warm:   #F5EFE3;
-    --cream:        #EFE7D7;
-    --sage:         #8A9A7B;
-    --sage-deep:    #6E7E5F;
-    --sage-light:   #B4BFA6;
-    --terracotta:   #C87941;
-    --terracotta-deep: #A35E2E;
-    --charcoal:     #3A3530;
-    --slate:        #595047;
-    --muted:        #8B8278;
-    --rule:         rgba(138, 154, 123, 0.24);
-    --rule-soft:    rgba(58, 53, 48, 0.08);
+:root{--cream:#F0EDE7;--cream2:#E8E4DD;--cream3:#DDD8CF;--offwhite:#F7F5F1;--white:#FFFFFF;--sand:#C4B49C;--sandD:#A8977E;--sandL:#ECE6DA;--dark:#3C3830;--mid:#6A6460;--gray:#8C8884;--lightgray:#E2DED8;--teal:#7EABB8;--tealD:#5A8E9C;--tealL:#D8EBEF;--sage:#9BB0A4;--sageD:#7A9890;--sageL:#DDE8E4;--s1:#8AAEC0;--s1L:#D8EBF2;--s2:#9BB0A4;--s2L:#DDE8E4;--s3:#C0A882;--s3L:#EDE4D4;--s4:#7AA0B0;--s4L:#D6E8EF;--s5:#B0A898;--s5L:#EAE7E2;--s6:#A0B898;--s6L:#DDE8DA;--radius:16px;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);overflow-x:hidden;}
 
-    --display: "Cormorant Garamond", Georgia, serif;
-    --sans:    "Jost", system-ui, sans-serif;
-    --mono:    "Inter", system-ui, sans-serif;
+nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(240,237,231,0.97);backdrop-filter:blur(14px);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:68px;border-bottom:1px solid rgba(196,180,156,0.35);}
+.nav-logo{font-family:'Dancing Script',cursive;color:var(--dark);font-size:1.5rem;font-weight:700;}
+.nav-logo span{color:var(--tealD);}
+.nav-links{display:flex;gap:32px;}
+.nav-links a{color:var(--mid);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color .2s;}
+.nav-links a:hover{color:var(--tealD);}
+.nav-links a.nav-shop{color:var(--tealD);font-weight:700;border:1.5px solid var(--tealD);padding:6px 16px;border-radius:100px;}
+.nav-links a.nav-shop:hover{background:var(--tealD);color:var(--white);}
+.nav-cta{background:var(--teal);color:var(--white);padding:10px 24px;border-radius:100px;font-weight:600;font-size:0.875rem;text-decoration:none;transition:all .2s;}
+.nav-cta:hover{background:var(--tealD);transform:translateY(-1px);}
 
-    --max: 1280px;
-    --pad: clamp(1.25rem, 4vw, 2.5rem);
-  }
+.shop-header{padding:140px 24px 60px;background:linear-gradient(160deg,var(--cream) 0%,var(--cream2) 50%,var(--cream3) 100%);text-align:center;position:relative;overflow:hidden;}
+.shop-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(126,171,184,0.10) 0%,transparent 50%),radial-gradient(ellipse at 70% 25%,rgba(196,180,156,0.13) 0%,transparent 50%);pointer-events:none;}
+.shop-header-inner{position:relative;z-index:2;max-width:800px;margin:0 auto;}
+.shop-header .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(126,171,184,0.15);border:1px solid rgba(126,171,184,0.4);color:var(--tealD);font-size:0.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:28px;}
+.shop-header h1{font-family:'Dancing Script',cursive;font-size:clamp(3rem,7vw,5.5rem);font-weight:700;color:var(--dark);line-height:1.05;margin-bottom:8px;}
+.shop-header h2{font-family:'DM Sans',sans-serif;font-size:clamp(0.9rem,2vw,1.1rem);font-weight:400;color:var(--sandD);letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px;}
+.shop-header .lede{font-family:'Playfair Display',serif;font-size:clamp(1.05rem,2.2vw,1.4rem);font-style:italic;color:var(--mid);max-width:560px;margin:0 auto;line-height:1.65;}
 
-  *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.start-here{padding:80px 24px;background:var(--cream);}
+.start-hero{max-width:1100px;margin:0 auto;background:linear-gradient(135deg,#2C2620 0%,#3C3830 100%);border-radius:24px;overflow:hidden;position:relative;padding:clamp(40px,5vw,72px);display:grid;grid-template-columns:1.15fr 0.85fr;gap:clamp(28px,5vw,60px);align-items:center;box-shadow:0 24px 80px rgba(60,56,48,0.25);}
+.start-hero::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--sage),var(--sand));}
+.start-hero::after{content:'';position:absolute;top:-100px;right:-100px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(126,171,184,0.18),transparent 70%);pointer-events:none;}
+@media(max-width:900px){.start-hero{grid-template-columns:1fr;}}
+.start-hero .start-tag{font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:12px;}
+.start-hero .start-tag::after{content:'';width:32px;height:1px;background:var(--teal);}
+.start-hero h2{font-family:'Playfair Display',serif;color:var(--cream);font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.1;margin-bottom:18px;}
+.start-hero h2 em{font-family:'Dancing Script',cursive;font-style:normal;color:var(--teal);font-weight:700;font-size:1.1em;}
+.start-hero p.hero-body{font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;line-height:1.55;color:rgba(240,237,231,0.78);margin-bottom:28px;max-width:480px;}
+.hero-bullets{list-style:none;padding:0;margin:0 0 32px 0;display:grid;gap:10px;}
+.hero-bullets li{display:flex;align-items:flex-start;gap:12px;font-size:0.95rem;line-height:1.55;color:rgba(240,237,231,0.92);}
+.hero-bullets li::before{content:'✓';color:var(--teal);font-weight:700;flex-shrink:0;margin-top:2px;}
+.start-hero .cta-btn{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:var(--white);padding:16px 32px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:0.04em;border-radius:100px;text-decoration:none;transition:all .25s;box-shadow:0 8px 32px rgba(126,171,184,0.3);}
+.start-hero .cta-btn:hover{background:var(--tealD);transform:translateY(-2px);box-shadow:0 12px 40px rgba(126,171,184,0.4);}
+.price-card{background:rgba(240,237,231,0.08);border:1px solid rgba(240,237,231,0.18);border-radius:12px;padding:36px 28px;position:relative;text-align:center;}
+.price-card::before{content:'';position:absolute;top:-1px;right:-1px;width:32px;height:32px;border-top:2px solid var(--teal);border-right:2px solid var(--teal);}
+.price-card::after{content:'';position:absolute;bottom:-1px;left:-1px;width:32px;height:32px;border-bottom:2px solid var(--teal);border-left:2px solid var(--teal);}
+.price-card .label{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(240,237,231,0.65);margin-bottom:14px;}
+.price-card .amount{font-family:'Playfair Display',serif;font-size:clamp(3.4rem,6vw,4.5rem);font-weight:900;color:var(--teal);line-height:1;}
+.price-card .amount sup{font-size:0.4em;vertical-align:super;margin-right:4px;font-weight:700;}
+.price-card .subline{font-size:0.78rem;color:rgba(240,237,231,0.7);margin-top:14px;padding-top:14px;border-top:1px solid rgba(240,237,231,0.14);line-height:1.5;}
 
-  body {
-    margin: 0;
-    font-family: var(--sans);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--charcoal);
-    background: var(--ivory);
-    overflow-x: hidden;
-  }
+.methodology-intro{padding:80px 24px 40px;background:var(--cream2);text-align:center;}
+.methodology-intro-inner{max-width:720px;margin:0 auto;}
+.section-label{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sageD);margin-bottom:16px;display:inline-flex;align-items:center;gap:10px;}
+.section-label::before{content:'';display:inline-block;width:28px;height:2px;background:var(--sageD);border-radius:2px;}
+.section-label::after{content:'';display:inline-block;width:28px;height:2px;background:var(--sageD);border-radius:2px;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:16px;}
+.section-title em{color:var(--tealD);font-style:italic;}
+.methodology-intro p{font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:var(--mid);line-height:1.65;max-width:600px;margin:0 auto;}
 
-  /* subtle paper grain */
-  body::before {
-    content: "";
-    position: fixed; inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.28;
-    mix-blend-mode: multiply;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.36 0 0 0 0 0.33 0 0 0 0 0.30 0 0 0 0.05 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  }
+.pillar-layer{padding:64px 24px;position:relative;overflow:hidden;}
+.pillar-layer:nth-child(odd){background:var(--cream);}
+.pillar-layer:nth-child(even){background:var(--cream2);}
+.pillar-layer::before{content:'';position:absolute;width:280px;height:280px;border-radius:50%;pointer-events:none;z-index:1;}
+.pillar-layer.p1::before{background:radial-gradient(circle,rgba(138,174,192,0.15),transparent 70%);top:-80px;right:-80px;}
+.pillar-layer.p2::before{background:radial-gradient(circle,rgba(155,176,164,0.16),transparent 70%);bottom:-80px;left:-80px;}
+.pillar-layer.p3::before{background:radial-gradient(circle,rgba(192,168,130,0.16),transparent 70%);top:-80px;right:-80px;}
+.pillar-layer.p4::before{background:radial-gradient(circle,rgba(122,160,176,0.16),transparent 70%);bottom:-80px;left:-80px;}
+.pillar-layer.p5::before{background:radial-gradient(circle,rgba(176,168,152,0.18),transparent 70%);top:-80px;right:-80px;}
+.pillar-layer.p6::before{background:radial-gradient(circle,rgba(160,184,152,0.16),transparent 70%);bottom:-80px;left:-80px;}
+.pillar-layer.p7::before{background:radial-gradient(circle,rgba(196,180,156,0.16),transparent 70%);top:-80px;right:-80px;}
+.pillar-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:0.85fr 1.15fr;gap:clamp(32px,5vw,64px);align-items:center;}
+@media(max-width:900px){.pillar-inner{grid-template-columns:1fr;gap:32px;}}
+.pillar-head{position:relative;}
+.pillar-number{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;margin-bottom:14px;display:inline-flex;align-items:center;gap:12px;}
+.pillar-number::before{content:'';width:28px;height:1px;display:inline-block;}
+.pillar-layer.p1 .pillar-number{color:var(--s1);}
+.pillar-layer.p1 .pillar-number::before{background:var(--s1);}
+.pillar-layer.p2 .pillar-number{color:var(--s2);}
+.pillar-layer.p2 .pillar-number::before{background:var(--s2);}
+.pillar-layer.p3 .pillar-number{color:var(--s3);}
+.pillar-layer.p3 .pillar-number::before{background:var(--s3);}
+.pillar-layer.p4 .pillar-number{color:var(--s4);}
+.pillar-layer.p4 .pillar-number::before{background:var(--s4);}
+.pillar-layer.p5 .pillar-number{color:var(--s5);}
+.pillar-layer.p5 .pillar-number::before{background:var(--s5);}
+.pillar-layer.p6 .pillar-number{color:var(--s6);}
+.pillar-layer.p6 .pillar-number::before{background:var(--s6);}
+.pillar-layer.p7 .pillar-number{color:var(--sandD);}
+.pillar-layer.p7 .pillar-number::before{background:var(--sandD);}
+.pillar-head h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,2.8rem);font-weight:700;line-height:1.1;color:var(--dark);margin-bottom:20px;}
+.pillar-head h2 em{font-style:italic;color:var(--tealD);}
+.pillar-manifesto{font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;line-height:1.55;color:var(--mid);border-left:2px solid;padding-left:20px;}
+.pillar-layer.p1 .pillar-manifesto{border-left-color:var(--s1);}
+.pillar-layer.p2 .pillar-manifesto{border-left-color:var(--s2);}
+.pillar-layer.p3 .pillar-manifesto{border-left-color:var(--s3);}
+.pillar-layer.p4 .pillar-manifesto{border-left-color:var(--s4);}
+.pillar-layer.p5 .pillar-manifesto{border-left-color:var(--s5);}
+.pillar-layer.p6 .pillar-manifesto{border-left-color:var(--s6);}
+.pillar-layer.p7 .pillar-manifesto{border-left-color:var(--sandD);}
 
-  a { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+.pillar-product-card{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:var(--offwhite);border-radius:var(--radius);padding:28px 30px;border:1px solid rgba(180,170,158,0.25);text-decoration:none;color:inherit;transition:all 0.25s ease;position:relative;}
+.pillar-product-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:var(--radius) 0 0 var(--radius);}
+.pillar-layer.p1 .pillar-product-card::before{background:var(--s1);}
+.pillar-layer.p2 .pillar-product-card::before{background:var(--s2);}
+.pillar-layer.p3 .pillar-product-card::before{background:var(--s3);}
+.pillar-layer.p4 .pillar-product-card::before{background:var(--s4);}
+.pillar-layer.p5 .pillar-product-card::before{background:var(--s5);}
+.pillar-layer.p6 .pillar-product-card::before{background:var(--s6);}
+.pillar-layer.p7 .pillar-product-card::before{background:var(--sandD);}
+.pillar-product-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(60,56,48,0.10);border-color:rgba(180,170,158,0.4);}
+.pillar-product-card .product-meta{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;margin-bottom:8px;}
+.pillar-layer.p1 .product-meta{color:var(--s1);}
+.pillar-layer.p2 .product-meta{color:var(--s2);}
+.pillar-layer.p3 .product-meta{color:var(--s3);}
+.pillar-layer.p4 .product-meta{color:var(--s4);}
+.pillar-layer.p5 .product-meta{color:var(--s5);}
+.pillar-layer.p6 .product-meta{color:var(--s6);}
+.pillar-layer.p7 .product-meta{color:var(--sandD);}
+.pillar-product-card h3{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;line-height:1.15;margin:0 0 8px 0;color:var(--dark);}
+.pillar-product-card p{font-family:'DM Sans',sans-serif;font-size:0.9rem;line-height:1.6;color:var(--mid);margin:0;}
+.pillar-product-card .product-action{display:flex;flex-direction:column;align-items:flex-end;gap:10px;flex-shrink:0;}
+.pillar-product-card .product-price{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;line-height:1;color:var(--dark);}
+.pillar-product-card .product-price sup{font-size:0.5em;vertical-align:super;margin-right:2px;font-weight:700;}
+.pillar-product-card .explore-link{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--tealD);display:inline-flex;align-items:center;gap:6px;transition:gap 0.2s ease;}
+.pillar-product-card:hover .explore-link{gap:10px;}
+@media(max-width:600px){.pillar-product-card{grid-template-columns:1fr;gap:16px;}.pillar-product-card .product-action{align-items:flex-start;flex-direction:row;justify-content:space-between;width:100%;}}
 
-  h1, h2, h3, h4 {
-    font-family: var(--display);
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    line-height: 1.1;
-    margin: 0;
-    color: var(--charcoal);
-  }
+.deeper{padding:80px 24px;background:var(--cream);}
+.deeper-inner{max-width:1100px;margin:0 auto;}
+.deeper-intro{text-align:center;margin-bottom:48px;}
+.deeper-intro h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:12px;}
+.deeper-intro h2 em{font-style:italic;color:var(--tealD);}
+.deeper-intro p{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--mid);max-width:540px;margin:0 auto;}
+.deeper-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+@media(max-width:820px){.deeper-grid{grid-template-columns:1fr;}}
+.program-card{background:var(--offwhite);padding:clamp(32px,4vw,48px);border-radius:20px;border:1px solid rgba(180,170,158,0.2);display:flex;flex-direction:column;position:relative;overflow:hidden;}
+.program-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;}
+.program-card.featured::before{background:linear-gradient(90deg,var(--teal),var(--sage),var(--sand));}
+.program-card.bundle::before{background:linear-gradient(90deg,var(--sand),var(--teal),var(--sage));}
+.program-card.featured{background:linear-gradient(160deg,#2C2620 0%,#3C3830 100%);color:var(--cream);border:none;}
+.program-card .card-tag{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:10px;color:var(--sageD);}
+.program-card.featured .card-tag{color:var(--teal);}
+.program-card .card-tag::before{content:'';width:20px;height:1px;background:currentColor;}
+.program-card h3{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,2.8vw,2.2rem);font-weight:700;line-height:1.1;margin-bottom:18px;color:var(--dark);}
+.program-card.featured h3{color:var(--cream);}
+.program-card h3 em{font-family:'Dancing Script',cursive;font-style:normal;color:var(--tealD);font-size:1.1em;}
+.program-card.featured h3 em{color:var(--teal);}
+.program-card > p{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;line-height:1.55;margin-bottom:26px;flex-grow:1;color:var(--mid);}
+.program-card.featured > p{color:rgba(240,237,231,0.78);}
+.program-card .includes{list-style:none;padding:0;margin:0 0 28px 0;display:grid;gap:8px;font-size:0.9rem;line-height:1.5;}
+.program-card .includes li{display:flex;align-items:flex-start;gap:10px;color:var(--dark);}
+.program-card.featured .includes li{color:rgba(240,237,231,0.92);}
+.program-card .includes li::before{content:'✓';color:var(--tealD);font-weight:700;flex-shrink:0;}
+.program-card.featured .includes li::before{color:var(--teal);}
+.program-foot{display:flex;align-items:baseline;justify-content:space-between;padding-top:22px;border-top:1px solid rgba(180,170,158,0.25);gap:16px;flex-wrap:wrap;}
+.program-card.featured .program-foot{border-top-color:rgba(240,237,231,0.15);}
+.program-foot .big-price{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:900;line-height:1;}
+.program-foot .big-price sup{font-size:0.4em;vertical-align:super;margin-right:3px;font-weight:700;}
+.program-card .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:100px;text-decoration:none;transition:all 0.25s ease;}
+.program-card .btn.primary{background:var(--teal);color:var(--white);box-shadow:0 6px 20px rgba(126,171,184,0.3);}
+.program-card .btn.primary:hover{background:var(--tealD);transform:translateY(-2px);box-shadow:0 10px 28px rgba(126,171,184,0.4);}
 
-  .container {
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 0 var(--pad);
-    position: relative;
-    z-index: 2;
-  }
+.free-challenge{padding:80px 24px;background:linear-gradient(180deg,var(--cream2) 0%,var(--cream) 100%);text-align:center;}
+.challenge-inner{max-width:640px;margin:0 auto;}
+.challenge-inner h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:16px;}
+.challenge-inner h2 em{font-family:'Dancing Script',cursive;font-style:normal;color:var(--teal);font-weight:700;font-size:1.15em;}
+.challenge-inner p{font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:var(--mid);line-height:1.55;margin-bottom:28px;}
+.challenge-inner .btn-free{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--dark);border:1.5px solid var(--dark);padding:14px 30px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;border-radius:100px;text-decoration:none;transition:all 0.25s ease;}
+.challenge-inner .btn-free:hover{background:var(--dark);color:var(--cream);}
 
-  .eyebrow {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    color: var(--terracotta);
-    font-weight: 500;
-  }
+.closing{padding:80px 24px;text-align:center;background:linear-gradient(135deg,#2C2620 0%,#3C3830 100%);color:var(--cream);}
+.closing h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:700;line-height:1.2;max-width:660px;margin:0 auto 16px;color:var(--cream);}
+.closing h2 em{font-family:'Dancing Script',cursive;font-style:normal;color:var(--teal);font-size:1.15em;}
+.closing p{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:rgba(240,237,231,0.75);max-width:540px;margin:0 auto;line-height:1.6;}
 
-  /* ---------- NAV ---------- */
-  nav.top {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(250, 246, 238, 0.88);
-    backdrop-filter: saturate(180%) blur(14px);
-    -webkit-backdrop-filter: saturate(180%) blur(14px);
-    border-bottom: 1px solid var(--rule-soft);
-  }
-  .nav-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px var(--pad);
-    max-width: var(--max);
-    margin: 0 auto;
-  }
-  .brand {
-    font-family: var(--display);
-    font-weight: 500;
-    font-size: 22px;
-    font-style: italic;
-    letter-spacing: 0.01em;
-    color: var(--charcoal);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .brand .mark {
-    display: inline-block;
-    color: var(--terracotta);
-    font-style: normal;
-    transform: translateY(-1px);
-  }
-  .nav-links {
-    display: flex;
-    gap: 36px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--slate);
-  }
-  .nav-links a:hover { color: var(--terracotta); }
-  .nav-cta {
-    background: var(--sage-deep);
-    color: var(--ivory);
-    padding: 10px 20px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    border-radius: 999px;
-    transition: background .2s ease;
-  }
-  .nav-cta:hover { background: var(--terracotta-deep); }
-  @media (max-width: 820px) { .nav-links { display: none; } }
+footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba(196,180,156,0.4);}
+.footer-content{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:40px;margin-bottom:44px;}
+.footer-brand .brand-name{font-family:'Dancing Script',cursive;color:var(--dark);font-size:1.6rem;font-weight:700;margin-bottom:10px;}
+.footer-brand .brand-name span{color:var(--tealD);}
+.footer-brand p{color:var(--gray);font-size:0.85rem;line-height:1.7;max-width:270px;}
+.footer-links h5{color:var(--dark);font-size:0.85rem;font-weight:700;margin-bottom:14px;}
+.footer-links ul{list-style:none;}
+.footer-links ul li{margin-bottom:9px;}
+.footer-links ul li a{color:var(--mid);text-decoration:none;font-size:0.85rem;transition:color .2s;}
+.footer-links ul li a:hover{color:var(--tealD);}
+.footer-bottom{max-width:1100px;margin:0 auto;border-top:1px solid rgba(196,180,156,0.25);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{color:var(--gray);font-size:0.78rem;}
 
-  /* ---------- HEADER ---------- */
-  .shop-header {
-    padding: clamp(72px, 10vw, 120px) 0 clamp(40px, 6vw, 64px);
-    position: relative;
-    overflow: hidden;
-  }
-  .shop-header::after {
-    content: "";
-    position: absolute;
-    right: -80px; top: 20%;
-    width: 360px; height: 360px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(138,154,123,0.12), transparent 70%);
-    pointer-events: none;
-  }
-  .shop-header .eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 28px;
-  }
-  .shop-header .eyebrow::before {
-    content: "✿";
-    font-size: 14px;
-    color: var(--sage);
-  }
-  .shop-header h1 {
-    font-size: clamp(2.6rem, 6.5vw, 5.2rem);
-    font-weight: 500;
-    line-height: 1.02;
-    max-width: 840px;
-    margin-bottom: 28px;
-  }
-  .shop-header h1 em {
-    font-style: italic;
-    color: var(--terracotta);
-    font-weight: 500;
-  }
-  .shop-header p.lede {
-    font-family: var(--display);
-    font-size: clamp(1.2rem, 1.6vw, 1.45rem);
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--slate);
-    max-width: 640px;
-  }
-
-  /* ---------- START HERE HERO (Workbook) ---------- */
-  .start-here {
-    padding: clamp(40px, 5vw, 72px) 0 clamp(60px, 8vw, 100px);
-    position: relative;
-  }
-  .start-hero {
-    background: linear-gradient(135deg, var(--sage-deep) 0%, #5F6D52 100%);
-    color: var(--ivory);
-    border-radius: 6px;
-    overflow: hidden;
-    position: relative;
-    padding: clamp(48px, 6vw, 80px);
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: clamp(32px, 5vw, 72px);
-    align-items: center;
-  }
-  .start-hero::before {
-    content: "";
-    position: absolute;
-    top: -80px; right: -80px;
-    width: 340px; height: 340px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(200,121,65,0.25), transparent 70%);
-    pointer-events: none;
-  }
-  @media (max-width: 900px) { .start-hero { grid-template-columns: 1fr; } }
-
-  .start-hero .mono-tag {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: rgba(250, 246, 238, 0.7);
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .start-hero .mono-tag::after {
-    content: "";
-    width: 32px; height: 1px;
-    background: rgba(200,121,65,0.7);
-    display: inline-block;
-  }
-  .start-hero h2 {
-    color: var(--ivory);
-    font-size: clamp(2rem, 4.2vw, 3.2rem);
-    line-height: 1.05;
-    margin-bottom: 20px;
-  }
-  .start-hero h2 em {
-    font-style: italic;
-    color: #E8B08C;
-    font-weight: 500;
-  }
-  .start-hero p.hero-body {
-    font-family: var(--display);
-    font-size: 1.1rem;
-    font-style: italic;
-    line-height: 1.55;
-    color: rgba(250, 246, 238, 0.85);
-    margin-bottom: 28px;
-    max-width: 520px;
-  }
-  .hero-bullets {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 36px 0;
-    display: grid;
-    gap: 10px;
-  }
-  .hero-bullets li {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    font-size: 15px;
-    line-height: 1.55;
-    color: rgba(250, 246, 238, 0.9);
-    font-weight: 300;
-  }
-  .hero-bullets li::before {
-    content: "✦";
-    color: #E8B08C;
-    font-size: 14px;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-
-  .start-hero .cta-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--terracotta);
-    color: var(--ivory);
-    padding: 16px 28px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    border-radius: 999px;
-    transition: all .25s ease;
-  }
-  .start-hero .cta-btn:hover {
-    background: #D88850;
-    transform: translateY(-1px);
-    box-shadow: 0 14px 28px -14px rgba(200,121,65,0.65);
-  }
-  .start-hero .cta-btn .arrow { transition: transform .25s ease; }
-  .start-hero .cta-btn:hover .arrow { transform: translateX(4px); }
-
-  /* price card on right */
-  .price-card {
-    background: rgba(250, 246, 238, 0.08);
-    border: 1px solid rgba(250, 246, 238, 0.18);
-    border-radius: 4px;
-    padding: 40px 32px;
-    position: relative;
-  }
-  .price-card::before {
-    content: "";
-    position: absolute;
-    top: -1px; right: -1px;
-    width: 36px; height: 36px;
-    border-top: 2px solid #E8B08C;
-    border-right: 2px solid #E8B08C;
-  }
-  .price-card::after {
-    content: "";
-    position: absolute;
-    bottom: -1px; left: -1px;
-    width: 36px; height: 36px;
-    border-bottom: 2px solid #E8B08C;
-    border-left: 2px solid #E8B08C;
-  }
-  .price-card .label {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: rgba(250, 246, 238, 0.6);
-    margin-bottom: 16px;
-  }
-  .price-card .amount {
-    font-family: var(--display);
-    font-size: clamp(3.8rem, 7vw, 5.2rem);
-    font-weight: 500;
-    color: #E8B08C;
-    line-height: 1;
-    margin-bottom: 6px;
-  }
-  .price-card .amount sup {
-    font-size: 0.38em;
-    vertical-align: super;
-    margin-right: 4px;
-    font-weight: 400;
-  }
-  .price-card .subline {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    color: rgba(250, 246, 238, 0.7);
-    margin-bottom: 24px;
-  }
-  .price-card .details {
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(250, 246, 238, 0.82);
-    padding-top: 20px;
-    border-top: 1px solid rgba(250, 246, 238, 0.14);
-  }
-
-  /* ---------- PILLAR PRODUCTS SECTION ---------- */
-  .pillar-products {
-    padding: clamp(60px, 8vw, 100px) 0;
-    background: var(--ivory-warm);
-    position: relative;
-  }
-  .section-intro {
-    text-align: center;
-    margin: 0 auto clamp(40px, 6vw, 64px);
-    max-width: 680px;
-  }
-  .section-intro .eyebrow {
-    margin-bottom: 16px;
-    display: inline-block;
-  }
-  .section-intro h2 {
-    font-size: clamp(1.9rem, 3.8vw, 3rem);
-    line-height: 1.1;
-    margin-bottom: 16px;
-  }
-  .section-intro h2 em {
-    font-style: italic;
-    color: var(--sage-deep);
-  }
-  .section-intro p {
-    font-family: var(--display);
-    font-size: 1.15rem;
-    font-style: italic;
-    color: var(--slate);
-    line-height: 1.55;
-  }
-
-  .pillar-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  @media (max-width: 960px) { .pillar-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 600px) { .pillar-grid { grid-template-columns: 1fr; } }
-
-  .product {
-    background: var(--ivory);
-    padding: 36px 32px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    transition: background 0.3s ease;
-    min-height: 340px;
-  }
-  .product:hover { background: #FDFAF3; }
-
-  .product .tag {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--sage-deep);
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-  .product h3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.15;
-    margin-bottom: 14px;
-    color: var(--charcoal);
-  }
-  .product p {
-    font-size: 14.5px;
-    line-height: 1.6;
-    color: var(--slate);
-    margin: 0 0 24px 0;
-    flex-grow: 1;
-  }
-  .product .foot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule-soft);
-  }
-  .product .price {
-    font-family: var(--display);
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--charcoal);
-  }
-  .product .price sup { font-size: 0.5em; vertical-align: super; margin-right: 2px; }
-  .product .explore {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--terracotta);
-    font-weight: 500;
-    transition: gap 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .product .explore:hover { color: var(--terracotta-deep); gap: 10px; }
-
-  /* ---------- DEEPER PROGRAMS SECTION (Masterclass + Bundle) ---------- */
-  .deeper {
-    padding: clamp(72px, 10vw, 120px) 0;
-    background: var(--ivory);
-    position: relative;
-  }
-  .deeper-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(20px, 3vw, 32px);
-  }
-  @media (max-width: 820px) { .deeper-grid { grid-template-columns: 1fr; } }
-
-  .program-card {
-    background: var(--cream);
-    padding: clamp(36px, 5vw, 56px);
-    border-radius: 4px;
-    position: relative;
-    border: 1px solid var(--rule);
-    display: flex;
-    flex-direction: column;
-  }
-  .program-card.featured {
-    background: var(--charcoal);
-    color: var(--ivory);
-    border-color: var(--charcoal);
-  }
-  .program-card .card-tag {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .program-card .card-tag { color: var(--sage-deep); }
-  .program-card.featured .card-tag { color: #E8B08C; }
-  .program-card .card-tag::before {
-    content: "";
-    width: 20px; height: 1px;
-    background: currentColor;
-  }
-  .program-card h3 {
-    font-size: clamp(1.7rem, 2.8vw, 2.2rem);
-    font-weight: 500;
-    line-height: 1.1;
-    margin-bottom: 20px;
-  }
-  .program-card.featured h3 { color: var(--ivory); }
-  .program-card h3 em {
-    font-style: italic;
-    color: var(--terracotta);
-  }
-  .program-card.featured h3 em { color: #E8B08C; }
-  .program-card > p {
-    font-family: var(--display);
-    font-size: 1.1rem;
-    font-style: italic;
-    line-height: 1.5;
-    margin-bottom: 28px;
-    flex-grow: 1;
-  }
-  .program-card > p { color: var(--slate); }
-  .program-card.featured > p { color: rgba(250,246,238,0.78); }
-
-  .program-card .includes {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 32px 0;
-    display: grid;
-    gap: 10px;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .program-card .includes li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
-  .program-card .includes li::before {
-    content: "—";
-    color: var(--terracotta);
-    font-weight: 500;
-    flex-shrink: 0;
-  }
-  .program-card.featured .includes li::before { color: #E8B08C; }
-
-  .program-foot {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-top: 24px;
-    border-top: 1px solid var(--rule-soft);
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .program-card.featured .program-foot { border-top-color: rgba(250,246,238,0.15); }
-  .program-foot .big-price {
-    font-family: var(--display);
-    font-size: 2.8rem;
-    font-weight: 500;
-    line-height: 1;
-  }
-  .program-foot .big-price sup {
-    font-size: 0.4em;
-    vertical-align: super;
-    margin-right: 3px;
-  }
-  .program-card .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 26px;
-    font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    border-radius: 999px;
-    transition: all 0.25s ease;
-  }
-  .program-card .btn.primary {
-    background: var(--sage-deep);
-    color: var(--ivory);
-  }
-  .program-card .btn.primary:hover {
-    background: var(--charcoal);
-    transform: translateY(-1px);
-  }
-  .program-card.featured .btn.primary {
-    background: var(--terracotta);
-  }
-  .program-card.featured .btn.primary:hover {
-    background: #D88850;
-  }
-  .program-card .btn.waitlist {
-    background: transparent;
-    color: var(--charcoal);
-    border: 1px solid var(--charcoal);
-  }
-  .program-card .btn.waitlist:hover {
-    background: var(--charcoal);
-    color: var(--ivory);
-  }
-
-  /* coming-soon ribbon */
-  .ribbon {
-    position: absolute;
-    top: 20px;
-    right: -4px;
-    background: var(--terracotta);
-    color: var(--ivory);
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 6px 14px;
-    border-radius: 2px 0 0 2px;
-  }
-  .ribbon::after {
-    content: "";
-    position: absolute;
-    right: 0; bottom: -4px;
-    border-top: 4px solid var(--terracotta-deep);
-    border-right: 4px solid transparent;
-  }
-
-  /* ---------- FREE CHALLENGE SECTION ---------- */
-  .free-challenge {
-    padding: clamp(64px, 9vw, 112px) 0;
-    background: linear-gradient(180deg, var(--ivory) 0%, var(--ivory-warm) 100%);
-    position: relative;
-    overflow: hidden;
-  }
-  .free-challenge::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    width: 240px; height: 240px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(138,154,123,0.10), transparent 70%);
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-  .challenge-inner {
-    max-width: 720px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 var(--pad);
-    position: relative;
-    z-index: 2;
-  }
-  .challenge-inner .eyebrow {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  .challenge-inner h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.1;
-    margin-bottom: 20px;
-  }
-  .challenge-inner h2 em {
-    font-style: italic;
-    color: var(--terracotta);
-  }
-  .challenge-inner p {
-    font-family: var(--display);
-    font-size: 1.2rem;
-    font-style: italic;
-    color: var(--slate);
-    line-height: 1.5;
-    margin-bottom: 32px;
-  }
-  .challenge-inner .btn-free {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: transparent;
-    color: var(--charcoal);
-    border: 1.5px solid var(--charcoal);
-    padding: 16px 32px;
-    font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border-radius: 999px;
-    transition: all 0.25s ease;
-  }
-  .challenge-inner .btn-free:hover {
-    background: var(--charcoal);
-    color: var(--ivory);
-  }
-
-  /* ---------- CLOSING ---------- */
-  .closing {
-    padding: clamp(72px, 10vw, 120px) 0;
-    text-align: center;
-    background: var(--charcoal);
-    color: var(--ivory);
-  }
-  .closing h2 {
-    color: var(--ivory);
-    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
-    line-height: 1.15;
-    max-width: 660px;
-    margin: 0 auto 16px;
-  }
-  .closing h2 em {
-    font-style: italic;
-    color: #E8B08C;
-  }
-  .closing p {
-    font-family: var(--display);
-    font-size: 1.15rem;
-    font-style: italic;
-    color: rgba(250,246,238,0.75);
-    max-width: 540px;
-    margin: 0 auto;
-  }
-
-  /* ---------- FOOTER ---------- */
-  footer {
-    background: var(--charcoal);
-    color: var(--ivory);
-    padding: 48px 0 32px;
-    font-size: 13px;
-    border-top: 1px solid rgba(250,246,238,0.08);
-  }
-  .foot-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid rgba(250,246,238,0.12);
-  }
-  .foot-brand {
-    font-family: var(--display);
-    font-style: italic;
-    font-size: 18px;
-    color: var(--ivory);
-  }
-  .foot-brand .mark { color: var(--terracotta); font-style: normal; }
-  .foot-links {
-    display: flex;
-    gap: 24px;
-    color: rgba(250,246,238,0.7);
-    font-size: 13px;
-    flex-wrap: wrap;
-  }
-  .foot-links a:hover { color: var(--terracotta); }
-  .foot-bottom {
-    margin-top: 24px;
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    color: rgba(250,246,238,0.5);
-    text-align: center;
-  }
-  .foot-bottom strong { color: #E8B08C; font-weight: 500; }
-
-  /* ---------- REVEAL ---------- */
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s ease; }
-  .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) {
-    .reveal { opacity: 1; transform: none; transition: none; }
-    html { scroll-behavior: auto; }
-  }
+@media(max-width:768px){.nav-links{display:none;}nav{padding:0 20px;}.shop-header{padding:120px 20px 50px;}.start-here{padding:50px 20px;}.pillar-layer{padding:50px 20px;}.deeper{padding:50px 20px;}.free-challenge{padding:50px 20px;}.closing{padding:50px 20px;}footer{padding:44px 20px 22px;}}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="top">
-  <div class="nav-wrap">
-    <a href="index.html" class="brand"><span class="mark">✦</span>Revitalize &amp; Thrive Now</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-    <a href="https://rivitalize.gumroad.com/l/nlkuz" class="nav-cta">Start the 30 Days</a>
+<nav>
+  <div class="nav-logo">✿ Revitalize <span>&</span> Thrive Now</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#program">The Program</a>
+    <a href="shop.html" class="nav-shop">✦ Shop All Products</a>
+    <a href="index.html#faq">FAQ</a>
   </div>
+  <a class="nav-cta" href="https://rivitalize.gumroad.com/l/nlkuz" target="_blank">Get Access — $79</a>
 </nav>
 
-<!-- SHOP HEADER -->
 <section class="shop-header">
-  <div class="container">
-    <div class="eyebrow">The Wellness Collection</div>
-    <h1>Programs built for the woman you're <em>becoming</em>.</h1>
+  <div class="shop-header-inner">
+    <div class="badge">✿ The Wellness Collection</div>
+    <h1>Shop Our Programs</h1>
+    <h2>Programs for Every Pillar of Midlife Wellness</h2>
     <p class="lede">Holistic digital workbooks and guided programs for women navigating midlife with intention. Start where you are. Go as deep as you like.</p>
   </div>
 </section>
 
-<!-- START HERE — HERO WORKBOOK -->
 <section class="start-here">
-  <div class="container">
-    <div class="start-hero reveal">
-      <div>
-        <div class="mono-tag">Start Here</div>
-        <h2>The 30-Day Wellness <em>Transformation</em> Workbook</h2>
-        <p class="hero-body">The complete starting point. Eighty pages of guided daily practice across all six pillars — built to be written in, reflected on, and actually finished.</p>
-
-        <ul class="hero-bullets">
-          <li>30 daily pages — one focused practice per day</li>
-          <li>All six pillars: Mindset, Nutrition, Movement, Sleep, Stress, Connection</li>
-          <li>Reflection prompts, habit trackers, and weekly reviews</li>
-          <li>Instant PDF download — yours to keep forever</li>
-        </ul>
-
-        <a href="https://rivitalize.gumroad.com/l/nlkuz" class="cta-btn">
-          Buy the Workbook
-          <span class="arrow">→</span>
-        </a>
-      </div>
-
-      <div class="price-card">
-        <div class="label">One-Time · Digital</div>
-        <div class="amount"><sup>$</sup>79</div>
-        <div class="subline">Instant PDF Download</div>
-        <div class="details">80 pages · 30-day program · Lifetime access · All sales final</div>
-      </div>
+  <div class="start-hero">
+    <div>
+      <div class="start-tag">Start Here</div>
+      <h2>The 30-Day Wellness <em>Transformation</em> Workbook</h2>
+      <p class="hero-body">The complete starting point. Eighty pages of guided daily practice across all six pillars — built to be written in, reflected on, and actually finished.</p>
+      <ul class="hero-bullets">
+        <li>30 daily pages — one focused practice per day</li>
+        <li>All six pillars covered in depth</li>
+        <li>Reflection prompts, habit trackers, and weekly reviews</li>
+        <li>Instant PDF download — yours to keep forever</li>
+      </ul>
+      <a href="https://rivitalize.gumroad.com/l/nlkuz" target="_blank" class="cta-btn">Buy the Workbook →</a>
+    </div>
+    <div class="price-card">
+      <div class="label">One-Time · Digital</div>
+      <div class="amount"><sup>$</sup>79</div>
+      <div class="subline">80 pages · 30-day program · Lifetime access · All sales final</div>
     </div>
   </div>
 </section>
 
-<!-- PILLAR PRODUCTS -->
-<section class="pillar-products">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Focused Programs</span>
-      <h2>Go deeper on <em>one pillar at a time</em></h2>
-      <p>Each guide is a complete protocol for one specific area — perfect when you already know where you want to focus.</p>
+<section class="methodology-intro">
+  <div class="methodology-intro-inner">
+    <span class="section-label">The Six Pillars Method</span>
+    <h2 class="section-title">One framework. <em>Six pillars.</em></h2>
+    <p>Midlife wellness isn't built from a single intervention. It's built across six interconnected pillars — each with its own protocol, each with its own product. Start with the pillar where you live most acutely.</p>
+  </div>
+</section>
+
+<section class="pillar-layer p1">
+  <div class="pillar-inner">
+    <div class="pillar-head">
+      <div class="pillar-number">Pillar 01 · Mindset</div>
+      <h2>The framework expiration is <em>mental</em> first.</h2>
+      <p class="pillar-manifesto">By forty, the operating system that carried you through your twenties stops describing your actual life. The reset begins in the mind.</p>
     </div>
-
-    <div class="pillar-grid">
-      <div class="product">
-        <span class="tag">Mindset · 30 Days</span>
-        <h3>30-Day Mindset Reset</h3>
-        <p>Rewire limiting beliefs, build daily mental resilience, and rediscover your inner confidence — one gentle day at a time.</p>
-        <div class="foot">
-          <span class="price"><sup>$</sup>39</span>
-          <a href="mindset-reset.html" class="explore">Explore →</a>
+    <div>
+      <a href="mindset-reset.html" class="pillar-product-card">
+        <div>
+          <div class="product-meta">30 Days · Daily Practice</div>
+          <h3>30-Day Mindset Reset</h3>
+          <p>Rewire limiting beliefs, build daily mental resilience, and rediscover your inner confidence — one gentle day at a time.</p>
         </div>
-      </div>
-
-      <div class="product">
-        <span class="tag">Nutrition · 30 Days</span>
-        <h3>Hormone-Balancing Meal Plan</h3>
-        <p>Thirty days of anti-inflammatory meals, fifty-plus hormone-friendly recipes, and a daily food-mood journal.</p>
-        <div class="foot">
-          <span class="price"><sup>$</sup>39</span>
-          <a href="hormone-meal-plan.html" class="explore">Explore →</a>
+        <div class="product-action">
+          <span class="product-price"><sup>$</sup>39</span>
+          <span class="explore-link">Explore →</span>
         </div>
-      </div>
-
-      <div class="product">
-        <span class="tag">Sleep · 21 Days</span>
-        <h3>The Midlife Sleep Fix</h3>
-        <p>A 21-day sleep transformation with nightly journals, bedtime routine builders, and sleep quality tracking.</p>
-        <div class="foot">
-          <span class="price"><sup>$</sup>39</span>
-          <a href="sleep-fix.html" class="explore">Explore →</a>
-        </div>
-      </div>
-
-      <div class="product">
-        <span class="tag">Movement · 12 Weeks</span>
-        <h3>Low-Impact Strength &amp; Longevity</h3>
-        <p>A 12-week progressive movement plan with workout tracking, energy logs, and non-scale victory journaling.</p>
-        <div class="foot">
-          <span class="price"><sup>$</sup>39</span>
-          <a href="strength-longevity.html" class="explore">Explore →</a>
-        </div>
-      </div>
-
-      <div class="product">
-        <span class="tag">Stress · 6 Weeks</span>
-        <h3>Adrenal Reset &amp; Burnout Recovery</h3>
-        <p>A six-week burnout recovery protocol with daily stress journaling, cortisol rhythm awareness, and boundary-setting worksheets.</p>
-        <div class="foot">
-          <span class="price"><sup>$</sup>39</span>
-          <a href="burnout-recovery.html" class="explore">Explore →</a>
-        </div>
-      </div>
-
-      <div class="product">
-        <span class="tag">Hormones · Guide</span>
-        <h3>Perimenopause Survival Guide</h3>
-        <p>A compassionate, science-backed guide to navigating perimenopause with daily symptom journals, hormone logs, and doctor prep worksheets.</p>
-        <div class="foot">
-          <span class="price"><sup>$</sup>39</span>
-          <a href="perimenopause-guide.html" class="explore">Explore →</a>
-        </div>
-      </div>
-
-      <div class="product">
-        <span class="tag">All Pillars · Planner</span>
-        <h3>The Midlife Wellness Planner</h3>
-        <p>A 12-month printable digital planner with monthly goal pages, weekly habit trackers, and daily gratitude and intention journals.</p>
-        <div class="foot">
-          <span class="price"><sup>$</sup>19</span>
-          <a href="wellness-planner.html" class="explore">Explore →</a>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- DEEPER PROGRAMS: MASTERCLASS + BUNDLE -->
+<section class="pillar-layer p2">
+  <div class="pillar-inner">
+    <div class="pillar-head">
+      <div class="pillar-number">Pillar 02 · Nutrition</div>
+      <h2>Eat for <em>output</em>, not optics.</h2>
+      <p class="pillar-manifesto">In midlife, your biology stops tolerating what you ate at twenty-five. The fix isn't discipline — it's recalibration. Different inputs for a different operating environment.</p>
+    </div>
+    <div>
+      <a href="hormone-meal-plan.html" class="pillar-product-card">
+        <div>
+          <div class="product-meta">30 Days · Hormones &amp; Recipes</div>
+          <h3>Hormone-Balancing Meal Plan</h3>
+          <p>Thirty days of anti-inflammatory meals, fifty-plus hormone-friendly recipes, and a daily food-mood journal.</p>
+        </div>
+        <div class="product-action">
+          <span class="product-price"><sup>$</sup>39</span>
+          <span class="explore-link">Explore →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="pillar-layer p3">
+  <div class="pillar-inner">
+    <div class="pillar-head">
+      <div class="pillar-number">Pillar 03 · Movement</div>
+      <h2>Strength is <em>medicine</em>.</h2>
+      <p class="pillar-manifesto">For women over thirty-five, the most important movement input isn't cardio — it's progressive strength. Bone density, insulin sensitivity, longevity. The work is non-negotiable.</p>
+    </div>
+    <div>
+      <a href="strength-longevity.html" class="pillar-product-card">
+        <div>
+          <div class="product-meta">12 Weeks · Progressive Plan</div>
+          <h3>Low-Impact Strength &amp; Longevity</h3>
+          <p>A 12-week progressive movement plan with workout tracking, energy logs, and non-scale victory journaling.</p>
+        </div>
+        <div class="product-action">
+          <span class="product-price"><sup>$</sup>39</span>
+          <span class="explore-link">Explore →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="pillar-layer p4">
+  <div class="pillar-inner">
+    <div class="pillar-head">
+      <div class="pillar-number">Pillar 04 · Sleep</div>
+      <h2>The most underrated <em>input</em> in midlife.</h2>
+      <p class="pillar-manifesto">Sleep is not where you rest. It's where your body does the repair work that keeps everything else functioning. Get sleep right, and the other pillars become possible.</p>
+    </div>
+    <div>
+      <a href="sleep-fix.html" class="pillar-product-card">
+        <div>
+          <div class="product-meta">21 Days · Daily Protocol</div>
+          <h3>The Midlife Sleep Fix</h3>
+          <p>A 21-day sleep transformation with nightly journals, bedtime routine builders, and sleep quality tracking.</p>
+        </div>
+        <div class="product-action">
+          <span class="product-price"><sup>$</sup>39</span>
+          <span class="explore-link">Explore →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="pillar-layer p5">
+  <div class="pillar-inner">
+    <div class="pillar-head">
+      <div class="pillar-number">Pillar 05 · Stress</div>
+      <h2>Cortisol is the <em>quiet</em> driver.</h2>
+      <p class="pillar-manifesto">Most midlife symptoms blamed on hormones are downstream of cortisol. Address the stress system, and the rest of the body follows. This is leverage.</p>
+    </div>
+    <div>
+      <a href="burnout-recovery.html" class="pillar-product-card">
+        <div>
+          <div class="product-meta">6 Weeks · Burnout Recovery</div>
+          <h3>Adrenal Reset &amp; Burnout Recovery</h3>
+          <p>A six-week burnout recovery protocol with daily stress journaling, cortisol rhythm awareness, and boundary-setting worksheets.</p>
+        </div>
+        <div class="product-action">
+          <span class="product-price"><sup>$</sup>39</span>
+          <span class="explore-link">Explore →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="pillar-layer p6">
+  <div class="pillar-inner">
+    <div class="pillar-head">
+      <div class="pillar-number">Pillar 06 · Hormones</div>
+      <h2>The decade nobody <em>warned</em> you about.</h2>
+      <p class="pillar-manifesto">Perimenopause begins five to ten years before most women have a name for it. The first step is understanding what's actually happening — and what you can do about it.</p>
+    </div>
+    <div>
+      <a href="perimenopause-guide.html" class="pillar-product-card">
+        <div>
+          <div class="product-meta">Comprehensive · Science-Backed</div>
+          <h3>Perimenopause Survival Guide</h3>
+          <p>A compassionate, science-backed guide to navigating perimenopause with daily symptom journals, hormone logs, and doctor prep worksheets.</p>
+        </div>
+        <div class="product-action">
+          <span class="product-price"><sup>$</sup>39</span>
+          <span class="explore-link">Explore →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="pillar-layer p7">
+  <div class="pillar-inner">
+    <div class="pillar-head">
+      <div class="pillar-number">All Six Pillars · Daily Practice</div>
+      <h2>Track everything. <em>One book.</em></h2>
+      <p class="pillar-manifesto">A printable companion that holds the whole methodology — twelve months of monthly goals, weekly habits, and daily reflection across every pillar.</p>
+    </div>
+    <div>
+      <a href="wellness-planner.html" class="pillar-product-card">
+        <div>
+          <div class="product-meta">12 Months · Printable PDF</div>
+          <h3>The Midlife Wellness Planner</h3>
+          <p>A 12-month printable digital planner with monthly goal pages, weekly habit trackers, and daily gratitude and intention journals.</p>
+        </div>
+        <div class="product-action">
+          <span class="product-price"><sup>$</sup>19</span>
+          <span class="explore-link">Explore →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="deeper">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Go All In</span>
+  <div class="deeper-inner">
+    <div class="deeper-intro">
+      <span class="section-label">Go All In</span>
       <h2>When one pillar isn't enough, go <em>deeper</em></h2>
       <p>Two comprehensive offerings for women ready to transform every pillar at once.</p>
     </div>
-
     <div class="deeper-grid">
-      <div class="program-card featured reveal">
+      <div class="program-card featured">
         <div class="card-tag">Flagship Program</div>
         <h3>The Revitalize &amp; Thrive <em>Masterclass Series</em></h3>
         <p>Our signature six-module written course covering every wellness pillar — the complete methodology, taught in depth.</p>
-
         <ul class="includes">
           <li>Six comprehensive modules — one per pillar</li>
           <li>Master habit tracker across all pillars</li>
@@ -952,91 +427,84 @@
           <li>Personal wellness vision guide</li>
           <li>Lifetime access to all future updates</li>
         </ul>
-
         <div class="program-foot">
           <span class="big-price"><sup>$</sup>149</span>
-          <a href="https://rivitalize.gumroad.com/l/masterclass-series" class="btn primary">
-    Enroll Now
-    <span class="arrow">→</span>
-</a>
+          <a href="https://rivitalize.gumroad.com/l/masterclass-series" target="_blank" class="btn primary">Enroll Now →</a>
         </div>
       </div>
-
-      <div class="program-card reveal">
-        <span class="ribbon">Coming Soon</span>
+      <div class="program-card bundle">
         <div class="card-tag">Premium Bundle</div>
         <h3>The Complete <em>Midlife Reset</em></h3>
-        <p>Everything — the Masterclass, your choice of two pillar guides, and the Midlife Wellness Planner. The deepest version of the work.</p>
-
+        <p>Everything — the Masterclass, four pillar deep-dive guides, and the Midlife Wellness Planner. The deepest version of the work.</p>
         <ul class="includes">
           <li>The full Masterclass Series</li>
-          <li>Any two pillar guides of your choice</li>
+          <li>Four pillar deep-dive guides</li>
           <li>The Midlife Wellness Planner</li>
-          <li>Priority email access for questions</li>
           <li>Lifetime access and updates</li>
+          <li>Save $75 versus buying separately</li>
         </ul>
-
         <div class="program-foot">
           <span class="big-price"><sup>$</sup>249</span>
-          <a href="https://rivitalize.gumroad.com/l/nxqlwr" class="btn primary">Get the Bundle →</a>
+          <a href="https://rivitalize.gumroad.com/l/nxqlwr" target="_blank" class="btn primary">Get the Bundle →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FREE CHALLENGE -->
-<section class="free-challenge" id="waitlist">
+<section class="free-challenge">
   <div class="challenge-inner">
-    <span class="eyebrow">Begin Gently</span>
+    <span class="section-label">Begin Gently</span>
     <h2>Not sure where to start? Try the <em>5-Day Energy Reset</em></h2>
-    <p>Five days. Five small shifts. Delivered to your inbox — a beautiful introduction to Dr. Alexander's approach before you commit to a full program.</p>
-    <a href="energy-challenge.html" class="btn-free">
-      Start the Free Challenge
-      <span class="arrow">→</span>
-    </a>
+    <p>Five days. Five small shifts. Delivered to your inbox — a beautiful introduction to Dr. Lori's approach before you commit to a full program.</p>
+    <a href="energy-challenge.html" class="btn-free">Start the Free Challenge →</a>
   </div>
 </section>
 
-<!-- CLOSING -->
 <section class="closing">
-  <div class="container">
-    <h2>Every program is built for the woman navigating midlife with <em>intention</em>.</h2>
-    <p>Holistic wellness science, daily journaling, and gentle accountability — so real transformation becomes real life.</p>
-  </div>
+  <h2>Every program is built for the woman navigating midlife with <em>intention</em>.</h2>
+  <p>Holistic wellness science, daily journaling, and gentle accountability — so real transformation becomes real life.</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <div class="container">
-    <div class="foot-wrap">
-      <div class="foot-brand"><span class="mark">✦</span> Revitalize &amp; Thrive Now</div>
-      <div class="foot-links">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="privacy-policy.html">Privacy</a>
-        <a href="data-deletion.html">Data Deletion</a>
-        <a href="mailto:hello@revitalizeandthrivenow.com">Contact</a>
-      </div>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="brand-name">✿ Revitalize <span>&</span> Thrive Now</div>
+      <p>A science-backed 30-day wellness transformation program for anyone ready to live fully, love deeply, and bloom completely.</p>
     </div>
-    <div class="foot-bottom">
-      All products are digital downloads · <strong>All sales are final — no refunds.</strong><br>
-      © 2026 Revitalize &amp; Thrive Now · An Alexander Wellness Brand.
+    <div class="footer-links">
+      <h5>Program</h5>
+      <ul>
+        <li><a href="index.html#program">The 6 Sections</a></li>
+        <li><a href="index.html#booklet">Booklet Specs</a></li>
+        <li><a href="index.html#trackers">Progress Trackers</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+      </ul>
     </div>
+    <div class="footer-links">
+      <h5>Shop</h5>
+      <ul>
+        <li><a href="shop.html">All Products</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/masterclass-series" target="_blank">Masterclass Series</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/nxqlwr" target="_blank">Complete Reset Bundle</a></li>
+        <li><a href="energy-challenge.html">Free Energy Challenge</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="mailto:hello@revitalizeandthrivenow.com">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="data-deletion.html">Data Deletion</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Revitalize and Thrive Now. All rights reserved.</p>
+    <p>Live your life in full bloom.</p>
   </div>
 </footer>
-
-<script>
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add("in");
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
-</script>
 
 </body>
 </html>
