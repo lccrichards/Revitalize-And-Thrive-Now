@@ -76,7 +76,7 @@ def schedule_post(api_key: str, profile_ids: list, text: str, scheduled_at: str,
     full_text = text
     payload = {
         "post": {
-            "text": full_text,
+            "caption": full_text,
             "scheduled_at": scheduled_at,
             "social_profile_ids": profile_ids,
         }
