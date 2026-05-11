@@ -90,8 +90,7 @@ def schedule_post(api_key: str, profile_ids: list, text: str, scheduled_at: str,
         "Accept": "application/json",
     }
     resp = requests.post(f"{PUBLER_API}/posts", json=payload, headers=headers, timeout=15)
-    if resp.status_code not in (200, 201):
-        p    print(f"  API response {resp.status_code}: {resp.text[:300]}")
+    print("  API " + str(resp.status_code) + ": " + resp.text[:300])
     if resp.status_code not in (200, 201):
         return {}
     return resp.json()
