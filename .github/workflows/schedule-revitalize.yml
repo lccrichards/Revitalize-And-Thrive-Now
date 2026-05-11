@@ -34,12 +34,10 @@ jobs:
       - name: Schedule posts to Publer
         env:
           PUBLER_API_KEY: ${{ secrets.PUBLER_API_KEY }}
-          PUBLER_WORKSPACE_ID: ${{ secrets.PUBLER_WORKSPACE_ID }}
         run: |
           python scripts/schedule_posts.py \
             --brand revitalize \
             --start-date "${{ inputs.start_date }}" \
             --api-key "$PUBLER_API_KEY" \
-            --workspace-id "$PUBLER_WORKSPACE_ID" \
             --profile-ids ig:${{ secrets.PUBLER_PROFILE_REVITALIZE_IG }} \
             ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}

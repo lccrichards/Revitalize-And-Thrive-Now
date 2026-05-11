@@ -34,7 +34,6 @@ jobs:
       - name: Schedule posts to Publer
         env:
           PUBLER_API_KEY: ${{ secrets.PUBLER_API_KEY }}
-          PUBLER_WORKSPACE_ID: ${{ secrets.PUBLER_WORKSPACE_ID }}
         run: |
           PROFILE_ARGS="ig:${{ secrets.PUBLER_PROFILE_RECLAIM_IG }}"
           if [ -n "${{ secrets.PUBLER_PROFILE_RECLAIM_YT }}" ]; then
@@ -45,6 +44,5 @@ jobs:
             --brand reclaim \
             --start-date "${{ inputs.start_date }}" \
             --api-key "$PUBLER_API_KEY" \
-            --workspace-id "$PUBLER_WORKSPACE_ID" \
             --profile-ids $PROFILE_ARGS \
             ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}
