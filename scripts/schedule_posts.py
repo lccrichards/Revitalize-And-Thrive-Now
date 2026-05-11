@@ -104,8 +104,7 @@ def schedule_post(api_key: str, workspace_id: str, account_ids: list, platform: 
             "posts": [
                 {
                     "networks": {network_key: network_payload},
-                    "accounts": [{"id": aid} for aid in account_ids],
-                    "scheduled_at": scheduled_at,
+                    "accounts": [{"id": aid, "scheduled_at": scheduled_at + "Z"} for aid in account_ids],
                 }
             ]
         }
