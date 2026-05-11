@@ -75,11 +75,9 @@ def build_schedule_date(start_monday: datetime, day_num: int, day_of_week: str, 
 def schedule_post(api_key: str, profile_ids: list, text: str, scheduled_at: str, dry_run: bool) -> dict:
     full_text = text
     payload = {
-        "post": {
-            "text": full_text,
-            "scheduled_at": scheduled_at,
-            "social_profile_ids": profile_ids,
-        }
+        "text": full_text,
+        "scheduled_at": scheduled_at,
+        "social_profile_ids": profile_ids,
     }
     if dry_run:
         return {"dry_run": True, "scheduled_at": scheduled_at, "preview": full_text[:80]}
