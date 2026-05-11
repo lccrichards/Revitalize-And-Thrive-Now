@@ -76,7 +76,7 @@ def schedule_post(api_key: str, profile_ids: list, text: str, scheduled_at: str,
     full_text = text
     payload = {
         "post": {
-            "text": full_text,
+            "content": full_text,
             "scheduled_at": scheduled_at,
             "social_profile_ids": profile_ids,
         }
@@ -91,7 +91,8 @@ def schedule_post(api_key: str, profile_ids: list, text: str, scheduled_at: str,
     }
     resp = requests.post(f"{PUBLER_API}/posts", json=payload, headers=headers, timeout=15)
     if resp.status_code not in (200, 201):
-        print(f"  ERROR {resp.status_code}: {resp.text[:200]}")
+        p    print(f"  API response {resp.status_code}: {resp.text[:300]}")
+    if resp.status_code not in (200, 201):
         return {}
     return resp.json()
 
