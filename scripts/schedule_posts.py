@@ -7,13 +7,11 @@ Usage:
     --brand revitalize \
     --start-date 2025-06-02 \
     --api-key YOUR_PUBLER_API_KEY \
-    --workspace-id YOUR_PUBLER_WORKSPACE_ID \
     --profile-ids ig:PROFILE_ID [yt:PROFILE_ID]
 
   --brand         revitalize | reclaim
   --start-date    Monday date to begin (YYYY-MM-DD). Must be a Monday.
   --api-key       Publer API key (or set PUBLER_API_KEY env var)
-  --workspace-id  Publer workspace ID (or set PUBLER_WORKSPACE_ID env var)
   --profile-ids   One or more Publer social profile IDs prefixed with platform
                   e.g.  ig:abc123   yt:def456
   --dry-run       Print scheduled posts without calling Publer API
@@ -34,7 +32,6 @@ TIME_MAP = {
     "7:00 AM":  7,  "7:30 AM":  7.5, "8:00 AM":  8,  "9:00 AM":  9,
     "10:00 AM": 10, "11:00 AM": 11,  "12:00 PM": 12, "6:00 PM":  18,
     "7:00 PM":  19, "8:00 PM":  20,
-    # Reclaim IG times
     "7am": 7, "9am": 9, "10am": 10, "11am": 11,
     "12pm": 12, "2pm": 14, "5pm": 17, "6pm": 18,
     "7pm": 19, "8am": 8, "7:30am": 7.5,
@@ -70,6 +67,25 @@ def build_schedule_date(start_monday: datetime, day_num: int, day_of_week: str, 
     return post_datetime.strftime("%Y-%m-%dT%H:%M:%S")
 
 
+def get_workspace_id(api_key: str) -> str:
+    headers = {
+        "Authorization": "Bearer-API " + api_key,
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+    resp = requests.get(PUBLER_API + "/workspaces", headers=headers, timeout=15)
+    print("Workspaces API " + str(resp.status_code) + ": " + resp.text[:500])
+    if resp.status_code == 200:
+        data = resp.json()
+        if isinstance(data, list) and len(data) > 0:
+            return str(data[0].get("id", data[0].get("_id", "")))
+        if isinstance(data, dict):
+            workspaces = data.get("workspaces", data.get("data", []))
+            if workspaces:
+                return str(workspaces[0].get("id", workspaces[0].get("_id", "")))
+    return ""
+
+
 def schedule_post(api_key: str, workspace_id: str, account_ids: list, platform: str,
                   text: str, scheduled_at: str, dry_run: bool) -> dict:
     if dry_run:
@@ -97,10 +113,12 @@ def schedule_post(api_key: str, workspace_id: str, account_ids: list, platform: 
 
     headers = {
         "Authorization": "Bearer-API " + api_key,
-        "Publer-Workspace-Id": workspace_id,
         "Content-Type": "application/json",
         "Accept": "application/json",
     }
+    if workspace_id:
+        headers["Publer-Workspace-Id"] = workspace_id
+
     resp = requests.post(PUBLER_API + "/posts/schedule", json=payload, headers=headers, timeout=15)
     print("  API " + str(resp.status_code) + ": " + resp.text[:300])
     if resp.status_code not in (200, 201):
@@ -113,7 +131,6 @@ def main():
     parser.add_argument("--brand", required=True, choices=["revitalize","reclaim"])
     parser.add_argument("--start-date", required=True, help="Monday start date YYYY-MM-DD")
     parser.add_argument("--api-key", default=os.environ.get("PUBLER_API_KEY",""))
-    parser.add_argument("--workspace-id", default=os.environ.get("PUBLER_WORKSPACE_ID",""))
     parser.add_argument("--profile-ids", nargs="+", required=True,
                         help="e.g. ig:abc123 yt:def456")
     parser.add_argument("--dry-run", action="store_true")
@@ -121,8 +138,6 @@ def main():
 
     if not args.api_key and not args.dry_run:
         sys.exit("ERROR: --api-key or PUBLER_API_KEY env var required")
-    if not args.workspace_id and not args.dry_run:
-        sys.exit("ERROR: --workspace-id or PUBLER_WORKSPACE_ID env var required")
 
     try:
         start = datetime.strptime(args.start_date, "%Y-%m-%d")
@@ -155,13 +170,21 @@ def main():
         print("YT profiles: " + str(yt_profiles))
     print("-" * 60)
 
+    workspace_id = ""
+    if not args.dry_run:
+        workspace_id = os.environ.get("PUBLER_WORKSPACE_ID", "")
+        if not workspace_id:
+            print("No PUBLER_WORKSPACE_ID set — auto-discovering workspace...")
+            workspace_id = get_workspace_id(args.api_key)
+            print("Using workspace ID: " + workspace_id)
+
     success = 0
     for post in posts:
         scheduled_at = build_schedule_date(start, post["day"], post["day_of_week"], post["post_time"])
         caption_with_tags = post["caption"] + ("\n\n" + post["hashtags"] if post["hashtags"] else "")
 
         if ig_profiles:
-            result = schedule_post(args.api_key, args.workspace_id, ig_profiles, "ig",
+            result = schedule_post(args.api_key, workspace_id, ig_profiles, "ig",
                                    caption_with_tags, scheduled_at, args.dry_run)
             status = "OK" if result else "FAIL"
             print("Day " + str(post["day"]).zfill(2) + " [" + post["day_of_week"][:3] + "] " +
@@ -171,7 +194,7 @@ def main():
 
         if yt_profiles and args.brand == "reclaim":
             yt_text = post["title"] + "\n\n" + caption_with_tags
-            result = schedule_post(args.api_key, args.workspace_id, yt_profiles, "yt",
+            result = schedule_post(args.api_key, workspace_id, yt_profiles, "yt",
                                    yt_text, scheduled_at, args.dry_run)
             status = "OK" if result else "FAIL"
             print("Day " + str(post["day"]).zfill(2) + " [" + post["day_of_week"][:3] + "] " +
