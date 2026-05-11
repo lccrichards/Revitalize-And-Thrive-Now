@@ -75,9 +75,11 @@ def build_schedule_date(start_monday: datetime, day_num: int, day_of_week: str, 
 def schedule_post(api_key: str, profile_ids: list, text: str, scheduled_at: str, dry_run: bool) -> dict:
     full_text = text
     payload = {
-        "text": full_text,
-        "scheduled_at": scheduled_at,
-        "social_profile_ids": profile_ids,
+        "post": {
+            "content": full_text,
+            "scheduled_at": scheduled_at,
+            "social_profile_ids": profile_ids,
+        }
     }
     if dry_run:
         return {"dry_run": True, "scheduled_at": scheduled_at, "preview": full_text[:80]}
@@ -88,8 +90,8 @@ def schedule_post(api_key: str, profile_ids: list, text: str, scheduled_at: str,
         "Accept": "application/json",
     }
     resp = requests.post(f"{PUBLER_API}/posts", json=payload, headers=headers, timeout=15)
+    print(f"  API response {resp.status_code}: {resp.text[:300]}")
     if resp.status_code not in (200, 201):
-        print(f"  ERROR {resp.status_code}: {resp.text[:200]}")
         return {}
     return resp.json()
 
