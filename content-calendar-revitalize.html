@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>30-Day Instagram Content Calendar — Revitalize & Thrive Now</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --cream:#F0EDE7; --white:#FFFFFF; --dark:#3C3830; --mid:#6A6460; --gray:#8C8884;
+  --teal:#7EABB8; --tealD:#5A8E9C; --tealL:#D8EBEF;
+  --sage:#9BB0A4; --sageD:#7A9890; --sageL:#DDE8E4;
+  --sand:#C4B49C; --sandL:#ECE6DA;
+  --blush:#EDD5C8; --blushD:#D4A890;
+  --green:#6A8C5A; --greenL:#E8F0E4;
+  --gold:#C8A96E; --goldL:#F5EDD5;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);}
+
+header{background:linear-gradient(135deg,var(--tealD),var(--sageD));padding:3rem 2rem 2rem;text-align:center;color:var(--white);}
+header .brand{font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;opacity:0.75;margin-bottom:0.5rem;}
+header h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:0.5rem;}
+header p{opacity:0.85;font-size:0.95rem;max-width:500px;margin:0 auto;}
+.stats-bar{display:flex;justify-content:center;gap:2.5rem;margin-top:1.5rem;flex-wrap:wrap;}
+.stat{text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;}
+.stat-label{font-size:0.7rem;opacity:0.7;letter-spacing:0.1em;text-transform:uppercase;}
+
+.filters{background:var(--white);border-bottom:1px solid rgba(196,180,156,0.3);padding:1rem 2rem;display:flex;gap:0.6rem;flex-wrap:wrap;justify-content:center;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px rgba(0,0,0,0.05);}
+.filter-btn{padding:6px 16px;border-radius:100px;border:1px solid rgba(196,180,156,0.4);background:transparent;font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:var(--mid);cursor:pointer;transition:all 0.18s;}
+.filter-btn:hover{border-color:var(--teal);color:var(--tealD);}
+.filter-btn.active{background:var(--tealD);border-color:var(--tealD);color:var(--white);}
+
+.calendar{max-width:1100px;margin:0 auto;padding:2rem;}
+.week-label{font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--sageD);margin:2rem 0 1rem;padding-left:0.2rem;display:flex;align-items:center;gap:0.8rem;}
+.week-label::after{content:'';flex:1;height:1px;background:var(--sageL);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem;}
+
+.day-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid rgba(180,170,158,0.18);transition:transform 0.2s,box-shadow 0.2s;}
+.day-card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(58,48,40,0.1);}
+.day-card.hidden{display:none;}
+
+.card-top{padding:0.9rem 1.1rem 0.7rem;border-bottom:1px solid rgba(180,170,158,0.12);}
+.card-top-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.4rem;}
+.day-num{font-family:'Playfair Display',serif;font-size:0.78rem;font-weight:700;color:var(--gray);}
+.platform-badge{font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:100px;background:linear-gradient(135deg,#E040FB,#FF6090);color:var(--white);}
+.type-badge{display:inline-block;font-size:0.62rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:0.5rem;}
+.type-hook{background:var(--goldL);color:#9A6820;}
+.type-edu{background:var(--tealL);color:var(--tealD);}
+.type-promo{background:var(--blush);color:var(--blushD);}
+.type-inspo{background:var(--sageL);color:var(--sageD);}
+.type-cta{background:var(--greenL);color:var(--green);}
+.type-story{background:var(--sandL);color:#7A6845;}
+.card-title{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;color:var(--dark);line-height:1.3;}
+
+.card-body{padding:0.9rem 1.1rem;}
+.caption-label{font-size:0.6rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray);margin-bottom:0.4rem;}
+.caption{font-size:0.82rem;color:var(--mid);line-height:1.65;white-space:pre-wrap;}
+.hashtags{margin-top:0.7rem;font-size:0.75rem;color:var(--tealD);line-height:1.6;}
+
+.card-footer{padding:0.7rem 1.1rem;background:var(--cream);border-top:1px solid rgba(180,170,158,0.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.4rem;}
+.post-time{font-size:0.7rem;color:var(--gray);display:flex;align-items:center;gap:0.3rem;}
+.cta-tag{font-size:0.68rem;font-weight:600;color:var(--tealD);background:var(--tealL);padding:3px 10px;border-radius:100px;}
+
+.copy-btn{display:block;width:calc(100% - 2.2rem);margin:0 1.1rem 1rem;padding:0.55rem;background:var(--cream);border:1px solid rgba(196,180,156,0.35);border-radius:8px;font-size:0.72rem;font-weight:600;color:var(--mid);cursor:pointer;transition:all 0.18s;font-family:'DM Sans',sans-serif;text-align:center;}
+.copy-btn:hover{background:var(--tealL);border-color:var(--teal);color:var(--tealD);}
+.copy-btn.copied{background:var(--sageL);border-color:var(--sage);color:var(--sageD);}
+
+
+.img-spec{border-top:1px dashed rgba(126,171,184,0.4);padding:0.85rem 1.1rem;background:#f4fbfa;}
+.img-spec-title{font-size:0.58rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--tealD);margin-bottom:0.55rem;display:flex;align-items:center;gap:0.4rem;}
+.img-spec-row{margin-bottom:0.45rem;}
+.img-spec-row-label{font-size:0.58rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray);margin-bottom:0.15rem;}
+.img-spec-row-val{font-size:0.76rem;color:var(--mid);line-height:1.5;}
+.img-spec-row-val em{font-style:normal;color:var(--tealD);font-weight:500;}
+footer{background:var(--dark);color:rgba(255,255,255,0.5);text-align:center;padding:2rem;font-size:0.78rem;}
+footer strong{color:var(--teal);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Content Calendar</div>
+  <h1>30-Day Instagram Content Calendar<br/>Revitalize & Thrive Now</h1>
+  <p>Ready-to-post captions, hashtags, and CTAs — one per day for 30 days.</p>
+  <div class="stats-bar">
+    <div class="stat"><div class="stat-num">30</div><div class="stat-label">Daily Posts</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Content Types</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Products Featured</div></div>
+  </div>
+</header>
+
+<div class="filters">
+  <button class="filter-btn active" onclick="filterCards('all')">All Posts</button>
+  <button class="filter-btn" onclick="filterCards('hook')">Hook</button>
+  <button class="filter-btn" onclick="filterCards('edu')">Educational</button>
+  <button class="filter-btn" onclick="filterCards('promo')">Product Promo</button>
+  <button class="filter-btn" onclick="filterCards('inspo')">Inspiration</button>
+  <button class="filter-btn" onclick="filterCards('cta')">CTA / Offer</button>
+  <button class="filter-btn" onclick="filterCards('story')">Brand Story</button>
+</div>
+
+<div class="calendar">
+
+<!-- WEEK 1 -->
+<div class="week-label">Week 1 — Mindset & Awareness · Days 1–7</div>
+<div class="grid">
+
+<div class="day-card" data-type="story">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 01 · Monday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-story">Brand Story</span>
+    <div class="card-title">Welcome — Who We Are</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">If you're a midlife woman who wakes up exhausted, feels invisible in your own life, and wonders where *you* went — you're in the right place. ✦
+
+I'm here to help you revitalize your body, reset your mindset, and build the thriving life you actually deserve. One day, one step, one choice at a time.
+
+This page is your daily dose of real, practical wellness — no toxic positivity, no impossible standards. Just tools that work for real women in real midlife.
+
+Save this page. Your transformation starts here. 🌿</div>
+    <div class="hashtags">#RevitalizeAndThriveNow #MidlifeWellness #WomenOver40 #TransformationJourney #MindsetReset #ThriveInMidlife #WellnessForWomen #SelfCareOver40</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> confident midlife woman smiling softly in golden morning light, lifestyle portrait photography, warm ivory and seafoam tones, shallow depth of field, editorial wellness brand aesthetic --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A confident midlife woman with a soft smile in warm morning sunlight, lifestyle photography style, ivory and teal color palette, blurred nature background, editorial wellness magazine feel</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Your transformation starts here. ✦"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · Follow for daily wellness · <em>Follow + Save this page</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 AM</span>
+    <span class="cta-tag">Follow + Save</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="hook">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 02 · Tuesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">Why You're Still Exhausted</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Let's be honest.
+
+You've tried the diets. You've pushed through the exhaustion. You've told yourself "I'll feel better when..."
+
+And yet here you are — still running on empty. 💭
+
+Here's what nobody told you: it's not a willpower problem. It's a foundation problem.
+
+When your mindset, nutrition, sleep, and stress are all working against you — no amount of trying harder fixes anything.
+
+The solution isn't more discipline. It's a complete reset.
+
+📌 Comment RESET below and I'll tell you exactly where to start.</div>
+    <div class="hashtags">#MidlifeExhaustion #WomenOver40 #HormonalHealth #MidlifeReset #WellnessJourney #TiredAllTheTime #MindsetMatters #RevitalizeAndThriveNow</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> minimalist wellness typography poster, dark teal background, bold clean white sans-serif text, modern editorial layout, high contrast, social media square format --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold minimalist typographic graphic with deep teal background, clean white modern sans-serif font, wellness brand aesthetic, Instagram post format</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"It's not a willpower problem. It's a foundation problem."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>Comment RESET below ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 9:00 AM</span>
+    <span class="cta-tag">Comment RESET</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="promo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 03 · Wednesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">30-Day Mindset Reset — Spotlight</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">What if 30 days from now you woke up with a completely different inner voice? ✨
+
+Not the one that says "you're too old," "it's too late," or "you've already tried."
+
+The one that says: *I've got this.*
+
+That's exactly what the 30-Day Mindset Reset workbook does — it rewires your thought patterns, one gentle daily practice at a time.
+
+What's inside:
+📓 30-Day Cognitive Reframe Workbook
+🌅 Morning & Evening Journal Prompts
+🔍 Weekly Belief Audit Tracker
+🙏 Gratitude & Wins Tracker
+📊 30-Day Progress Chart
+
+Just 10–15 minutes a day. That's all it takes.
+
+👉 Link in bio to get instant access for only $37.</div>
+    <div class="hashtags">#MindsetReset #30DayChallenge #MindsetWorkbook #CognitiveReframe #WomenOver40 #MidlifeTransformation #SelfDevelopment #RevitalizeAndThriveNow #DigitalDownload</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> open spiral journal flat lay with a gold pen and steaming coffee cup on warm linen surface, soft natural light, lifestyle product photography, cream and sage tones --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A flat lay photo of an open journal, elegant pen, and coffee cup on a warm linen surface with soft natural light, lifestyle product photography style</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"What if 30 days from now you woke up with a completely different inner voice?"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Mindset Reset · $37 instant download · <em>Link in Bio → Get Instant Access</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 12:00 PM</span>
+    <span class="cta-tag">Link in Bio — $37</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="edu">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 04 · Thursday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">3 Signs Your Mindset Is Blocking You</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">3 signs your mindset is quietly blocking your wellness goals 👇
+
+1️⃣ You start strong then self-sabotage
+   You get going, feel momentum — then something "comes up" and you quit. Sound familiar?
+
+2️⃣ You dismiss your own wins
+   Someone compliments your progress and your first thought is "it's not that much."
+
+3️⃣ You wait to feel ready
+   You tell yourself you'll start when the timing is right. (It never is.)
+
+These aren't personality flaws — they're patterns. And patterns can be rewired.
+
+The 30-Day Mindset Reset was built for exactly this. Save this post and come back to it when that voice gets loud. 💙
+
+Which one resonates most? Tell me below 👇</div>
+    <div class="hashtags">#MindsetWork #SelfSabotage #GrowthMindset #MidlifeWoman #WellnessMindset #PersonalDevelopment #WomenEmpowerment #RevitalizeAndThriveNow</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> clean infographic carousel slide, seafoam green background, white bold text, modern wellness editorial design, numbered list layout, social media post --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A clean informational graphic with seafoam green background, bold white text, modern wellness editorial design, numbered list with icons</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"3 Signs Your Mindset Is Quietly Blocking Your Wellness Goals"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Mindset Reset · $37 · Revitalize & Thrive Now · <em>Save this + Swipe for all 3 →</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 6:00 PM</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 05 · Friday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Permission Slip Friday</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">A permission slip for you today 🌿
+
+You have permission to rest without guilt.
+You have permission to choose yourself — without explaining it to anyone.
+You have permission to start over, again, as many times as you need.
+You have permission to want more for your life.
+You have permission to thrive — not just survive.
+
+Midlife isn't the end of your story. It's the chapter where you finally stop playing small.
+
+Save this. Read it whenever that voice tries to talk you out of your own dreams. 💙
+
+Happy Friday. What are you giving yourself permission to do this weekend?</div>
+    <div class="hashtags">#PermissionSlip #MidlifeWoman #WomenOver50 #ThriveNotSurvive #SelfCompassion #WeekendWellness #RevitalizeAndThriveNow #MindsetShift #YouDeserveThis</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> soft watercolor floral background, blush and ivory tones, elegant botanical elements, gentle morning light, feminine wellness aesthetic, no text --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A soft watercolor botanical background with blush pink and ivory flowers, gentle feminine wellness aesthetic, morning light mood, no text</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"You have permission to thrive — not just survive."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>Save this for when that voice gets loud 💙</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 8:00 AM</span>
+    <span class="cta-tag">Save + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="cta">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 06 · Saturday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-cta">CTA / Offer</span>
+    <div class="card-title">Weekend Reset — Free Energy Challenge</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">This weekend, what if you tried something different? ⚡
+
+Not another diet. Not another 5am alarm.
+
+Just 5 days of simple, powerful actions that target every pillar of your energy — mindset, nutrition, movement, sleep, and stress.
+
+It's called the 5-Day Energy Reset Challenge.
+
+And it's completely FREE.
+
+No credit card. No commitment. Just a workbook that shows you exactly what's been stealing your energy and exactly how to get it back.
+
+👉 Grab it free — link in bio.
+
+Because you deserve to feel alive again. Not just less tired. Truly, vibrantly alive. ✨</div>
+    <div class="hashtags">#FreeChallenge #EnergyReset #5DayChallenge #MidlifeEnergy #NaturalEnergy #WellnessChallenge #WomenOver40 #RevitalizeAndThriveNow #FreeWorkbook</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> vibrant teal gradient background, bold white text announcement, lightning bolt icon, modern wellness brand graphic, high energy, clean minimal layout --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold announcement graphic with vibrant teal gradient background, white bold text, lightning bolt icon, energetic clean modern design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The 5-Day Energy Reset Challenge — Completely FREE"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Free instant download · No credit card needed · <em>Link in Bio → Grab Your Free Copy</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 10:00 AM</span>
+    <span class="cta-tag">Free — Link in Bio</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 07 · Sunday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Sunday Reset Ritual</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Sunday is not wasted time. It's investment time. 🌙
+
+Before the week begins, ask yourself:
+
+✦ What do I need most this week — rest, movement, or connection?
+✦ What one habit, if done daily, would change everything?
+✦ What am I willing to let go of to make space for growth?
+
+You don't need a perfect plan. You need an honest one.
+
+This week, I'm cheering you on. 💙
+
+Drop one word below that describes what you're calling in for this new week 👇</div>
+    <div class="hashtags">#SundayReset #WeeklyIntention #MindfulSunday #MidlifeWellness #SundayRoutine #WellnessWomen #NewWeekNewStart #RevitalizeAndThriveNow #IntentionalLiving</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> cozy Sunday morning flat lay, white ceramic coffee cup, open journal with handwriting, soft golden window light, warm cream and sage tones, overhead lifestyle photography --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A cozy morning flat lay with a white coffee cup, open journal, and soft golden window light, overhead lifestyle photography, warm cream tones</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Sunday is not wasted time. It's investment time."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>Drop one word for your week below ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:30 AM</span>
+    <span class="cta-tag">Comment + Engage</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+</div><!-- end grid -->
+
+<!-- WEEK 2 -->
+<div class="week-label">Week 2 — Hormones & Nutrition · Days 8–14</div>
+<div class="grid">
+
+<div class="day-card" data-type="hook">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 08 · Monday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">Your Hormones Are Talking</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Bloating after every meal. Mood swings that come from nowhere. A brain that feels wrapped in cotton wool. 😔
+
+These aren't just "getting older." Your hormones are trying to tell you something.
+
+And what you eat is one of the most powerful signals you can send back.
+
+Anti-inflammatory. Whole food. Hormone-supporting nutrition isn't a diet — it's a conversation with your own biology.
+
+And when you get it right? The bloating lifts. The fog clears. The energy returns.
+
+It starts with 30 days of eating differently.
+
+📌 Save this post — tomorrow I'm sharing the 5 foods that make the biggest difference.</div>
+    <div class="hashtags">#HormoneHealth #HormonalBalance #MidlifeHormones #AntiInflammatory #WomenOver40 #GutHealth #BrainFog #RevitalizeAndThriveNow #HormoneBalance</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> thoughtful midlife woman sitting by a window, soft morning light, contemplative expression, blurred bokeh garden background, lifestyle portrait, warm neutral tones --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A midlife woman sitting quietly by a window in soft morning light, thoughtful expression, lifestyle portrait photography, warm neutral blurred background</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Your hormones are trying to tell you something."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · $47 · <em>Save this → The 5 foods drop tomorrow</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 AM</span>
+    <span class="cta-tag">Save Post</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="edu">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 09 · Tuesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">5 Hormone-Friendly Foods</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">5 foods that support hormone balance in midlife 🥗
+
+(Save this — you'll want to come back to it)
+
+🥑 Avocado — healthy fats that support progesterone production
+🐟 Fatty fish — omega-3s reduce inflammation and support mood
+🥦 Cruciferous vegetables — help the liver clear excess estrogen
+🫐 Berries — antioxidants that protect hormone receptors
+🌿 Flaxseeds — lignans that support estrogen balance
+
+These aren't superfoods. They're real, accessible foods that work with your biology instead of against it.
+
+The Hormone-Balancing Meal Plan includes 30 days of meals built around exactly these principles — plus 50+ recipes and a daily food-mood journal.
+
+👉 Link in bio for $47 — less than $2 a day for 30 days of eating for your hormones.</div>
+    <div class="hashtags">#HormoneFoods #HormoneBalancingMeals #AntiInflammatoryDiet #MidlifeNutrition #WomenOver40 #HolisticHealth #EatForYourHormones #RevitalizeAndThriveNow</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> elegant food carousel flat lay, avocado salmon blueberries flaxseeds broccoli on white marble, overhead nutrition photography, clean editorial style, soft shadows --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An elegant overhead flat lay of hormone-supporting foods including avocado, salmon, blueberries, flaxseeds, and broccoli on white marble, editorial nutrition photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"5 Foods That Support Hormone Balance in Midlife"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · 50+ recipes · $47 · <em>Link in Bio → Get the Full 30-Day Meal Plan</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 12:00 PM</span>
+    <span class="cta-tag">Link in Bio — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="promo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 10 · Wednesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Hormone-Balancing Meal Plan — Spotlight</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">What if eating for your hormones actually tasted amazing? 🍽️
+
+The Hormone-Balancing Meal Plan & Recipe Guide gives you 30 days of delicious, anti-inflammatory meals — with zero guesswork.
+
+Here's what you get:
+🥗 30-Day Anti-Inflammatory Meal Plan (day-by-day)
+📖 50+ Hormone-Friendly Recipes
+🛒 Weekly Grocery Checklists — prep made simple
+📓 Daily Food + Symptom Journal — spot what's working
+⚡ Energy & Mood Food-Response Log
+💧 30-Day Hydration Tracker
+
+This isn't a diet. It's nourishment. And there's a big difference.
+
+One-time investment: $47. Instant digital download.
+
+👉 Link in bio — your body is ready.</div>
+    <div class="hashtags">#HormoneMealPlan #AntiInflammatoryRecipes #HormoneRecipes #MidlifeMeals #HealthyEatingOver40 #WholeFoodRecipes #RevitalizeAndThriveNow #DigitalDownload #NourishYourBody</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> beautifully styled healthy meal on a ceramic plate, salmon with roasted vegetables and greens, warm natural light, food photography editorial style, sage and cream tones --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A beautifully plated healthy meal with salmon, colorful roasted vegetables, and greens on a ceramic plate, warm natural light food photography, editorial style</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"What if eating for your hormones actually tasted amazing?"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · 30 days · 50+ recipes · $47 · <em>Link in Bio → Instant Digital Download</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 6:00 PM</span>
+    <span class="cta-tag">Link in Bio — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="edu">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 11 · Thursday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Hydration & Hormones</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">The cheapest hormone support available costs $0. 💧
+
+Water.
+
+Dehydration mimics hormone imbalance symptoms — brain fog, fatigue, mood swings, bloating, headaches.
+
+Before you try a new supplement or cut another food group, ask yourself:
+
+How much water did I actually drink today?
+
+Midlife women need a minimum of 8–10 glasses per day. Most are getting 4–5.
+
+Small upgrade: add a pinch of sea salt and a squeeze of lemon to your morning glass. Your adrenals will thank you. ✨
+
+What does your daily water intake actually look like? Be honest 😄 Tell me below 👇</div>
+    <div class="hashtags">#Hydration #HormoneHealth #WaterIntake #MidlifeWellness #DrinkMoreWater #AdrenalHealth #WomenOver40 #WellnessTips #RevitalizeAndThriveNow</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> minimal flat lay of clear glass water with lemon slice and sea salt on white marble surface, clean bright lifestyle photography, morning light, airy and fresh --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A minimal flat lay of a clear glass of water with a lemon slice and sea salt on white marble, clean bright lifestyle photography, airy morning atmosphere</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The cheapest hormone support available costs $0. 💧"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · Includes hydration tracker · $47 · <em>Comment your daily water intake below ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 8:00 AM</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 12 · Friday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">From Dieting to Nourishment</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">The diet industry spent 30 years teaching you to fight your body. 🥊
+
+Count calories. Restrict carbs. Earn your food. Punish yourself when you slip.
+
+And here you are — exhausted, frustrated, and still not feeling well.
+
+Here's the truth: your body was never your enemy.
+
+It's been working overtime trying to keep you healthy through hormonal shifts, stress, and a world that wasn't designed for midlife women.
+
+What if you stopped fighting it and started feeding it?
+
+Nourishment — not restriction — is the path back to feeling like yourself.
+
+That's the foundation of everything we do here. 💙
+
+Drop ❤️ if you're ready to trade dieting for nourishing.</div>
+    <div class="hashtags">#NourishNotRestrict #HealYourRelationshipWithFood #IntuitiveEating #MidlifeNutrition #AntiDiet #WomenOver40 #FoodFreedom #RevitalizeAndThriveNow #HolisticWellness</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> elegant quote typography poster, warm ivory linen texture background, italic serif font, minimal botanical frame, feminine wellness editorial design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An elegant typographic poster with warm ivory linen texture background, beautiful italic serif font, subtle botanical border, feminine editorial wellness design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Nourishment — not restriction — is the path back to feeling like yourself."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>Drop ❤️ if you're ready to trade dieting for nourishing</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 9:00 AM</span>
+    <span class="cta-tag">Reaction + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="cta">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 13 · Saturday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-cta">CTA / Offer</span>
+    <div class="card-title">Weekend Meal Prep Motivation</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Weekend prep tip: 2 hours on Sunday = 5 days of eating in your power. 🥙
+
+When the food is ready, the choices are easy. When it isn't — the drive-through wins.
+
+This week, what if you prepped:
+✦ One batch of whole grains (quinoa, brown rice)
+✦ One tray of roasted vegetables
+✦ One source of protein
+✦ One big jar of hormone-supporting greens
+
+That's the foundation of every meal for the next five days.
+
+Want 30 days of this mapped out with grocery lists and recipes already done for you?
+
+The Hormone-Balancing Meal Plan does exactly that — for $47.
+
+👉 Link in bio. Start Monday feeling prepared. 🌿</div>
+    <div class="hashtags">#MealPrep #SundayMealPrep #HormoneBalancingMeals #HealthyMealPrep #WomenOver40 #MidlifeNutrition #MealPrepSunday #RevitalizeAndThriveNow</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> meal prep flat lay overhead, glass containers with quinoa roasted vegetables and protein on white marble kitchen counter, Sunday prep aesthetic, clean editorial food photography --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An overhead flat lay of glass meal prep containers filled with quinoa, roasted vegetables, and protein on white marble, clean editorial food photography style</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"2 hours Sunday = 5 days of eating in your power. 🥙"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · Weekly grocery lists included · $47 · <em>Link in Bio → Start Monday prepared</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 10:00 AM</span>
+    <span class="cta-tag">Link in Bio — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="story">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 14 · Sunday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-story">Brand Story</span>
+    <div class="card-title">Why This Work Matters</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Here's something I want you to know. 💙
+
+You are not too old to feel incredible in your body.
+You are not too late to build the life you've always wanted.
+You are not too far gone to come back to yourself.
+
+Midlife is a transition — not a destination. And transitions, while uncomfortable, are where the deepest growth happens.
+
+Every guide, every workbook, every resource here was created for one reason: to give real midlife women the tools they never got — and the permission they never gave themselves.
+
+You deserve to thrive. Not someday. Now.
+
+What's one thing you wish you'd started sooner? I'd love to know 👇</div>
+    <div class="hashtags">#MidlifeWoman #YouDeserveMore #NeverTooLate #WomenOver40 #WomenOver50 #WellnessJourney #RevitalizeAndThriveNow #ThriveInMidlife #SelfCareIsNotSelfish</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> radiant midlife woman in a sunlit field, arms slightly open, peaceful confident expression, golden hour light, lifestyle portrait, warm teal and gold tones --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A radiant midlife woman in a sunlit field with a peaceful confident expression, golden hour lifestyle portrait photography, warm and empowering</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"You are not too old to feel incredible in your body."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>What's one thing you wish you'd started sooner? ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 AM</span>
+    <span class="cta-tag">Comment + Engage</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+</div>
+
+<!-- WEEK 3 -->
+<div class="week-label">Week 3 — Energy & Movement · Days 15–21</div>
+<div class="grid">
+
+<div class="day-card" data-type="hook">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 15 · Monday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">The 2pm Wall — What's Really Happening</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">You hit a wall at 2pm every single day. ⚡
+
+Not because you're lazy. Not because you need more coffee.
+
+Here's what's actually happening:
+
+Your blood sugar is crashing (from a breakfast that didn't support you), your cortisol is tanking (because your adrenals are overtaxed), and your body is in energy conservation mode.
+
+This is biology. Not weakness.
+
+And here's the good news: when you address the root causes — sleep, nutrition, movement, and stress — the 2pm crash disappears.
+
+I know because I've seen it happen in thousands of midlife women who finally stopped fighting their body and started working with it.
+
+Want to know exactly how? Comment ENERGY below and I'll share the guide. 👇</div>
+    <div class="hashtags">#AfternoonSlump #EnergyCrash #MidlifeEnergy #AdrenalFatigue #BloodSugar #NaturalEnergy #WomenOver40 #RevitalizeAndThriveNow #EnergyTips</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> bold clock graphic showing 2:00 PM, dark background, bright amber accent, modern editorial design, bold sans-serif typography, high contrast social media post --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold graphic showing a clock at 2:00 PM with dark background, amber accent color, modern editorial typography design, high contrast and attention-grabbing</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"You hit the wall at 2pm every single day. Here's what's actually happening."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">5-Day Energy Reset Challenge · FREE · <em>Comment ENERGY below → I'll share the guide</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 AM</span>
+    <span class="cta-tag">Comment ENERGY</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="promo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 16 · Tuesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">30-Day Energy Transformation — Free Start</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">What if you could start rebuilding your energy today — for free? ⚡
+
+The 5-Day Energy Reset Challenge is your no-risk entry point. Five days. All six wellness pillars. Zero cost.
+
+Then, when you're ready (and you will be, by Day 3), you can unlock the full 30-Day Energy Transformation Guide for just $37.
+
+The full upgrade includes:
+🔥 Complete 30-day protocol with daily habits
+⚡ Sleep, Nutrition & Movement Correlation Tracker
+📊 Weekly Momentum Check-In Pages
+🎯 30-Day Energy Goal Planner
+
+This is the system that replaces the coffee dependency, the afternoon crashes, and the "I'm just tired all the time" with actual, sustainable energy.
+
+👉 Start free — link in bio.</div>
+    <div class="hashtags">#EnergyTransformation #FreeChallenge #30DayChallenge #MidlifeEnergy #NaturalEnergyBoost #WomenOver40 #EnergyWorkbook #RevitalizeAndThriveNow #FreeDownload</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> split panel graphic, left teal block FREE 5 days, right seafoam block dollar sign 37, bold white typography, modern minimal wellness brand design, arrow connecting panels --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A split panel graphic with two color blocks showing FREE and $37, bold white typography, modern clean wellness brand design, arrow connecting the panels</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Start Free. Transform Everything. ⚡"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">5-Day Energy Challenge FREE → 30-Day Guide $37 · <em>Link in Bio → Start Your Free Challenge Now</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 12:00 PM</span>
+    <span class="cta-tag">Free — Link in Bio</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="edu">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 17 · Wednesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Movement That Doesn't Deplete You</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Hot take: more exercise is not always the answer. 🏃‍♀️
+
+If you're already exhausted, adding a brutal HIIT class doesn't restore your energy — it depletes it further.
+
+Midlife women need movement that:
+✦ Builds strength without spiking cortisol
+✦ Improves mobility and reduces inflammation
+✦ Energizes rather than drains
+
+That looks like:
+🚶 Daily 20–30 min walks (cortisol-lowering)
+🧘 Yoga and mobility work (nervous system reset)
+🏋️ Low-impact strength training 2–3x/week (bone density + metabolism)
+
+Movement should leave you feeling better than when you started. Always.
+
+Save this and share it with the woman in your life who's been grinding herself into the ground at the gym. 💙</div>
+    <div class="hashtags">#MidlifeMovement #LowImpactExercise #StrengthTraining #WalkingForWellness #WomenOver40 #MovementIsMedicine #FitnessOver40 #RevitalizeAndThriveNow</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> midlife woman doing gentle yoga outdoors in morning light, serene natural setting, green background, lifestyle wellness photography, soft and empowering --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A midlife woman doing gentle yoga outdoors in morning light, peaceful natural setting with green trees, lifestyle wellness photography, soft empowering mood</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Movement should leave you feeling better than when you started. Always."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Energy Transformation Guide · $37 · <em>Save + Share with a woman who needs this 💙</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 6:00 PM</span>
+    <span class="cta-tag">Save + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 18 · Thursday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Mid-Month Check-In</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Halfway through the month. Let's pause. 🌿
+
+Not to measure what you didn't do — but to acknowledge what you did.
+
+Did you rest when you needed to? ✦
+Did you drink more water? ✦
+Did you say no to something that wasn't serving you? ✦
+Did you show up for yourself, even imperfectly? ✦
+
+Every single one of those counts. Every small choice compounds.
+
+The woman you're becoming isn't built in grand gestures. She's built in the everyday decisions that nobody else sees.
+
+You're doing the work. I see you. 💙
+
+What's one small win from the past two weeks? Share below 👇</div>
+    <div class="hashtags">#MidMonthCheckIn #CelebrateyourWins #MidlifeWoman #SmallWins #WellnessJourney #YouAreDoingItRight #RevitalizeAndThriveNow #ProgressNotPerfection</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> open journal with handwritten notes and a pen resting on it, soft morning window light, warm neutral tones, introspective lifestyle still life photography --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An open journal with handwritten notes and a pen on a warm wooden surface, soft morning window light, introspective lifestyle still life photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Halfway through the month. Let's pause and celebrate what you did. 🌿"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>Share one small win below ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 9:00 AM</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="edu">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 19 · Friday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Sleep Is Your Superpower</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">You can eat perfectly, exercise regularly, and still feel awful — if your sleep is broken. 😴
+
+Here's what happens in your body when you consistently sleep less than 7 hours:
+
+❌ Cortisol rises (more belly fat, more anxiety)
+❌ Leptin drops (you feel hungrier all day)
+❌ Growth hormone plummets (slower recovery, faster aging)
+❌ Immune function weakens
+❌ Brain detoxification is interrupted
+
+Sleep is not a luxury. It's biological maintenance.
+
+Three things that make the biggest difference tonight:
+1. No screens 60 min before bed
+2. Room temp at 65–68°F
+3. Same sleep/wake time, even weekends
+
+Start with just one. And watch what changes.
+
+What's your biggest sleep struggle? Tell me 👇</div>
+    <div class="hashtags">#SleepHealth #BetterSleep #MidlifeSleep #SleepTips #WomenOver40 #SleepScience #CortisolBalance #RevitalizeAndThriveNow #SleepIsEssential</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> dark night sky with full moon through a bedroom window, soft ambient light, cozy bedroom aesthetic, dreamy and calm, wellness sleep graphic backdrop --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A dark sky with a full moon visible through a bedroom window, soft ambient bedside light, cozy calm bedroom atmosphere, dreamy sleep aesthetic</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Sleep is not a luxury. It's biological maintenance. 😴"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · Sleep Fix Guide · $37 · <em>What's your biggest sleep struggle? Tell me ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 PM</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="cta">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 20 · Saturday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-cta">CTA / Offer</span>
+    <div class="card-title">Weekend Shop — All Guides</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">This weekend, invest in yourself. 🌿
+
+Everything in the Revitalize & Thrive Now shop is a one-time digital download — no subscriptions, no recurring fees, instant access.
+
+✦ 30-Day Mindset Reset — $37
+✦ Hormone-Balancing Meal Plan — $47
+✦ 30-Day Energy Transformation Guide — Free → $37
+✦ 30-Day Wellness Transformation (Flagship) — $50
+✦ The Midlife Sleep Fix — $37
+✦ Adrenal Reset & Burnout Recovery — $47
+✦ Low-Impact Strength & Longevity — $57
+✦ Midlife Wellness Planner — $25
+
+Each one designed specifically for midlife women. Each one ready to download in minutes.
+
+👉 Link in bio to browse the full shop.
+
+Which one is calling your name? 👇</div>
+    <div class="hashtags">#DigitalDownload #WellnessShop #MidlifeWellness #WomenOver40 #SelfInvestment #WellnessGuides #WorkbookForWomen #RevitalizeAndThriveNow #WellnessProducts</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> clean product grid flat lay, multiple digital workbook mockups on white background, minimal elegant styling, editorial product photography, soft shadows --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A clean editorial product grid flat lay with multiple digital workbook mockups on a white background, minimal elegant styling and soft shadows</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"This weekend, invest in yourself. 🌿"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Full shop from $25 · All digital downloads · Instant access · <em>Link in Bio → Browse the Full Shop</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 11:00 AM</span>
+    <span class="cta-tag">Link in Bio — Shop</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 21 · Sunday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Rest Is Productive</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Rest is not quitting. Rest is repair. 🌙
+
+Your nervous system cannot operate in healing mode while it's in survival mode.
+
+Rest — real, intentional rest — is one of the most productive things a midlife woman can do.
+
+So if today you slept in, took a slow walk, said no to plans, or sat quietly with your coffee and your thoughts:
+
+That was not wasted time. That was investment.
+
+Your body heals when it rests. Your mind resets when it quiets. Your creativity returns when you stop filling every moment.
+
+This week, protect at least one hour that belongs only to you.
+
+Not productive. Not scheduled. Just yours. 💙</div>
+    <div class="hashtags">#RestIsProductive #RestAndRestore #SundaySelfCare #NervousSystemReset #WomenOver40 #MidlifeWellness #RestToRepair #RevitalizeAndThriveNow #SelfCare</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> cozy woman reading on a sofa with a warm cup of tea, soft blanket, natural afternoon light, inviting lifestyle photography, cream and sage tones --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A cozy woman reading on a comfortable sofa with a warm tea cup, soft blanket, natural afternoon light, inviting warm lifestyle photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Rest is not quitting. Rest is repair. 🌙"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>Save + Share · Protect your rest time this week</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 8:00 AM</span>
+    <span class="cta-tag">Save + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+</div>
+
+<!-- WEEK 4 -->
+<div class="week-label">Week 4 — Total Transformation · Days 22–30</div>
+<div class="grid">
+
+<div class="day-card" data-type="promo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 22 · Monday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Flagship: 30-Day Wellness Transformation</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">What if one workbook changed the entire trajectory of your health? 📖
+
+The 30-Day Wellness Transformation is our flagship program — and it's unlike anything else out there.
+
+80 color-coded pages. Six transformative sections. One complete reset.
+
+🧠 Days 1–5: Mindset Reset
+🥗 Days 6–10: Nutrition Foundations
+💪 Days 11–15: Movement & Fitness
+😴 Days 16–20: Stress Relief & Sleep
+❤️ Days 21–25: Inner Harmony
+🌿 Days 26–30: Sustain & Thrive
+
+Every day is mapped. Every section builds on the last. By Day 30, you're not just feeling better — you have a personal wellness system that sustains the transformation.
+
+Original value: $197. Your investment: $50.
+
+With a 30-Day Money-Back Guarantee.
+
+👉 Link in bio. This is the one. 🌿</div>
+    <div class="hashtags">#30DayTransformation #WellnessWorkbook #TotalWellness #MidlifeTransformation #WomenOver40 #WellnessJourney #FlagshipProgram #RevitalizeAndThriveNow #MoneyBackGuarantee</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> premium workbook lying open on a white marble desk, pages fanned showing color-coded sections, gold pen beside it, soft studio lighting, product editorial photography --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A premium open workbook on white marble with color-coded pages fanned out and a gold pen beside it, soft studio lighting, editorial product photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"What if one workbook changed the entire trajectory of your health? 📖"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Wellness Transformation · 80 pages · $50 · 30-Day Money-Back Guarantee · <em>Link in Bio → This Is the One</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 AM</span>
+    <span class="cta-tag">Link in Bio — $50</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="edu">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 23 · Tuesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">What Transformation Actually Looks Like</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Transformation doesn't look like a before/after photo. 🌿
+
+It looks like:
+✦ Choosing water over wine on a Tuesday — and not feeling deprived
+✦ Waking up before your alarm because your body feels rested
+✦ Saying no without a speech
+✦ Noticing the negative thought — and choosing a different one
+✦ Moving your body because you love it, not to punish it
+✦ Feeling proud of yourself on a regular basis
+
+These are the real markers. The quiet victories that don't make it to social media.
+
+They're also the ones that last.
+
+That's what we build here — not a 30-day sprint that you abandon. A sustainable transformation that becomes who you are.
+
+Which of these would mean the most to you? 👇</div>
+    <div class="hashtags">#WhatTransformationLooksLike #SustainableWellness #MindfulLiving #RealResults #MidlifeWoman #WellnessJourney #RevitalizeAndThriveNow #SmallWins #IntentionalLiving</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> carousel slide design, soft seafoam background, elegant serif text, checkmark icon, clean modern wellness editorial layout, Instagram carousel first slide --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A clean carousel slide with soft seafoam background, elegant serif text, checkmark icon, modern wellness editorial design, perfect for Instagram swipe posts</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Transformation doesn't look like a before/after photo. It looks like this."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Wellness Transformation · $50 · <em>Swipe to see all 6 quiet victories →</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 12:00 PM</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="hook">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 24 · Wednesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">The Burnout Warning Signs</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Burnout doesn't arrive all at once. It sneaks in. 🚨
+
+Early warning signs you might be missing:
+
+⚠️ You dread things you used to enjoy
+⚠️ Small tasks feel overwhelming
+⚠️ You feel numb more than you feel stressed
+⚠️ Rest doesn't restore you
+⚠️ You've stopped planning for the future
+⚠️ Cynicism is creeping in
+
+If three or more of those landed — your nervous system is asking for help.
+
+Burnout in midlife women is massively underdiagnosed because we've normalized exhaustion.
+
+But exhaustion is not your destiny. Recovery is possible. Rebuilding is possible.
+
+And it starts with recognizing where you are.
+
+📌 Save this. And if you need the full recovery roadmap — link in bio for our Adrenal Reset & Burnout Recovery guide, $47.</div>
+    <div class="hashtags">#BurnoutRecovery #AdrenalFatigue #MidlifeBurnout #WomenAndBurnout #NervousSystemHealth #BurnoutSigns #WomenOver40 #RevitalizeAndThriveNow</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> bold warning list infographic, dark charcoal background, amber warning icons, bold white sans-serif numbered list, high contrast editorial design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold warning list infographic with dark charcoal background, amber warning dot icons, bold white numbered text, high contrast editorial design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Burnout doesn't arrive all at once. It sneaks in. 🚨"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Adrenal Reset & Burnout Recovery Guide · $47 · <em>Save this · Link in Bio → Full Recovery Roadmap</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 9:00 AM</span>
+    <span class="cta-tag">Link in Bio — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 25 · Thursday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">You Are Not Starting Over</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">You are not starting over. 💙
+
+You are starting from experience.
+
+Every attempt that didn't stick taught you something. Every program you tried showed you what you don't need. Every hard season made you stronger than you realize.
+
+That's not failure. That's research.
+
+And now you get to apply everything you've learned — with the wisdom, clarity, and self-knowledge that only comes from living.
+
+Midlife women aren't beginners. We're advanced practitioners of our own lives.
+
+Act accordingly. 🌿
+
+Tag someone who needs to hear this today 💙</div>
+    <div class="hashtags">#StartingFromExperience #YouAreNotBehind #MidlifeWisdom #WomenOver40 #NeverGiveUp #GrowthMindset #RevitalizeAndThriveNow #WomenEmpowerment #ThriveInMidlife</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> empowering midlife woman portrait, direct confident gaze, warm golden light, deep teal and gold color grade, editorial lifestyle photography, strong and serene --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An empowering portrait of a midlife woman with a direct confident gaze, warm golden editorial lighting, teal and gold color grade, strong and serene mood</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"You are not starting over. You are starting from experience. 💙"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · <em>Tag a friend who needs to hear this today</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 AM</span>
+    <span class="cta-tag">Tag a Friend</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="promo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 26 · Friday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Midlife Wellness Planner — Spotlight</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">Your transformation needs a home. 📅
+
+The Midlife Wellness Planner is a 12-month digital planning system built specifically for women navigating midlife wellness.
+
+Monthly intention pages. Weekly check-ins. Daily habit trackers. Space for reflection, gratitude, and goal-setting.
+
+All in one beautiful, practical digital planner.
+
+Because the women who transform don't just have intention — they have a system.
+
+Just $25. Instant download. Yours for the entire year.
+
+👉 Link in bio — the last piece of your wellness puzzle. 🌿
+
+PS — Pair it with any of our 30-day guides for the complete system.</div>
+    <div class="hashtags">#WellnessPlanner #DigitalPlanner #MidlifePlanning #WomenOver40 #HabitTracker #IntentionalLiving #WellnessSystem #RevitalizeAndThriveNow #DigitalDownload</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> beautiful digital planner pages fanned open on a desk, gold pen, succulent beside it, clean lifestyle product photography, cream and sage tones, minimal --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">Beautiful planner pages fanned open on a clean desk with a gold pen and small succulent, lifestyle product photography, cream and sage tones, minimal styling</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Your transformation needs a home. 📅"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">12-Month Midlife Wellness Planner · $25 instant download · <em>Link in Bio → The Last Piece of Your Wellness Puzzle</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 12:00 PM</span>
+    <span class="cta-tag">Link in Bio — $25</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="story">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 27 · Saturday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-story">Brand Story</span>
+    <div class="card-title">Community Appreciation Post</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">To every woman who has followed, saved, commented, shared, and trusted us with your wellness journey — thank you. 🌿
+
+You remind me every single day why this work matters.
+
+You're the woman who shows up even when she's tired.
+Who chooses herself even when it's uncomfortable.
+Who reads the caption, saves the post, buys the workbook, and does the work — quietly, consistently, bravely.
+
+You are the reason these programs exist.
+
+And I want you to know: your health is worth every minute you invest in it. Your transformation is worth every dollar you spend on yourself.
+
+Keep going. I'm right here with you. 💙
+
+Drop ❤️ if this community has meant something to you.</div>
+    <div class="hashtags">#Gratitude #CommunityLove #MidlifeWellnessCommunity #WomenSupportingWomen #Thankful #WomenOver40 #RevitalizeAndThriveNow #YouAreWorthIt</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> warm botanical flat lay with wildflowers and a small handwritten thank you card, soft natural light, grateful feminine aesthetic, cream and teal tones --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A warm botanical flat lay with wildflowers and a small handwritten thank you card, soft natural light, grateful feminine aesthetic, cream and teal color palette</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"To every woman who has shown up here — thank you. 🌿"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Now · Community · <em>Drop ❤️ if this community has meant something to you</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 10:00 AM</span>
+    <span class="cta-tag">Reaction + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="promo">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 28 · Sunday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Masterclass Series — Spotlight</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">What if you had an expert guide for every pillar of your wellness — all in one place? 🎓
+
+The Revitalize & Thrive Masterclass Series is our most comprehensive program.
+
+6 deep-dive modules covering:
+🧠 Mindset & Identity Reset
+🥗 Nutrition & Hormone Balance
+💪 Movement & Longevity
+😴 Stress, Sleep & Nervous System
+❤️ Relationships & Inner Harmony
+🌿 Sustainable Habits & Your Wellness Blueprint
+
+Plus a master habit tracker and monthly review system.
+
+This is the program for the woman who's ready to go all in. $75 — one time, instant access.
+
+👉 Link in bio. Your most complete transformation starts here.</div>
+    <div class="hashtags">#MasterclassSeries #WellnessMasterclass #MidlifeTransformation #WomenOver40 #ComprehensiveWellness #AllInOne #RevitalizeAndThriveNow #WellnessEducation</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> premium course module grid graphic, dark background, teal accent lines, six elegant module cards with icons, sophisticated wellness brand design --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A premium course overview graphic with dark background, teal accent lines, six elegant module cards with icons, sophisticated wellness brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"What if you had an expert guide for every pillar of your wellness? 🎓"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Revitalize & Thrive Masterclass Series · 6 modules · $75 one time · <em>Link in Bio → Your Most Complete Transformation</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 9:00 AM</span>
+    <span class="cta-tag">Link in Bio — $75</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="edu">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 29 · Monday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Habit Stacking — The Retention Secret</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">The reason most wellness programs fail after 30 days? 🤔
+
+They never taught you how to make the habits stick.
+
+Enter: Habit Stacking.
+
+The idea is simple — attach a new habit to an existing one. Your brain already has pathways for what you do every day. Piggyback on them.
+
+Examples:
+☕ After I pour my coffee → I write 3 gratitudes
+🦷 While I brush my teeth → I do 5 minutes of breathwork
+🛏️ Before I get into bed → I review tomorrow's intention
+
+The habit doesn't feel like work because it's attached to something automatic.
+
+This is the principle behind every 30-day guide we create — small, stackable habits that compound into transformation.
+
+Save this. Try one tonight. 🌿</div>
+    <div class="hashtags">#HabitStacking #AtomicHabits #WellnessHabits #DailyHabits #MidlifeWoman #HabitFormation #SmallHabits #RevitalizeAndThriveNow #BehaviorChange</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> clean habit chain infographic, illustrated icons connected by arrows, coffee cup to journal to moon, soft cream background, modern wellness editorial design --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A clean illustrated habit chain infographic showing connected daily rituals with icons and arrows, soft cream background, modern wellness editorial design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The reason most wellness programs fail after 30 days? They never taught you to make habits stick."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Wellness Transformation · $50 · All habits built in · <em>Save this · Try one habit stack tonight</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 7:00 AM</span>
+    <span class="cta-tag">Save + Try Tonight</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+<div class="day-card" data-type="cta">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 30 · Tuesday</span><span class="platform-badge">Instagram</span></div>
+    <span class="type-badge type-cta">CTA / Offer</span>
+    <div class="card-title">Day 30 — Your Invitation to Begin</div>
+  </div>
+  <div class="card-body">
+    <div class="caption-label">Caption</div>
+    <div class="caption">30 days of showing up. 30 days of choosing yourself. 🌿
+
+Whether you've been following along for the whole month or you just found this page today — this is your sign.
+
+The next 30 days are going to pass no matter what.
+
+You can spend them the same way you've spent the last 30. Or you can spend them building something new.
+
+Here's where to start:
+
+🆓 Free: 5-Day Energy Reset Challenge → link in bio
+📓 $37: 30-Day Mindset Reset
+🥗 $47: Hormone-Balancing Meal Plan
+⚡ $37: 30-Day Energy Transformation Guide
+🌿 $50: 30-Day Wellness Transformation (Flagship)
+
+One-time purchase. Instant access. No subscription.
+
+👉 Link in bio. Pick the one that calls to you.
+
+Your transformation starts the moment you decide it does. 💙</div>
+    <div class="hashtags">#Day30 #YourTransformationStartsNow #MidlifeWellness #WomenOver40 #DigitalDownload #WellnessGuides #RevitalizeAndThriveNow #StartToday #30DayChallenge</div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> bold motivational closing graphic, deep teal background, white elegant text, product list with prices, strong empowering composition, wellness brand CTA design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold motivational social media graphic with deep teal background, white elegant typography, product price list, strong empowering composition</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The next 30 days will pass no matter what. The only question is who you'll be."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Free Challenge → $37 → $47 → $50 · All guides at link in bio · <em>Link in Bio → Pick the One That Calls to You 💙</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ 8:00 AM</span>
+    <span class="cta-tag">Link in Bio — All Guides</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Caption</button>
+</div>
+
+</div><!-- end week 4 grid -->
+</div><!-- end calendar -->
+
+<footer>
+  <strong>Revitalize & Thrive Now</strong> — 30-Day Instagram Content Calendar<br/>
+  30 posts · 6 content types · All captions ready to publish<br/>
+  hello@revitalizeandthrivenow.com
+</footer>
+
+<script>
+function filterCards(type) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.day-card').forEach(card => {
+    if (type === 'all' || card.dataset.type === type) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+
+function copyCaption(btn) {
+  const card = btn.closest('.day-card');
+  const caption = card.querySelector('.caption').innerText;
+  const hashtags = card.querySelector('.hashtags').innerText;
+  const full = caption + '\n\n' + hashtags;
+  navigator.clipboard.writeText(full).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy Caption'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
+</body>
+</html>

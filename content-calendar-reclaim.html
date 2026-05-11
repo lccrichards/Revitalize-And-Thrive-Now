@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>30-Day Content Calendar — Reclaim & Rise Now</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --cream:#FAF7F2; --white:#FFFFFF; --dark:#2C1810; --mid:#6A5A50; --gray:#8C7B6E;
+  --rose:#C0606A; --roseL:#F5E0E2; --roseD:#9A3A44;
+  --gold:#D4A853; --goldL:#F5EDD5; --goldD:#A07820;
+  --slate:#5A7A9B; --slateL:#D6E8EF;
+  --green:#5A8A4A; --greenL:#E0F0D8;
+  --warm:#F0E8DF; --warmD:#D8C8B8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);}
+
+header{background:linear-gradient(135deg,#2C1810 0%,#7A3A44 100%);padding:3rem 2rem 2rem;text-align:center;color:var(--white);}
+header .brand{font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;opacity:0.7;margin-bottom:0.5rem;}
+header h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:0.5rem;}
+header h1 em{font-style:italic;color:var(--gold);}
+header p{opacity:0.8;font-size:0.95rem;max-width:520px;margin:0 auto;}
+.stats-bar{display:flex;justify-content:center;gap:2.5rem;margin-top:1.5rem;flex-wrap:wrap;}
+.stat{text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);}
+.stat-label{font-size:0.7rem;opacity:0.65;letter-spacing:0.1em;text-transform:uppercase;}
+
+.filters{background:var(--white);border-bottom:1px solid var(--warmD);padding:1rem 2rem;display:flex;gap:0.6rem;flex-wrap:wrap;justify-content:center;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+.filter-btn{padding:6px 16px;border-radius:100px;border:1px solid var(--warmD);background:transparent;font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:var(--mid);cursor:pointer;transition:all 0.18s;}
+.filter-btn:hover{border-color:var(--rose);color:var(--roseD);}
+.filter-btn.active{background:var(--roseD);border-color:var(--roseD);color:var(--white);}
+.filter-btn.yt-filter.active{background:var(--slate);border-color:var(--slate);}
+
+.calendar{max-width:1100px;margin:0 auto;padding:2rem;}
+.week-label{font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--roseD);margin:2rem 0 1rem;padding-left:0.2rem;display:flex;align-items:center;gap:0.8rem;}
+.week-label::after{content:'';flex:1;height:1px;background:var(--roseL);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem;}
+
+.day-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid rgba(180,150,140,0.18);transition:transform 0.2s,box-shadow 0.2s;}
+.day-card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(44,24,16,0.1);}
+.day-card.hidden{display:none;}
+
+.card-top{padding:0.9rem 1.1rem 0.7rem;border-bottom:1px solid rgba(180,150,140,0.12);}
+.card-top-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.4rem;flex-wrap:wrap;gap:0.3rem;}
+.day-num{font-family:'Playfair Display',serif;font-size:0.78rem;font-weight:700;color:var(--gray);}
+.platform-badges{display:flex;gap:0.3rem;}
+.badge-ig{font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:100px;background:linear-gradient(135deg,#E040FB,#FF6090);color:var(--white);}
+.badge-yt{font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:100px;background:#FF0000;color:var(--white);}
+.type-badge{display:inline-block;font-size:0.62rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:0.5rem;}
+.type-hook{background:var(--goldL);color:var(--goldD);}
+.type-edu{background:var(--slateL);color:var(--slate);}
+.type-promo{background:var(--roseL);color:var(--roseD);}
+.type-inspo{background:var(--greenL);color:var(--green);}
+.type-cta{background:var(--warmD);color:#5A3820;}
+.type-story{background:#EDE4D4;color:#7A5830;}
+.card-title{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;color:var(--dark);line-height:1.3;}
+
+.card-body{padding:0.9rem 1.1rem;}
+
+.platform-section{margin-bottom:1rem;}
+.platform-label{font-size:0.6rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;}
+.platform-label.ig{color:#C040A0;}
+.platform-label.yt{color:#CC0000;}
+.platform-label::before{content:'';width:16px;height:2px;border-radius:2px;flex-shrink:0;}
+.platform-label.ig::before{background:#C040A0;}
+.platform-label.yt::before{background:#CC0000;}
+
+.caption{font-size:0.82rem;color:var(--mid);line-height:1.65;white-space:pre-wrap;}
+.yt-content{background:var(--warm);border-radius:8px;padding:0.8rem;margin-top:0.4rem;}
+.yt-row{margin-bottom:0.4rem;}
+.yt-row-label{font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray);margin-bottom:0.2rem;}
+.yt-row-value{font-size:0.82rem;color:var(--mid);line-height:1.5;}
+.hashtags{margin-top:0.7rem;font-size:0.75rem;color:var(--roseD);line-height:1.6;}
+
+.card-footer{padding:0.7rem 1.1rem;background:var(--warm);border-top:1px solid rgba(180,150,140,0.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.4rem;}
+.post-time{font-size:0.7rem;color:var(--gray);}
+.cta-tag{font-size:0.68rem;font-weight:600;color:var(--roseD);background:var(--roseL);padding:3px 10px;border-radius:100px;}
+
+.copy-btn{display:block;width:calc(100% - 2.2rem);margin:0 1.1rem 1rem;padding:0.55rem;background:var(--warm);border:1px solid var(--warmD);border-radius:8px;font-size:0.72rem;font-weight:600;color:var(--mid);cursor:pointer;transition:all 0.18s;font-family:'DM Sans',sans-serif;text-align:center;}
+.copy-btn:hover{background:var(--roseL);border-color:var(--rose);color:var(--roseD);}
+.copy-btn.copied{background:var(--greenL);border-color:var(--green);color:var(--green);}
+
+
+.img-spec{border-top:1px dashed rgba(192,96,106,0.3);padding:0.85rem 1.1rem;background:#fdf3f4;}
+.img-spec-title{font-size:0.58rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--roseD);margin-bottom:0.55rem;display:flex;align-items:center;gap:0.4rem;}
+.img-spec-row{margin-bottom:0.45rem;}
+.img-spec-row-label{font-size:0.58rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray);margin-bottom:0.15rem;}
+.img-spec-row-val{font-size:0.76rem;color:var(--mid);line-height:1.5;}
+.img-spec-row-val em{font-style:normal;color:var(--roseD);font-weight:500;}
+footer{background:var(--dark);color:rgba(255,255,255,0.45);text-align:center;padding:2rem;font-size:0.78rem;}
+footer strong{color:var(--gold);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Content Calendar</div>
+  <h1>30-Day Content Calendar<br/><em>Reclaim & Rise Now</em></h1>
+  <p>Instagram captions + YouTube scripts — ready to post, one per day for 30 days.</p>
+  <div class="stats-bar">
+    <div class="stat"><div class="stat-num">30</div><div class="stat-label">Daily Posts</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Platforms</div></div>
+    <div class="stat"><div class="stat-num">60</div><div class="stat-label">Total Assets</div></div>
+  </div>
+</header>
+
+<div class="filters">
+  <button class="filter-btn active" onclick="filterCards('all')">All Posts</button>
+  <button class="filter-btn yt-filter" onclick="filterCards('yt-only')">YouTube Only</button>
+  <button class="filter-btn" onclick="filterCards('hook')">Hook</button>
+  <button class="filter-btn" onclick="filterCards('edu')">Educational</button>
+  <button class="filter-btn" onclick="filterCards('promo')">Product Promo</button>
+  <button class="filter-btn" onclick="filterCards('inspo')">Inspiration</button>
+  <button class="filter-btn" onclick="filterCards('cta')">CTA / Offer</button>
+</div>
+
+<div class="calendar">
+
+<!-- WEEK 1 -->
+<div class="week-label">Week 1 — Reclaim Your Power · Days 1–7</div>
+<div class="grid">
+
+<div class="day-card" data-type="story" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 01 · Monday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-story">Brand Story</span>
+    <div class="card-title">Welcome to Reclaim & Rise Now</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">There comes a moment when you stop waiting to feel better and decide to become better. 🌹
+
+That moment? It can be right now.
+
+Reclaim & Rise Now exists for the woman who is done surviving midlife and ready to truly rise through it — with her whole self intact.
+
+Your body, your mind, your voice, your joy. All of it. Reclaimed.
+
+Follow along. I'm so glad you're here. 💙</div>
+      <div class="hashtags">#ReclaimAndRiseNow #MidlifeWoman #RiseUp #WomenOver40 #ReclaimYourLife #MidlifeTransformation #WomenEmpowerment</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short / Video</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Welcome to Reclaim & Rise Now — Your Midlife Transformation Starts Here</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook (first 5 sec)</div><div class="yt-row-value">"If you've ever felt invisible in your own life — this channel is for you."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Introduce the brand, who it's for, what content is coming. Speak directly to the midlife woman who's tired of just getting by. End with a subscribe CTA.</div></div>
+        <div class="yt-row"><div class="yt-row-label">Tags</div><div class="yt-row-value">midlife women, reclaim and rise, women over 40, wellness transformation, midlife empowerment</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> powerful midlife woman standing tall in soft morning light, rose gold color grade, editorial lifestyle portrait, empowering and serene, dark warm tones --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A powerful midlife woman standing tall in soft morning light with a rose gold editorial color grade, empowering lifestyle portrait photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"There comes a moment when you stop waiting to feel better and decide to become better. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · Follow + Subscribe · <em>Follow for daily midlife empowerment</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7am · YT: 9am</span>
+    <span class="cta-tag">Follow + Subscribe</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="hook" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 02 · Tuesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">The Invisible Woman Problem</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">When did you start making yourself smaller? 🌹
+
+Not all at once. Bit by bit.
+
+You stopped sharing your opinion at the table.
+You stopped booking the trip.
+You stopped saying "actually, I want something different."
+
+Midlife women are taught to disappear gracefully. To take up less space, ask for less, expect less.
+
+But what if midlife was the time to take up MORE space — not less?
+
+To reclaim the voice you quieted. The dreams you deferred. The woman you've been meaning to become.
+
+That's what we do here. Drop 🌹 if this resonates.</div>
+      <div class="hashtags">#InvisibleWoman #ReclaimYourVoice #WomenOver40 #MidlifePower #TakeUpSpace #WomenEmpowerment #ReclaimAndRiseNow</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Why Midlife Women Feel Invisible (And How to Reclaim Your Power)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"You didn't become invisible. You were made to feel that way."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">60-90 sec. Talk about the social conditioning that shrinks midlife women. 3 ways it shows up. End with: "We're reclaiming all of it."</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> bold typographic poster, dark espresso background, gold serif text, rose accent underline, modern editorial design, strong scroll-stopping composition --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold typographic social media graphic with dark espresso background, gold serif typography, rose accent line, modern editorial wellness design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"You didn't become invisible. You were made to feel that way."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · <em>Drop 🌹 if this resonates · Comment below</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 9am · YT: 11am</span>
+    <span class="cta-tag">Reaction + Comment</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="promo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 03 · Wednesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">30-Day Mindset Reset — Intro</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">The most powerful tool for reclaiming your life isn't a supplement, a cleanse, or a gym membership. 🌹
+
+It's your mind.
+
+The 30-Day Mindset Reset workbook gives you a daily practice to:
+📓 Rewire limiting beliefs
+🌅 Start and end each day with intention
+🔍 Track and measure your mental shifts
+🙏 Build a gratitude practice that actually works
+
+10–15 minutes a day. 30 days. A completely different inner voice.
+
+$37 — instant digital download. Link in bio. 🌹</div>
+      <div class="hashtags">#MindsetReset #MindsetWorkbook #WomenOver40 #30DayChallenge #ReclaimAndRiseNow #CognitivReframe #MidlifeTransformation #DigitalDownload</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">I Did a 30-Day Mindset Reset — Here's What Changed</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"In 30 days, my inner voice completely changed. Here's the exact workbook I used."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Walk through what's inside the workbook. Show a page or two. Talk about results. End with link in description.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> elegant journal flat lay, dark rose-toned linen surface, gold pen, open pages with handwriting, moody warm lighting, premium lifestyle product photography --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An elegant flat lay with an open journal, gold pen on dark rose-toned linen, moody warm lighting, premium lifestyle product photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The most powerful tool for reclaiming your life? Your mind."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Mindset Reset · $37 instant download · <em>Link in Bio/Description → Get Instant Access</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 12pm · YT: 2pm</span>
+    <span class="cta-tag">Link in Bio/Description — $37</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 04 · Thursday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">What "Reclaiming" Actually Means</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Reclaiming yourself in midlife looks like this 👇
+
+✦ Reclaiming your body — not by forcing it, but by nourishing it
+✦ Reclaiming your mind — not by positive thinking, but by honest practice
+✦ Reclaiming your energy — not by pushing harder, but by resting smarter
+✦ Reclaiming your voice — not by being louder, but by being truer
+✦ Reclaiming your joy — not by chasing it, but by removing what blocks it
+
+None of this happens in a week. But all of it is possible in 30 days of intentional focus.
+
+Which of these do you want to reclaim most? Tell me below 👇</div>
+      <div class="hashtags">#ReclaimYourself #MidlifeWoman #WomenOver40 #IntentionalLiving #WellnessJourney #ReclaimAndRiseNow #MidlifeWellness</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">5 Things Midlife Women Need to Reclaim (And How)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"You haven't lost yourself. You just need to know where to look."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Go through each of the 5 areas. Give one concrete action for each. Warm, conversational delivery.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> clean educational carousel slide, dark espresso card with gold text and rose icon, modern empowerment brand design, bold and elegant typography --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A clean educational carousel slide with dark espresso background, gold text, rose icon accent, modern empowerment brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Reclaiming yourself in midlife looks like this 👇"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Mindset Reset · $37 · Reclaim & Rise Now · <em>Swipe to see all 5 → Which do you want most?</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 6pm · YT: 5pm</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 05 · Friday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Your Rise Begins With One Decision</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Every rise begins with one quiet decision. 🌹
+
+Not a dramatic announcement.
+Not a perfect plan.
+Not waiting until the kids leave, the job changes, the weight drops.
+
+Just a woman, on an ordinary day, deciding: enough of this. I want more. I'm going to try.
+
+That's it. That's the whole secret.
+
+The rest is just showing up — imperfectly, inconsistently, stubbornly — until the new version of you becomes undeniable.
+
+Happy Friday. Make the decision this weekend. 💙
+
+What are you deciding today?</div>
+      <div class="hashtags">#YourRiseBegins #MakeTheDecision #MidlifeWoman #WomenOver40 #ReclaimAndRiseNow #NewBeginning #WellnessMindset</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">The One Decision That Changes Everything in Midlife</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"You don't need a sign. You don't need permission. You just need this one decision."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Talk about the power of a single committed decision. Personal and warm. End with a challenge: share what you're deciding in the comments.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> midlife woman walking confidently outdoors at sunrise, golden hour light, rose and gold tones, empowering lifestyle portrait photography, back view or profile --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A midlife woman walking confidently at sunrise in golden hour light, rose and gold tones, empowering lifestyle portrait photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Every rise begins with one quiet decision. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · <em>What are you deciding today? Comment below ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 8am · YT: 10am</span>
+    <span class="cta-tag">Comment Your Decision</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="cta" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 06 · Saturday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-cta">CTA / Offer</span>
+    <div class="card-title">Start Free — Energy Challenge</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Your rise doesn't have to cost a thing to begin. ⚡
+
+The 5-Day Energy Reset Challenge is completely free — and it's the fastest way to start feeling the difference.
+
+5 days. 6 wellness pillars. One simple daily workbook.
+
+You'll start to see what's been stealing your energy, and exactly what to do about it.
+
+No credit card. No commitment. Just a fresh start.
+
+👉 Link in bio — free download. Your weekend gift to yourself. 🌹</div>
+      <div class="hashtags">#FreeChallenge #EnergyReset #ReclaimYourEnergy #ReclaimAndRiseNow #MidlifeWomen #FreeDownload #StartFree #WellnessChallenge</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">FREE 5-Day Energy Reset for Midlife Women — Download Now</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"I'm giving away the exact workbook that shows you why you're exhausted — and how to fix it."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Quick walkthrough of the free challenge. Show the workbook cover. Emphasize it's free. Link in description.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> vibrant rose gradient announcement graphic, bold gold text, lightning bolt icon, free challenge badge, modern empowerment brand design, high energy --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A vibrant rose gradient announcement graphic with bold gold text, lightning bolt icon, free challenge badge, modern empowerment brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Your rise doesn't have to cost a thing to begin. ⚡ FREE 5-Day Energy Reset"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Free instant download · No credit card · <em>Link in Bio/Description → Your Weekend Gift</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 10am · YT: 12pm</span>
+    <span class="cta-tag">Free — Link in Bio/Description</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 07 · Sunday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Sunday Rising Ritual</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Sunday morning intention for the week ahead 🌹
+
+This week, I am choosing:
+✦ Rest without guilt
+✦ Nourishment without obsession
+✦ Movement without punishment
+✦ Honesty without apology
+✦ Growth without perfection
+
+Write these down. Put them somewhere you'll see them every morning.
+
+Your rise isn't a destination. It's a daily practice.
+
+What word is guiding your week? Drop it below 👇</div>
+      <div class="hashtags">#SundayIntention #WeeklyReset #MidlifeRising #ReclaimAndRiseNow #IntentionalWeek #WomenOver40 #MorningRitual</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">My Sunday Rising Ritual for Midlife Women (Set Your Week Up Right)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Five intentions I set every Sunday that changed how I move through my entire week."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Walk through each intention. Why it matters. How to implement it. Calm, reflective energy — fits the Sunday mood.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> moody Sunday morning ritual flat lay, candle flame, journal, dried roses on dark wood surface, dark warm ambient light, intentional feminine aesthetic --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A moody Sunday morning ritual flat lay with a candle, journal, and dried roses on dark wood, warm ambient light, intentional feminine aesthetic</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Sunday is not wasted time. It's investment time. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · <em>Drop your word for the week below ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7:30am · YT: 8am</span>
+    <span class="cta-tag">Comment Your Word</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+</div>
+
+<!-- WEEK 2 -->
+<div class="week-label">Week 2 — Nourish to Rise · Days 8–14</div>
+<div class="grid">
+
+<div class="day-card" data-type="hook" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 08 · Monday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">Your Body Isn't Betraying You</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Hot take: your body isn't betraying you in midlife. 🌹
+
+It's communicating with you.
+
+The bloating, the brain fog, the weight shifts, the fatigue — these are not signs that your body has given up. They're signals that something needs to change.
+
+And when you listen — really listen — your body becomes your greatest ally.
+
+This week we're talking about nourishment. Not diet culture. Not restriction. Real food that works WITH your biology.
+
+Save this post — a hormone-balancing meal guide drops later this week. 🌿</div>
+      <div class="hashtags">#ListenToYourBody #HormoneHealth #MidlifeBody #WomenOver40 #NourishYourBody #AntiInflammatory #ReclaimAndRiseNow</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Your Body Is Not Betraying You in Midlife — Here's What's Really Happening</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Every symptom you're experiencing is a message. Here's how to read it."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Break down 3 common midlife symptoms and what they're really signaling. End with: food as medicine intro.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> midlife woman gently placing hand on heart, eyes closed, soft rose and gold tones, editorial wellness portrait, empowering and healing atmosphere --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A midlife woman gently placing her hand on her heart with eyes closed, soft rose and gold editorial tones, empowering and healing wellness portrait</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Your body isn't betraying you. It's communicating with you. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · $47 · <em>Save this · Hormone guide drops later this week</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7am · YT: 9am</span>
+    <span class="cta-tag">Save Post</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 09 · Tuesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Top 5 Hormone-Supporting Foods</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">5 foods that support hormones in midlife women 🥑 (save this)
+
+🥑 Avocado — healthy fats for progesterone production
+🐟 Salmon — omega-3s for inflammation and mood
+🥦 Broccoli — helps the liver clear excess estrogen
+🫐 Blueberries — antioxidants that protect hormone receptors
+🌿 Flaxseeds — balance estrogen naturally
+
+These aren't superfoods. They're whole foods that work WITH your body.
+
+Want 30 days of meals built around these? The Hormone-Balancing Meal Plan has you covered — 50+ recipes, grocery lists, and a food-mood journal.
+
+👉 $47 — link in bio/description.</div>
+      <div class="hashtags">#HormoneFoods #HormoneBalance #MidlifeNutrition #WomenOver40 #AntiInflammatoryDiet #ReclaimAndRiseNow #EatForYourHormones</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">5 Foods Every Midlife Woman Should Eat for Hormone Balance</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"These five foods cost under $30 a week and can change how your hormones function."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Hold up each food. Explain the science simply. Suggest one easy way to include each. Link to meal plan in description.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> elegant hormone-supporting food flat lay, avocado salmon blueberries flaxseeds broccoli on dark slate surface, moody editorial food photography, rose and gold accents --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An elegant overhead flat lay of hormone-supporting foods on a dark slate surface with rose and gold accent elements, moody editorial food photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"5 foods that support hormones in midlife women 🥑 (save this)"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · 50+ recipes · $47 · <em>Link in Bio/Description → Full 30-Day Meal Plan</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 12pm · YT: 2pm</span>
+    <span class="cta-tag">Link in Bio/Description — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="promo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 10 · Wednesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Hormone Meal Plan — Spotlight</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">What would change if every meal you ate for the next 30 days actually worked for your hormones? 🍽️
+
+The Hormone-Balancing Meal Plan gives you exactly that:
+
+🥗 30-Day Anti-Inflammatory Meal Plan
+📖 50+ Hormone-Friendly Recipes
+🛒 Weekly Grocery Checklists
+📓 Daily Food + Symptom Journal
+⚡ Energy & Mood Food-Response Log
+💧 30-Day Hydration Tracker
+
+This is not a diet. It's a relationship with food — redesigned for midlife.
+
+$47. Instant digital download. Link in bio/description. 🌹</div>
+      <div class="hashtags">#HormoneMealPlan #AntiInflammatoryRecipes #MidlifeNutrition #EatToThrive #ReclaimAndRiseNow #WomenOver40 #DigitalDownload #HormoneRecipes</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Inside the 30-Day Hormone-Balancing Meal Plan (What You Actually Get)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"50+ recipes, grocery lists, and a symptom journal — all for midlife hormone health. Let me show you what's inside."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Flip through the guide on camera. Highlight key sections. Show a recipe. End with link in description.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> styled healthy meal on dark ceramic plate, salmon with vibrant roasted vegetables, dark moody food photography, warm amber lighting, editorial style --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A styled healthy meal with salmon and colorful roasted vegetables on a dark ceramic plate, moody amber-lit editorial food photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"What would change if every meal worked for your hormones for 30 days? 🍽️"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · 30 days · 50+ recipes · $47 · <em>Link in Bio/Description → Instant Download</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 6pm · YT: 5pm</span>
+    <span class="cta-tag">Link in Bio/Description — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 11 · Thursday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Gut Health = Hormone Health</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Your gut and your hormones are in a constant conversation. 🌿
+
+Here's what that means practically:
+
+When your gut microbiome is out of balance → estrogen metabolism is disrupted → you get hormonal symptoms.
+
+Supporting your gut health directly supports hormonal health.
+
+3 easy gut-supporting habits to start this week:
+1️⃣ Add 1 fermented food daily (yogurt, kimchi, kefir)
+2️⃣ Eat at least 25–30g of fiber (vegetables, legumes, flaxseeds)
+3️⃣ Reduce ultra-processed foods that disrupt the microbiome
+
+Small shifts. Real results.
+
+Save this and share it with a woman who needs it. 🌹</div>
+      <div class="hashtags">#GutHealth #GutHormoneConnection #MicrobiomeHealth #WomenOver40 #HormoneBalance #ReclaimAndRiseNow #GutheHealth #DigestiveWellness</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">The Gut-Hormone Connection Every Midlife Woman Needs to Know</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Your gut is running your hormones. Here's what that actually means for you."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Explain the estrobolome. Keep it simple. Give 3 gut-supporting foods. End with product mention.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> gut health illustrated infographic, warm rose and gold color palette, simple digestive icons, three numbered steps, modern wellness editorial design --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A warm illustrated gut health infographic with rose and gold color palette, simple digestive system icons, three numbered steps, modern wellness brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Your gut and your hormones are in a constant conversation. 🌿"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · Gut-supporting recipes · $47 · <em>Save + Share with a woman who needs this 🌹</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 8am · YT: 10am</span>
+    <span class="cta-tag">Save + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 12 · Friday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Nourishment Is an Act of Rising</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Every time you choose to nourish your body — you are rising. 🌹
+
+Not because it's perfect.
+Not because you got every meal right this week.
+
+But because you are choosing to show up for yourself with care, with intention, with the belief that your body is worth feeding well.
+
+That's not diet culture. That's self-respect.
+
+Nourishment is an act of rising.
+
+What meal made you feel most alive this week? Tell me below 👇</div>
+      <div class="hashtags">#NourishToRise #SelfRespect #FoodAsMedicine #WomenOver40 #MidlifeNourishment #ReclaimAndRiseNow #EatWell #BodyPositive</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Nourishment Is an Act of Self-Respect (Not Diet Culture)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Eating well isn't about being smaller. It's about being more fully yourself."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Reframe food as self-respect vs. restriction. Emotional and real. End with weekend nourishment challenge.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> elegant dark background quote poster, gold italic serif typography, rose leaf botanical accent, luxury wellness editorial design, save-worthy composition --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An elegant typographic quote poster with dark background, gold italic serif font, rose botanical accent, luxury wellness editorial design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Every time you choose to nourish your body — you are rising. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · <em>What meal made you feel most alive this week? ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 9am · YT: 11am</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 13 · Saturday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Weekend Meal Prep for Hormones</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Weekend hormone-supporting meal prep in under 2 hours 🥙
+
+Here's your simple framework:
+
+🌾 One batch grain (quinoa or brown rice — 30 min)
+🥦 One roasted vegetable tray (olive oil, sea salt — 25 min)
+🐟 One protein source prepped (salmon, eggs, or legumes)
+🥗 One big hormone-supporting salad base
+💧 One large jug of infused water
+
+That's the foundation. Every meal this week built on these five things.
+
+Want the full 30-day version mapped out with recipes and grocery lists? Link in bio/description — the Hormone-Balancing Meal Plan for $47. 🌹</div>
+      <div class="hashtags">#WeekendMealPrep #HormoneMealPrep #MidlifeNutrition #SundayMealPrep #ReclaimAndRiseNow #WomenOver40 #MealPrepIdeas #HealthyMealPrep</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Hormone-Supporting Meal Prep in Under 2 Hours (Midlife Women)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Two hours on Sunday = five days of eating in your power. Here's exactly what I prep."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Quick visual walkthrough of the 5-component prep. Show each item. Emphasize simplicity. Link to meal plan.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> hormone meal prep flat lay, glass containers with salmon greens grains on dark stone surface, warm moody lighting, editorial food photography, intentional styling --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">An overhead flat lay of hormone-supporting meal prep containers on a dark stone surface, warm moody lighting, intentional editorial food photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Two hours Sunday = five days of eating in your power. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Hormone-Balancing Meal Plan · Weekly grocery lists · $47 · <em>Link in Bio/Description → Start Monday prepared</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 10am · YT: 12pm</span>
+    <span class="cta-tag">Link in Bio/Description — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="story" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 14 · Sunday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-story">Brand Story</span>
+    <div class="card-title">Why We Do This Work</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">I want to tell you why Reclaim & Rise Now exists. 🌹
+
+It's not about looking younger. It's not about being smaller. It's not about fixing what was never broken.
+
+It's about the midlife woman who wakes up one day and realizes she has been living FOR everyone else and not AT ALL for herself.
+
+It's about giving her the tools, the permission, and the community to change that.
+
+One reclaimed habit at a time. One risen-up morning at a time.
+
+You are the reason this work exists. And I am grateful for you every single day. 💙
+
+What made you find this page? I'd love to know your story 👇</div>
+      <div class="hashtags">#WhyWeDoThis #MidlifeWoman #ReclaimAndRiseNow #WomenEmpowerment #WomenOver40 #YourStoryMatters #MidlifeWellness</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Why I Created Reclaim & Rise Now (The Real Story)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"This channel exists because of one conversation I had with a woman who had forgotten herself completely."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Personal, vulnerable origin story for the brand. Emotional connection. End with community invitation.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> intimate brand story graphic, rose and gold tones, elegant serif typography, warm bokeh light background, personal and emotional wellness brand design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A warm intimate brand story graphic with rose and gold tones, elegant serif typography, warm bokeh light background, personal emotional brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"It's about the woman who realizes she has been living for everyone else. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · Our Story · <em>What made you find this page? Share your story ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7am · YT: 9am</span>
+    <span class="cta-tag">Comment Your Story</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+</div>
+
+<!-- WEEK 3 -->
+<div class="week-label">Week 3 — Rise in Energy & Strength · Days 15–21</div>
+<div class="grid">
+
+<div class="day-card" data-type="hook" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 15 · Monday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">Energy Is Not a Luxury</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">You cannot rise on empty. ⚡
+
+And yet, so many midlife women are trying to build a new life while running on the lowest energy they've ever had.
+
+Energy is not a luxury. It's the foundation.
+
+Without it, the workouts don't happen. The boundaries don't hold. The joy doesn't register.
+
+This week we're talking about reclaiming your energy — not with caffeine and willpower, but with the four foundations that actually work:
+
+Sleep. Nutrition. Movement. Stress management.
+
+Comment ENERGY below and I'll share exactly where to start. 🌹</div>
+      <div class="hashtags">#ReclaimYourEnergy #MidlifeEnergy #EnergyFoundations #WomenOver40 #NaturalEnergy #ReclaimAndRiseNow #StopBeingTired</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">You Cannot Rise on Empty — Reclaiming Your Energy in Midlife</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Before anything else can change — your energy has to come back."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Explain the energy-transformation connection. Introduce the 4 foundations. Preview the week's content.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> bold energy hook graphic, dark background, gold lightning bolt, strong typography, modern wellness empowerment brand design, high impact scroll-stopper --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold energy hook graphic with dark background, gold lightning bolt icon, strong modern typography, wellness empowerment brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"You cannot rise on empty. ⚡"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">5-Day Energy Challenge FREE · 30-Day Guide $37 · <em>Comment ENERGY → I'll share exactly where to start</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7am · YT: 9am</span>
+    <span class="cta-tag">Comment ENERGY</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="promo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 16 · Tuesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">30-Day Energy Transformation Guide</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Start FREE. Rise fully. ⚡
+
+The 5-Day Energy Reset Challenge is your no-cost first step — 5 days, all 6 wellness pillars, zero commitment.
+
+Then unlock the full 30-Day Energy Transformation Guide ($37) with:
+🔥 Complete 30-day daily protocol
+⚡ Sleep, Nutrition & Movement Tracker
+📊 Weekly Momentum Check-Ins
+🎯 30-Day Energy Goal Planner
+
+This is the system that replaces exhaustion with vitality — sustainably.
+
+👉 Start free — link in bio/description. 🌹</div>
+      <div class="hashtags">#EnergyTransformation #FreeChallenge #ReclaimYourEnergy #ReclaimAndRiseNow #MidlifeEnergy #30DayChallenge #WomenOver40</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Free 5-Day Energy Challenge + Full 30-Day Guide — What's Inside</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Start completely free. Here's the exact program that helps midlife women reclaim their energy."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Show the free challenge + paid upgrade. Walk through what's inside each. Emphasize the free starting point.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> split panel promo graphic, left dark panel FREE 5 days, right rose panel dollar 37, gold connecting arrow, modern empowerment brand design --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A split panel promotional graphic with dark and rose color blocks, FREE and $37 labels, gold connecting arrow, modern empowerment brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Start FREE. Rise fully. ⚡"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Free 5-Day Challenge → Full 30-Day Guide $37 · <em>Link in Bio/Description → Start Free Today</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 12pm · YT: 2pm</span>
+    <span class="cta-tag">Free — Link in Bio/Description</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 17 · Wednesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Strength Training for Midlife Women</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">The most underrated wellness tool for midlife women? Strength training. 💪
+
+Here's why it matters MORE in midlife:
+
+🦴 Bone density decreases from perimenopause onward — strength training slows this
+🔥 Muscle mass = metabolic rate — more muscle means better metabolism
+😴 Strength training improves sleep quality significantly
+🧠 Resistance exercise protects cognitive function
+❤️ Reduces cardiovascular risk by up to 30%
+
+You don't need heavy weights. You don't need a gym. You need 2–3 sessions per week of progressive resistance.
+
+Your body was made to be strong. Let's reclaim that strength. 🌹
+
+Save this and share it with a woman who's afraid to lift. She needs to see this.</div>
+      <div class="hashtags">#StrengthTrainingWomen #LiftingOver40 #WomenWhoLift #MidlifeFitness #BoneDensity #StrengthTrainingBenefits #ReclaimAndRiseNow #WomenOver40</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Why Every Woman Over 40 Needs to Strength Train (The Science)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"If you only do one thing for your midlife health — make it this."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Cover 5 science-backed benefits. Keep it accessible. End with: "You don't need a gym. You need a plan." — link to strength guide.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> strong midlife woman doing dumbbell exercises outdoors, sunrise light, empowering lifestyle photography, rose and gold editorial tones, confident expression --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A strong midlife woman doing light dumbbell exercises outdoors in sunrise light, empowering lifestyle photography, rose and gold editorial tones</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The most underrated wellness tool for midlife women? Strength training. 💪"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Low-Impact Strength & Longevity Guide · $57 · <em>Save + Share with a woman afraid to lift</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 6pm · YT: 5pm</span>
+    <span class="cta-tag">Save + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 18 · Thursday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">You Are Rising — Even on Hard Days</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">On the hard days — remember this. 🌹
+
+Rising doesn't always look like momentum.
+
+Sometimes it looks like resting instead of quitting.
+Sometimes it looks like asking for help.
+Sometimes it looks like choosing the salad AND the dessert, without the guilt.
+Sometimes it looks like crying, and then getting up anyway.
+
+You are not behind. You are not failing. You are rising — even when it feels like you're standing still.
+
+The work is never wasted. Not even the hard days.
+
+Especially not the hard days.
+
+Sending love to every woman who needed to hear this today. 💙
+
+Drop 🌹 if you're rising, even on a hard day.</div>
+      <div class="hashtags">#KeepRising #HardDays #MidlifeWoman #YouAreEnough #ReclaimAndRiseNow #WomenEmpowerment #WomenOver40 #RisingThroughIt</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">You Are Rising — Even on the Hard Days (This Is for You)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"If today is a hard day — stay. I made this for you."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Warm, personal, conversational. Talk about what rising actually looks like on difficult days. Emotional and honest.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> warm empathy quote graphic, dark background with soft rose light, gold italic serif text, botanical elements, emotional and healing wellness brand design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A warm empathy quote graphic with dark background and soft rose light, gold italic serif typography, subtle botanical elements, emotional healing brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Rising doesn't always look like momentum. Sometimes it looks like resting instead of quitting. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · <em>Drop 🌹 if you're rising even on a hard day</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 9am · YT: 11am</span>
+    <span class="cta-tag">Reaction + Comment</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 19 · Friday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">The Sleep-Energy-Hormone Triangle</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Sleep. Energy. Hormones. They form a triangle — and each one affects the other two. 😴
+
+When sleep is disrupted:
+→ Cortisol rises (stress hormone)
+→ Leptin drops (hunger regulation fails)
+→ Estrogen and progesterone fluctuate further
+
+Which means: fixing your sleep helps fix your energy AND your hormones.
+
+3 things that genuinely help midlife sleep:
+1️⃣ Magnesium glycinate before bed (supports deeper sleep)
+2️⃣ Consistent wake time (anchors your circadian rhythm)
+3️⃣ 60 min screen-free wind-down (reduces cortisol)
+
+Start with just one this weekend. 🌹
+
+What's your biggest sleep challenge right now? Tell me below 👇</div>
+      <div class="hashtags">#SleepAndHormones #MidlifeSleep #BetterSleep #HormoneHealth #SleepScience #ReclaimAndRiseNow #WomenOver40 #SleepTips</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">The Sleep-Hormone-Energy Triangle Every Midlife Woman Needs to Understand</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Fix your sleep and you fix your hormones AND your energy. Here's exactly how."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Explain the triangle with simple language. Give 3 actionable sleep tips. Recommend the Midlife Sleep Fix guide.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> sleep triangle infographic, three interconnected circles in rose slate and gold, clean modern health graphic, dark background, wellness data visualization --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A sleep-hormone-energy triangle infographic with three interconnected circles in rose, slate, and gold, clean modern health data visualization with dark background</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Sleep. Energy. Hormones. They form a triangle — and each one affects the other two. 😴"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Midlife Sleep Fix Guide · $37 · Reclaim & Rise Now · <em>What's your biggest sleep struggle? Tell me ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7pm · YT: 6pm</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="cta" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 20 · Saturday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-cta">CTA / Offer</span>
+    <div class="card-title">Weekend Shop — Invest in Your Rise</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">This weekend, invest in your rise. 🌹
+
+Every guide in the shop is a one-time purchase, instant download — designed for midlife women who are done waiting:
+
+✦ 30-Day Mindset Reset — $37
+✦ Hormone-Balancing Meal Plan — $47
+✦ 30-Day Energy Transformation — Free → $37
+✦ 30-Day Wellness Transformation — $50
+✦ Midlife Sleep Fix — $37
+✦ Burnout Recovery — $47
+✦ Strength & Longevity — $57
+✦ Wellness Planner (12-month) — $25
+
+No subscriptions. No recurring charges. One investment. Immediate access.
+
+👉 Link in bio. Pick the one that calls to you. Your rise is worth it. 💙</div>
+      <div class="hashtags">#InvestInYourself #ReclaimAndRiseNow #DigitalDownload #WellnessGuides #MidlifeWellness #WomenOver40 #WellnessShop #SelfInvestment</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Every Guide Available for Midlife Women — Full Shop Tour</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Here's every resource I recommend for midlife women — and how to choose the right one for you."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Quick tour of all products. Who each is for. Prices. End with "start wherever feels right" message.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> premium product shop grid, all wellness guide mockups on dark background with gold price labels, sophisticated editorial product display design --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A premium wellness guide product grid display on dark background with gold price labels, sophisticated editorial product display design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"This weekend, invest in your rise. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Full shop from $25 · All digital · Instant access · <em>Link in Bio → Pick the one that calls to you 💙</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 11am · YT: 1pm</span>
+    <span class="cta-tag">Link in Bio/Description — Shop All</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 21 · Sunday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">Rest Is Part of the Rise</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">The rise includes the rest. 🌹
+
+We celebrate the action. The momentum. The visible progress.
+
+But the rest — the quiet Sunday, the cancelled plan, the afternoon nap — that's not falling behind. That's the invisible infrastructure of your rise.
+
+Your nervous system rebuilds in stillness.
+Your creativity returns in silence.
+Your clarity emerges from rest.
+
+You cannot rise continuously. You rise, then you restore. Then you rise again.
+
+Today — restore. ✨
+
+What does your ideal restful Sunday look like? Tell me 👇</div>
+      <div class="hashtags">#RestIsPartOfTheRise #ReclaimRest #SundayRestore #ReclaimAndRiseNow #MidlifeWellness #NervousSystemRest #WomenOver40 #RestWithoutGuilt</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Rest Is Not Weakness — It's the Foundation of Your Rise</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"The women who rise the highest also rest the deepest. Here's why."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Talk about the nervous system, parasympathetic state, creativity from rest. Give permission to slow down. Sunday-appropriate tone.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> midlife woman resting peacefully in a garden, eyes closed, soft afternoon light, wildflowers around her, rose and gold tones, serene and restorative --ar 4:5 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A midlife woman resting peacefully in a sunlit garden surrounded by wildflowers, eyes closed, rose and gold afternoon light, serene restorative atmosphere</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The rise includes the rest. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · <em>What does your ideal restful Sunday look like? ↓</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 8am · YT: 9am</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+</div>
+
+<!-- WEEK 4 -->
+<div class="week-label">Week 4 — Full Rise · Days 22–30</div>
+<div class="grid">
+
+<div class="day-card" data-type="promo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 22 · Monday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Flagship: 30-Day Wellness Transformation</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">The complete rise. All of it. In 30 days. 🌹
+
+The 30-Day Wellness Transformation is 80 color-coded pages covering every dimension of your wellbeing:
+
+🧠 Mindset Reset (Days 1–5)
+🥗 Nutrition Foundations (Days 6–10)
+💪 Movement & Fitness (Days 11–15)
+😴 Stress Relief & Sleep (Days 16–20)
+❤️ Inner Harmony (Days 21–25)
+🌿 Sustain & Thrive (Days 26–30)
+
+This is the one that changes the whole picture.
+
+Value $197. Your investment: $50 — with a 30-Day Money-Back Guarantee.
+
+👉 Link in bio/description. Begin your full rise. 💙</div>
+      <div class="hashtags">#30DayTransformation #WellnessWorkbook #MidlifeTransformation #ReclaimAndRiseNow #WomenOver40 #FlagshipProgram #FullRise #MoneyBackGuarantee</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">The 30-Day Total Wellness Transformation — Everything You Need to Know</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"80 pages. 6 sections. 30 days. One complete transformation. Let me show you what's inside."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Flip through the workbook. Walk through each section. Talk about the money-back guarantee. End with CTA.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> premium flagship workbook open on dark wood desk, rose gold pen beside it, pages showing color-coded sections, warm dramatic studio lighting --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A premium flagship workbook open on a dark wood desk with a rose gold pen, color-coded pages visible, warm dramatic studio lighting, luxury product photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The complete rise. All of it. In 30 days. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Wellness Transformation · 80 pages · $50 · Money-Back Guarantee · <em>Link in Bio/Description → Begin Your Full Rise</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7am · YT: 9am</span>
+    <span class="cta-tag">Link in Bio/Description — $50</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="hook" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 23 · Tuesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-hook">Hook</span>
+    <div class="card-title">The Perimenopause Nobody Warned You About</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Nobody warned you about perimenopause. Not really. 🌹
+
+Not the rage that comes from nowhere.
+Not the anxiety at 3am.
+Not the way your body changes seemingly overnight.
+Not the brain fog so thick you forget words mid-sentence.
+
+You were told about hot flashes. Maybe some mood swings. And then left to figure out the rest alone.
+
+That's not okay. You deserved — you still deserve — real information and real support.
+
+📌 Save this post. And if you're navigating perimenopause and need a survival guide that actually helps — link in bio for our Perimenopause Survival Guide, $47.</div>
+      <div class="hashtags">#Perimenopause #PerimenopauseSupport #MidlifeHormones #WomenOver40 #MenopauseAwareness #ReclaimAndRiseNow #YouDeservedBetter</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">What Nobody Told You About Perimenopause (And What to Do Now)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Nobody warned you about the rage, the anxiety, the brain fog. Let's fix that right now."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Cover 5 undertalked perimenopause symptoms. Normalize them. Give 2 practical coping strategies. End with product mention.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> clean educational carousel first slide, dark espresso background, gold text, rose accent, bold serif headline, Instagram swipe post design --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A clean carousel first slide with dark espresso background, gold text, rose accent line, bold serif headline, Instagram swipe post design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Real rising in midlife looks like this 🌹 · Swipe to see all 5"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · 30-Day Wellness Transformation · $50 · <em>Swipe → Which everyday rising moment hits home?</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 12pm · YT: 2pm</span>
+    <span class="cta-tag">Link in Bio/Description — $47</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="inspo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 24 · Wednesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-inspo">Inspiration</span>
+    <div class="card-title">What Rising Actually Looks Like</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Real rising in midlife looks like this: 🌹
+
+✦ Cooking a hormone-supporting meal on a Tuesday night and feeling proud
+✦ Saying no to something draining without the guilt spiral
+✦ Waking up at 6am — not because you have to, but because you want to
+✦ Looking in the mirror and thinking "she's trying, and that's enough"
+✦ Choosing yourself in a small way, on an ordinary day
+
+That's the rise. Not the dramatic moment. The quiet, daily choosing of yourself.
+
+You're doing it. Even when it doesn't feel like it. 💙
+
+What does rising look like for you today?</div>
+      <div class="hashtags">#WhatRisingLooksLike #EverydayRising #ReclaimAndRiseNow #MidlifeWoman #WomenOver40 #SmallWins #ChooseYourself #DailyRise</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">What Rising Actually Looks Like for Midlife Women (It's Not What You Think)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Rising isn't a highlight reel moment. It's a Wednesday-morning decision."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Talk through 5 everyday examples of rising. Normalize the mundane. Make women feel seen and validated.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> bold perimenopause awareness graphic, dark background, rose warning icons, numbered list in gold, striking editorial design, informative and empowering --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold awareness infographic with dark background, rose warning icons, gold numbered list, striking editorial design, both informative and empowering</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Nobody warned you about perimenopause. Not really. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Perimenopause Survival Guide · $47 · Reclaim & Rise Now · <em>Save this · Link in Bio → Your Survival Guide</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 9am · YT: 11am</span>
+    <span class="cta-tag">Comment Below</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 25 · Thursday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Build Habits That Actually Last</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Why most wellness habits don't last — and the fix 🌹
+
+The problem: we try to start too many habits at once and quit when life gets hard.
+
+The solution: habit stacking + identity anchoring.
+
+HABIT STACKING:
+Attach new habits to existing ones.
+→ After I pour my morning coffee, I write 3 gratitudes.
+→ Before I get into bed, I review my next day's intention.
+
+IDENTITY ANCHORING:
+Frame habits as who you ARE, not what you DO.
+→ Not "I'm trying to drink more water" → "I'm someone who prioritizes hydration."
+→ Not "I should exercise more" → "I'm a woman who moves her body."
+
+Your identity drives your behavior. Change the story, change the habit.
+
+Save this. Start one tonight. 🌹</div>
+      <div class="hashtags">#HabitStacking #IdentityBasedHabits #WellnessHabits #ReclaimAndRiseNow #AtomicHabits #MidlifeHabits #WomenOver40 #HabitFormation</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Why Your Wellness Habits Never Stick (And the Simple Fix)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"It's not about willpower. It's about the two techniques nobody taught you."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Explain habit stacking and identity anchoring with examples. Give 3 stacks to try tonight. Practical and energetic.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> habit stacking chain infographic, rose and gold illustrated icons connected by golden arrows, morning coffee to gratitude to intention, warm cream background --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A illustrated habit stacking chain infographic with rose and gold icons connected by golden arrows showing morning rituals, warm cream background</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"It's not about willpower. It's about the two techniques nobody taught you."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Wellness Transformation · $50 · Habits built in · <em>Save this · Try one habit stack tonight 🌹</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 6pm · YT: 5pm</span>
+    <span class="cta-tag">Save + Try Tonight</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="promo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 26 · Friday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Wellness Planner — Your System for Rising</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">Your rise needs a home. 📅
+
+The Midlife Wellness Planner is your 12-month digital planning system — built for women who are building a new version of themselves and need somewhere to track it.
+
+Monthly intention pages.
+Weekly check-ins.
+Daily habit trackers.
+Space for reflection, gratitude, and goal-setting.
+
+All in one beautiful, practical digital planner.
+
+Just $25. Yours for the entire year. Instant download.
+
+👉 Link in bio/description. The system behind the rise. 🌹</div>
+      <div class="hashtags">#WellnessPlanner #DigitalPlanner #MidlifePlanning #ReclaimAndRiseNow #HabitTracker #WomenOver40 #WellnessSystem #PlannerForWomen</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">The $25 Planner That Keeps Your Wellness On Track All Year</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Transformation without a system won't last. Here's the planner I recommend for midlife women."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Flip through planner pages. Show monthly, weekly, and daily sections. Emphasize the $25 price point.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> elegant planner pages open on dark wood table, rose gold pen, single dried rose beside it, moody warm lighting, luxury digital planner product photography --ar 1:1 --style raw</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">Elegant digital planner pages open on dark wood table with a rose gold pen and dried rose, moody warm lighting, luxury product photography</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"Your rise needs a home. 📅"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">12-Month Midlife Wellness Planner · $25 instant download · <em>Link in Bio/Description → The System Behind the Rise</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 12pm · YT: 2pm</span>
+    <span class="cta-tag">Link in Bio/Description — $25</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="story" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 27 · Saturday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-story">Brand Story</span>
+    <div class="card-title">Thank You — Community Appreciation</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">To every woman who has shown up here — thank you. 🌹
+
+You followed.
+You saved.
+You tried.
+You shared your story in the comments.
+You bought the workbook, opened it at 6am, and did the work — quietly, bravely, imperfectly.
+
+You are the heartbeat of this community. And I want you to know:
+
+Your rise inspires me. Every single day.
+
+Keep going. I am cheering for you with everything I have. 💙
+
+Drop 🌹 if this community has meant something to you. I read every single one.</div>
+      <div class="hashtags">#CommunityLove #GratefulHeart #ReclaimAndRiseNow #WomenSupportingWomen #MidlifeCommunity #WomenOver40 #TogetherWeRise #YouMatter</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">To Every Woman Watching This — Thank You (Community Appreciation)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"I want to take 60 seconds to say something I don't say enough."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Genuine, warm appreciation. Tell the community what their presence means. Ask them to share what they've taken away this month.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> warm grateful community appreciation graphic, rose petals on dark background, gold script thank you text, elegant and heartfelt wellness brand design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A warm grateful appreciation graphic with rose petals on dark background, gold script thank you text, elegant heartfelt wellness brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"To every woman who has shown up here — thank you. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Reclaim & Rise Now · Community · <em>Drop 🌹 if this community has meant something to you</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 10am · YT: 11am</span>
+    <span class="cta-tag">Reaction + Comment</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="promo" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 28 · Sunday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-promo">Product Promo</span>
+    <div class="card-title">Masterclass Series — Go Deeper</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">For the woman who's ready to go all in on her rise. 🎓
+
+The Revitalize & Thrive Masterclass Series is our most comprehensive program — 6 deep-dive modules covering every pillar of midlife wellness:
+
+🧠 Mindset & Identity Reset
+🥗 Nutrition & Hormone Balance
+💪 Movement & Longevity
+😴 Stress, Sleep & Nervous System
+❤️ Relationships & Inner Harmony
+🌿 Sustainable Habits & Wellness Blueprint
+
+Plus a master habit tracker and monthly review system.
+
+$75 — one time, instant access. This is the full rise. 🌹
+
+👉 Link in bio/description.</div>
+      <div class="hashtags">#MasterclassSeries #WellnessMasterclass #ReclaimAndRiseNow #MidlifeTransformation #WomenOver40 #GoAllIn #FullRise</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">The Most Comprehensive Midlife Wellness Program — 6-Module Masterclass Review</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"If you want the complete picture — every pillar of midlife wellness in one program — this is it."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Walk through all 6 modules. Who it's for. What's included. $75 value breakdown. End with strong CTA.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> premium six-module masterclass program graphic, dark background, six gold-outlined cards with icons, sophisticated wellness brand design, luxury editorial feel --ar 1:1</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A premium masterclass program graphic with dark background, six gold-outlined module cards with icons, sophisticated luxury wellness editorial brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"For the woman ready to go all in on her rise. 🎓"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Masterclass Series · 6 modules · $75 one time · Instant access · <em>Link in Bio/Description → The Full Rise</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 9am · YT: 10am</span>
+    <span class="cta-tag">Link in Bio/Description — $75</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="edu" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 29 · Monday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-edu">Educational</span>
+    <div class="card-title">Sustaining the Rise — Your Wellness Blueprint</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">The rise that lasts isn't built on motivation. 🌹
+
+Motivation comes and goes. Systems stay.
+
+Here's how to build your personal wellness blueprint — the system that sustains your transformation:
+
+1️⃣ Identify your 3 non-negotiable daily habits (the ones that anchor everything else)
+2️⃣ Create environment design (make the healthy choice the easy choice)
+3️⃣ Build a weekly review practice (10 min every Sunday to recalibrate)
+4️⃣ Stack habits onto existing anchors (morning coffee, bedtime routine)
+5️⃣ Build in recovery — planned rest days are not failure
+
+This is exactly what Day 26–30 of the Wellness Transformation workbook covers.
+
+Save this. Your blueprint starts with step one. 🌿</div>
+      <div class="hashtags">#WellnessBlueprint #SustainableWellness #HabitSystems #MidlifeWellness #ReclaimAndRiseNow #WomenOver40 #LongTermHealth #EnvironmentDesign</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">How to Build a Wellness Blueprint That Actually Lasts (Midlife Women)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"Motivation fails. Systems don't. Here are the 5 elements of a wellness blueprint that sticks."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Walk through the 5 blueprint elements. Concrete, actionable. End with workbook recommendation.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> wellness blueprint step-by-step infographic, five numbered rose cards with gold icons, dark background, clean modern empowerment brand design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A clean wellness blueprint infographic with five numbered rose cards and gold icons on dark background, modern empowerment brand design</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The rise that lasts isn't built on motivation. Motivation comes and goes. Systems stay. 🌹"</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">30-Day Wellness Transformation · $50 · Blueprint in Days 26–30 · <em>Save this · Your blueprint starts with step one</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 7am · YT: 9am</span>
+    <span class="cta-tag">Save + Share</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+<div class="day-card" data-type="cta" data-platform="both">
+  <div class="card-top">
+    <div class="card-top-row"><span class="day-num">Day 30 · Tuesday</span><div class="platform-badges"><span class="badge-ig">Instagram</span><span class="badge-yt">YouTube</span></div></div>
+    <span class="type-badge type-cta">CTA / Offer</span>
+    <div class="card-title">Day 30 — Your Rise Begins Now</div>
+  </div>
+  <div class="card-body">
+    <div class="platform-section">
+      <div class="platform-label ig">Instagram Caption</div>
+      <div class="caption">30 days. And here we are. 🌹
+
+The next 30 days will pass no matter what you do with them.
+
+You can spend them waiting to feel ready — or you can spend them becoming someone who is.
+
+Here's where your rise begins:
+
+🆓 FREE: 5-Day Energy Reset Challenge → link in bio
+📓 $37: 30-Day Mindset Reset
+🥗 $47: Hormone-Balancing Meal Plan
+⚡ $37: 30-Day Energy Transformation Guide
+🌿 $50: 30-Day Wellness Transformation
+🎓 $75: Masterclass Series
+📅 $25: 12-Month Wellness Planner
+
+One-time. Instant access. No subscription.
+
+Pick the one that's calling you. Start today.
+
+Your rise doesn't begin someday. It begins the moment you decide. 💙
+
+👉 Link in bio.</div>
+      <div class="hashtags">#Day30 #YourRiseStartsNow #ReclaimAndRiseNow #MidlifeTransformation #WomenOver40 #StartToday #DigitalDownload #WellnessGuides #NowIsYourTime</div>
+    </div>
+    <div class="platform-section">
+      <div class="platform-label yt">YouTube Short</div>
+      <div class="yt-content">
+        <div class="yt-row"><div class="yt-row-label">Title</div><div class="yt-row-value">Your Rise Starts Now — Day 30 (Every Resource for Midlife Women)</div></div>
+        <div class="yt-row"><div class="yt-row-label">Hook</div><div class="yt-row-value">"The next 30 days will pass. The only question is who you'll be on the other side."</div></div>
+        <div class="yt-row"><div class="yt-row-label">Content</div><div class="yt-row-value">Powerful, motivational close. Show all products quickly. Speak directly to the woman on the fence. End with: "Your rise begins the moment you decide."</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="img-spec">
+  <div class="img-spec-title">📸 Image &amp; Graphic Spec</div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Midjourney</div><div class="img-spec-row-val"><em>/imagine</em> bold motivational closing graphic, dark espresso background, gold and rose typography, all product tiers listed, powerful empowerment composition, strong CTA design --ar 4:5</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">DALL·E</div><div class="img-spec-row-val">A bold motivational closing graphic with dark espresso background, gold and rose typography, product tier list, powerful empowerment composition</div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Quote Overlay</div><div class="img-spec-row-val"><em>"The next 30 days will pass. The only question is who you'll be on the other side."</em></div></div>
+  <div class="img-spec-row"><div class="img-spec-row-label">Product + CTA</div><div class="img-spec-row-val">Free → $25 → $37 → $47 → $50 → $75 · All guides in bio · <em>Link in Bio/Description → Your Rise Starts Now 🌹</em></div></div>
+</div>
+<div class="card-footer">
+    <span class="post-time">⏰ IG: 8am · YT: 9am</span>
+    <span class="cta-tag">Link in Bio/Description — All Guides</span>
+  </div>
+  <button class="copy-btn" onclick="copyCaption(this)">Copy Instagram Caption</button>
+</div>
+
+</div><!-- end week 4 grid -->
+</div><!-- end calendar -->
+
+<footer>
+  <strong>Reclaim & Rise Now</strong> — 30-Day Content Calendar · Instagram + YouTube<br/>
+  30 Instagram captions · 30 YouTube scripts · All ready to publish<br/>
+  hello@revitalizeandthrivenow.com
+</footer>
+
+<script>
+function filterCards(type) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.day-card').forEach(card => {
+    if (type === 'all') {
+      card.classList.remove('hidden');
+    } else if (type === 'yt-only') {
+      card.classList.remove('hidden');
+    } else if (card.dataset.type === type) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+
+function copyCaption(btn) {
+  const card = btn.closest('.day-card');
+  const igCaption = card.querySelector('.platform-section:first-of-type .caption');
+  const igHashtags = card.querySelector('.platform-section:first-of-type .hashtags');
+  if (!igCaption) return;
+  const full = igCaption.innerText + (igHashtags ? '\n\n' + igHashtags.innerText : '');
+  navigator.clipboard.writeText(full).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy Instagram Caption'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
+</body>
+</html>
