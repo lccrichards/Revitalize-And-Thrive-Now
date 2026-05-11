@@ -96,7 +96,7 @@ def schedule_post(api_key: str, workspace_id: str, account_ids: list, platform: 
         network_payload = {"text": text}
     else:
         network_key = "instagram"
-        network_payload = {"type": "feed", "text": text}
+        network_payload = {"type": "photo", "text": text}
 
     payload = {
         "bulk": {
