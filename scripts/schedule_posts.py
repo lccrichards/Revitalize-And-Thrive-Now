@@ -26,7 +26,7 @@ from datetime import datetime, timedelta
 
 import requests
 
-PUBLER_API = "https://api.publer.io/api/v1"
+PUBLER_API = "https://api.publer.io
 
 TIME_MAP = {
     "7:00 AM":  7,  "7:30 AM":  7.5, "8:00 AM":  8,  "9:00 AM":  9,
