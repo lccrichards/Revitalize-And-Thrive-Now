@@ -1,0 +1,28 @@
+name: Discover Buffer Channel IDs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Discover Buffer channel IDs
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          python scripts/schedule_posts_buffer.py \
+            --brand revitalize \
+            --api-key "$BUFFER_API_KEY" \
+            --discover

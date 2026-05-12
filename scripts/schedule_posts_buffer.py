@@ -8,10 +8,15 @@ Usage:
     --start-date 2026-05-11 \
     --api-key YOUR_BUFFER_API_KEY
 
-  --brand       revitalize | reclaim
-  --start-date  Monday date to begin (YYYY-MM-DD). Must be a Monday.
-  --api-key     Buffer API key (or set BUFFER_API_KEY env var)
-  --dry-run     Print scheduled posts without calling Buffer API
+  --brand          revitalize | reclaim
+  --start-date     Monday date to begin (YYYY-MM-DD). Must be a Monday.
+  --api-key        Buffer API key (or set BUFFER_API_KEY env var)
+  --ig-channel-id  Buffer Instagram channel ID (skips API discovery).
+                   Set via BUFFER_IG_CHANNEL_ID env var to avoid rate limits.
+  --yt-channel-id  Buffer YouTube channel ID (optional, reclaim only).
+                   Set via BUFFER_YT_CHANNEL_ID env var.
+  --discover       Print org and channel IDs then exit (use once to get IDs).
+  --dry-run        Print scheduled posts without calling Buffer API
 """
 
 import argparse
@@ -72,11 +77,11 @@ def graphql(api_key: str, query: str, variables: dict = None) -> dict:
     if variables:
         body["variables"] = variables
     wait = 60
-    for attempt in range(5):
+    for attempt in range(6):
         resp = requests.post(BUFFER_API, json=body, headers=headers, timeout=15)
         if resp.status_code != 429:
             break
-        print("  Rate limited — sleeping {}s (attempt {}/5)".format(wait, attempt + 1))
+        print("  Rate limited — sleeping {}s (attempt {}/6)".format(wait, attempt + 1))
         time.sleep(wait)
         wait = min(wait * 2, 300)
     resp.raise_for_status()
@@ -153,13 +158,34 @@ def schedule_post(api_key: str, channel_id: str, text: str, due_at: datetime,
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--brand", required=True, choices=["revitalize", "reclaim"])
-    parser.add_argument("--start-date", required=True, help="Monday start date YYYY-MM-DD")
+    parser.add_argument("--start-date", help="Monday start date YYYY-MM-DD")
     parser.add_argument("--api-key", default=os.environ.get("BUFFER_API_KEY", ""))
+    parser.add_argument("--ig-channel-id", default=os.environ.get("BUFFER_IG_CHANNEL_ID", ""),
+                        help="Buffer Instagram channel ID (skips discovery)")
+    parser.add_argument("--yt-channel-id", default=os.environ.get("BUFFER_YT_CHANNEL_ID", ""),
+                        help="Buffer YouTube channel ID (skips discovery)")
+    parser.add_argument("--discover", action="store_true",
+                        help="Print org and channel IDs then exit")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
     if not args.api_key and not args.dry_run:
         sys.exit("ERROR: --api-key or BUFFER_API_KEY env var required")
+
+    # Discovery-only mode: print channel IDs and exit
+    if args.discover:
+        print("Discovering Buffer channels...")
+        org_id = get_org_id(args.api_key)
+        channels = get_channel_ids(args.api_key, org_id)
+        print("\nAdd these as GitHub Secrets to skip discovery on future runs:")
+        if channels.get("instagram"):
+            print("  BUFFER_IG_CHANNEL_ID = " + channels["instagram"])
+        if channels.get("youtube"):
+            print("  BUFFER_YT_CHANNEL_ID = " + channels["youtube"])
+        return
+
+    if not args.start_date:
+        sys.exit("ERROR: --start-date required")
 
     try:
         start = datetime.strptime(args.start_date, "%Y-%m-%d")
@@ -179,18 +205,26 @@ def main():
     print("Start date : " + start.strftime("%A %d %B %Y"))
     print("-" * 60)
 
-    ig_channel = yt_channel = None
+    ig_channel = args.ig_channel_id or None
+    yt_channel = args.yt_channel_id or None
+
     if not args.dry_run:
-        print("Discovering Buffer channels...")
-        org_id = get_org_id(args.api_key)
-        channels = get_channel_ids(args.api_key, org_id)
-        ig_channel = channels.get("instagram")
-        yt_channel = channels.get("youtube")
-        if not ig_channel:
-            sys.exit("ERROR: No Instagram channel found in Buffer. Connect your Instagram Business account first.")
-        print("Instagram channel: " + ig_channel)
-        if yt_channel:
-            print("YouTube channel  : " + yt_channel)
+        if ig_channel:
+            print("Instagram channel: " + ig_channel + " (from env/arg — skipping discovery)")
+            if yt_channel:
+                print("YouTube channel  : " + yt_channel + " (from env/arg — skipping discovery)")
+        else:
+            print("Discovering Buffer channels...")
+            org_id = get_org_id(args.api_key)
+            channels = get_channel_ids(args.api_key, org_id)
+            ig_channel = channels.get("instagram")
+            yt_channel = channels.get("youtube")
+            if not ig_channel:
+                sys.exit("ERROR: No Instagram channel found in Buffer. Connect your Instagram Business account first.")
+            print("Instagram channel: " + ig_channel)
+            if yt_channel:
+                print("YouTube channel  : " + yt_channel)
+            print("\nTIP: Add BUFFER_IG_CHANNEL_ID=" + ig_channel + " as a GitHub Secret to skip this discovery step next time.")
     print("-" * 60)
 
     success = 0
