@@ -35,6 +35,7 @@ jobs:
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
+          sleep 5
           python scripts/schedule_posts_buffer.py \
             --brand revitalize \
             --start-date "${{ inputs.start_date }}" \

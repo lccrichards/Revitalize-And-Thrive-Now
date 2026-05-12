@@ -71,11 +71,14 @@ def graphql(api_key: str, query: str, variables: dict = None) -> dict:
     body = {"query": query}
     if variables:
         body["variables"] = variables
-    resp = requests.post(BUFFER_API, json=body, headers=headers, timeout=15)
-    if resp.status_code == 429:
-        print("  Rate limited — sleeping 60s")
-        time.sleep(60)
+    wait = 60
+    for attempt in range(5):
         resp = requests.post(BUFFER_API, json=body, headers=headers, timeout=15)
+        if resp.status_code != 429:
+            break
+        print("  Rate limited — sleeping {}s (attempt {}/5)".format(wait, attempt + 1))
+        time.sleep(wait)
+        wait = min(wait * 2, 300)
     resp.raise_for_status()
     return resp.json()
 
