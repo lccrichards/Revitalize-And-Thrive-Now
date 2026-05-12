@@ -251,7 +251,7 @@ def main():
                 success += 1
 
         if not args.dry_run:
-            time.sleep(1)
+            time.sleep(4)
 
     print("-" * 60)
     done_msg = "queued (dry run)" if args.dry_run else "scheduled in Buffer"
