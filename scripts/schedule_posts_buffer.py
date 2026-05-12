@@ -126,12 +126,15 @@ def schedule_post(api_key: str, channel_id: str, text: str, due_at: datetime,
     post_input = {
         "channelId": channel_id,
         "text": text,
+        "postType": "post",
         "schedulingType": "automatic",
         "mode": "customScheduled",
         "dueAt": due_at.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
     }
     if image_url:
         post_input["imageUrl"] = image_url
+    else:
+        print("  WARNING: No image_url for this post — Instagram requires an image")
 
     data = graphql(api_key, mutation, {"input": post_input})
     if "errors" in data:
