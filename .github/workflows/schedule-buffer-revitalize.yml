@@ -1,0 +1,42 @@
+name: Schedule Buffer — Revitalize & Thrive Now
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: "Start date for Day 1 (must be a Monday, format YYYY-MM-DD)"
+        required: true
+        type: string
+      dry_run:
+        description: "Dry run — preview posts without sending to Buffer"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+jobs:
+  schedule-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Schedule posts to Buffer
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          python scripts/schedule_posts_buffer.py \
+            --brand revitalize \
+            --start-date "${{ inputs.start_date }}" \
+            --api-key "$BUFFER_API_KEY" \
+            ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}
