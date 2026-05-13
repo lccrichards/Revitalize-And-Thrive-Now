@@ -136,11 +136,10 @@ def schedule_post(api_key: str, channel_id: str, text: str, due_at: datetime,
     post_input = {
         "channelId": channel_id,
         "text": text,
-        "schedulingType": "scheduled",
         "dueAt": due_at.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
     }
     if image_url:
-        post_input["media"] = [{"url": image_url, "type": "IMAGE"}]
+        post_input["mediaUrls"] = [image_url]
     else:
         print("  WARNING: No image_url for this post — Instagram requires an image")
 
@@ -166,11 +165,45 @@ def main():
                         help="Buffer YouTube channel ID (skips discovery)")
     parser.add_argument("--discover", action="store_true",
                         help="Print org and channel IDs then exit")
+    parser.add_argument("--introspect", action="store_true",
+                        help="Print Buffer CreatePostInput schema fields then exit")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
     if not args.api_key and not args.dry_run:
         sys.exit("ERROR: --api-key or BUFFER_API_KEY env var required")
+
+    # Schema introspection mode: print CreatePostInput fields and exit
+    if args.introspect:
+        query = """
+        query {
+          ci: __type(name: "CreatePostInput") {
+            inputFields { name type { name kind ofType { name kind ofType { name } } } }
+          }
+          enums: __schema {
+            types {
+              name
+              kind
+              enumValues { name }
+            }
+          }
+        }
+        """
+        data = graphql(args.api_key, query)
+        fields = data.get("data", {}).get("ci", {}).get("inputFields", [])
+        print("\nCreatePostInput fields:")
+        for f in fields:
+            t = f["type"]
+            type_name = t.get("name") or (t.get("ofType") or {}).get("name") or str(t)
+            print("  " + f["name"] + ": " + type_name)
+        print("\nRelevant enums:")
+        for t in data.get("data", {}).get("enums", {}).get("types", []):
+            if t["kind"] == "ENUM" and t.get("enumValues") and any(
+                kw in t["name"].lower() for kw in ["post", "schedule", "mode", "media", "type"]
+            ):
+                vals = [v["name"] for v in t["enumValues"]]
+                print("  " + t["name"] + ": " + str(vals))
+        return
 
     # Discovery-only mode: print channel IDs and exit
     if args.discover:
