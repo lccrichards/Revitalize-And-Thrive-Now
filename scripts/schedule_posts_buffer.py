@@ -137,7 +137,6 @@ def schedule_post(api_key: str, channel_id: str, text: str, due_at: datetime,
         "channelId": channel_id,
         "text": text,
         "postType": "post",
-        "schedulingType": "automatic",
         "mode": "customScheduled",
         "dueAt": due_at.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
     }
