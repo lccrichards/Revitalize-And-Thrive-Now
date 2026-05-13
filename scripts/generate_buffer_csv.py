@@ -71,10 +71,10 @@ def main():
     with open(data_path) as f:
         posts = json.load(f)
 
-    with open(out_path, "w", newline="", encoding="utf-8") as csvfile:
+    with open(out_path, "w", newline="", encoding="utf-8-sig") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-        # Publer bulk upload headers
-        writer.writerow(["Date", "Time", "Message", "Photo 1"])
+        # Publer bulk upload headers (exact Publer format)
+        writer.writerow(["Date", "Message", "Link", "Media URLs"])
 
         for post in posts:
             dt = build_date(start, post["day"], post["day_of_week"], post["post_time"])
@@ -82,12 +82,10 @@ def main():
             if post.get("hashtags"):
                 caption += "\n\n" + post["hashtags"]
 
-            # Publer requires literal \n (not real newlines) inside CSV fields
-            caption_csv = caption.replace("\n", "\\n")
             writer.writerow([
-                dt.strftime("%m/%d/%Y"),   # Date: MM/DD/YYYY
-                dt.strftime("%H:%M"),       # Time: 24-hour HH:MM
-                caption_csv,
+                dt.strftime("%Y-%m-%d %H:%M"),  # Publer format: YYYY-MM-DD HH:MM
+                caption,
+                "",                              # Link (empty)
                 post.get("image_url", ""),
             ])
 
