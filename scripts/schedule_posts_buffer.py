@@ -84,6 +84,8 @@ def graphql(api_key: str, query: str, variables: dict = None) -> dict:
         print("  Rate limited — sleeping {}s (attempt {}/6)".format(wait, attempt + 1))
         time.sleep(wait)
         wait = min(wait * 2, 300)
+    if not resp.ok:
+        print("  HTTP {} error. Response body: {}".format(resp.status_code, resp.text[:1000]))
     resp.raise_for_status()
     return resp.json()
 
