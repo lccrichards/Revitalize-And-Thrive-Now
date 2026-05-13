@@ -1,9 +1,9 @@
 """
 generate_buffer_csv.py
-Generates Buffer bulk-upload CSV files from posts JSON data.
+Generates Publer bulk-upload CSV files from posts JSON data.
 
-Buffer CSV format: Date, Time, Text, Image URL
-Upload at: buffer.com > Publishing > Queue > ... > Import CSV
+Publer CSV format: Date, Time, Message, Photo 1
+Upload at: publer.io > Bulk Schedule > Import CSV
 
 Usage:
   python scripts/generate_buffer_csv.py --brand revitalize --start-date 2026-05-18
@@ -73,8 +73,8 @@ def main():
 
     with open(out_path, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-        # Buffer bulk upload headers
-        writer.writerow(["Date", "Time", "Text", "Image URL"])
+        # Publer bulk upload headers
+        writer.writerow(["Date", "Time", "Message", "Photo 1"])
 
         for post in posts:
             dt = build_date(start, post["day"], post["day_of_week"], post["post_time"])
@@ -83,18 +83,18 @@ def main():
                 caption += "\n\n" + post["hashtags"]
 
             writer.writerow([
-                dt.strftime("%m/%d/%Y"),       # Date: MM/DD/YYYY
-                dt.strftime("%I:%M %p"),        # Time: 12-hour format
+                dt.strftime("%m/%d/%Y"),   # Date: MM/DD/YYYY
+                dt.strftime("%H:%M"),       # Time: 24-hour HH:MM
                 caption,
                 post.get("image_url", ""),
             ])
 
     print("CSV saved to: " + out_path)
     print("Posts exported: " + str(len(posts)))
-    print("\nTo upload:")
-    print("1. Go to buffer.com > Publishing")
-    print("2. Select your Instagram channel")
-    print("3. Click the '...' or Settings menu > Import CSV")
+    print("\nTo upload to Publer:")
+    print("1. Go to publer.io > Bulk Schedule")
+    print("2. Select your Instagram account")
+    print("3. Click 'Import CSV'")
     print("4. Upload: " + os.path.basename(out_path))
 
 
