@@ -82,10 +82,12 @@ def main():
             if post.get("hashtags"):
                 caption += "\n\n" + post["hashtags"]
 
+            # Publer requires literal \n (not real newlines) inside CSV fields
+            caption_csv = caption.replace("\n", "\\n")
             writer.writerow([
                 dt.strftime("%m/%d/%Y"),   # Date: MM/DD/YYYY
                 dt.strftime("%H:%M"),       # Time: 24-hour HH:MM
-                caption,
+                caption_csv,
                 post.get("image_url", ""),
             ])
 
