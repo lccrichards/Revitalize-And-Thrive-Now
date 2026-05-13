@@ -73,8 +73,20 @@ def main():
 
     with open(out_path, "w", newline="", encoding="utf-8-sig") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-        # Publer bulk upload headers (exact Publer format)
-        writer.writerow(["Date", "Message", "Link", "Media URLs"])
+        # All 11 Publer CSV columns (exact header names required)
+        writer.writerow([
+            "Date",
+            "Text",
+            "Link",
+            "Media URL",
+            "Title",
+            "Label",
+            "Alt text(s)",
+            "Comment(s)",
+            "Pin board, FB album, or Google category",
+            "Post subtype - I.e. story, reel, PDF ..",
+            "CTA - For Facebook links or Google",
+        ])
 
         for post in posts:
             dt = build_date(start, post["day"], post["day_of_week"], post["post_time"])
@@ -82,11 +94,22 @@ def main():
             if post.get("hashtags"):
                 caption += "\n\n" + post["hashtags"]
 
+            # Map post_format to Publer subtype
+            fmt = post.get("post_format", "feed").lower()
+            subtype = "Reel" if fmt == "reel" else "Photo"
+
             writer.writerow([
-                dt.strftime("%Y-%m-%d %H:%M"),  # Publer format: YYYY-MM-DD HH:MM
-                caption,
-                "",                              # Link (empty)
-                post.get("image_url", ""),
+                dt.strftime("%Y/%m/%d %H:%M"),  # Date: YYYY/MM/DD HH:MM
+                caption,                         # Text
+                "",                              # Link
+                post.get("image_url", ""),       # Media URL
+                "",                              # Title
+                "",                              # Label
+                "",                              # Alt text(s)
+                "",                              # Comment(s)
+                "",                              # Pin board / FB album / Google category
+                subtype,                         # Post subtype: Reel or Photo
+                "",                              # CTA
             ])
 
     print("CSV saved to: " + out_path)
