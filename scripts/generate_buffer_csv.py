@@ -8,6 +8,7 @@ Upload at: publer.io > Bulk Schedule > Import CSV
 Usage:
   python scripts/generate_buffer_csv.py --brand revitalize --start-date 2026-05-18
   python scripts/generate_buffer_csv.py --brand reclaim --start-date 2026-05-18
+  python scripts/generate_buffer_csv.py --brand reclaim-v2 --start-date 2026-05-18 --interval-days 2
 """
 
 import argparse
@@ -42,18 +43,22 @@ def parse_hour(time_str):
     return 9, 0
 
 
-def build_date(start_monday, day_num, day_of_week, post_time):
-    week_offset = (day_num - 1) // 7
-    dow_index = DAY_ORDER.index(day_of_week) if day_of_week in DAY_ORDER else (day_num - 1) % 7
-    post_date = start_monday + timedelta(weeks=week_offset, days=dow_index)
+def build_date(start_monday, day_num, day_of_week, post_time, interval_days=1):
+    if interval_days > 1:
+        post_date = start_monday + timedelta(days=(day_num - 1) * interval_days)
+    else:
+        week_offset = (day_num - 1) // 7
+        dow_index = DAY_ORDER.index(day_of_week) if day_of_week in DAY_ORDER else (day_num - 1) % 7
+        post_date = start_monday + timedelta(weeks=week_offset, days=dow_index)
     hour, minute = parse_hour(post_time)
     return post_date.replace(hour=hour, minute=minute, second=0, microsecond=0)
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--brand", required=True, choices=["revitalize", "reclaim"])
-    parser.add_argument("--start-date", required=True, help="Monday start date YYYY-MM-DD")
+    parser.add_argument("--brand", required=True)
+    parser.add_argument("--start-date", required=True, help="Start date YYYY-MM-DD")
+    parser.add_argument("--interval-days", type=int, default=1, help="Days between posts (default 1, use 2 for every-other-day)")
     args = parser.parse_args()
 
     try:
@@ -61,8 +66,8 @@ def main():
     except ValueError:
         sys.exit("ERROR: --start-date must be YYYY-MM-DD")
 
-    if start.weekday() != 0:
-        sys.exit("ERROR: start date must be a Monday (got " + start.strftime("%A") + ")")
+    if args.interval_days == 1 and start.weekday() != 0:
+        sys.exit("ERROR: start date must be a Monday when --interval-days is 1 (got " + start.strftime("%A") + ")")
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_path = os.path.join(script_dir, "..", "data", "posts-" + args.brand + ".json")
@@ -89,7 +94,7 @@ def main():
         ])
 
         for post in posts:
-            dt = build_date(start, post["day"], post["day_of_week"], post["post_time"])
+            dt = build_date(start, post["day"], post.get("day_of_week", ""), post["post_time"], args.interval_days)
             caption = post["caption"]
             if post.get("hashtags"):
                 caption += "\n\n" + post["hashtags"]
