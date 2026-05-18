@@ -193,6 +193,51 @@ footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba
 .footer-bottom p{color:var(--gray);font-size:0.78rem;}
 
 @media(max-width:768px){.nav-links{display:none;}nav{padding:0 20px;}.shop-header{padding:120px 20px 50px;}.start-here{padding:50px 20px;}.pillar-layer{padding:50px 20px;}.deeper{padding:50px 20px;}.free-challenge{padding:50px 20px;}.closing{padding:50px 20px;}footer{padding:44px 20px 22px;}}
+
+/* ---------- BUNDLES ---------- */
+.bundles-section{padding:80px 24px;background:var(--cream2);}
+.bundles-inner{max-width:1100px;margin:0 auto;}
+.bundles-header{text-align:center;margin-bottom:56px;}
+.bundles-header p{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--mid);max-width:540px;margin:16px auto 0;line-height:1.6;}
+.bundle-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media(max-width:900px){.bundle-cards{grid-template-columns:1fr;max-width:480px;margin:0 auto;}}
+.bundle-card{background:var(--cream);border:1px solid rgba(196,180,156,0.45);border-radius:16px;padding:36px 28px;display:flex;flex-direction:column;position:relative;transition:box-shadow .25s,transform .25s;}
+.bundle-card:hover{box-shadow:0 16px 48px rgba(60,56,48,0.12);transform:translateY(-3px);}
+.bundle-card.featured-bundle{background:linear-gradient(135deg,#2C2620,#3C3830);border-color:var(--teal);}
+.bundle-tag{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--tealD);margin-bottom:14px;}
+.bundle-card.featured-bundle .bundle-tag{color:var(--teal);}
+.bundle-tag.best-value{display:inline-block;background:var(--teal);color:var(--white);padding:4px 14px;border-radius:100px;letter-spacing:.12em;margin-bottom:14px;}
+.bundle-card h3{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:16px;}
+.bundle-card.featured-bundle h3{color:var(--cream);}
+.bundle-includes{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:20px;font-size:0.875rem;color:var(--mid);}
+.bundle-includes-list{font-family:'Playfair Display',serif;font-size:0.95rem;font-style:italic;color:rgba(240,237,231,0.78);margin-bottom:20px;line-height:1.6;flex:1;}
+.bundle-includes .plus{color:var(--tealD);font-weight:700;font-size:1.1em;}
+.bundle-value{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--gray);text-decoration:line-through;margin-bottom:4px;}
+.bundle-card.featured-bundle .bundle-value{color:rgba(240,237,231,0.45);}
+.bundle-price{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:var(--dark);line-height:1;margin-bottom:4px;}
+.bundle-card.featured-bundle .bundle-price{color:var(--teal);}
+.bundle-price sup{font-size:0.4em;vertical-align:super;margin-right:3px;}
+.bundle-save{font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:600;color:var(--tealD);margin-bottom:24px;}
+.bundle-card.featured-bundle .bundle-save{color:var(--teal);}
+.bundle-card .btn-bundle{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:100px;text-decoration:none;transition:all 0.25s ease;background:var(--teal);color:var(--white);box-shadow:0 6px 20px rgba(126,171,184,0.3);margin-top:auto;}
+.bundle-card .btn-bundle:hover{background:var(--tealD);transform:translateY(-2px);}
+
+/* ---------- MEMBERSHIP ---------- */
+.membership-section{padding:80px 24px;background:linear-gradient(160deg,rgba(126,171,184,0.1) 0%,var(--cream) 50%,rgba(155,176,164,0.08) 100%);}
+.membership-inner{max-width:660px;margin:0 auto;text-align:center;}
+.membership-sub{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--mid);line-height:1.65;max-width:520px;margin:16px auto 44px;}
+.membership-card{background:var(--white);border:1.5px solid rgba(126,171,184,0.4);border-radius:20px;padding:48px 40px;box-shadow:0 20px 60px rgba(126,171,184,0.14);position:relative;overflow:hidden;}
+.membership-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--sage),var(--teal));}
+.mem-price{font-family:'Playfair Display',serif;font-size:4rem;font-weight:900;color:var(--dark);line-height:1;margin-bottom:4px;}
+.mem-price sup{font-size:0.35em;vertical-align:super;color:var(--tealD);}
+.mem-price .per{font-size:0.4em;font-weight:400;color:var(--mid);font-family:'DM Sans',sans-serif;}
+.mem-period{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gray);margin-bottom:32px;}
+.mem-includes{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:12px;text-align:left;max-width:380px;margin-left:auto;margin-right:auto;}
+.mem-includes li{display:flex;align-items:flex-start;gap:12px;font-size:0.9rem;line-height:1.5;color:var(--dark);}
+.mem-includes li::before{content:'✦';color:var(--tealD);font-size:0.75em;flex-shrink:0;margin-top:3px;}
+.btn-join{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:var(--white);padding:16px 36px;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:100px;text-decoration:none;transition:all .25s;box-shadow:0 8px 28px rgba(126,171,184,0.35);}
+.btn-join:hover{background:var(--tealD);transform:translateY(-2px);box-shadow:0 12px 36px rgba(126,171,184,0.45);}
+.mem-fine{font-size:0.78rem;color:var(--gray);margin-top:16px;font-family:'DM Sans',sans-serif;}
 </style>
 </head>
 <body>
@@ -452,6 +497,85 @@ footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba
   </div>
 </section>
 
+<!-- BUNDLES -->
+<section class="bundles-section">
+  <div class="bundles-inner">
+    <div class="bundles-header">
+      <span class="section-label">Curated Bundles</span>
+      <h2 class="section-title">More <em>transformation</em>, greater value</h2>
+      <p>Complementary programs paired together at a meaningful discount — because real transformation works best when the pieces work together.</p>
+    </div>
+    <div class="bundle-cards">
+
+      <div class="bundle-card">
+        <div class="bundle-tag">Hormone &amp; Body Reset</div>
+        <h3>The Hormone Bundle</h3>
+        <div class="bundle-includes">
+          <span>Hormone Meal Plan</span>
+          <span class="plus">+</span>
+          <span>Gut Health Reset</span>
+          <span class="plus">+</span>
+          <span>Sleep Fix</span>
+        </div>
+        <div class="bundle-value">$117 value</div>
+        <div class="bundle-price"><sup>$</sup>97</div>
+        <div class="bundle-save">Save $20</div>
+        <a href="https://rivitalize.gumroad.com/l/hormone-bundle" class="btn-bundle" target="_blank" rel="noopener">Get the Bundle →</a>
+      </div>
+
+      <div class="bundle-card">
+        <div class="bundle-tag">Mind &amp; Identity Reset</div>
+        <h3>The Mindset Bundle</h3>
+        <div class="bundle-includes">
+          <span>Mindset Reset</span>
+          <span class="plus">+</span>
+          <span>Confidence Rebuild</span>
+          <span class="plus">+</span>
+          <span>Relationships Guide</span>
+        </div>
+        <div class="bundle-value">$117 value</div>
+        <div class="bundle-price"><sup>$</sup>97</div>
+        <div class="bundle-save">Save $20</div>
+        <a href="https://rivitalize.gumroad.com/l/mindset-bundle" class="btn-bundle" target="_blank" rel="noopener">Get the Bundle →</a>
+      </div>
+
+      <div class="bundle-card featured-bundle">
+        <div class="bundle-tag best-value">Best Value</div>
+        <h3>The Complete Collection</h3>
+        <p class="bundle-includes-list">All 9 protocol programs in the Revitalize library — every deep-dive guide in a single purchase.</p>
+        <div class="bundle-value">$351 value</div>
+        <div class="bundle-price"><sup>$</sup>197</div>
+        <div class="bundle-save">Save $154</div>
+        <a href="https://rivitalize.gumroad.com/l/complete-collection" class="btn-bundle" target="_blank" rel="noopener">Get Everything →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section class="membership-section">
+  <div class="membership-inner">
+    <span class="section-label">Monthly Membership</span>
+    <h2 class="section-title">The Revitalize <em>Circle</em></h2>
+    <p class="membership-sub">Your ongoing support system — for the woman who wants guidance, community, and fresh resources every single month.</p>
+    <div class="membership-card">
+      <div class="mem-price"><sup>$</sup>27<span class="per">/month</span></div>
+      <div class="mem-period">Cancel anytime · No contracts</div>
+      <ul class="mem-includes">
+        <li>Monthly live session with Dr. Lori &amp; the community</li>
+        <li>New monthly protocol or resource download</li>
+        <li>Private Revitalize Circle community access</li>
+        <li>20% off all individual programs &amp; bundles</li>
+        <li>Early access to every new product</li>
+        <li>Monthly guided wellness challenge</li>
+      </ul>
+      <a href="https://rivitalize.gumroad.com/l/revitalize-circle" class="btn-join" target="_blank" rel="noopener">Join the Circle →</a>
+      <p class="mem-fine">Billed monthly · Cancel anytime · Instant community access</p>
+    </div>
+  </div>
+</section>
+
 <section class="free-challenge">
   <div class="challenge-inner">
     <span class="section-label">Begin Gently</span>
@@ -485,8 +609,12 @@ footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba
       <h5>Shop</h5>
       <ul>
         <li><a href="shop.html">All Products</a></li>
-        <li><a href="https://rivitalize.gumroad.com/l/masterclass-series" target="_blank">Masterclass Series</a></li>
-        <li><a href="https://rivitalize.gumroad.com/l/nxqlwr" target="_blank">Complete Reset Bundle</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/masterclass-series" target="_blank">Masterclass Series — $149</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/nxqlwr" target="_blank">Complete Midlife Reset — $249</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/hormone-bundle" target="_blank">The Hormone Bundle — $97</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/mindset-bundle" target="_blank">The Mindset Bundle — $97</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/complete-collection" target="_blank">Complete Collection — $197</a></li>
+        <li><a href="https://rivitalize.gumroad.com/l/revitalize-circle" target="_blank">Revitalize Circle — $27/mo</a></li>
         <li><a href="energy-challenge.html">Free Energy Challenge</a></li>
       </ul>
     </div>
