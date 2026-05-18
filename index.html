@@ -276,6 +276,54 @@ footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba
 @keyframes scaleIn{from{opacity:0;transform:scale(0.92);}to{opacity:1;transform:scale(1);}}
 
 @media(max-width:768px){.nav-links{display:none;}nav{padding:0 20px;}.hero{padding:90px 20px 60px;}.section{padding:64px 20px;}.stats-row{gap:28px;}.pricing-card{padding:30px 22px;}footer{padding:44px 20px 22px;}.sections-strip{padding:0 20px;}.shop-teaser{padding:60px 20px;}}
+
+/* ---------- PROGRAMS / BUNDLES / MEMBERSHIP ---------- */
+.programs-section{background:linear-gradient(160deg,var(--cream3) 0%,var(--cream2) 100%);padding:96px 24px;}
+.programs-header{text-align:center;margin-bottom:60px;}
+.programs-header .section-label{justify-content:center;}
+.program-options{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:0 auto 60px;}
+@media(max-width:900px){.program-options{grid-template-columns:1fr;max-width:480px;}}
+.prog-card{background:var(--offwhite);border:1px solid rgba(196,180,156,0.35);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;position:relative;transition:box-shadow .25s,transform .25s;}
+.prog-card:hover{box-shadow:0 16px 48px rgba(0,0,0,0.1);transform:translateY(-3px);}
+.prog-card.featured{background:linear-gradient(135deg,#2C2620,#3C3830);border-color:var(--tealD);}
+.prog-card.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--sage),var(--sand));border-radius:16px 16px 0 0;}
+.prog-eyebrow{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--tealD);margin-bottom:12px;}
+.prog-card.featured .prog-eyebrow{color:var(--teal);}
+.prog-eyebrow.badge{display:inline-block;background:var(--teal);color:var(--white);padding:4px 14px;border-radius:100px;}
+.prog-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:12px;}
+.prog-card.featured h3{color:var(--cream);}
+.prog-desc{font-family:'Playfair Display',serif;font-size:0.9rem;font-style:italic;line-height:1.6;color:var(--mid);margin-bottom:16px;flex:1;}
+.prog-card.featured .prog-desc{color:rgba(240,237,231,0.7);}
+.prog-includes-line{font-size:0.82rem;color:var(--gray);margin-bottom:20px;line-height:1.6;}
+.prog-card.featured .prog-includes-line{color:rgba(240,237,231,0.55);}
+.prog-includes-line s{color:var(--gray);text-decoration:line-through;}
+.prog-price{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:var(--dark);line-height:1;margin-bottom:4px;}
+.prog-card.featured .prog-price{color:var(--teal);}
+.prog-price sup{font-size:0.38em;vertical-align:super;margin-right:2px;}
+.prog-save{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;color:var(--tealD);margin-bottom:24px;}
+.prog-card.featured .prog-save{color:var(--teal);}
+.prog-cta{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:100px;text-decoration:none;transition:all .25s;background:var(--teal);color:var(--white);box-shadow:0 6px 20px rgba(126,171,184,0.28);margin-top:auto;}
+.prog-cta:hover{background:var(--tealD);transform:translateY(-2px);}
+
+/* Membership */
+.membership-band{background:var(--cream);padding:80px 24px;border-top:1px solid rgba(196,180,156,0.3);}
+.membership-band-inner{max-width:680px;margin:0 auto;text-align:center;}
+.membership-band .section-label{justify-content:center;margin-bottom:16px;}
+.membership-band h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:14px;}
+.membership-band h2 em{font-family:'Dancing Script',cursive;font-style:normal;color:var(--tealD);font-size:1.1em;}
+.membership-band .sub{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--mid);line-height:1.6;max-width:500px;margin:0 auto 44px;}
+.mem-band-card{background:var(--white);border:1.5px solid rgba(126,171,184,0.4);border-radius:20px;padding:48px 40px;box-shadow:0 20px 60px rgba(126,171,184,0.12);position:relative;overflow:hidden;}
+.mem-band-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--sage),var(--sand));}
+.mem-band-price{font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:900;color:var(--dark);line-height:1;margin-bottom:4px;}
+.mem-band-price sup{font-size:0.35em;vertical-align:super;color:var(--tealD);}
+.mem-band-price .per{font-size:0.38em;font-weight:400;color:var(--gray);font-family:'DM Sans',sans-serif;}
+.mem-band-period{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gray);margin-bottom:32px;}
+.mem-band-list{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:12px;text-align:left;max-width:380px;margin-left:auto;margin-right:auto;}
+.mem-band-list li{display:flex;align-items:flex-start;gap:12px;font-size:0.9rem;line-height:1.5;color:var(--dark);}
+.mem-band-list li::before{content:'✦';color:var(--tealD);font-size:0.75em;flex-shrink:0;margin-top:3px;}
+.mem-band-cta{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:var(--white);padding:16px 36px;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:100px;text-decoration:none;transition:all .25s;box-shadow:0 8px 28px rgba(126,171,184,0.3);}
+.mem-band-cta:hover{background:var(--tealD);transform:translateY(-2px);}
+.mem-band-fine{font-size:0.75rem;color:var(--gray);margin-top:14px;font-family:'DM Sans',sans-serif;}
 </style>
 </head>
 <body>
@@ -286,11 +334,12 @@ footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba
     <a href="#program">The Program</a>
     <a href="#booklet">The Booklet</a>
     <a href="#trackers">Trackers</a>
-    <a href="#pricing">Pricing</a>
+    <a href="#pricing">Programs</a>
+    <a href="#membership">Membership</a>
     <a href="#faq">FAQ</a>
-    <a href="shop.html" class="nav-shop">✦ Shop All Products</a>
+    <a href="shop.html" class="nav-shop">✦ Shop All</a>
   </div>
-  <a class="nav-cta" href="https://rivitalize.gumroad.com/l/nlkuz" target="_blank">Get Access — $79</a>
+  <a class="nav-cta" href="#pricing">Get Started</a>
 </nav>
 
 <section class="hero">
@@ -445,28 +494,74 @@ footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba
   </div>
 </section>
 
-<section class="pricing-section" id="pricing">
-  <div class="container">
-    <div class="section-label">Investment</div>
-    <h2 class="section-title">One Price.<br/><em>Lifetime Transformation.</em></h2>
-    <div class="pricing-card">
-      <div class="pricing-badge">✿ Revitalize & Thrive Now — Complete Bundle</div>
-      <div class="pricing-amount"><sup>$</sup>79</div>
-      <div class="pricing-period">One-time payment · No recurring charges</div>
-      <ul class="pricing-features">
-        <li>80-Page Color-Coded Digital Workbook (.docx & PDF)</li>
-        <li>All 30 Daily Lessons with Science-Backed Content</li>
-        <li>4 Built-In Progress Trackers & Assessment Charts</li>
-        <li>120+ Action Items Across 6 Wellness Pillars</li>
-        <li>90+ Evening Reflection Prompts</li>
-        <li>30 Daily Coach's Tips & Bonus Resources</li>
-        <li>Print-Ready Class Handout Formatting (US Letter)</li>
-        <li>Certificate of Completion (Print & Display)</li>
-        <li>Future Program Updates Included Free</li>
-        <li>30-Day Transformative Guide</li>
+<section class="programs-section" id="pricing">
+  <div class="programs-header">
+    <div class="section-label">Programs &amp; Membership</div>
+    <h2 class="section-title">Every Way to <em>Revitalize.</em></h2>
+    <p style="font-family:'Playfair Display',serif;font-style:italic;color:var(--mid);max-width:520px;margin:0 auto;line-height:1.6;">Start with one program, bundle complementary ones, or join the Circle for ongoing support — every option is built around the same science-backed methodology.</p>
+  </div>
+
+  <div class="program-options">
+
+    <div class="prog-card">
+      <div class="prog-eyebrow">Hormone &amp; Body Reset</div>
+      <h3>The Hormone Bundle</h3>
+      <p class="prog-desc">Three programs that directly address the hormonal triad — nutrition, gut health, and sleep.</p>
+      <div class="prog-includes-line">Hormone Meal Plan + Gut Health Reset + Sleep Fix</div>
+      <div class="prog-includes-line"><s>$117 value</s></div>
+      <div class="prog-price"><sup>$</sup>97</div>
+      <div class="prog-save">Save $20</div>
+      <a href="https://rivitalize.gumroad.com/l/hormone-bundle" class="prog-cta" target="_blank" rel="noopener">Get the Bundle →</a>
+    </div>
+
+    <div class="prog-card">
+      <div class="prog-eyebrow">Mind &amp; Identity Reset</div>
+      <h3>The Mindset Bundle</h3>
+      <p class="prog-desc">Three programs that rebuild your confidence, identity, and relationships from the inside out.</p>
+      <div class="prog-includes-line">Mindset Reset + Confidence Rebuild + Relationships Guide</div>
+      <div class="prog-includes-line"><s>$117 value</s></div>
+      <div class="prog-price"><sup>$</sup>97</div>
+      <div class="prog-save">Save $20</div>
+      <a href="https://rivitalize.gumroad.com/l/mindset-bundle" class="prog-cta" target="_blank" rel="noopener">Get the Bundle →</a>
+    </div>
+
+    <div class="prog-card featured">
+      <div class="prog-eyebrow badge">Best Value</div>
+      <h3>The Complete Collection</h3>
+      <p class="prog-desc">Every protocol program in the Revitalize library — all 9 deep-dive guides in one purchase.</p>
+      <div class="prog-includes-line">All 9 individual protocol programs included</div>
+      <div class="prog-includes-line"><s>$351 value</s></div>
+      <div class="prog-price"><sup>$</sup>197</div>
+      <div class="prog-save">Save $154</div>
+      <a href="https://rivitalize.gumroad.com/l/complete-collection" class="prog-cta" target="_blank" rel="noopener">Get Everything →</a>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;margin-bottom:32px;">
+    <p style="font-family:'Playfair Display',serif;font-style:italic;color:var(--mid);font-size:0.95rem;">Looking for individual programs or the flagship workbook?</p>
+    <a href="shop.html" style="display:inline-flex;align-items:center;gap:8px;color:var(--tealD);font-weight:700;font-size:0.9rem;text-decoration:none;font-family:'DM Sans',sans-serif;letter-spacing:0.04em;text-transform:uppercase;border-bottom:1.5px solid var(--tealD);padding-bottom:2px;">Browse All 12 Programs →</a>
+  </div>
+</section>
+
+<section class="membership-band" id="membership">
+  <div class="membership-band-inner">
+    <div class="section-label">Monthly Membership</div>
+    <h2>The Revitalize <em>Circle</em></h2>
+    <p class="sub">Your ongoing support system — for the woman who wants guidance, community, and fresh resources every single month.</p>
+    <div class="mem-band-card">
+      <div class="mem-band-price"><sup>$</sup>27<span class="per">/month</span></div>
+      <div class="mem-band-period">Cancel anytime · No contracts</div>
+      <ul class="mem-band-list">
+        <li>Monthly live session with Dr. Lori &amp; the community</li>
+        <li>New monthly protocol or resource download</li>
+        <li>Private Revitalize Circle community access</li>
+        <li>20% off all individual programs &amp; bundles</li>
+        <li>Early access to every new product</li>
+        <li>Monthly guided wellness challenge</li>
       </ul>
-      <a href="https://rivitalize.gumroad.com/l/nlkuz" target="_blank" class="pricing-cta">Get Instant Access — $79</a>
-      <div class="pricing-guarantee">🔒 <span>Secure checkout.</span> Instant digital delivery. All sales are final.</div>
+      <a href="https://rivitalize.gumroad.com/l/revitalize-circle" class="mem-band-cta" target="_blank" rel="noopener">Join the Circle →</a>
+      <p class="mem-band-fine">Billed monthly · Cancel anytime · Instant community access</p>
     </div>
   </div>
 </section>
@@ -507,7 +602,7 @@ footer{background:var(--cream2);padding:60px 40px 28px;border-top:2px solid rgba
     <h2 class="section-title" style="text-align:center;">Frequently Asked <em>Questions</em></h2>
     <div class="faq-list">
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What do I receive after purchasing? <span class="faq-arrow">▾</span></button><div class="faq-a">Immediately after purchase you will receive an email with download links for the 80-page workbook in both .docx and PDF formats. Print it at home, at a print shop, or use it digitally on any device.</div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is this a recurring subscription? <span class="faq-arrow">▾</span></button><div class="faq-a">No. Your $79 payment is one-time only. There are no recurring charges, hidden fees, or auto-renewals. You get lifetime access to all current content and all future updates.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is the membership a recurring subscription? <span class="faq-arrow">▾</span></button><div class="faq-a">The Revitalize Circle membership is $27/month and renews automatically each month — cancel anytime with no penalty. All individual protocols and bundles are one-time purchases with lifetime access; no recurring charges apply to those.</div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is this suitable as a class handout or group program? <span class="faq-arrow">▾</span></button><div class="faq-a">Absolutely. The booklet was specifically designed with class handout formatting in mind — US Letter size, 1-inch margins for hole-punching, 11pt Arial body text for easy reading, and color-coded sections for instant navigation.</div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much time does this require each day? <span class="faq-arrow">▾</span></button><div class="faq-a">Each day requires 30–60 minutes including reading the lesson, completing action items, and filling in reflection prompts. The program is flexible — if you miss a day, simply pick up where you left off.</div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do I need any equipment or supplements? <span class="faq-arrow">▾</span></button><div class="faq-a">No equipment or supplements are required. The program uses bodyweight exercises, walking, and free resources like YouTube for yoga and meditation.</div></div>
