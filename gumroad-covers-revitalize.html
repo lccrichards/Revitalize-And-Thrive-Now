@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Revitalize & Thrive — Gumroad Cover Images</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Dancing+Script:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#777; padding:40px; font-family:'DM Sans',sans-serif; }
+
+.instructions {
+  background:white; border-radius:10px; padding:18px 24px;
+  margin-bottom:36px; max-width:1280px;
+  font-family:sans-serif; font-size:14px; color:#333; line-height:1.7;
+}
+.instructions strong { font-size:15px; }
+
+.cover-wrap { margin-bottom:52px; max-width:1280px; }
+.cover-label { color:rgba(255,255,255,0.75); font-family:sans-serif; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; margin-bottom:10px; }
+
+.cover {
+  width:1280px; height:720px;
+  position:relative; overflow:hidden;
+  display:flex; align-items:center;
+  font-family:'DM Sans',sans-serif;
+}
+
+/* ── shared layout ── */
+.left {
+  flex:0 0 600px; padding:80px 72px;
+  display:flex; flex-direction:column; justify-content:center;
+  position:relative; z-index:2;
+}
+.right {
+  flex:1; display:flex; align-items:center; justify-content:center;
+  padding-right:60px; position:relative; z-index:2;
+}
+
+.pill {
+  display:inline-flex; align-items:center; gap:6px;
+  background:rgba(90,142,156,0.12); border:1.5px solid rgba(90,142,156,0.4);
+  border-radius:100px; padding:6px 18px;
+  font-size:12px; font-weight:600; color:#5A8E9C;
+  letter-spacing:.08em; text-transform:uppercase;
+  margin-bottom:20px; width:fit-content;
+}
+
+.brand { font-family:'Dancing Script',cursive; font-size:22px; color:#5A8E9C; margin-bottom:10px; }
+.category { font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#9BB0A4; margin-bottom:18px; }
+
+.cover-h1 {
+  font-family:'Playfair Display',serif; font-size:72px; font-weight:900;
+  color:#3C3830; line-height:1.0; margin-bottom:18px;
+}
+.cover-includes {
+  font-family:'Playfair Display',serif; font-style:italic;
+  font-size:22px; color:#6A6460; margin-bottom:32px; line-height:1.5;
+}
+.divider { width:52px; height:2.5px; background:#9BB0A4; margin-bottom:28px; }
+
+.price-row { display:flex; align-items:center; gap:16px; }
+.price-big { font-family:'Playfair Display',serif; font-size:66px; font-weight:900; color:#3C3830; line-height:1; }
+.price-big sup { font-size:0.38em; vertical-align:top; margin-top:14px; }
+.save-badge { background:#5A8E9C; color:white; border-radius:100px; padding:8px 22px; font-size:15px; font-weight:700; }
+
+/* ── book mockups (3-up) ── */
+.books-3 { position:relative; width:420px; height:400px; }
+.book {
+  width:190px; height:248px; border-radius:10px; position:absolute;
+  box-shadow:6px 14px 36px rgba(0,0,0,0.2), inset 0 0 0 1px rgba(255,255,255,0.18);
+  display:flex; flex-direction:column; justify-content:space-between;
+  padding:20px 18px; overflow:hidden;
+}
+.book::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(155deg,rgba(255,255,255,0.18) 0%,transparent 55%);
+  border-radius:inherit;
+}
+.book-label { font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; opacity:0.65; }
+.book-title { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; line-height:1.25; }
+.book-icon { font-size:30px; opacity:0.25; }
+
+.books-3 .book:nth-child(1) { left:8px;  top:80px; transform:rotate(-9deg); z-index:1; }
+.books-3 .book:nth-child(2) { left:105px; top:26px; transform:rotate(-1deg); z-index:2; }
+.books-3 .book:nth-child(3) { left:208px; top:58px; transform:rotate(7deg);  z-index:1; }
+
+.book-teal  { background:linear-gradient(145deg,#5A8E9C,#3d717e); color:white; }
+.book-sage  { background:linear-gradient(145deg,#9BB0A4,#789088); color:white; }
+.book-sand  { background:linear-gradient(145deg,#C4B49C,#a4947c); color:white; }
+.book-rose  { background:linear-gradient(145deg,#C49898,#a07878); color:white; }
+.book-blush { background:linear-gradient(145deg,#D4B4A8,#b09488); color:white; }
+.book-lav   { background:linear-gradient(145deg,#A8A8C4,#888898); color:white; }
+
+/* ── deco blob ── */
+.blob {
+  position:absolute; border-radius:50%; pointer-events:none;
+  opacity:0.11;
+}
+
+/* ── book grid (9-up) ── */
+.books-9 { display:flex; gap:11px; align-items:flex-end; }
+.book-sm {
+  width:104px; height:134px; border-radius:7px;
+  box-shadow:3px 7px 20px rgba(0,0,0,0.22);
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding:10px 10px; position:relative; overflow:hidden;
+}
+.book-sm::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(155deg,rgba(255,255,255,0.16) 0%,transparent 55%);
+}
+.book-sm-title { font-family:'Playfair Display',serif; font-size:11px; font-weight:700; color:white; line-height:1.25; position:relative; z-index:1; }
+.books-9 .book-sm:nth-child(odd) { transform:translateY(-9px); }
+
+/* ── seal (membership) ── */
+.seal-bg { width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; position:relative; z-index:2; }
+.seal {
+  width:390px; height:390px; border-radius:50%;
+  border:2.5px solid rgba(90,142,156,0.38);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; position:relative;
+  box-shadow:0 0 0 14px rgba(90,142,156,0.055), 0 0 0 28px rgba(90,142,156,0.025);
+}
+.seal::before {
+  content:''; position:absolute; inset:11px; border-radius:50%;
+  border:1.5px dashed rgba(90,142,156,0.22);
+}
+.seal-brand { font-family:'Dancing Script',cursive; font-size:26px; color:#5A8E9C; margin-bottom:6px; }
+.seal-icon  { font-size:44px; color:#9BB0A4; opacity:0.55; margin-bottom:10px; }
+.seal-title { font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#3C3830; line-height:1.1; margin-bottom:8px; }
+.seal-title em { font-family:'Dancing Script',cursive; font-style:normal; color:#5A8E9C; font-size:1.15em; }
+.seal-sub   { font-size:12px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#8C8884; margin-bottom:18px; }
+.seal-price { font-family:'Playfair Display',serif; font-size:46px; font-weight:900; color:#3C3830; }
+.seal-price .per { font-size:18px; font-weight:400; color:#8C8884; font-family:'DM Sans',sans-serif; }
+.seal-fine  { font-size:12px; color:#8C8884; margin-top:8px; letter-spacing:.04em; }
+.seal-tagline {
+  position:absolute; bottom:52px;
+  font-family:'Playfair Display',serif; font-style:italic;
+  font-size:22px; color:#6A6460; text-align:center; padding:0 90px;
+}
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <strong>📸 How to screenshot each cover:</strong><br>
+  Open in Chrome → zoom to 100% → use a screenshot tool to capture each 1280×720 cover exactly.<br>
+  <strong>Mac:</strong> Cmd+Shift+4, drag selection. &nbsp;|&nbsp; <strong>Windows:</strong> Windows+Shift+S (Snipping Tool).<br>
+  Upload each image to Gumroad under <em>Edit Product → Cover Image</em>. Recommended size: 1280×720px.
+</div>
+
+<!-- ══════════════════════════════════════════
+     COVER 1 — THE HORMONE BUNDLE
+══════════════════════════════════════════ -->
+<div class="cover-wrap">
+  <div class="cover-label">Cover 1 of 4 — The Hormone Bundle · $97</div>
+  <div class="cover" style="background:linear-gradient(130deg,#F0EDE7 0%,#DDE8E4 55%,#c5dbd2 100%);">
+    <div class="blob" style="width:520px;height:520px;background:#9BB0A4;top:-160px;right:60px;"></div>
+    <div class="left">
+      <div class="pill">✿ For Women 40–65</div>
+      <div class="brand">Revitalize &amp; Thrive Now</div>
+      <div class="category">Hormone &amp; Body Reset</div>
+      <div class="cover-h1">The Hormone<br>Bundle</div>
+      <div class="cover-includes">Meal Plan · Gut Reset · Sleep Fix</div>
+      <div class="divider"></div>
+      <div class="price-row">
+        <div class="price-big"><sup>$</sup>97</div>
+        <div class="save-badge">Save $20</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="books-3">
+        <div class="book book-teal">
+          <div class="book-icon">🌿</div>
+          <div>
+            <div class="book-label">Protocol 1</div>
+            <div class="book-title">Hormone Meal Plan</div>
+          </div>
+        </div>
+        <div class="book book-sage">
+          <div class="book-icon">🌱</div>
+          <div>
+            <div class="book-label">Protocol 2</div>
+            <div class="book-title">Gut Health Reset</div>
+          </div>
+        </div>
+        <div class="book book-sand">
+          <div class="book-icon">🌙</div>
+          <div>
+            <div class="book-label">Protocol 3</div>
+            <div class="book-title">Sleep Fix for Women</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     COVER 2 — THE MINDSET BUNDLE
+══════════════════════════════════════════ -->
+<div class="cover-wrap">
+  <div class="cover-label">Cover 2 of 4 — The Mindset Bundle · $97</div>
+  <div class="cover" style="background:linear-gradient(130deg,#F5EFEF 0%,#EDE3DF 55%,#E0D4CC 100%);">
+    <div class="blob" style="width:520px;height:520px;background:#C49898;top:-150px;right:50px;"></div>
+    <div class="left">
+      <div class="pill" style="background:rgba(164,112,112,0.1);border-color:rgba(164,112,112,0.38);color:#A07070;">✿ For Women 40–65</div>
+      <div class="brand">Revitalize &amp; Thrive Now</div>
+      <div class="category" style="color:#C49898;">Mind &amp; Identity Reset</div>
+      <div class="cover-h1">The Mindset<br>Bundle</div>
+      <div class="cover-includes">Mindset · Confidence · Relationships</div>
+      <div class="divider" style="background:#C49898;"></div>
+      <div class="price-row">
+        <div class="price-big"><sup>$</sup>97</div>
+        <div class="save-badge" style="background:#A07878;">Save $20</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="books-3">
+        <div class="book book-rose">
+          <div class="book-icon">🧠</div>
+          <div>
+            <div class="book-label">Protocol 1</div>
+            <div class="book-title">Mindset Reset</div>
+          </div>
+        </div>
+        <div class="book book-blush">
+          <div class="book-icon">✨</div>
+          <div>
+            <div class="book-label">Protocol 2</div>
+            <div class="book-title">Confidence Rebuild</div>
+          </div>
+        </div>
+        <div class="book book-lav">
+          <div class="book-icon">💫</div>
+          <div>
+            <div class="book-label">Protocol 3</div>
+            <div class="book-title">Relationships Guide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     COVER 3 — THE COMPLETE COLLECTION
+══════════════════════════════════════════ -->
+<div class="cover-wrap">
+  <div class="cover-label">Cover 3 of 4 — The Complete Collection · $197</div>
+  <div class="cover" style="background:linear-gradient(135deg,#2d6a78 0%,#1a4a56 45%,#0d2f3c 100%);">
+    <div class="blob" style="width:700px;height:700px;background:#7EABB8;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.08;"></div>
+    <div class="seal-bg" style="flex-direction:column;gap:0;">
+      <div style="display:inline-flex;align-items:center;background:rgba(126,171,184,0.2);border:1.5px solid rgba(126,171,184,0.45);border-radius:100px;padding:7px 20px;font-size:12px;font-weight:700;color:#7EABB8;letter-spacing:.1em;text-transform:uppercase;margin-bottom:22px;">✿ All 9 Programs · For Women 40–65</div>
+      <div style="font-family:'Playfair Display',serif;font-size:68px;font-weight:900;color:#FAF6EE;line-height:1.0;text-align:center;margin-bottom:10px;">The Complete<br>Collection</div>
+      <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;color:rgba(250,246,238,0.6);text-align:center;margin-bottom:22px;">Every Revitalize Protocol — One Investment</div>
+      <div style="display:flex;align-items:center;gap:16px;justify-content:center;margin-bottom:36px;">
+        <div style="font-family:'Playfair Display',serif;font-size:62px;font-weight:900;color:#FAF6EE;line-height:1;"><sup style="font-size:0.38em;vertical-align:top;margin-top:12px;">$</sup>197</div>
+        <div style="background:#7EABB8;color:white;border-radius:100px;padding:8px 22px;font-size:14px;font-weight:700;">Save $154</div>
+      </div>
+      <div class="books-9">
+        <div class="book-sm" style="background:linear-gradient(145deg,#5A8E9C,#3d717e)"><div class="book-sm-title">Hormone Meal Plan</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#9BB0A4,#789088)"><div class="book-sm-title">Gut Health Reset</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#7AA0B0,#5a8090)"><div class="book-sm-title">Sleep Fix</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#C49898,#a07878)"><div class="book-sm-title">Mindset Reset</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#D4B4A8,#b09488)"><div class="book-sm-title">Confidence Rebuild</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#A8A8C4,#888898)"><div class="book-sm-title">Relationships Guide</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#C4B49C,#a4947c)"><div class="book-sm-title">Strength &amp; Longevity</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#A8B898,#889878)"><div class="book-sm-title">Cortisol Recovery</div></div>
+        <div class="book-sm" style="background:linear-gradient(145deg,#B8A8C8,#988aa8)"><div class="book-sm-title">Energy &amp; Vitality</div></div>
+      </div>
+      <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:rgba(250,246,238,0.4);margin-top:16px;text-align:center;">$351 value — yours for $197</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     COVER 4 — REVITALIZE CIRCLE MEMBERSHIP
+══════════════════════════════════════════ -->
+<div class="cover-wrap">
+  <div class="cover-label">Cover 4 of 4 — Revitalize Circle Membership · $27/month</div>
+  <div class="cover" style="background:linear-gradient(150deg,#F7F5F1 0%,#F0EDE7 55%,#E8E4DD 100%);">
+    <div class="blob" style="width:560px;height:560px;background:#9BB0A4;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+    <div class="blob" style="width:300px;height:300px;background:#5A8E9C;top:-60px;left:-60px;opacity:0.06;"></div>
+    <div class="blob" style="width:280px;height:280px;background:#9BB0A4;bottom:-60px;right:-40px;opacity:0.07;"></div>
+    <div class="seal-bg">
+      <div class="pill" style="position:absolute;top:44px;left:50%;transform:translateX(-50%);white-space:nowrap;">✿ Monthly Membership · Women 40–65</div>
+      <div class="seal">
+        <div class="seal-brand">Revitalize &amp; Thrive Now</div>
+        <div class="seal-icon">✿</div>
+        <div class="seal-title">The Revitalize<br><em>Circle</em></div>
+        <div class="seal-sub">Monthly Membership</div>
+        <div class="seal-price">$27<span class="per">/month</span></div>
+        <div class="seal-fine">Cancel anytime · No contracts</div>
+      </div>
+      <div class="seal-tagline">Ongoing guidance, community &amp; fresh resources every month —<br>for the woman who wants to keep thriving.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
