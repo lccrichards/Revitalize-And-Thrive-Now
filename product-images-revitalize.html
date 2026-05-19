@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Revitalize — Product Images</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Dancing+Script:wght@700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
-body { background:#000; padding:40px; }
+body { background:#888; padding:40px; }
 
 .card {
   position:relative; overflow:hidden;
-  background:#0d0b09;
-  font-family:'DM Mono', monospace;
-  color:#FAF6EE;
+  background:#F0EDE7;
+  font-family:'DM Sans', sans-serif;
+  color:#3C3830;
 }
 .card-wide { width:1280px; height:720px; }
 .card-sq   { width:600px;  height:600px; }
 
-/* corner brackets — teal for Revitalize */
+/* corner brackets in teal */
 .card::before, .card::after,
 .card .br, .card .bl {
   content:''; position:absolute;
@@ -30,6 +30,11 @@ body { background:#000; padding:40px; }
 .card::after  { top:20px; right:20px; border-width:2px 2px 0 0; }
 .card .br     { bottom:20px; right:20px; border-width:0 2px 2px 0; }
 .card .bl     { bottom:20px; left:20px;  border-width:0 0 2px 2px; }
+
+/* subtle background texture */
+.card::after {
+  border-width:2px 2px 0 0;
+}
 
 .inner {
   position:absolute; inset:0;
@@ -44,59 +49,71 @@ body { background:#000; padding:40px; }
   justify-content:space-between;
 }
 
-.top-bar { display:flex; justify-content:space-between; align-items:flex-start; }
-.top-brand { font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#FAF6EE; opacity:.85; border-bottom:1.5px solid #5A8E9C; padding-bottom:4px; }
-.top-tag   { font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#FAF6EE; opacity:.6; }
+/* soft gradient overlay */
+.grad {
+  position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(135deg, #F0EDE7 0%, #E8E4DD 50%, #DDE8E4 100%);
+}
+
+.top-bar { display:flex; justify-content:space-between; align-items:flex-start; position:relative; z-index:2; }
+.top-brand {
+  font-family:'Dancing Script', cursive;
+  font-size:20px; color:#5A8E9C;
+  border-bottom:1.5px solid #7EABB8; padding-bottom:3px;
+}
+.top-brand-sq { font-size:17px; }
+.top-tag { font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#3C3830; opacity:.55; }
 .top-tag-sq { font-size:10px; }
 
-.main { flex:1; display:flex; flex-direction:column; justify-content:center; padding:0 0 20px; }
-.the  { font-family:'Playfair Display',serif; font-style:italic; font-weight:400; color:#FAF6EE; opacity:.7; }
-.name { font-family:'Playfair Display',serif; font-weight:900; color:#FAF6EE; line-height:.95; letter-spacing:-.01em; }
-.rule { height:2px; background:#5A8E9C; margin:16px 0 20px; }
-.sub  { font-family:'Playfair Display',serif; font-style:italic; font-weight:400; color:#FAF6EE; opacity:.55; line-height:1.4; }
+.main { flex:1; display:flex; flex-direction:column; justify-content:center; padding:0 0 20px; position:relative; z-index:2; }
+.the  { font-family:'Playfair Display',serif; font-style:italic; font-weight:400; color:#3C3830; opacity:.6; }
+.name { font-family:'Playfair Display',serif; font-weight:900; color:#3C3830; line-height:.95; letter-spacing:-.01em; }
+.rule { height:2px; background:#7EABB8; margin:16px 0 20px; }
+.sub  { font-family:'Playfair Display',serif; font-style:italic; font-weight:400; color:#6A6460; line-height:1.4; }
 
-.bot { display:flex; justify-content:space-between; align-items:flex-end; }
+.bot { display:flex; justify-content:space-between; align-items:flex-end; position:relative; z-index:2; }
 .bot-left { display:flex; flex-direction:column; gap:6px; }
-.bot-meta   { font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:#5A8E9C; opacity:.9; }
-.bot-author { font-family:'Playfair Display',serif; font-style:italic; font-size:14px; color:#FAF6EE; opacity:.5; }
-.bot-author::before { content:'◆ '; font-style:normal; font-size:8px; }
+.bot-meta   { font-size:10px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#5A8E9C; }
+.bot-author { font-family:'Playfair Display',serif; font-style:italic; font-size:14px; color:#3C3830; opacity:.5; }
+.bot-author::before { content:'✿ '; font-style:normal; font-size:11px; color:#7EABB8; }
 .bot-right { text-align:right; }
-.price     { font-family:'Playfair Display',serif; font-weight:900; color:#5A8E9C; line-height:1; }
-.price-sub { font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#FAF6EE; opacity:.4; margin-top:4px; }
+.price     { font-family:'Playfair Display',serif; font-weight:900; color:#3C3830; line-height:1; }
+.price-sub { font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:#5A8E9C; margin-top:4px; }
 
-/* wide */
+/* wide sizes */
+.wide .top-brand { font-size:26px; }
 .wide .the  { font-size:48px; margin-bottom:4px; }
-.wide .name { font-size:130px; }
+.wide .name { font-size:128px; }
 .wide .rule { width:80px; }
 .wide .sub  { font-size:26px; }
 .wide .bot-author { font-size:16px; }
-.wide .price { font-size:110px; }
+.wide .price { font-size:108px; }
 .wide .price-sub { font-size:13px; }
 
-/* square */
+/* square sizes */
 .sq .the  { font-size:28px; margin-bottom:2px; }
-.sq .name { font-size:68px; }
+.sq .name { font-size:66px; }
 .sq .rule { width:50px; margin:10px 0 14px; }
 .sq .sub  { font-size:16px; }
 .sq .bot-author { font-size:13px; }
-.sq .price { font-size:72px; }
+.sq .price { font-size:70px; }
 .sq .price-sub { font-size:10px; margin-top:2px; }
 .sq .bot-meta { font-size:9px; }
 
-.lbl { color:rgba(255,255,255,0.4); font-family:monospace; font-size:11px; padding:8px 0 6px; }
+.lbl { color:rgba(255,255,255,0.7); font-family:monospace; font-size:11px; padding:8px 0 6px; }
 .wrap { margin-bottom:48px; }
 </style>
 </head>
 <body>
 
-<!-- HORMONE BUNDLE WIDE -->
+<!-- HORMONE BUNDLE — WIDE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — HORMONE BUNDLE — 1280×720</div>
 <div class="card card-wide wide">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive Now</div>
+      <div class="top-brand">Revitalize &amp; Thrive Now</div>
       <div class="top-tag">Hormone Bundle</div>
     </div>
     <div class="main">
@@ -119,14 +136,14 @@ body { background:#000; padding:40px; }
 </div>
 </div>
 
-<!-- HORMONE BUNDLE SQUARE -->
+<!-- HORMONE BUNDLE — SQUARE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — HORMONE BUNDLE — 600×600</div>
 <div class="card card-sq sq">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner-sq">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive</div>
+      <div class="top-brand top-brand-sq">Revitalize &amp; Thrive Now</div>
       <div class="top-tag top-tag-sq">Hormone Bundle</div>
     </div>
     <div class="main">
@@ -149,14 +166,14 @@ body { background:#000; padding:40px; }
 </div>
 </div>
 
-<!-- MINDSET BUNDLE WIDE -->
+<!-- MINDSET BUNDLE — WIDE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — MINDSET BUNDLE — 1280×720</div>
 <div class="card card-wide wide">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive Now</div>
+      <div class="top-brand">Revitalize &amp; Thrive Now</div>
       <div class="top-tag">Mindset Bundle</div>
     </div>
     <div class="main">
@@ -179,14 +196,14 @@ body { background:#000; padding:40px; }
 </div>
 </div>
 
-<!-- MINDSET BUNDLE SQUARE -->
+<!-- MINDSET BUNDLE — SQUARE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — MINDSET BUNDLE — 600×600</div>
 <div class="card card-sq sq">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner-sq">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive</div>
+      <div class="top-brand top-brand-sq">Revitalize &amp; Thrive Now</div>
       <div class="top-tag top-tag-sq">Mindset Bundle</div>
     </div>
     <div class="main">
@@ -209,14 +226,14 @@ body { background:#000; padding:40px; }
 </div>
 </div>
 
-<!-- COMPLETE COLLECTION WIDE -->
+<!-- COMPLETE COLLECTION — WIDE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — COMPLETE COLLECTION — 1280×720</div>
 <div class="card card-wide wide">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive Now</div>
+      <div class="top-brand">Revitalize &amp; Thrive Now</div>
       <div class="top-tag">Complete Collection</div>
     </div>
     <div class="main">
@@ -239,14 +256,14 @@ body { background:#000; padding:40px; }
 </div>
 </div>
 
-<!-- COMPLETE COLLECTION SQUARE -->
+<!-- COMPLETE COLLECTION — SQUARE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — COMPLETE COLLECTION — 600×600</div>
 <div class="card card-sq sq">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner-sq">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive</div>
+      <div class="top-brand top-brand-sq">Revitalize &amp; Thrive Now</div>
       <div class="top-tag top-tag-sq">Complete Collection</div>
     </div>
     <div class="main">
@@ -269,14 +286,14 @@ body { background:#000; padding:40px; }
 </div>
 </div>
 
-<!-- REVITALIZE CIRCLE WIDE -->
+<!-- REVITALIZE CIRCLE — WIDE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — CIRCLE MEMBERSHIP — 1280×720</div>
 <div class="card card-wide wide">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive Now</div>
+      <div class="top-brand">Revitalize &amp; Thrive Now</div>
       <div class="top-tag">Membership</div>
     </div>
     <div class="main">
@@ -299,14 +316,14 @@ body { background:#000; padding:40px; }
 </div>
 </div>
 
-<!-- REVITALIZE CIRCLE SQUARE -->
+<!-- REVITALIZE CIRCLE — SQUARE -->
 <div class="wrap">
 <div class="lbl">REVITALIZE — CIRCLE MEMBERSHIP — 600×600</div>
 <div class="card card-sq sq">
-  <div class="br"></div><div class="bl"></div>
+  <div class="grad"></div><div class="br"></div><div class="bl"></div>
   <div class="inner-sq">
     <div class="top-bar">
-      <div class="top-brand">Revitalize · &amp; · Thrive</div>
+      <div class="top-brand top-brand-sq">Revitalize &amp; Thrive Now</div>
       <div class="top-tag top-tag-sq">Membership</div>
     </div>
     <div class="main">
