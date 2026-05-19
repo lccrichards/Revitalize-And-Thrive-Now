@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Revitalize — Thumbnails 600x600</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Dancing+Script:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#666; padding:40px; font-family:'DM Sans',sans-serif; }
+.wrap { margin-bottom:40px; }
+.lbl { color:white; font-family:monospace; font-size:12px; margin-bottom:8px; }
+.thumb {
+  width:600px; height:600px;
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  text-align:center; padding:48px 40px;
+}
+.blob { position:absolute; border-radius:50%; pointer-events:none; }
+.brand { font-family:'Dancing Script',cursive; font-size:18px; color:rgba(90,142,156,0.9); margin-bottom:10px; position:relative; z-index:2; }
+.eyebrow { font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; margin-bottom:14px; position:relative; z-index:2; }
+.title { font-family:'Playfair Display',serif; font-weight:900; line-height:1.05; position:relative; z-index:2; margin-bottom:14px; }
+.includes { font-family:'Playfair Display',serif; font-style:italic; font-size:15px; color:#6A6460; line-height:1.5; margin-bottom:24px; position:relative; z-index:2; }
+.price-box { display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; z-index:2; }
+.price { font-family:'Playfair Display',serif; font-weight:900; color:#3C3830; line-height:1; }
+.save { border-radius:100px; font-weight:700; font-size:13px; color:white; padding:6px 18px; }
+.pill { display:inline-flex; align-items:center; border-radius:100px; padding:5px 14px; font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; margin-bottom:18px; position:relative; z-index:2; }
+/* book stack - vertical for square format */
+.books-v { display:flex; justify-content:center; gap:-10px; margin-bottom:20px; position:relative; z-index:2; }
+.bk { width:90px; height:118px; border-radius:6px; box-shadow:4px 8px 20px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:flex-end; padding:10px 9px; position:relative; overflow:hidden; }
+.bk::before { content:''; position:absolute; inset:0; background:linear-gradient(155deg,rgba(255,255,255,0.18) 0%,transparent 55%); border-radius:inherit; }
+.bk-t { font-family:'Playfair Display',serif; font-size:11px; font-weight:700; color:white; line-height:1.2; position:relative; z-index:1; }
+.books-v .bk:nth-child(1) { transform:rotate(-7deg) translateY(6px); }
+.books-v .bk:nth-child(2) { transform:rotate(0deg); z-index:2; }
+.books-v .bk:nth-child(3) { transform:rotate(7deg) translateY(6px); }
+/* seal */
+.seal-ring { width:280px; height:280px; border-radius:50%; border:2.5px solid rgba(90,142,156,0.35); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; position:relative; box-shadow:0 0 0 10px rgba(90,142,156,0.05); }
+.seal-ring::before { content:''; position:absolute; inset:9px; border-radius:50%; border:1.5px dashed rgba(90,142,156,0.2); }
+.seal-icon { font-size:36px; color:#9BB0A4; opacity:0.55; margin-bottom:6px; }
+.seal-t { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:#3C3830; line-height:1.1; margin-bottom:4px; }
+.seal-t em { font-family:'Dancing Script',cursive; font-style:normal; color:#5A8E9C; font-size:1.1em; }
+.seal-sub { font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#8C8884; margin-bottom:12px; }
+.seal-p { font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#3C3830; }
+.seal-p .per { font-size:16px; font-weight:400; color:#8C8884; font-family:'DM Sans',sans-serif; }
+</style>
+</head>
+<body>
+
+<!-- THUMB 1: HORMONE BUNDLE -->
+<div class="wrap">
+  <div class="lbl">Thumb 1 — Hormone Bundle (600×600)</div>
+  <div class="thumb" style="background:linear-gradient(145deg,#F0EDE7 0%,#DDE8E4 60%,#c5dbd2 100%);">
+    <div class="blob" style="width:400px;height:400px;background:#9BB0A4;opacity:0.1;top:-100px;right:-80px;"></div>
+    <div class="brand">Revitalize &amp; Thrive Now</div>
+    <div class="pill" style="background:rgba(90,142,156,0.1);border:1.5px solid rgba(90,142,156,0.35);color:#5A8E9C;">✿ For Women 40–65</div>
+    <div class="eyebrow" style="color:#9BB0A4;">Hormone &amp; Body Reset</div>
+    <div class="title" style="font-size:44px;color:#3C3830;">The Hormone<br>Bundle</div>
+    <div class="books-v">
+      <div class="bk" style="background:linear-gradient(145deg,#5A8E9C,#3d717e)"><div class="bk-t">Hormone Meal Plan</div></div>
+      <div class="bk" style="background:linear-gradient(145deg,#9BB0A4,#789088)"><div class="bk-t">Gut Health Reset</div></div>
+      <div class="bk" style="background:linear-gradient(145deg,#C4B49C,#a4947c)"><div class="bk-t">Sleep Fix</div></div>
+    </div>
+    <div class="price-box">
+      <div class="price" style="font-size:52px;"><sup style="font-size:0.38em;vertical-align:top;margin-top:10px;">$</sup>97</div>
+      <div class="save" style="background:#5A8E9C;">Save $20</div>
+    </div>
+  </div>
+</div>
+
+<!-- THUMB 2: MINDSET BUNDLE -->
+<div class="wrap">
+  <div class="lbl">Thumb 2 — Mindset Bundle (600×600)</div>
+  <div class="thumb" style="background:linear-gradient(145deg,#F5EFEF 0%,#EDE3DF 60%,#E0D4CC 100%);">
+    <div class="blob" style="width:400px;height:400px;background:#C49898;opacity:0.1;top:-100px;right:-80px;"></div>
+    <div class="brand" style="color:#A07878;">Revitalize &amp; Thrive Now</div>
+    <div class="pill" style="background:rgba(164,112,112,0.1);border:1.5px solid rgba(164,112,112,0.35);color:#A07070;">✿ For Women 40–65</div>
+    <div class="eyebrow" style="color:#C49898;">Mind &amp; Identity Reset</div>
+    <div class="title" style="font-size:44px;color:#3C3830;">The Mindset<br>Bundle</div>
+    <div class="books-v">
+      <div class="bk" style="background:linear-gradient(145deg,#C49898,#a07878)"><div class="bk-t">Mindset Reset</div></div>
+      <div class="bk" style="background:linear-gradient(145deg,#D4B4A8,#b09488)"><div class="bk-t">Confidence Rebuild</div></div>
+      <div class="bk" style="background:linear-gradient(145deg,#A8A8C4,#888898)"><div class="bk-t">Relationships Guide</div></div>
+    </div>
+    <div class="price-box">
+      <div class="price" style="font-size:52px;"><sup style="font-size:0.38em;vertical-align:top;margin-top:10px;">$</sup>97</div>
+      <div class="save" style="background:#A07878;">Save $20</div>
+    </div>
+  </div>
+</div>
+
+<!-- THUMB 3: COMPLETE COLLECTION -->
+<div class="wrap">
+  <div class="lbl">Thumb 3 — Complete Collection (600×600)</div>
+  <div class="thumb" style="background:linear-gradient(145deg,#2d6a78 0%,#1a4a56 50%,#0d2f3c 100%);">
+    <div class="blob" style="width:500px;height:500px;background:#7EABB8;opacity:0.08;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+    <div class="brand" style="color:#7EABB8;">Revitalize &amp; Thrive Now</div>
+    <div class="pill" style="background:rgba(126,171,184,0.18);border:1.5px solid rgba(126,171,184,0.4);color:#7EABB8;">✿ All 9 Programs</div>
+    <div class="eyebrow" style="color:rgba(255,255,255,0.4);">For Women 40–65</div>
+    <div class="title" style="font-size:42px;color:#FAF6EE;">The Complete<br>Collection</div>
+    <div class="includes" style="color:rgba(250,246,238,0.55);margin-bottom:20px;">Every Revitalize Protocol</div>
+    <div class="price-box">
+      <div class="price" style="font-size:56px;color:#FAF6EE;"><sup style="font-size:0.38em;vertical-align:top;margin-top:12px;color:#7EABB8;">$</sup>197</div>
+      <div class="save" style="background:#7EABB8;">Save $154 · $351 Value</div>
+    </div>
+  </div>
+</div>
+
+<!-- THUMB 4: REVITALIZE CIRCLE -->
+<div class="wrap">
+  <div class="lbl">Thumb 4 — Revitalize Circle Membership (600×600)</div>
+  <div class="thumb" style="background:linear-gradient(145deg,#F7F5F1 0%,#F0EDE7 55%,#E8E4DD 100%);">
+    <div class="blob" style="width:420px;height:420px;background:#9BB0A4;opacity:0.09;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+    <div class="brand">Revitalize &amp; Thrive Now</div>
+    <div class="seal-ring">
+      <div class="seal-icon">✿</div>
+      <div class="seal-t">The Revitalize<br><em>Circle</em></div>
+      <div class="seal-sub">Monthly Membership</div>
+      <div class="seal-p">$27<span class="per">/mo</span></div>
+    </div>
+    <div style="margin-top:18px;font-size:12px;color:#8C8884;letter-spacing:.04em;position:relative;z-index:2;">Cancel anytime · Women 40–65</div>
+  </div>
+</div>
+
+</body>
+</html>
