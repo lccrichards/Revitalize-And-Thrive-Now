@@ -70,7 +70,7 @@ Request correction of inaccurate data
 Opt out of marketing communications
 Request information about data sharing practices
 To exercise your rights, contact us at:
-📧 [Email Address – To Be Provided]
+📧  wellness@alexanderwellnessreimagined.com
 We will respond within the timeframe required by applicable law.
 9. International Data Transfers
 If you access our Services from outside the United States, your information may be transferred to, stored, and processed in the United States or other jurisdictions.
@@ -86,5 +86,5 @@ Changes will be effective immediately upon posting to this page, with the update
 13. Contact Information
 For questions, concerns, or requests regarding this Privacy Policy, please contact:
 Revitalize and Thrive LLC
-📧 [Email Address – To Be Provided]
-📍 [Optional Business Address]
+📧  wellness@alexanderwellnessreimagined.com
+📍 6586 Atlantic Ave Suite 117, Delray Beach, FL 33466
