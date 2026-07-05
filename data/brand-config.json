@@ -1,0 +1,123 @@
+{
+  "revitalize": {
+    "name": "Revitalize & Thrive Now",
+    "audience": "Women 45-65",
+    "voice": "Warm, empowering, woman-to-woman",
+    "ig_handle": "revitalize_thrive_now",
+    "ig_user_id": "27164026169935796",
+    "products": {
+      "30day-workbook": {
+        "name": "30-Day Revitalize Workbook",
+        "price": 79,
+        "url": "https://revitalize.gumroad.com/l/nlkuz",
+        "description": "Your roadmap to feeling alive again"
+      },
+      "midlife-sleep-fix": {
+        "name": "Midlife Sleep Fix",
+        "price": 37,
+        "url": "https://revitalize.gumroad.com/l/midlife-sleep-fix",
+        "description": "Rebalance your sleep-hormone cycle",
+        "bundle_bonus": "Energy Challenge (valued at $29)"
+      },
+      "hormone-meal-plan": {
+        "name": "Hormone Meal Plan",
+        "price": 47,
+        "url": "https://revitalize.gumroad.com/l/hormone-meal-plan",
+        "description": "28 days of hormone-supportive meals"
+      },
+      "mindset-reset": {
+        "name": "Midlife Mindset Reset",
+        "price": 37,
+        "url": "https://revitalize.gumroad.com/l/mindset-reset",
+        "description": "21-day guided transformation"
+      },
+      "energy-challenge": {
+        "name": "5-Day Energy Challenge",
+        "price": 0,
+        "url": "https://revitalize.gumroad.com/l/energy-challenge",
+        "description": "Free challenge to boost energy"
+      },
+      "gut-health-reset": {
+        "name": "Gut Health Reset",
+        "price": 39,
+        "url": "https://revitalize.gumroad.com/l/gut-health-reset",
+        "description": "30-day gut restoration program"
+      },
+      "burnout-recovery": {
+        "name": "Burnout Recovery Blueprint",
+        "price": 49,
+        "url": "https://revitalize.gumroad.com/l/burnout-recovery",
+        "description": "Recover your energy and vitality"
+      },
+      "strength-longevity": {
+        "name": "Strength & Longevity",
+        "price": 59,
+        "url": "https://revitalize.gumroad.com/l/strength-longevity",
+        "description": "Build strength that lasts"
+      },
+      "perimenopause-guide": {
+        "name": "Perimenopause Guide",
+        "price": 39,
+        "url": "https://revitalize.gumroad.com/l/perimenopause-guide",
+        "description": "Navigate the transition with clarity"
+      },
+      "wellness-planner": {
+        "name": "Wellness Planner",
+        "price": 29,
+        "url": "https://revitalize.gumroad.com/l/wellness-planner",
+        "description": "Your personalized wellness roadmap"
+      }
+    }
+  },
+  "reclaim": {
+    "name": "Reclaim & Rise Now",
+    "audience": "Men 45-55",
+    "voice": "Direct, no-fluff, urgency through logic",
+    "ig_handle": "reclaim_and_rise_now",
+    "ig_user_id": "27634679816148097",
+    "products": {
+      "30day-workbook": {
+        "name": "30-Day Reclaim Workbook",
+        "price": 79,
+        "url": "https://reclaim.gumroad.com/l/nlkuz",
+        "description": "30-day men's wellness protocol"
+      },
+      "midlife-sleep-fix": {
+        "name": "Midlife Sleep Fix",
+        "price": 37,
+        "url": "https://reclaim.gumroad.com/l/midlife-sleep-fix",
+        "description": "Fix your sleep, fix your hormones"
+      },
+      "hormone-meal-plan": {
+        "name": "Hormone Meal Plan",
+        "price": 47,
+        "url": "https://reclaim.gumroad.com/l/hormone-meal-plan",
+        "description": "Meals optimized for testosterone"
+      },
+      "mindset-reset": {
+        "name": "Men's Mindset Reset",
+        "price": 37,
+        "url": "https://reclaim.gumroad.com/l/mindset-reset",
+        "description": "Rewire your confidence"
+      },
+      "testosterone-boost": {
+        "name": "Testosterone Optimization",
+        "price": 49,
+        "url": "https://reclaim.gumroad.com/l/testosterone-boost",
+        "description": "Science-backed testosterone protocol"
+      },
+      "strength-training": {
+        "name": "Strength Training for 45+",
+        "price": 59,
+        "url": "https://reclaim.gumroad.com/l/strength-training",
+        "description": "Build strength without injury"
+      },
+      "confidence-rebuild": {
+        "name": "Confidence Rebuild",
+        "price": 39,
+        "url": "https://reclaim.gumroad.com/l/confidence-rebuild",
+        "description": "Restore your personal power"
+      }
+    }
+  }
+}

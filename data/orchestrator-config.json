@@ -1,0 +1,82 @@
+{
+  "revitalize_rotation": {
+    "monday": {
+      "morning": "30day-workbook",
+      "evening": "midlife-sleep-fix"
+    },
+    "tuesday": {
+      "morning": "midlife-sleep-fix",
+      "evening": "hormone-meal-plan"
+    },
+    "wednesday": {
+      "morning": "hormone-meal-plan",
+      "evening": "mindset-reset"
+    },
+    "thursday": {
+      "morning": "mindset-reset",
+      "evening": "gut-health-reset"
+    },
+    "friday": {
+      "morning": "energy-challenge",
+      "evening": "burnout-recovery"
+    },
+    "saturday": {
+      "morning": "burnout-recovery",
+      "evening": "strength-longevity"
+    },
+    "sunday": {
+      "morning": "wellness-planner",
+      "evening": "perimenopause-guide"
+    }
+  },
+  "reclaim_rotation": {
+    "monday": {
+      "morning": "30day-workbook",
+      "evening": "midlife-sleep-fix"
+    },
+    "tuesday": {
+      "morning": "midlife-sleep-fix",
+      "evening": "hormone-meal-plan"
+    },
+    "wednesday": {
+      "morning": "hormone-meal-plan",
+      "evening": "testosterone-boost"
+    },
+    "thursday": {
+      "morning": "mindset-reset",
+      "evening": "strength-training"
+    },
+    "friday": {
+      "morning": "testosterone-boost",
+      "evening": "confidence-rebuild"
+    },
+    "saturday": {
+      "morning": "strength-training",
+      "evening": "30day-workbook"
+    },
+    "sunday": {
+      "morning": "confidence-rebuild",
+      "evening": "hormone-meal-plan"
+    }
+  },
+  "higgsfield": {
+    "revitalize_settings": {
+      "monday": "morning sunlight through windows, fresh and energized",
+      "tuesday": "comfortable bedroom, peaceful sleep sanctuary",
+      "wednesday": "kitchen with colorful healthy food, abundance",
+      "thursday": "modern living room, calm and focused",
+      "friday": "outdoor park setting, free and energetic",
+      "saturday": "gym or training space, strong and capable",
+      "sunday": "spa or wellness retreat setting, serene and restored"
+    },
+    "reclaim_settings": {
+      "monday": "executive office, commanding presence",
+      "tuesday": "bedroom, restful and recovered",
+      "wednesday": "kitchen with quality protein, strong",
+      "thursday": "gym or training space, powerful",
+      "friday": "boardroom, confident professional",
+      "saturday": "outdoor setting, adventurous",
+      "sunday": "home office, focused and in control"
+    }
+  }
+}
