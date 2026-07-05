@@ -3,6 +3,7 @@
     "date": "2026-07-05",
     "day_of_week": "sunday",
     "slot": "evening",
+    "reels_generated": true,
     "revitalize": {
       "product": "perimenopause-guide",
       "product_name": "Perimenopause Guide",
@@ -14,7 +15,15 @@
       "post_status": "posted",
       "higgsfield_job_id": "5ba3b4ad-d599-4820-84d7-ac79937e0869",
       "instagram_post_id": "18090679370381282",
-      "posted_at": "2026-07-05T20:35:00Z"
+      "posted_at": "2026-07-05T20:35:00Z",
+      "reels": {
+        "vertical_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260705_214134_38ec5254-a8ba-42dc-92ce-9f078317d18b.png",
+        "aspect_ratio": "9:16",
+        "higgsfield_job_id": "38ec5254-a8ba-42dc-92ce-9f078317d18b",
+        "instagram_reel_post_id": "18611432068054692",
+        "instagram_feed_post_id": "18129509620619313",
+        "status": "posted"
+      }
     },
     "reclaim": {
       "product": "hormone-meal-plan",
@@ -27,7 +36,13 @@
       "post_status": "pending_account_connection",
       "higgsfield_job_id": "dc55cd96-f06b-4cf2-a88b-9735420d1b50",
       "error": "Reclaim Instagram account (27634679816148097) not connected to Composio. Account needs to be manually added to the connection.",
-      "action_required": "Connect Reclaim & Rise Now Instagram account to Composio via COMPOSIO_MANAGE_CONNECTIONS"
+      "action_required": "Connect Reclaim & Rise Now Instagram account to Composio via COMPOSIO_MANAGE_CONNECTIONS",
+      "reels": {
+        "vertical_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260705_214136_8dacf55b-20ab-4dfe-91f6-3d9c6f101ea3.png",
+        "aspect_ratio": "9:16",
+        "higgsfield_job_id": "8dacf55b-20ab-4dfe-91f6-3d9c6f101ea3",
+        "status": "generated_pending_account_connection"
+      }
     }
   }
 ]
