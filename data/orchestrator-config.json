@@ -1,0 +1,97 @@
+{
+  "schedule": {
+    "morning": {
+      "time_et": "7:00 AM",
+      "cron_utc": "0 11 * * *",
+      "angle": "education",
+      "hook_style": "research_stat_or_question",
+      "product_tiers": ["flagship", "membership"],
+      "tone": "Authority and credibility. Teach something real. Build trust. CTA is secondary to value."
+    },
+    "afternoon": {
+      "time_et": "3:00 PM",
+      "cron_utc": "0 19 * * *",
+      "angle": "pain_point",
+      "hook_style": "symptom_or_frustration",
+      "product_tiers": ["standalone", "entry"],
+      "tone": "Hit the exact pain they are feeling RIGHT NOW at 3 PM. Exhaustion. Brain fog. Energy crash. Name it precisely. Product is the direct solution."
+    },
+    "evening": {
+      "time_et": "7:00 PM",
+      "cron_utc": "0 23 * * *",
+      "angle": "transformation_and_cta",
+      "hook_style": "aspiration_or_before_after",
+      "product_tiers": ["flagship", "standalone", "bundle"],
+      "tone": "Transformation is possible. She deserves this. Urgency. Specific price. Full URL. This is the conversion post."
+    }
+  },
+
+  "revitalize_rotation": {
+    "monday":    {"theme": "hormone balance",             "slot_products": {"morning": "Hormone Reset Masterclass", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle"}},
+    "tuesday":   {"theme": "sleep optimization",          "slot_products": {"morning": "The Midlife Sleep Fix", "afternoon": "The Midlife Sleep Fix", "evening": "The Midlife Sleep Fix"}},
+    "wednesday": {"theme": "energy restoration",          "slot_products": {"morning": "Energy Restoration Guide", "afternoon": "Energy Restoration Guide", "evening": "30-Day Wellness Transformation"}},
+    "thursday":  {"theme": "mindset reset",               "slot_products": {"morning": "The Mindset Bundle", "afternoon": "Stress Management Workbook", "evening": "The Revitalize Circle Monthly Membership"}},
+    "friday":    {"theme": "nutrition and meal planning", "slot_products": {"morning": "Nutrition Deep Dive", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle"}},
+    "saturday":  {"theme": "skincare and beauty",         "slot_products": {"morning": "Skincare and Beauty Protocol", "afternoon": "Skincare and Beauty Protocol", "evening": "The Revitalize Circle Monthly Membership"}},
+    "sunday":    {"theme": "strength and fitness after 45", "slot_products": {"morning": "Fitness After 45 Guide", "afternoon": "Fitness After 45 Guide", "evening": "30-Day Wellness Transformation"}}
+  },
+
+  "reclaim_rotation": {
+    "monday":    {"theme": "testosterone optimization",       "slot_products": {"morning": "Reclaim Masterclass", "afternoon": "Testosterone and Stamina Meal Plan", "evening": "Complete Reclaim Reset Bundle"}},
+    "tuesday":   {"theme": "sleep recovery",                  "slot_products": {"morning": "Sleep Recovery Protocol", "afternoon": "Sleep Recovery Protocol", "evening": "Complete Reclaim Reset Bundle"}},
+    "wednesday": {"theme": "energy and cognitive performance","slot_products": {"morning": "Reclaim Masterclass", "afternoon": "Midlife Wellness Planner", "evening": "Complete Reclaim Reset Bundle"}},
+    "thursday":  {"theme": "mindset recalibration",           "slot_products": {"morning": "Midlife Mindset Code", "afternoon": "Midlife Mindset Code", "evening": "Reclaim Masterclass"}},
+    "friday":    {"theme": "nutrition for male hormones",     "slot_products": {"morning": "Testosterone and Stamina Meal Plan", "afternoon": "Testosterone and Stamina Meal Plan", "evening": "Complete Reclaim Reset Bundle"}},
+    "saturday":  {"theme": "strength and muscle density",     "slot_products": {"morning": "Strength Density and Longevity", "afternoon": "Strength Density and Longevity", "evening": "Complete Reclaim Reset Bundle"}},
+    "sunday":    {"theme": "drive and motivation",            "slot_products": {"morning": "Midlife Mindset Code", "afternoon": "Reclaim Masterclass", "evening": "Complete Reclaim Reset Bundle"}}
+  },
+
+  "higgsfield": {
+    "revitalize_image_prompt_template": "Professional woman aged 45-65, {mood}, {setting}, warm natural light, photorealistic portrait, confident and radiant expression, wellness lifestyle, clean composition. STRICTLY WOMEN ONLY — no men in frame.",
+    "reclaim_image_prompt_template": "Professional man aged 45-55, {mood}, {setting}, clean modern environment, photorealistic, sharp focused expression, high-performance lifestyle. STRICTLY MEN ONLY — no women in frame.",
+    "moods": {
+      "morning": "energized and focused, morning light, fresh start energy",
+      "afternoon": "determined despite fatigue, mid-day resilience, purposeful",
+      "evening": "transformed and glowing, relaxed confidence, end-of-day calm empowerment"
+    },
+    "revitalize_settings": {
+      "hormone balance": "bright kitchen with herbal teas and whole foods on counter",
+      "sleep optimization": "peaceful bedroom, soft morning light, well-rested",
+      "energy restoration": "home office desk with morning coffee, natural light through window",
+      "mindset reset": "journaling at a sunlit table, plants in background",
+      "nutrition and meal planning": "preparing a colorful healthy meal in modern kitchen",
+      "strength and fitness after 45": "light home workout space, yoga mat, natural light",
+      "stress and cortisol management": "seated meditation or breathing exercise, calm interior",
+      "skincare and beauty": "bathroom vanity with natural skincare products, morning routine",
+      "confidence and self-worth": "standing tall, professional attire, confident posture, office or outdoors",
+      "perimenopause support": "comfortable home environment, reading or self-care",
+      "weight management": "walking outdoors in nature, active wear, natural setting",
+      "monthly membership and community": "on a video call or reading, connected and engaged"
+    },
+    "reclaim_settings": {
+      "testosterone optimization": "modern gym, lifting weights, focused intensity",
+      "sleep recovery": "clean modern bedroom, morning light, well-rested and sharp",
+      "energy and cognitive performance": "executive office or home office, laptop, sharp focus",
+      "mindset recalibration": "journaling or reading strategy book at a desk",
+      "nutrition for male hormones": "preparing a protein-rich meal in a modern kitchen",
+      "strength and muscle density": "gym with free weights, functional training space",
+      "stress and cortisol management": "outdoor walk or standing at window, composed",
+      "drive and motivation": "reviewing goals or business plan, purposeful expression",
+      "midlife performance edge": "boardroom or executive setting, commanding presence",
+      "confidence and identity": "standing tall outdoors, early morning, purpose-driven"
+    }
+  },
+
+  "composio": {
+    "revitalize": {
+      "ig_entity_id": "revitalize_thrive_now_business",
+      "ig_user_id": "27164026169935796",
+      "fb_entity_id": "revitalize_thrive_now_business"
+    },
+    "reclaim": {
+      "ig_entity_id": "reclaim_and_rise_now",
+      "ig_user_id": "27634679816148097",
+      "fb_entity_id": null
+    }
+  }
+}
