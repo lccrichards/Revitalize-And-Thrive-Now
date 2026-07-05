@@ -1,0 +1,31 @@
+{
+  "note": "Persistent daily triggers created via mcp__Claude_Code_Remote__create_trigger. To recreate any trigger, open a new Claude Code session and ask: 'Create the [morning/afternoon/evening] orchestrator trigger from data/triggers.json'",
+  "triggers": [
+    {
+      "id": "trig_01BMNF6YHrqruUsocJQFnnKv",
+      "name": "RTN + Reclaim — Morning Post (7 AM ET)",
+      "cron_expression": "3 11 * * *",
+      "status": "ACTIVE",
+      "next_run": "2026-07-06T11:03:00Z",
+      "slot": "morning",
+      "prompt_summary": "Education/authority slot. Uses morning product from daily rotation. Generates Higgsfield women image for Revitalize, men image for Reclaim. Posts via Composio to both Instagram accounts."
+    },
+    {
+      "id": "trig_01F8cyPxTvbyacbz91rvQte7",
+      "name": "RTN + Reclaim — Afternoon Post (3 PM ET)",
+      "cron_expression": "3 19 * * *",
+      "status": "ACTIVE",
+      "next_run": "2026-07-05T19:03:00Z",
+      "slot": "afternoon",
+      "prompt_summary": "Pain-point slot. 3 PM crash content. Uses afternoon product from daily rotation. Generates Higgsfield images. Posts via Composio to both Instagram accounts."
+    },
+    {
+      "id": "PENDING_RECREATION",
+      "name": "RTN + Reclaim — Evening Post (7 PM ET)",
+      "cron_expression": "3 23 * * *",
+      "status": "NEEDS_CREATION",
+      "slot": "evening",
+      "prompt": "You are the Master Orchestrator for two wellness brands. Execute today's EVENING post (7 PM ET) for both brands. This is the CONVERSION slot — transformation language, specific price, full URL, urgency. This post sells.\n\nREPO: /home/user/revitalize-and-thrive-now\nBRAND CONFIG: data/brand-config.json\nORCHESTRATOR CONFIG: data/orchestrator-config.json\n\nREAD both config files first. Then follow these exact steps:\n\n━━━ STEP 1: DETERMINE TODAY ━━━\nGet current day of week (lowercase). Look up today's revitalize_rotation and reclaim_rotation in orchestrator-config.json. Use the 'evening' slot product for each brand.\n\n━━━ STEP 2: REVITALIZE AND THRIVE NOW POST ━━━\nBrand: Women 45-65. Warm, empowering, woman-to-woman voice.\nAngle: Transformation and CTA — paint the before and after. She is tired of feeling this way. There is a solution. She deserves it. End with full urgency: product name, price, URL on its own line.\nHook options: 'Imagine waking up tomorrow feeling...' or 'What if the version of you that has energy all day / sleeps through the night / feels like herself again — was only [price] away?'\nProduct: Use today's evening product from revitalize_rotation. MUST include full Gumroad URL on its own line.\nBundle: If the product has a bundle_bonus in brand-config.json, lead with combined value: 'Get [Product] ($39) + [Bonus] (valued at $29) — yours FREE today.'\nCaption: 180-220 words. Transformation language. 1-3 emojis. Urgency at the close. 12-15 hashtags.\n\nGenerate the Higgsfield image:\n- Call mcp__higgsfield__generate_image, model 'nano_banana_pro', aspect_ratio '1:1'\n- Prompt: 'Professional woman aged 45-65, transformed and glowing, relaxed confidence, evening calm empowerment, [use the setting from higgsfield.revitalize_settings for today theme in orchestrator-config.json], warm golden hour light, photorealistic portrait. STRICTLY WOMEN ONLY — no men in frame.'\n- Poll mcp__higgsfield__job_display until status = completed. Extract rawUrl.\n\nPost to Instagram via Composio REST API:\n  POST https://backend.composio.dev/api/v1/actions/INSTAGRAM_POST_IG_USER_MEDIA/execute\n  Header: x-api-key: [COMPOSIO_API_KEY]\n  Body: {\"entityId\":\"revitalize_thrive_now_business\",\"input\":{\"ig_user_id\":\"27164026169935796\",\"image_url\":\"[rawUrl]\",\"caption\":\"[caption]\"}}\n  Get container id. Then POST INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH with creation_id.\n\n━━━ STEP 3: RECLAIM AND RISE POST ━━━\nBrand: Men 45-55. Direct, no-fluff. Urgency through logic.\nAngle: ROI close — every day without fixing this costs him performance and revenue. The product is the decision a high performer makes.\nHook: 'You have already lost [X] this year to [symptom]. The fix is [price].'\nProduct: Today's evening product from reclaim_rotation. Full URL on its own line.\nCaption: 150-180 words. Declarative close. Specific numbers. 12-15 hashtags.\n\nGenerate the Higgsfield image:\n- model 'nano_banana_pro', aspect_ratio '1:1'\n- Prompt: 'Professional man aged 45-55, transformed and confident, end-of-day commanding presence, [use setting from higgsfield.reclaim_settings for today theme], warm evening light, photorealistic. STRICTLY MEN ONLY — no women in frame.'\n- Poll until completed. Extract rawUrl.\n\nPost to Instagram via Composio REST API: entityId=reclaim_and_rise_now, ig_user_id=27634679816148097.\n\n━━━ STEP 4: LOG ━━━\nAppend to data/orchestrator-log.json:\n{\"date\":\"[today]\",\"slot\":\"evening\",\"revitalize\":{\"product\":\"...\",\"post_id\":\"...\",\"status\":\"posted\"},\"reclaim\":{\"product\":\"...\",\"post_id\":\"...\",\"status\":\"posted\"}}\n\nCommit and push: git add data/orchestrator-log.json && git commit -m 'Evening post log [date]' && git push -u origin claude/laughing-darwin-cQTwH"
+    }
+  ]
+}
