@@ -1,43 +1,25 @@
 #!/usr/bin/env python3
 """
 post_direct.py
-Generate AI content and post directly to Instagram and Facebook.
-No GitHub. No Publer. No Buffer.
+Generate AI content and post directly to Instagram and Facebook via Composio.
+No Meta tokens. No GitHub. No Publer. No Buffer.
 
 Requirements:
-  pip install anthropic requests
+  pip install anthropic composio-core
 
-One-time setup — get your Meta credentials:
-  1. Go to developers.facebook.com and create a free App (type: Business)
-  2. Add "Instagram Graph API" and "Pages API" products to your app
-  3. Connect your Instagram Business account to your Facebook Page
-     (Instagram app > Settings > Linked Accounts)
-  4. Get your access token:
-     - Go to developers.facebook.com/tools/explorer
-     - Select your App, select your Page
-     - Add permissions: pages_manage_posts, pages_read_engagement,
-       instagram_basic, instagram_content_publish
-     - Click "Generate Access Token" and copy it
-  5. Find your IDs:
-     - Instagram Business Account ID:
-         curl "https://graph.facebook.com/v20.0/me/accounts?access_token=TOKEN"
-         then: curl "https://graph.facebook.com/v20.0/PAGE_ID?fields=instagram_business_account&access_token=TOKEN"
-     - Facebook Page ID: returned from the /me/accounts call above
-  6. (Optional) Get a free Pexels API key at pexels.com/api for auto image fetching
+Composio is already connected to both Instagram accounts and the Facebook page.
+You only need two API keys:
 
-Set environment variables:
   export ANTHROPIC_API_KEY=sk-ant-...
-  export META_ACCESS_TOKEN=your_page_access_token
-  export META_IG_USER_ID=your_instagram_business_account_id
-  export META_PAGE_ID=your_facebook_page_id
-  export PEXELS_API_KEY=your_pexels_key   (optional — enables auto image fetching)
+  export COMPOSIO_API_KEY=your_composio_key   (get from app.composio.dev > Settings > API Keys)
+  export PEXELS_API_KEY=your_pexels_key       (optional — free at pexels.com/api)
 
 Usage:
   # Post 1 post to Instagram right now
   python scripts/post_direct.py --brand revitalize --platform ig
 
   # Schedule 7 posts to Instagram starting next Monday
-  python scripts/post_direct.py --brand revitalize --count 7 --start-date 2026-06-02 --platform ig
+  python scripts/post_direct.py --brand revitalize --count 7 --start-date 2026-07-07 --platform ig
 
   # Post to both Instagram and Facebook
   python scripts/post_direct.py --brand revitalize --platform both
@@ -53,6 +35,11 @@ Usage:
 
   # Dry run — preview everything without any API calls
   python scripts/post_direct.py --brand revitalize --count 3 --dry-run
+
+Composio entity IDs (already configured — do not change):
+  revitalize Instagram  : revitalize_thrive_now_business  (IG user ID 27164026169935796)
+  reclaim    Instagram  : reclaim_and_rise_now             (IG user ID 27634679816148097)
+  revitalize Facebook   : revitalize_thrive_now_business
 """
 
 import argparse
@@ -68,14 +55,18 @@ import requests
 try:
     import anthropic
 except ImportError:
-    sys.exit("ERROR: Run:  pip install anthropic requests")
+    sys.exit("ERROR: Run:  pip install anthropic composio-core")
+
+try:
+    from composio import ComposioToolSet, Action
+except ImportError:
+    sys.exit("ERROR: Run:  pip install composio-core")
 
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 CONFIG_PATH = DATA_DIR / "brand-config.json"
 
 ANTHROPIC_MODEL = "claude-sonnet-4-6"
-META_API = "https://graph.facebook.com/v20.0"
 PEXELS_API = "https://api.pexels.com/v1/search"
 
 DAY_ORDER = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -86,10 +77,26 @@ TIME_TO_HM = {
     "10:00 AM": (10, 0), "11:00 AM": (11, 0), "12:00 PM": (12, 0),
 }
 
-# Fallback images if no Pexels key and no image_url on the post
+# Fallback images when no Pexels key is set
 BRAND_FALLBACK_IMAGE = {
     "revitalize": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1080",
-    "reclaim": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1080",
+    "reclaim":    "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1080",
+}
+
+# Composio entity IDs and platform IDs — already connected, no tokens needed
+COMPOSIO_CONFIG = {
+    "revitalize": {
+        "ig_entity_id": "revitalize_thrive_now_business",
+        "ig_user_id":   "27164026169935796",
+        "fb_entity_id": "revitalize_thrive_now_business",
+        "fb_page_id":   None,  # fetched automatically via list_managed_pages
+    },
+    "reclaim": {
+        "ig_entity_id": "reclaim_and_rise_now",
+        "ig_user_id":   "27634679816148097",
+        "fb_entity_id": None,  # no Facebook connection for Reclaim — add via Composio if needed
+        "fb_page_id":   None,
+    },
 }
 
 
@@ -108,7 +115,6 @@ def load_config(brand: str) -> dict:
 # ── Image fetching ────────────────────────────────────────────────────────────
 
 def fetch_pexels_image(query: str, pexels_key: str) -> str:
-    """Fetch a relevant square image from Pexels using the post's image_suggestion."""
     try:
         resp = requests.get(
             PEXELS_API,
@@ -126,7 +132,6 @@ def fetch_pexels_image(query: str, pexels_key: str) -> str:
 
 
 def resolve_image(post: dict, brand: str, pexels_key: str) -> str:
-    """Return the best available image URL for a post."""
     if post.get("image_url"):
         return post["image_url"]
     if pexels_key and post.get("image_suggestion"):
@@ -228,19 +233,18 @@ def generate_post(client, cfg: dict, theme: str, product_filter: str, idx: int) 
     }
 
 
-# ── Meta API — Instagram ──────────────────────────────────────────────────────
+# ── Composio — Instagram ──────────────────────────────────────────────────────
 
-def post_instagram(
+def post_instagram_composio(
+    toolset: "ComposioToolSet",
+    entity_id: str,
     ig_user_id: str,
-    access_token: str,
     caption: str,
     image_url: str,
-    scheduled_time: datetime | None,
     dry_run: bool,
 ) -> bool:
     if dry_run:
-        timing = f"scheduled {scheduled_time.strftime('%Y-%m-%d %H:%M')}" if scheduled_time else "immediate"
-        print(f"    [DRY RUN] Instagram — {timing}")
+        print(f"    [DRY RUN] Instagram — immediate (Composio entity: {entity_id})")
         print(f"    Caption preview: {caption[:80]}...")
         return True
 
@@ -250,84 +254,120 @@ def post_instagram(
         return False
 
     # Step 1 — Create media container
-    params = {
-        "image_url": image_url,
-        "caption": caption,
-        "access_token": access_token,
-    }
-    if scheduled_time:
-        params["published"] = "false"
-        params["scheduled_publish_time"] = str(int(scheduled_time.timestamp()))
-    else:
-        params["published"] = "true"
-
-    resp = requests.post(f"{META_API}/{ig_user_id}/media", params=params, timeout=20)
-    if not resp.ok:
-        print(f"    IG container error {resp.status_code}: {resp.text[:200]}")
+    try:
+        result = toolset.execute_action(
+            action=Action.INSTAGRAM_POST_IG_USER_MEDIA,
+            params={
+                "ig_user_id": ig_user_id,
+                "image_url": image_url,
+                "caption": caption,
+            },
+            entity_id=entity_id,
+        )
+    except Exception as e:
+        print(f"    IG container error: {e}")
         return False
 
-    container_id = resp.json().get("id")
+    data = result if isinstance(result, dict) else {}
+    # Composio wraps results in a data key
+    if "data" in data:
+        data = data["data"]
+    container_id = data.get("id") or data.get("creation_id")
     if not container_id:
-        print("    IG error: no container ID returned")
+        print(f"    IG error: no container ID in response: {str(result)[:200]}")
         return False
 
-    if scheduled_time:
-        print(f"    Scheduled for {scheduled_time.strftime('%A %Y-%m-%d %H:%M')} UTC")
-        return True
-
-    # Step 2 — Publish immediately
     time.sleep(3)
-    resp2 = requests.post(
-        f"{META_API}/{ig_user_id}/media_publish",
-        params={"creation_id": container_id, "access_token": access_token},
-        timeout=20,
-    )
-    if not resp2.ok:
-        print(f"    IG publish error {resp2.status_code}: {resp2.text[:200]}")
+
+    # Step 2 — Publish
+    try:
+        result2 = toolset.execute_action(
+            action=Action.INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH,
+            params={
+                "ig_user_id": ig_user_id,
+                "creation_id": container_id,
+            },
+            entity_id=entity_id,
+        )
+    except Exception as e:
+        print(f"    IG publish error: {e}")
         return False
 
-    post_id = resp2.json().get("id", "unknown")
+    data2 = result2 if isinstance(result2, dict) else {}
+    if "data" in data2:
+        data2 = data2["data"]
+    post_id = data2.get("id", "unknown")
     print(f"    Posted — ID: {post_id}")
     return True
 
 
-# ── Meta API — Facebook ───────────────────────────────────────────────────────
+# ── Composio — Facebook ───────────────────────────────────────────────────────
 
-def post_facebook(
+def get_facebook_page_id(toolset: "ComposioToolSet", entity_id: str) -> str:
+    """Fetch the managed Facebook Page ID via Composio."""
+    try:
+        result = toolset.execute_action(
+            action=Action.FACEBOOK_LIST_MANAGED_PAGES,
+            params={},
+            entity_id=entity_id,
+        )
+        data = result if isinstance(result, dict) else {}
+        if "data" in data:
+            data = data["data"]
+        pages = data.get("data", [])
+        if pages:
+            page_id = pages[0].get("id", "")
+            print(f"    Facebook Page ID: {page_id} ({pages[0].get('name', '')})")
+            return page_id
+    except Exception as e:
+        print(f"    Could not fetch Facebook page ID: {e}")
+    return ""
+
+
+def post_facebook_composio(
+    toolset: "ComposioToolSet",
+    entity_id: str,
     page_id: str,
-    access_token: str,
     message: str,
     image_url: str,
-    scheduled_time: datetime | None,
     dry_run: bool,
 ) -> bool:
     if dry_run:
-        timing = f"scheduled {scheduled_time.strftime('%Y-%m-%d %H:%M')}" if scheduled_time else "immediate"
-        print(f"    [DRY RUN] Facebook — {timing}")
+        print(f"    [DRY RUN] Facebook — immediate (Composio entity: {entity_id})")
         print(f"    Caption preview: {message[:80]}...")
         return True
 
-    params = {"access_token": access_token, "message": message}
-    if scheduled_time:
-        params["published"] = "false"
-        params["scheduled_publish_time"] = str(int(scheduled_time.timestamp()))
-
-    if image_url:
-        params["url"] = image_url
-        endpoint = f"{META_API}/{page_id}/photos"
-    else:
-        endpoint = f"{META_API}/{page_id}/feed"
-
-    resp = requests.post(endpoint, params=params, timeout=20)
-    if not resp.ok:
-        print(f"    FB error {resp.status_code}: {resp.text[:200]}")
+    if not entity_id:
+        print("    SKIP — no Facebook Composio connection for this brand.")
+        print("    Connect your Facebook Page at app.composio.dev > Apps > Facebook.")
         return False
 
-    if scheduled_time:
-        print(f"    Scheduled for {scheduled_time.strftime('%A %Y-%m-%d %H:%M')} UTC")
-    else:
-        post_id = resp.json().get("id", "unknown")
-        print(f"    Posted — ID: {post_id}")
+    if not page_id:
+        print("    Fetching Facebook Page ID...")
+        page_id = get_facebook_page_id(toolset, entity_id)
+        if not page_id:
+            print("    SKIP — could not determine Facebook Page ID.")
+            return False
+
+    params = {"page_id": page_id, "message": message}
+    if image_url:
+        params["url"] = image_url
+
+    try:
+        result = toolset.execute_action(
+            action=Action.FACEBOOK_CREATE_PHOTO_POST,
+            params=params,
+            entity_id=entity_id,
+        )
+    except Exception as e:
+        print(f"    FB post error: {e}")
+        return False
+
+    data = result if isinstance(result, dict) else {}
+    if "data" in data:
+        data = data["data"]
+    post_id = data.get("id", "unknown")
+    print(f"    Posted — ID: {post_id}")
     return True
 
 
@@ -339,10 +379,6 @@ def build_scheduled_time(start_date: datetime, day_num: int, post_time: str) -> 
     dow_index = (day_num - 1) % 7
     post_dt = start_date + timedelta(weeks=week_offset, days=dow_index)
     post_dt = post_dt.replace(hour=h, minute=m, second=0, microsecond=0, tzinfo=timezone.utc)
-    # Meta requires scheduled posts to be at least 10 minutes in the future
-    min_future = datetime.now(timezone.utc) + timedelta(minutes=15)
-    if post_dt < min_future:
-        post_dt = min_future
     return post_dt
 
 
@@ -350,7 +386,7 @@ def build_scheduled_time(start_date: datetime, day_num: int, post_time: str) -> 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate AI content and post directly to Instagram / Facebook",
+        description="Generate AI content and post directly to Instagram / Facebook via Composio",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
@@ -375,7 +411,7 @@ def main():
     )
     parser.add_argument(
         "--start-date",
-        help="Schedule start date YYYY-MM-DD. If omitted, posts are published immediately.",
+        help="(Note) Scheduling display only -- Composio posts immediately. Format: YYYY-MM-DD",
     )
     parser.add_argument(
         "--generate-only", action="store_true",
@@ -386,16 +422,8 @@ def main():
         help="Anthropic API key (or set ANTHROPIC_API_KEY env var)",
     )
     parser.add_argument(
-        "--access-token", default=os.environ.get("META_ACCESS_TOKEN", ""),
-        help="Meta Page access token (or set META_ACCESS_TOKEN env var)",
-    )
-    parser.add_argument(
-        "--ig-user-id", default=os.environ.get("META_IG_USER_ID", ""),
-        help="Instagram Business Account ID (or set META_IG_USER_ID env var)",
-    )
-    parser.add_argument(
-        "--page-id", default=os.environ.get("META_PAGE_ID", ""),
-        help="Facebook Page ID (or set META_PAGE_ID env var)",
+        "--composio-key", default=os.environ.get("COMPOSIO_API_KEY", ""),
+        help="Composio API key (or set COMPOSIO_API_KEY env var) -- get from app.composio.dev",
     )
     parser.add_argument(
         "--pexels-key", default=os.environ.get("PEXELS_API_KEY", ""),
@@ -407,19 +435,19 @@ def main():
     )
     args = parser.parse_args()
 
-    # Validate credentials
+    # Validate
     if not args.anthropic_key and not args.dry_run:
         sys.exit("ERROR: ANTHROPIC_API_KEY required (or pass --anthropic-key)")
+    if not args.composio_key and not args.generate_only and not args.dry_run:
+        sys.exit(
+            "ERROR: COMPOSIO_API_KEY required (or pass --composio-key)\n"
+            "Get your key at: app.composio.dev > Settings > API Keys"
+        )
 
-    if not args.generate_only and not args.dry_run:
-        if args.platform in ("ig", "both") and not args.ig_user_id:
-            sys.exit("ERROR: META_IG_USER_ID required for Instagram (or pass --ig-user-id)")
-        if args.platform in ("fb", "both") and not args.page_id:
-            sys.exit("ERROR: META_PAGE_ID required for Facebook (or pass --page-id)")
-        if not args.access_token:
-            sys.exit("ERROR: META_ACCESS_TOKEN required (or pass --access-token)")
+    cfg = load_config(args.brand)
+    cmp_cfg = COMPOSIO_CONFIG[args.brand]
 
-    # Parse start date
+    # Resolve start date (display only — used for post metadata)
     start_date = None
     if args.start_date:
         try:
@@ -427,18 +455,20 @@ def main():
         except ValueError:
             sys.exit("ERROR: --start-date must be YYYY-MM-DD")
 
-    cfg = load_config(args.brand)
     client = anthropic.Anthropic(api_key=args.anthropic_key) if not args.dry_run else None
+    toolset = ComposioToolSet(api_key=args.composio_key) if not args.dry_run and not args.generate_only else None
+
+    # Cached Facebook page ID (fetched once on first FB post)
+    fb_page_id_cache = cmp_cfg.get("fb_page_id")
 
     # Header
     label = "DRY RUN" if args.dry_run else ("GENERATE ONLY" if args.generate_only else "POSTING")
     print(f"\n[{label}]  {cfg['name'].upper()}")
     print(f"Platform : {args.platform.upper()}")
     print(f"Posts    : {args.count}")
+    print(f"Via      : Composio (no Meta tokens needed)")
     if start_date:
         print(f"Schedule : starting {start_date.strftime('%A %d %B %Y')}")
-    elif not args.generate_only:
-        print(f"Timing   : immediate")
     if args.theme:
         print(f"Theme    : {args.theme}")
     if args.product:
@@ -458,7 +488,7 @@ def main():
                 "post_time": POST_TIMES[(i - 1) % len(POST_TIMES)],
                 "post_format": POST_FORMATS[(i - 1) % len(POST_FORMATS)],
                 "title": f"[DRY RUN] Post {i}",
-                "caption": "Dry run — API not called.",
+                "caption": "Dry run — no API called.",
                 "hashtags": "#DryRun",
                 "image_url": BRAND_FALLBACK_IMAGE.get(args.brand, ""),
                 "image_suggestion": "Dry run",
@@ -483,13 +513,16 @@ def main():
         # Resolve image
         image_url = resolve_image(post, args.brand, args.pexels_key)
 
-        # Build schedule time if requested
-        sched = build_scheduled_time(start_date, i, post["post_time"]) if start_date else None
-
         # Post to Instagram
         if args.platform in ("ig", "both"):
-            success = post_instagram(
-                args.ig_user_id, args.access_token, caption, image_url, sched, args.dry_run
+            print(f"  → Instagram ({cmp_cfg['ig_entity_id']})")
+            success = post_instagram_composio(
+                toolset,
+                cmp_cfg["ig_entity_id"],
+                cmp_cfg["ig_user_id"],
+                caption,
+                image_url,
+                args.dry_run,
             )
             if success:
                 ig_ok += 1
@@ -498,8 +531,15 @@ def main():
 
         # Post to Facebook
         if args.platform in ("fb", "both"):
-            success = post_facebook(
-                args.page_id, args.access_token, caption, image_url, sched, args.dry_run
+            fb_entity = cmp_cfg.get("fb_entity_id")
+            print(f"  → Facebook ({fb_entity or 'NOT CONNECTED'})")
+            success = post_facebook_composio(
+                toolset,
+                fb_entity or "",
+                fb_page_id_cache or "",
+                caption,
+                image_url,
+                args.dry_run,
             )
             if success:
                 fb_ok += 1
