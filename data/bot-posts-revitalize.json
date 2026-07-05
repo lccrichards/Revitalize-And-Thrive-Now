@@ -1,0 +1,24 @@
+[
+  {
+    "day": 1,
+    "day_of_week": "Monday",
+    "post_time": "7:00 AM",
+    "post_format": "reel",
+    "title": "[DRY RUN] Post 1",
+    "caption": "Dry run \u2014 API not called.",
+    "hashtags": "#DryRun",
+    "image_url": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1080",
+    "image_suggestion": "Dry run"
+  },
+  {
+    "day": 2,
+    "day_of_week": "Tuesday",
+    "post_time": "8:00 AM",
+    "post_format": "feed",
+    "title": "[DRY RUN] Post 2",
+    "caption": "Dry run \u2014 API not called.",
+    "hashtags": "#DryRun",
+    "image_url": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1080",
+    "image_suggestion": "Dry run"
+  }
+]
