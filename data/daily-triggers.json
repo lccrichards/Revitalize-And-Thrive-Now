@@ -1,0 +1,230 @@
+{
+  "triggers": [
+    {
+      "trigger_name": "Revitalize — Monday General Post (7 PM ET)",
+      "brand": "revitalize",
+      "day": "monday",
+      "time": "7:00 PM ET",
+      "cron_expression": "0 23 * * 1",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Revitalize — Tuesday Video Post (7 PM ET)",
+      "brand": "revitalize",
+      "day": "tuesday",
+      "time": "7:00 PM ET",
+      "cron_expression": "0 23 * * 2",
+      "content_type": "video_post",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Revitalize — Wednesday General Post (6 PM ET)",
+      "brand": "revitalize",
+      "day": "wednesday",
+      "time": "6:00 PM ET",
+      "cron_expression": "0 22 * * 3",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Revitalize — Thursday General Post (6 PM ET)",
+      "brand": "revitalize",
+      "day": "thursday",
+      "time": "6:00 PM ET",
+      "cron_expression": "0 22 * * 4",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Revitalize — Friday Video Post (7 PM ET)",
+      "brand": "revitalize",
+      "day": "friday",
+      "time": "7:00 PM ET",
+      "cron_expression": "0 23 * * 5",
+      "content_type": "video_post",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Revitalize — Saturday General Post (5 PM ET)",
+      "brand": "revitalize",
+      "day": "saturday",
+      "time": "5:00 PM ET",
+      "cron_expression": "0 21 * * 6",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Revitalize — Sunday General Post (6 PM ET)",
+      "brand": "revitalize",
+      "day": "sunday",
+      "time": "6:00 PM ET",
+      "cron_expression": "0 22 * * 0",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Reclaim — Monday Video Post (7 PM ET)",
+      "brand": "reclaim",
+      "day": "monday",
+      "time": "7:00 PM ET",
+      "cron_expression": "0 23 * * 1",
+      "content_type": "video_post",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Reclaim — Tuesday General Post (7 PM ET)",
+      "brand": "reclaim",
+      "day": "tuesday",
+      "time": "7:00 PM ET",
+      "cron_expression": "0 23 * * 2",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Reclaim — Wednesday General Post (6 PM ET)",
+      "brand": "reclaim",
+      "day": "wednesday",
+      "time": "6:00 PM ET",
+      "cron_expression": "0 22 * * 3",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Reclaim — Thursday Video Post (6 PM ET)",
+      "brand": "reclaim",
+      "day": "thursday",
+      "time": "6:00 PM ET",
+      "cron_expression": "0 22 * * 4",
+      "content_type": "video_post",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Reclaim — Friday General Post (7 PM ET)",
+      "brand": "reclaim",
+      "day": "friday",
+      "time": "7:00 PM ET",
+      "cron_expression": "0 23 * * 5",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Reclaim — Saturday General Post (5 PM ET)",
+      "brand": "reclaim",
+      "day": "saturday",
+      "time": "5:00 PM ET",
+      "cron_expression": "0 21 * * 6",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    },
+    {
+      "trigger_name": "Reclaim — Sunday General Post (6 PM ET)",
+      "brand": "reclaim",
+      "day": "sunday",
+      "time": "6:00 PM ET",
+      "cron_expression": "0 22 * * 0",
+      "content_type": "general_post",
+      "platforms": ["instagram_feed", "facebook"],
+      "create_new_session": true,
+      "notifications": {
+        "push": true,
+        "email": false
+      }
+    }
+  ],
+  "posting_summary": {
+    "total_triggers": 14,
+    "revitalize_triggers": 7,
+    "reclaim_triggers": 7,
+    "weekly_volume": {
+      "revitalize": {
+        "videos": 2,
+        "general_posts": 5,
+        "total": 7
+      },
+      "reclaim": {
+        "videos": 2,
+        "general_posts": 5,
+        "total": 7
+      }
+    },
+    "platforms_covered": [
+      "instagram_reels",
+      "instagram_feed",
+      "tiktok",
+      "youtube_shorts",
+      "youtube_channel",
+      "facebook"
+    ],
+    "cron_times": {
+      "7:00_PM_ET": "0 23 * * (weekday)",
+      "6:00_PM_ET": "0 22 * * (weekday)",
+      "5:00_PM_ET": "0 21 * * (Saturday)"
+    }
+  }
+}
