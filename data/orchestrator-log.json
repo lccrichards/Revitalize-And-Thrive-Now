@@ -44,5 +44,85 @@
         "status": "generated_pending_account_connection"
       }
     }
+  },
+  {
+    "date": "2026-07-06",
+    "day_of_week": "sunday",
+    "event": "week_1_video_generation_initiated",
+    "status": "in_progress",
+    "videos_generating": 4,
+    "revitalize": {
+      "tuesday_video": {
+        "job_id": "3d8fc7e8-6cfd-4054-8e93-3d448d7555a4",
+        "model": "seedance_2_0",
+        "duration": "15s",
+        "aspect_ratio": "9:16",
+        "character": "Indian woman, age 42",
+        "product": "perimenopause-guide",
+        "product_price": 39,
+        "pillar": "Problem/Perimenopause Focus",
+        "content": "Brain fog → clarity transformation",
+        "status": "pending_generation",
+        "posting_platform": ["instagram_reels", "tiktok", "youtube_shorts"],
+        "posting_time": "7:00 PM ET"
+      },
+      "friday_video": {
+        "job_id": "93689363-2b80-4a8b-9397-4a714741b0f9",
+        "model": "seedance_2_0",
+        "duration": "15s",
+        "aspect_ratio": "9:16",
+        "character": "African American woman, age 54",
+        "product": "hormone-meal-plan",
+        "product_price": 47,
+        "pillar": "Transformation/Results Focus",
+        "content": "Energy depletion → vitality restoration",
+        "status": "pending_generation",
+        "posting_platform": ["instagram_reels", "tiktok", "youtube_shorts"],
+        "posting_time": "7:00 PM ET"
+      }
+    },
+    "reclaim": {
+      "monday_video": {
+        "job_id": "d3ab683f-f524-43c9-b37b-9de208c2df38",
+        "model": "seedance_2_0",
+        "duration": "15s",
+        "aspect_ratio": "9:16",
+        "character": "Latino man, age 50",
+        "product": "hormone-meal-plan",
+        "product_price": 47,
+        "pillar": "Problem/ROI Focus",
+        "content": "Productivity loss ($50k) → peak performance",
+        "status": "pending_generation",
+        "posting_platform": ["instagram_reels", "tiktok", "youtube_shorts"],
+        "posting_time": "7:00 PM ET"
+      },
+      "thursday_video": {
+        "job_id": "091a2986-f352-43ef-bab0-a447e79ef563",
+        "model": "seedance_2_0",
+        "duration": "15s",
+        "aspect_ratio": "9:16",
+        "character": "Asian man, age 56",
+        "product": "testosterone-boost",
+        "product_price": 49,
+        "pillar": "Transformation/Performance Focus",
+        "content": "Energy decline → testosterone peak",
+        "status": "pending_generation",
+        "posting_platform": ["instagram_reels", "tiktok", "youtube_shorts"],
+        "posting_time": "6:00 PM ET"
+      }
+    },
+    "carousel_images_status": {
+      "status": "rate_limit_hit",
+      "note": "Attempted to generate carousel images for 5 general posts per brand. Hit Higgsfield rate limit after 2 images started. Will retry in 30 minutes or use Canva templates.",
+      "general_posts_needed": 10,
+      "carousel_images_started": 2
+    },
+    "next_steps": [
+      "Monitor video generation jobs (refresh every 5 minutes)",
+      "Complete carousel image generation (Canva or Higgsfield retry)",
+      "Test posting to Instagram Reels (already connected)",
+      "Connect Reclaim Instagram account",
+      "Deploy 14 daily posting triggers"
+    ]
   }
 ]
