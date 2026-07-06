@@ -1,0 +1,220 @@
+{
+  "posting_schedule": {
+    "revitalize": {
+      "posts_per_week": 2,
+      "days": ["tuesday", "friday"],
+      "times": {
+        "tuesday": "7:00 PM ET",
+        "friday": "6:00 PM ET"
+      },
+      "timezone": "America/New_York",
+      "platforms": ["instagram", "tiktok", "youtube_shorts"]
+    },
+    "reclaim": {
+      "posts_per_week": 2,
+      "days": ["monday", "thursday"],
+      "times": {
+        "monday": "7:00 PM ET",
+        "thursday": "6:00 PM ET"
+      },
+      "timezone": "America/New_York",
+      "platforms": ["instagram", "tiktok", "youtube_shorts"]
+    }
+  },
+  "content_mix_strategy": {
+    "weekly_pattern": [
+      {
+        "sequence": 1,
+        "content_type": "problem_awareness_video",
+        "purpose": "Brand awareness + engagement",
+        "format": "15-30s Reel/Short",
+        "cta": "Soft CTA - 'Swipe up' / 'Link in bio'",
+        "objective": "Hook viewers, build problem awareness"
+      },
+      {
+        "sequence": 2,
+        "content_type": "solution_cta_post",
+        "purpose": "Direct sales conversion",
+        "format": "Image carousel + strong CTA",
+        "cta": "Hard CTA - 'Get it now' + direct link",
+        "objective": "Drive immediate conversions"
+      }
+    ],
+    "monthly_rotation": [
+      {
+        "week": 1,
+        "pillar": "Problem/ROI Focus",
+        "revitalize_product": "perimenopause-guide",
+        "reclaim_product": "hormone-meal-plan",
+        "messaging": "Pain point, urgency, lost time/money"
+      },
+      {
+        "week": 2,
+        "pillar": "Science/Education",
+        "revitalize_product": "midlife-sleep-fix",
+        "reclaim_product": "testosterone-boost",
+        "messaging": "How it works, hormone science, proof"
+      },
+      {
+        "week": 3,
+        "pillar": "Transformation/Results",
+        "revitalize_product": "burnout-recovery",
+        "reclaim_product": "confidence-rebuild",
+        "messaging": "Before/after, testimonials, real results"
+      },
+      {
+        "week": 4,
+        "pillar": "Solution/Deep Dive",
+        "revitalize_product": "30day-workbook",
+        "reclaim_product": "30day-workbook",
+        "messaging": "What's included, roadmap, implementation"
+      }
+    ]
+  },
+  "video_content_spec": {
+    "platforms_by_type": {
+      "instagram_reels": {
+        "duration": "15-30 seconds",
+        "aspect_ratio": "9:16",
+        "hook_requirement": "First 3 seconds critical",
+        "text_overlay": "Problem statement + benefit",
+        "cta_placement": "Last 2-3 seconds",
+        "captions": "Required (60% watch without sound)"
+      },
+      "tiktok": {
+        "duration": "15-30 seconds",
+        "aspect_ratio": "9:16",
+        "hook_requirement": "Ultra-fast, first 1 second decides",
+        "text_overlay": "Large, bold, on-brand colors",
+        "cta_placement": "Subtle - content speaks for itself",
+        "algorithm_factor": "Trends + sounds + retention"
+      },
+      "youtube_shorts": {
+        "duration": "15-60 seconds",
+        "aspect_ratio": "9:16",
+        "hook_requirement": "First 3 seconds",
+        "story_arc": "Complete narrative arc",
+        "cta_placement": "Card annotation + pinned comment",
+        "retention_goal": "60%+ watch completion"
+      }
+    }
+  },
+  "content_generation_pipeline": {
+    "video_posts": {
+      "frequency": "Weekly generation",
+      "types": [
+        {
+          "name": "Problem Hook Videos",
+          "count_per_week": 1,
+          "model": "seedance_2_0",
+          "duration": "15s",
+          "purpose": "Brand awareness, engagement, social proof"
+        },
+        {
+          "name": "Transformation Videos",
+          "count_per_week": 1,
+          "model": "seedance_2_0",
+          "duration": "15s",
+          "purpose": "Testimonial-style, results-focused"
+        }
+      ],
+      "diversity": "Rotate through different ethnic backgrounds and ages per schedule"
+    },
+    "image_posts": {
+      "frequency": "Weekly generation",
+      "types": [
+        {
+          "name": "Product Showcase",
+          "format": "Single image + text overlay",
+          "purpose": "Direct CTA, product link"
+        },
+        {
+          "name": "Carousel Posts",
+          "format": "3-5 slides showing value proposition",
+          "purpose": "Educational + conversion funnel"
+        }
+      ]
+    }
+  },
+  "conversion_funnel": {
+    "top_of_funnel": {
+      "content": "Problem awareness videos, educational posts",
+      "goal": "Build audience, establish authority",
+      "metrics": "Views, shares, comments, saves"
+    },
+    "middle_of_funnel": {
+      "content": "Testimonials, transformation stories, before/after",
+      "goal": "Build trust, demonstrate results",
+      "metrics": "Profile visits, website clicks, follower growth"
+    },
+    "bottom_of_funnel": {
+      "content": "Direct product CTAs, limited-time offers, urgency messaging",
+      "goal": "Drive immediate sales",
+      "metrics": "Link clicks, conversions, revenue"
+    }
+  },
+  "cta_framework": {
+    "soft_cta": {
+      "examples": [
+        "Tap the link in bio to learn more",
+        "Comment 'YES' if this resonates",
+        "Save this for later",
+        "Check the link in bio for the full breakdown"
+      ],
+      "placement": "Video end frame, caption mention",
+      "purpose": "Engagement, audience building"
+    },
+    "hard_cta": {
+      "examples": [
+        "Get it now - [direct URL]",
+        "Don't wait - Limited availability",
+        "Your transformation starts at $39",
+        "Reclaim your edge today"
+      ],
+      "placement": "Captions, pinned comments, carousel text",
+      "purpose": "Direct conversions to Gumroad"
+    }
+  },
+  "posting_cadence_cron": {
+    "revitalize_tuesday": "0 19 * * 2",
+    "revitalize_friday": "0 18 * * 5",
+    "reclaim_monday": "0 19 * * 1",
+    "reclaim_thursday": "0 18 * * 4"
+  },
+  "performance_metrics": {
+    "tracking": {
+      "primary": ["Click-through rate to Gumroad", "Conversion rate", "Revenue per post"],
+      "secondary": ["Engagement rate (likes + comments + shares)", "Save rate", "Watch time %"],
+      "brand": ["Follower growth", "Profile visits", "Brand mentions"]
+    },
+    "optimization": {
+      "weekly_review": "Which CTAs convert best?",
+      "monthly_analysis": "Which product mix drives highest revenue?",
+      "quarterly_strategy": "Scaling top performers, testing new content pillars"
+    }
+  },
+  "asset_generation_schedule": {
+    "weekly_requirements": {
+      "revitalize": {
+        "videos": 2,
+        "images": 4,
+        "total_new_assets": 6
+      },
+      "reclaim": {
+        "videos": 2,
+        "images": 4,
+        "total_new_assets": 6
+      },
+      "combined": {
+        "total_videos_weekly": 4,
+        "total_images_weekly": 8,
+        "total_assets_weekly": 12
+      }
+    },
+    "monthly_volume": {
+      "total_videos": 16,
+      "total_images": 32,
+      "total_assets": 48
+    }
+  }
+}

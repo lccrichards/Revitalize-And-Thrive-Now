@@ -1,0 +1,284 @@
+{
+  "posting_cadence": {
+    "frequency": "Daily posts for each brand",
+    "posts_per_brand_weekly": 7,
+    "video_posts_per_brand_weekly": 2,
+    "general_posts_per_brand_weekly": 5,
+    "platforms": [
+      "instagram_reels",
+      "instagram_feed",
+      "tiktok",
+      "youtube_shorts",
+      "youtube_feeds",
+      "facebook"
+    ]
+  },
+  "revitalize_daily_schedule": {
+    "monday": {
+      "time": "7:00 PM ET",
+      "cron": "0 23 * * 1",
+      "content_type": "general_post",
+      "format": "Carousel image (3-5 slides) or educational infographic",
+      "product": "Rotation - Week 1: Midlife Sleep Fix",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "tuesday": {
+      "time": "7:00 PM ET",
+      "cron": "0 23 * * 2",
+      "content_type": "video_post",
+      "format": "15s video - Problem/ROI focus",
+      "product": "Primary feature product",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"]
+    },
+    "wednesday": {
+      "time": "6:00 PM ET",
+      "cron": "22 * * 3",
+      "content_type": "general_post",
+      "format": "Educational carousel or testimonial image",
+      "product": "Rotation - Week 1: Hormone Meal Plan",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "thursday": {
+      "time": "6:00 PM ET",
+      "cron": "22 * * 4",
+      "content_type": "general_post",
+      "format": "Before/After or results showcase",
+      "product": "Rotation - Week 1: Burnout Recovery",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "friday": {
+      "time": "7:00 PM ET",
+      "cron": "0 23 * * 5",
+      "content_type": "video_post",
+      "format": "15s video - Transformation/Results focus",
+      "product": "Secondary feature product",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"]
+    },
+    "saturday": {
+      "time": "5:00 PM ET",
+      "cron": "21 * * 6",
+      "content_type": "general_post",
+      "format": "Carousel with tips or limited-time offer",
+      "product": "Rotation - Week 1: Wellness Planner",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "sunday": {
+      "time": "6:00 PM ET",
+      "cron": "22 * * 0",
+      "content_type": "general_post",
+      "format": "Inspirational message + soft CTA",
+      "product": "Rotation - Week 1: Perimenopause Guide",
+      "platforms": ["instagram_feed", "facebook"]
+    }
+  },
+  "reclaim_daily_schedule": {
+    "monday": {
+      "time": "7:00 PM ET",
+      "cron": "0 23 * * 1",
+      "content_type": "video_post",
+      "format": "15s video - Problem/ROI focus",
+      "product": "Primary feature product",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"]
+    },
+    "tuesday": {
+      "time": "7:00 PM ET",
+      "cron": "0 23 * * 2",
+      "content_type": "general_post",
+      "format": "Carousel image (3-5 slides) or educational infographic",
+      "product": "Rotation - Week 1: Midlife Sleep Fix",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "wednesday": {
+      "time": "6:00 PM ET",
+      "cron": "22 * * 3",
+      "content_type": "general_post",
+      "format": "Educational carousel or ROI breakdown",
+      "product": "Rotation - Week 1: Hormone Meal Plan",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "thursday": {
+      "time": "6:00 PM ET",
+      "cron": "22 * * 4",
+      "content_type": "video_post",
+      "format": "15s video - Transformation/Results focus",
+      "product": "Secondary feature product",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"]
+    },
+    "friday": {
+      "time": "7:00 PM ET",
+      "cron": "0 23 * * 5",
+      "content_type": "general_post",
+      "format": "Carousel with tips or performance data",
+      "product": "Rotation - Week 1: Confidence Rebuild",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "saturday": {
+      "time": "5:00 PM ET",
+      "cron": "21 * * 6",
+      "content_type": "general_post",
+      "format": "Weekend motivation + strong CTA",
+      "product": "Rotation - Week 1: Testosterone Optimization",
+      "platforms": ["instagram_feed", "facebook"]
+    },
+    "sunday": {
+      "time": "6:00 PM ET",
+      "cron": "22 * * 0",
+      "content_type": "general_post",
+      "format": "Week preparation message + offer",
+      "product": "Rotation - Week 1: 30-Day Workbook",
+      "platforms": ["instagram_feed", "facebook"]
+    }
+  },
+  "weekly_video_schedule": {
+    "revitalize": {
+      "video_1": {
+        "day": "tuesday",
+        "pillar": "Problem/ROI or Science",
+        "product_rotation": "Alternates weekly"
+      },
+      "video_2": {
+        "day": "friday",
+        "pillar": "Transformation or Solution",
+        "product_rotation": "Alternates weekly"
+      }
+    },
+    "reclaim": {
+      "video_1": {
+        "day": "monday",
+        "pillar": "Problem/ROI or Science",
+        "product_rotation": "Alternates weekly"
+      },
+      "video_2": {
+        "day": "thursday",
+        "pillar": "Transformation or Solution",
+        "product_rotation": "Alternates weekly"
+      }
+    }
+  },
+  "general_post_templates": {
+    "carousel_posts": {
+      "structure": "3-5 slides",
+      "slide_1": "Hook/Problem statement",
+      "slide_2": "Why it matters (science or stats)",
+      "slide_3": "Solution overview",
+      "slide_4": "What's included (for products)",
+      "slide_5": "CTA with pricing + link"
+    },
+    "educational_posts": {
+      "content_types": [
+        "Quick tips (3-5 actionable tips)",
+        "Myth-busting (Common misconception vs. truth)",
+        "Weekly check-in (Motivation + actionable advice)",
+        "Q&A format (Common question + detailed answer)",
+        "Stats/Data visualization (Hormone data, ROI data)"
+      ]
+    },
+    "testimonial_posts": {
+      "format": "Quote-based graphic or short customer story",
+      "includes": ["Result achieved", "Timeframe", "Specific benefit", "Call to action"]
+    },
+    "offer_posts": {
+      "format": "Limited-time offer or bundle announcement",
+      "includes": ["Original price", "Discount or bonus", "Expiration date", "Direct link"]
+    }
+  },
+  "platform_distribution_matrix": {
+    "instagram_reels": {
+      "content": "Video posts only",
+      "frequency": "2x weekly per brand",
+      "format": "15s, 9:16 vertical",
+      "caption_style": "Engaging hook + soft CTA"
+    },
+    "instagram_feed": {
+      "content": "General posts + image carousels",
+      "frequency": "5x weekly per brand",
+      "format": "Square or carousel slides",
+      "caption_style": "Product focus + hard CTA with URL"
+    },
+    "tiktok": {
+      "content": "Video posts only",
+      "frequency": "2x weekly per brand",
+      "format": "15s, 9:16 vertical",
+      "caption_style": "Trendy language + subtle CTA"
+    },
+    "youtube_shorts": {
+      "content": "Video posts only",
+      "frequency": "2x weekly per brand",
+      "format": "15-60s, 9:16 vertical",
+      "caption_style": "Story-driven + card annotation CTA"
+    },
+    "youtube_channel": {
+      "content": "Video library + playlists",
+      "frequency": "2x weekly per brand added",
+      "format": "15s shorts featured",
+      "cta_method": "Pinned comments with product links"
+    },
+    "facebook": {
+      "content": "General posts + image carousels",
+      "frequency": "5x weekly per brand",
+      "format": "Image carousels or single image",
+      "caption_style": "Community-focused + accessible CTA"
+    }
+  },
+  "monthly_product_rotation": {
+    "week_1": {
+      "pillar": "Problem/ROI Focus",
+      "revitalize_products": ["perimenopause-guide", "hormone-meal-plan"],
+      "reclaim_products": ["hormone-meal-plan", "testosterone-boost"]
+    },
+    "week_2": {
+      "pillar": "Science/Education",
+      "revitalize_products": ["midlife-sleep-fix", "gut-health-reset"],
+      "reclaim_products": ["midlife-sleep-fix", "testosterone-boost"]
+    },
+    "week_3": {
+      "pillar": "Transformation/Social Proof",
+      "revitalize_products": ["burnout-recovery", "strength-longevity"],
+      "reclaim_products": ["confidence-rebuild", "strength-training"]
+    },
+    "week_4": {
+      "pillar": "Solution/Deep Dive",
+      "revitalize_products": ["30day-workbook", "wellness-planner"],
+      "reclaim_products": ["30day-workbook", "mindset-reset"]
+    }
+  },
+  "content_generation_requirements": {
+    "weekly_needs": {
+      "videos": {
+        "revitalize": 2,
+        "reclaim": 2,
+        "total": 4
+      },
+      "images_for_general_posts": {
+        "revitalize": 5,
+        "reclaim": 5,
+        "total": 10
+      },
+      "total_unique_assets": 14
+    },
+    "monthly_volume": {
+      "videos": 16,
+      "general_post_images": 40,
+      "total_assets": 56
+    }
+  },
+  "cta_strategy": {
+    "soft_cta_on_videos": [
+      "Tap the link in bio to learn more",
+      "Comments below - which resonates?",
+      "Save this for later",
+      "Your transformation is waiting"
+    ],
+    "hard_cta_on_general_posts": [
+      "Get it now: [direct URL]",
+      "Limited availability - $X today",
+      "Your [benefit] starts at $X",
+      "Don't wait - Link in bio"
+    ]
+  },
+  "posting_time_rationale": {
+    "weekday_evening": "7 PM ET - Peak engagement for Instagram/TikTok",
+    "mid_afternoon": "6 PM ET - Catch afternoon scrollers before dinner",
+    "weekend_afternoon": "5 PM ET - Earlier weekend posting for social browsing"
+  }
+}
