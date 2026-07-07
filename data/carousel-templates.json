@@ -1,0 +1,434 @@
+{
+  "carousel_templates": [
+    {
+      "brand": "revitalize",
+      "day": "monday",
+      "type": "educational",
+      "title": "Sleep & Hormones Educational Carousel",
+      "time": "7:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "hook",
+          "content": "Sleep deprivation is stealing 3 hours per night from women 45-65. Here's what happens to your hormones..."
+        },
+        {
+          "slide": 2,
+          "type": "education",
+          "content": "The Sleep-Hormone Connection: Cortisol, melatonin, and progesterone all depend on quality sleep. Without it, everything crashes."
+        },
+        {
+          "slide": 3,
+          "type": "tips",
+          "content": "3 Actionable Sleep Wins: 1) Consistent bedtime (even weekends) 2) No screens 1 hour before sleep 3) Cool, dark room"
+        },
+        {
+          "slide": 4,
+          "type": "social_proof",
+          "content": "\"Finally sleeping 8 hours and waking up refreshed. My energy is back!\" - Sarah, 51"
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Get the complete sleep optimization guide. Midlife Sleep Fix - $37. https://revitalize.gumroad.com/l/midlife-sleep-fix"
+        }
+      ],
+      "product": "midlife-sleep-fix",
+      "product_price": 37,
+      "product_url": "https://revitalize.gumroad.com/l/midlife-sleep-fix",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "revitalize",
+      "day": "wednesday",
+      "type": "testimonial",
+      "title": "Testimonial/Before-After Transformation Carousel",
+      "time": "6:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "hook",
+          "content": "\"I thought burnout was just my life now. Then everything changed.\" - Meet Jennifer, 48"
+        },
+        {
+          "slide": 2,
+          "type": "before",
+          "content": "Before: Exhausted, overwhelmed, lost in daily grind. Burnout wasn't a phase—it was my new normal."
+        },
+        {
+          "slide": 3,
+          "type": "solution",
+          "content": "The Burnout Recovery Blueprint: Neurobiological resets, energy restoration protocol, life design framework"
+        },
+        {
+          "slide": 4,
+          "type": "after",
+          "content": "After: Jennifer reclaimed her energy, her focus, her life. 12 weeks to transformation."
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Your burnout recovery starts here. Burnout Recovery Blueprint - $49. https://revitalize.gumroad.com/l/burnout-recovery"
+        }
+      ],
+      "product": "burnout-recovery",
+      "product_price": 49,
+      "product_url": "https://revitalize.gumroad.com/l/burnout-recovery",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "revitalize",
+      "day": "thursday",
+      "type": "educational_tips",
+      "title": "Actionable Tips Carousel",
+      "time": "6:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "hook",
+          "content": "4 hormone-balancing wins you can implement TODAY (yes, today)"
+        },
+        {
+          "slide": 2,
+          "type": "tip",
+          "content": "Tip 1: Nutrition. Protein + healthy fat + fiber at every meal stabilizes blood sugar and hormones."
+        },
+        {
+          "slide": 3,
+          "type": "tip",
+          "content": "Tip 2: Movement. 30 mins of strength training 3x/week optimizes testosterone and cortisol."
+        },
+        {
+          "slide": 4,
+          "type": "tip",
+          "content": "Tip 3: Recovery. Sleep 7-9 hours, manage stress, give your body time to rebuild."
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Get the complete meal planning system designed for hormone balance. Hormone Meal Plan - $47. https://revitalize.gumroad.com/l/hormone-meal-plan"
+        }
+      ],
+      "product": "hormone-meal-plan",
+      "product_price": 47,
+      "product_url": "https://revitalize.gumroad.com/l/hormone-meal-plan",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "revitalize",
+      "day": "saturday",
+      "type": "offer",
+      "title": "Limited-Time Offer Carousel",
+      "time": "5:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "urgency",
+          "content": "⏰ FLASH SALE THIS WEEKEND ONLY ⏰ Wellness bundle at special price - ends Sunday midnight"
+        },
+        {
+          "slide": 2,
+          "type": "offer",
+          "content": "Bundle: Wellness Planner + Perimenopause Guide. Usually $68. This weekend only: $55"
+        },
+        {
+          "slide": 3,
+          "type": "value",
+          "content": "What's included: Daily planner, perimenopause symptom tracker, hormone optimization guide, meal templates, weekly check-ins"
+        },
+        {
+          "slide": 4,
+          "type": "social_proof",
+          "content": "\"This bundle changed my life. I finally have a plan and tools that actually work.\" - Michelle, 54"
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "⏰ Limited availability. Get your bundle NOW. https://revitalize.gumroad.com/l/wellness-bundle-flash"
+        }
+      ],
+      "products": ["wellness-planner", "perimenopause-guide"],
+      "product_prices": [29, 39],
+      "regular_price": 68,
+      "sale_price": 55,
+      "product_url": "https://revitalize.gumroad.com/l/wellness-bundle-flash",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "revitalize",
+      "day": "sunday",
+      "type": "inspirational",
+      "title": "Inspirational/Community Carousel",
+      "time": "6:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "community_message",
+          "content": "You're not alone. 5,000+ women are on this journey with you. We're reclaiming our power together."
+        },
+        {
+          "slide": 2,
+          "type": "testimonial",
+          "content": "\"At 47, I thought my best years were behind me. This community proved me wrong.\" - Nicole"
+        },
+        {
+          "slide": 3,
+          "type": "values",
+          "content": "Our shared values: Empowerment. Clarity. Energy. Women supporting women. No shame. No judgment."
+        },
+        {
+          "slide": 4,
+          "type": "impact",
+          "content": "Our impact: 5,000+ transformations. 10,000+ lives touched. Countless second chances reclaimed."
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Join us. Your transformation starts today. Browse all programs at Revitalize & Thrive Now"
+        }
+      ],
+      "product": "all_products",
+      "product_url": "https://revitalize.gumroad.com",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "reclaim",
+      "day": "tuesday",
+      "type": "roi_breakdown",
+      "title": "ROI/Productivity Breakdown Carousel",
+      "time": "7:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "hook",
+          "content": "You've lost $50,000 in productivity this year. Here's the math (and how to fix it)."
+        },
+        {
+          "slide": 2,
+          "type": "problem_data",
+          "content": "Brain fog costs you 2-3 hours per day. At $100/hour, that's $50k/year in lost opportunity. You're literally paying the price of your hormones."
+        },
+        {
+          "slide": 3,
+          "type": "solution",
+          "content": "The fix: Hormone Meal Plan optimizes testosterone, cortisol, sleep quality, and mental clarity in 28 days."
+        },
+        {
+          "slide": 4,
+          "type": "roi",
+          "content": "ROI: Regain 2+ hours daily = $50k+ recovered annually. Plus: better focus, better mood, better performance."
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Reclaim your edge. Invest $47 now, earn it back by day 10. Hormone Meal Plan - https://reclaim.gumroad.com/l/hormone-meal-plan"
+        }
+      ],
+      "product": "hormone-meal-plan",
+      "product_price": 47,
+      "product_url": "https://reclaim.gumroad.com/l/hormone-meal-plan",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "reclaim",
+      "day": "wednesday",
+      "type": "transformation",
+      "title": "Before-After Transformation Carousel",
+      "time": "6:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "hook",
+          "content": "\"I was losing myself. Then 90 days changed everything.\" - Meet David, 52"
+        },
+        {
+          "slide": 2,
+          "type": "before",
+          "content": "Before: Low energy, declining performance, confidence shot. He felt like a shadow of his former self."
+        },
+        {
+          "slide": 3,
+          "type": "solution",
+          "content": "Confidence Rebuild Blueprint: Neural rewiring, performance protocols, masculine identity restoration framework"
+        },
+        {
+          "slide": 4,
+          "type": "after",
+          "content": "After: David's energy returned, performance increased 40%, confidence rebuilt. 90 days to transformation."
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Your transformation starts here. Confidence Rebuild - $39. https://reclaim.gumroad.com/l/confidence-rebuild"
+        }
+      ],
+      "product": "confidence-rebuild",
+      "product_price": 39,
+      "product_url": "https://reclaim.gumroad.com/l/confidence-rebuild",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "reclaim",
+      "day": "friday",
+      "type": "protocols",
+      "title": "Performance Protocols Carousel",
+      "time": "7:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "hook",
+          "content": "The exact protocols used by high-performers to maintain peak energy and focus"
+        },
+        {
+          "slide": 2,
+          "type": "protocol",
+          "content": "Protocol 1: Morning Testosterone Activation (15 mins). Cold exposure + strength work = hormone surge"
+        },
+        {
+          "slide": 3,
+          "type": "protocol",
+          "content": "Protocol 2: Midday Energy Management. Nutrition timing + movement breaks = sustained focus"
+        },
+        {
+          "slide": 4,
+          "type": "protocol",
+          "content": "Protocol 3: Evening Recovery. Sleep protocol + stress management = restoration for next day"
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Get the complete 30-day protocol workbook. 30-Day Reclaim Workbook - $79. https://reclaim.gumroad.com/l/30day-reclaim"
+        }
+      ],
+      "product": "30day-workbook",
+      "product_price": 79,
+      "product_url": "https://reclaim.gumroad.com/l/30day-reclaim",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "reclaim",
+      "day": "saturday",
+      "type": "motivation",
+      "title": "Weekend Motivation Carousel",
+      "time": "5:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "motivational",
+          "content": "Weekend mindset: Rest is not laziness. Recovery is not weakness. You've earned this."
+        },
+        {
+          "slide": 2,
+          "type": "messaging",
+          "content": "This weekend, invest in yourself. Your body, your mind, your performance depend on it."
+        },
+        {
+          "slide": 3,
+          "type": "action_items",
+          "content": "3 things to do this weekend: 1) Sleep 8+ hours 2) Move your body 3) Refuel with quality nutrition"
+        },
+        {
+          "slide": 4,
+          "type": "social_proof",
+          "content": "\"Weekend recovery transformed my week. I crush it Monday-Friday because I protect my weekends.\" - Marcus, 50"
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Master the weekend recovery protocol. Strength Training for 45+ - $59. https://reclaim.gumroad.com/l/strength-training"
+        }
+      ],
+      "product": "strength-training",
+      "product_price": 59,
+      "product_url": "https://reclaim.gumroad.com/l/strength-training",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    },
+    {
+      "brand": "reclaim",
+      "day": "sunday",
+      "type": "strategy",
+      "title": "Week Prep Strategy Carousel",
+      "time": "6:00 PM ET",
+      "platforms": ["instagram_feed", "facebook"],
+      "slides": 5,
+      "slide_structure": [
+        {
+          "slide": 1,
+          "type": "hook",
+          "content": "Sunday preparation: How top performers set up their week for dominance"
+        },
+        {
+          "slide": 2,
+          "type": "strategy",
+          "content": "Strategy 1: Weekly planning ritual (30 mins). Map your priorities, schedule your workouts, plan your meals."
+        },
+        {
+          "slide": 3,
+          "type": "strategy",
+          "content": "Strategy 2: Meal prep Sunday. 4 hours of prep = 5 days of optimized nutrition. No excuses, just execution."
+        },
+        {
+          "slide": 4,
+          "type": "strategy",
+          "content": "Strategy 3: Mindset reset. Visualize your week. Set your intention. Activate your confidence."
+        },
+        {
+          "slide": 5,
+          "type": "cta",
+          "content": "Get the complete weekly strategy guide. Hormone Meal Plan - $47. https://reclaim.gumroad.com/l/hormone-meal-plan"
+        }
+      ],
+      "product": "hormone-meal-plan",
+      "product_price": 47,
+      "product_url": "https://reclaim.gumroad.com/l/hormone-meal-plan",
+      "creation_method": "canva_manual_or_higgsfield",
+      "status": "ready_for_creation"
+    }
+  ],
+  "carousel_summary": {
+    "total_carousels": 10,
+    "revitalize_carousels": 5,
+    "reclaim_carousels": 5,
+    "total_slides": 50,
+    "average_slides_per_carousel": 5,
+    "creation_status": "specifications_ready",
+    "creation_methods_available": [
+      "Manual creation in Canva using these specifications",
+      "Higgsfield image generation for carousel slides",
+      "Template-based creation from brand guidelines"
+    ],
+    "next_steps": [
+      "Create carousels manually in Canva using slide-by-slide specifications",
+      "Upload to orchestrator media library",
+      "Link in daily trigger configurations",
+      "Execute daily posting triggers"
+    ]
+  }
+}
