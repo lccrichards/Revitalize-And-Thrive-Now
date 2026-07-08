@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "date": "2026-07-08 (Tuesday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "transformation_and_cta",
+      "image_job_id": "3d6ea145-fe11-474d-844a-8b6e03577b1c",
+      "post_id": "18148319500509250",
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "transformation_and_cta",
+      "image_job_id": "40a6ce97-8b7e-4f31-ba5d-acf42f92e212",
+      "post_id": "18125729599710222",
+      "status": "posted"
+    }
+  }
+]
