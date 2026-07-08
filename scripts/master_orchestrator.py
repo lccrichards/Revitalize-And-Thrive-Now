@@ -14,13 +14,19 @@ TRIGGER SCHEDULE (ET):
   Afternoon 3:00 PM  — pain point / problem awareness
   Evening   7:00 PM  — transformation / CTA / conversion
 
+PLATFORMS:
+  Instagram — via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH
+  Facebook  — via Composio FACEBOOK_CREATE_PHOTO_POST (Revitalize only)
+  YouTube   — Video generation (Option B: FFmpeg image-to-video) + upload
+
 HOW IT WORKS:
   1. Determine today's day of week and time slot (morning/afternoon/evening)
   2. Load rotation schedule from orchestrator-config.json
   3. Generate on-brand captions for both brands (Claude does this inline)
   4. Generate Higgsfield images (women for Revitalize, men for Reclaim)
-  5. Post via Composio to Instagram
-  6. Log results to data/orchestrator-log.json
+  5. Post via Composio to Instagram and Facebook (cross-post)
+  6. Generate YouTube videos (Option B: static image-to-video) and upload
+  7. Log results to data/orchestrator-log.json
 
 CLAUDE EXECUTION INSTRUCTIONS:
 When this trigger fires, Claude must:
@@ -30,10 +36,17 @@ When this trigger fires, Claude must:
   d) Generate captions for both brands using the brand voice and today's product
   e) Call mcp__higgsfield__generate_image for each brand
   f) Poll mcp__higgsfield__job_display until status = completed
-  g) Call mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL:
+  g) For Instagram:
+       Call mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL:
        INSTAGRAM_POST_IG_USER_MEDIA (create container)
        then INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH (publish)
-  h) Append results to data/orchestrator-log.json
+  h) For Facebook (Revitalize only):
+       Call mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL:
+       FACEBOOK_CREATE_PHOTO_POST with image URL and caption
+  i) For YouTube (Reclaim only):
+       Generate MP4 video using FFmpeg (image + caption overlay + music)
+       Upload via youtube.videos.insert API
+  j) Append results to data/orchestrator-log.json with post IDs for each platform
 """
 
 import json

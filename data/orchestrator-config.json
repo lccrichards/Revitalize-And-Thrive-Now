@@ -86,12 +86,42 @@
     "revitalize": {
       "ig_entity_id": "revitalize_thrive_now_business",
       "ig_user_id": "27164026169935796",
-      "fb_entity_id": "revitalize_thrive_now_business"
+      "ig_account_id": "17841404319134524",
+      "fb_entity_id": "revitalize_thrive_now_business",
+      "fb_page_id": "130419383084779",
+      "fb_account_id": "act_1234567890",
+      "platforms": ["instagram", "facebook"]
     },
     "reclaim": {
       "ig_entity_id": "reclaim_and_rise_now",
       "ig_user_id": "27634679816148097",
-      "fb_entity_id": null
+      "ig_account_id": "18095676897118726",
+      "fb_entity_id": null,
+      "fb_page_id": null,
+      "yt_channel_id": "UCreclaimandriseNOW",
+      "yt_enabled": true,
+      "platforms": ["instagram", "youtube"]
+    }
+  },
+
+  "youtube": {
+    "video_generation_option": "B",
+    "option_b_config": {
+      "duration_seconds": 30,
+      "fade_in_duration": 2,
+      "display_duration": 26,
+      "fade_out_duration": 2,
+      "resolution": "1920x1080",
+      "codec": "libx264",
+      "audio_track": "royalty_free_wellness_track.mp3",
+      "caption_fontsize": 60,
+      "caption_color": "white",
+      "background_music_volume": 0.7
+    },
+    "reclaim_channel": {
+      "id": "UCreclaimandriseNOW",
+      "category": "22",
+      "default_playlist": "Evening Posts"
     }
   }
 }
