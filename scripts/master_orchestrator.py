@@ -39,6 +39,7 @@ When this trigger fires, Claude must:
 import json
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
@@ -48,21 +49,23 @@ ORCH_CONFIG_PATH = DATA_DIR / "orchestrator-config.json"
 LOG_PATH = DATA_DIR / "orchestrator-log.json"
 
 
-def get_time_slot(hour_utc: int) -> str:
-    """Map UTC hour to posting slot name."""
-    if hour_utc == 11:
+def get_time_slot() -> str:
+    """Map ET time to posting slot name based on America/New_York timezone."""
+    now_et = datetime.now(ZoneInfo("America/New_York"))
+    hour_et = now_et.hour
+
+    if 6 <= hour_et < 12:
         return "morning"
-    elif hour_utc == 19:
+    elif 12 <= hour_et < 18:
         return "afternoon"
-    elif hour_utc == 23:
+    elif 18 <= hour_et < 24:
         return "evening"
     else:
-        # Default to morning if called outside schedule
         return "morning"
 
 
 def get_day_name() -> str:
-    return datetime.now(timezone.utc).strftime("%A").lower()
+    return datetime.now(ZoneInfo("America/New_York")).strftime("%A").lower()
 
 
 def load_configs():
@@ -141,9 +144,8 @@ def print_daily_brief(day: str, slot: str, brand_cfg: dict, orch_cfg: dict):
 if __name__ == "__main__":
     # When run directly, print the daily brief so Claude knows what to execute
     import sys
-    hour_utc = datetime.now(timezone.utc).hour
     slot_arg = sys.argv[1] if len(sys.argv) > 1 else None
-    slot = slot_arg if slot_arg in ("morning", "afternoon", "evening") else get_time_slot(hour_utc)
+    slot = slot_arg if slot_arg in ("morning", "afternoon", "evening") else get_time_slot()
     day = get_day_name()
 
     brand_cfg, orch_cfg = load_configs()
