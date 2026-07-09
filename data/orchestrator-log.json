@@ -41,5 +41,48 @@
       "ig_post_id": "18120075106836750",
       "status": "posted"
     }
+  },
+  {
+    "date": "2026-07-09 (Thursday ET)",
+    "slot": "afternoon",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "angle": "pain_point",
+      "ig_post_id": "18073906865364501",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "pain_point",
+      "ig_post_id": "18027822083834164",
+      "status": "posted"
+    }
+  },
+  {
+    "date": "2026-07-09 (Thursday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "transformation_and_cta",
+      "ig_post_id": "17973160578097456",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "transformation_and_cta",
+      "ig_post_id": "17958425313170429",
+      "yt_status": "video-generation-pending",
+      "status": "posted"
+    }
   }
 ]
