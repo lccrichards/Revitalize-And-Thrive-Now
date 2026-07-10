@@ -1,8 +1,28 @@
 # Trigger Automation Fix — Critical Issues & Remediation
 
-**Status**: 3 PM posts failed. 7 PM trigger never created. Automation unreliable.  
-**Deadline**: Fix before July 10, 7 AM ET (next morning trigger fire)  
-**Priority**: CRITICAL — No manual posting acceptable going forward
+**Status (2026-07-10, updated)**: ROOT CAUSE FOUND AND FIXED.
+The trigger IDs this document originally referenced (`trig_01BMNF6YHrqruUsocJQFnnKv`,
+`trig_01F8cyPxTvbyacbz91rvQte7`) never actually existed — stale documentation.
+The triggers that were **actually** live and firing were a different set, created
+2026-07-08, that this repo's docs never tracked: `trig_013nTwRNxw1PGMjNexa3ufQw`
+(morning), `trig_015XtoV8H12ztGkdr9K4VavK` (afternoon), `trig_015LVecJRufuxka4nWy63G36`
+(evening). Those fired reliably on schedule (confirmed via `last_fired_at`) but their
+spawned sessions silently failed to actually post/log/push — no verification step
+caught it. This reproduced on **both** July 9 3 PM and July 10 7 AM before being
+caught and fixed. They also lacked an explicit Instagram account alias for Reclaim
+and called `FACEBOOK_CREATE_PHOTO_POST` explicitly for Revitalize, which duplicates
+the post Facebook already receives via Instagram auto-sync.
+
+**Fix applied 2026-07-10**: All three legacy triggers deleted and recreated
+(`trig_016rAJRivpmtaJnGSKPAWKCw` morning, `trig_01SeVcKi4k8hCkViYAeQj3HP` afternoon,
+`trig_019RDVJEs19923UUsESafRWE` evening — see `data/triggers.json`) with: mandatory
+`INSTAGRAM_GET_IG_MEDIA` verification + permalink capture before logging any post as
+successful, explicit account aliases for both Instagram accounts on every call, and
+removal of the redundant Facebook post call. A duplicate evening trigger created in
+an earlier session turn (`trig_01QvxgtizQTaYYygBMCEFsf8`, which also had the wrong
+git push branch) was also deleted to prevent double-posting.
+
+**Priority**: CRITICAL — No manual posting acceptable going forward (history below is preserved for context)
 
 ---
 
