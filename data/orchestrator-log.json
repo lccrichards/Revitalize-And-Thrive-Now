@@ -84,5 +84,32 @@
       "yt_status": "video-generation-pending",
       "status": "posted"
     }
+  },
+  {
+    "date": "2026-07-10 (Friday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-10T11:29:56Z",
+    "revitalize": {
+      "product": "Nutrition Deep Dive",
+      "price": "$49",
+      "theme": "nutrition and meal planning",
+      "angle": "education",
+      "ig_post_id": "18432289171123760",
+      "ig_permalink": "https://www.instagram.com/p/DanFixRoEqz/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "education",
+      "ig_post_id": "17957328639173669",
+      "ig_permalink": "https://www.instagram.com/p/DanFiwoIAqL/",
+      "status": "posted",
+      "verified": true
+    },
+    "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
   }
 ]
