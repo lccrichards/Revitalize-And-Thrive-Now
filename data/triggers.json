@@ -1,5 +1,5 @@
 {
-  "note": "Persistent daily triggers created via mcp__Claude_Code_Remote__create_trigger. To recreate any trigger, open a new Claude Code session and ask: 'Create the [morning/afternoon/evening] orchestrator trigger from data/triggers.json'. All three push results to branch claude/laughing-darwin-cQTwH — this is the actual live working branch (confirmed via git branch --show-current), NOT claude/mcp-image-generation-tool-oehbfz.",
+  "note": "Persistent daily triggers created via mcp__Claude_Code_Remote__create_trigger. To recreate any trigger, open a new Claude Code session and ask: 'Create the [morning/afternoon/evening/night] orchestrator trigger from data/triggers.json'. All four push results to branch claude/laughing-darwin-cQTwH — this is the actual live working branch (confirmed via git branch --show-current), NOT claude/mcp-image-generation-tool-oehbfz. NIGHT (10 PM) trigger was added to config on 2026-07-11 but its live trigger must still be created via mcp__Claude_Code_Remote__create_trigger — it is not ACTIVE until then (see status PENDING_CREATION below).",
   "last_verified": "2026-07-10T14:40:00Z",
   "triggers": [
     {
@@ -28,6 +28,16 @@
       "slot": "evening",
       "angle": "transformation_and_cta",
       "prompt_summary": "Conversion/transformation slot. Same verified posting pattern as morning/afternoon, plus best-effort YouTube video upload for Reclaim (does not block Instagram logging on failure)."
+    },
+    {
+      "id": null,
+      "name": "RTN + Reclaim — Night Post (10 PM ET)",
+      "cron_expression": "3 2 * * *",
+      "status": "PENDING_CREATION",
+      "slot": "night",
+      "angle": "restoration_and_rest",
+      "prompt_summary": "Restoration / gentle wind-down slot. 10 PM bedtime content — protect tonight's rest so tomorrow starts stronger. Uses the night product from the daily rotation (sleep/restoration-leaning). Same verified posting pattern as the other slots: Higgsfield women image for Revitalize + men image for Reclaim, post via Composio to both Instagram accounts (instagram_cardin-bulgar, instagram_medlar-slap) with explicit account aliases, verify each post live via INSTAGRAM_GET_IG_MEDIA before logging, no explicit Facebook call (Revitalize IG auto-syncs). cron 3 2 * * * UTC = 10 PM ET during EDT (adjust to 3 3 * * * for EST).",
+      "creation_command": "mcp__Claude_Code_Remote__create_trigger with cron '3 2 * * *' and the prompt used by the other slots, targeting branch claude/laughing-darwin-cQTwH. Must be run in a session where the Claude_Code_Remote MCP server is connected."
     }
   ],
   "superseded_triggers": {
