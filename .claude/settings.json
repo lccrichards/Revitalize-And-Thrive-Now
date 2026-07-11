@@ -1,0 +1,10 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "higgsfield",
+    "composio"
+  ],
+  "permissions": {
+    "defaultMode": "acceptEdits"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "note": "Persistent daily triggers created via mcp__Claude_Code_Remote__create_trigger. To recreate any trigger, open a new Claude Code session and ask: 'Create the [morning/afternoon/evening] orchestrator trigger from data/triggers.json'. All three push results to branch claude/laughing-darwin-cQTwH — this is the actual live working branch (confirmed via git branch --show-current), NOT claude/mcp-image-generation-tool-oehbfz.",
+  "last_verified": "2026-07-10T14:40:00Z",
+  "triggers": [
+    {
+      "id": "trig_016rAJRivpmtaJnGSKPAWKCw",
+      "name": "RTN + Reclaim — Morning Post (7 AM ET)",
+      "cron_expression": "3 11 * * *",
+      "status": "ACTIVE",
+      "slot": "morning",
+      "angle": "education",
+      "prompt_summary": "Education/authority slot. Uses morning product from daily rotation. Generates Higgsfield women image for Revitalize, men image for Reclaim. Posts via Composio to both Instagram accounts using explicit account aliases (instagram_cardin-bulgar, instagram_medlar-slap). Verifies each post is live via INSTAGRAM_GET_IG_MEDIA before logging. No explicit Facebook call — Revitalize IG auto-syncs to Facebook."
+    },
+    {
+      "id": "trig_01SeVcKi4k8hCkViYAeQj3HP",
+      "name": "RTN + Reclaim — Afternoon Post (3 PM ET)",
+      "cron_expression": "3 19 * * *",
+      "status": "ACTIVE",
+      "slot": "afternoon",
+      "angle": "pain_point",
+      "prompt_summary": "Pain-point slot. 3 PM crash content. Uses afternoon product from daily rotation. Same verified posting pattern as morning trigger."
+    },
+    {
+      "id": "trig_019RDVJEs19923UUsESafRWE",
+      "name": "RTN + Reclaim — Evening Post (7 PM ET)",
+      "cron_expression": "3 23 * * *",
+      "status": "ACTIVE",
+      "slot": "evening",
+      "angle": "transformation_and_cta",
+      "prompt_summary": "Conversion/transformation slot. Same verified posting pattern as morning/afternoon, plus best-effort YouTube video upload for Reclaim (does not block Instagram logging on failure)."
+    }
+  ],
+  "superseded_triggers": {
+    "note": "These trigger IDs no longer exist — deleted 2026-07-10 and replaced by the ACTIVE set above.",
+    "legacy_july_8_set": [
+      "trig_013nTwRNxw1PGMjNexa3ufQw (morning, cron 0 11 * * *) — fired on schedule per last_fired_at but its spawned session silently failed to post/log on multiple occasions (confirmed July 9 and again July 10). Lacked post-verification and explicit Reclaim account alias, and duplicated Facebook posts via an explicit FACEBOOK_CREATE_PHOTO_POST call.",
+      "trig_015XtoV8H12ztGkdr9K4VavK (afternoon, cron 0 19 * * *) — same root cause; this is the trigger behind the July 9 3 PM failure the user reported.",
+      "trig_015LVecJRufuxka4nWy63G36 (evening, cron 0 23 * * *) — same root cause."
+    ],
+    "phantom_documented_ids": [
+      "trig_01BMNF6YHrqruUsocJQFnnKv — referenced in earlier docs as the 'morning' trigger but never actually existed in the live trigger list; stale documentation from an earlier session.",
+      "trig_01F8cyPxTvbyacbz91rvQte7 — referenced in earlier docs as the 'afternoon' trigger; same issue, never existed.",
+      "trig_01QvxgtizQTaYYygBMCEFsf8 — a duplicate evening trigger created in a prior session turn; deleted 2026-07-10 to prevent double-posting alongside the legacy evening trigger. Its prompt also incorrectly pushed to branch claude/mcp-image-generation-tool-oehbfz instead of the real working branch."
+    ]
+  }
+}

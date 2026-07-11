@@ -1,0 +1,115 @@
+[
+  {
+    "date": "2026-07-08 (Tuesday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "transformation_and_cta",
+      "image_job_id": "3d6ea145-fe11-474d-844a-8b6e03577b1c",
+      "post_id": "18148319500509250",
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "transformation_and_cta",
+      "image_job_id": "40a6ce97-8b7e-4f31-ba5d-acf42f92e212",
+      "post_id": "18125729599710222",
+      "status": "posted"
+    }
+  },
+  {
+    "date": "2026-07-09 (Thursday ET)",
+    "slot": "morning",
+    "revitalize": {
+      "product": "The Mindset Bundle",
+      "price": "$97",
+      "theme": "mindset reset",
+      "angle": "education",
+      "ig_post_id": "18070414394402143",
+      "fb_post_id": "1029294466942140_122113748984693190",
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$67",
+      "theme": "mindset recalibration",
+      "angle": "education",
+      "ig_post_id": "18120075106836750",
+      "status": "posted"
+    }
+  },
+  {
+    "date": "2026-07-09 (Thursday ET)",
+    "slot": "afternoon",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "angle": "pain_point",
+      "ig_post_id": "18073906865364501",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "pain_point",
+      "ig_post_id": "18027822083834164",
+      "status": "posted"
+    }
+  },
+  {
+    "date": "2026-07-09 (Thursday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "transformation_and_cta",
+      "ig_post_id": "17973160578097456",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "transformation_and_cta",
+      "ig_post_id": "17958425313170429",
+      "yt_status": "video-generation-pending",
+      "status": "posted"
+    }
+  },
+  {
+    "date": "2026-07-10 (Friday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-10T11:29:56Z",
+    "revitalize": {
+      "product": "Nutrition Deep Dive",
+      "price": "$49",
+      "theme": "nutrition and meal planning",
+      "angle": "education",
+      "ig_post_id": "18432289171123760",
+      "ig_permalink": "https://www.instagram.com/p/DanFixRoEqz/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "education",
+      "ig_post_id": "17957328639173669",
+      "ig_permalink": "https://www.instagram.com/p/DanFiwoIAqL/",
+      "status": "posted",
+      "verified": true
+    },
+    "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
+  }
+]

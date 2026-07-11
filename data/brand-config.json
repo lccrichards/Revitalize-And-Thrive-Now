@@ -1,0 +1,270 @@
+{
+  "revitalize": {
+    "name": "Revitalize and Thrive Now",
+    "tagline": "Your Second Chapter Starts Now",
+    "audience": "Women 45-65 in midlife transition -- exhausted, hormonally imbalanced, dealing with brain fog, stubborn weight, broken sleep, and feeling invisible. They have put everyone else first for decades and are ready to reclaim themselves.",
+    "voice": "Warm, empowering, woman-to-woman. You have lived it. You are not selling -- you are handing her the answer she has been searching for. Speak directly to specific symptoms, not vague wellness language. Short punchy lines, no filler. Transformation language: second chapter, finally feel like yourself again, you deserve this. Never preachy. Always empowering. End every post with urgency and a specific price.",
+    "platforms": ["instagram", "facebook", "pinterest"],
+    "image_style": "Professional women aged 45-65. All demographics, all races, all body types. Confident, radiant, thriving. Clean natural light. No men in frame. Lifestyle wellness: morning routines, journaling, herbal tea, light exercise, reading, self-care moments.",
+    "products": [
+      {
+        "name": "30-Day Wellness Transformation",
+        "price_short": "$79",
+        "url": "rivitalize.gumroad.com/l/nlkuz",
+        "cta": "Get the 30-Day Wellness Transformation",
+        "category": "flagship"
+      },
+      {
+        "name": "Complete Wellness Bundle",
+        "price_short": "$149",
+        "url": "rivitalize.gumroad.com/l/complete-wellness-bundle",
+        "cta": "Get the Complete Wellness Bundle",
+        "category": "flagship"
+      },
+      {
+        "name": "The Revitalize Circle Monthly Membership",
+        "price_short": "$97/month",
+        "url": "rivitalize.gumroad.com/l/revitalize-circle",
+        "cta": "Join The Revitalize Circle",
+        "category": "membership"
+      },
+      {
+        "name": "Hormone Reset Masterclass",
+        "price_short": "$59",
+        "url": "rivitalize.gumroad.com/l/hormone-reset-masterclass",
+        "cta": "Get the Hormone Reset Masterclass",
+        "category": "premium"
+      },
+      {
+        "name": "The Midlife Sleep Fix",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/midlife-sleep-fix",
+        "cta": "Get The Midlife Sleep Fix",
+        "category": "standalone",
+        "bundle_bonus": "Energy Restoration Guide (FREE)"
+      },
+      {
+        "name": "Hormone-Balancing Meal Plan",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/hormone-meal-plan",
+        "cta": "Get the Hormone-Balancing Meal Plan",
+        "category": "standalone",
+        "bundle_bonus": "Energy Restoration Guide (FREE)"
+      },
+      {
+        "name": "The Mindset Bundle",
+        "price_short": "$49",
+        "url": "rivitalize.gumroad.com/l/mindset-bundle",
+        "cta": "Get The Mindset Bundle",
+        "category": "standalone"
+      },
+      {
+        "name": "Nutrition Deep Dive",
+        "price_short": "$49",
+        "url": "rivitalize.gumroad.com/l/nutrition-deep-dive",
+        "cta": "Get the Nutrition Deep Dive",
+        "category": "standalone"
+      },
+      {
+        "name": "Stress Management Workbook",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/stress-management",
+        "cta": "Get the Stress Management Workbook",
+        "category": "standalone"
+      },
+      {
+        "name": "Skincare and Beauty Protocol",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/skincare-beauty",
+        "cta": "Get the Skincare and Beauty Protocol",
+        "category": "standalone"
+      },
+      {
+        "name": "Fitness After 45 Guide",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/fitness-after-45",
+        "cta": "Get the Fitness After 45 Guide",
+        "category": "standalone"
+      },
+      {
+        "name": "Energy Restoration Guide",
+        "price_short": "$29",
+        "url": "rivitalize.gumroad.com/l/energy-restoration",
+        "cta": "Get the Energy Restoration Guide",
+        "category": "entry",
+        "bundle_note": "FREE when you purchase The Midlife Sleep Fix or Hormone-Balancing Meal Plan"
+      }
+    ],
+    "bundles": [
+      {
+        "trigger_product": "The Midlife Sleep Fix",
+        "trigger_price": "$39",
+        "bonus_product": "Energy Restoration Guide",
+        "bonus_value": "$29",
+        "combined_value": "$68",
+        "cta": "Get The Midlife Sleep Fix + Energy Restoration Guide FREE"
+      },
+      {
+        "trigger_product": "Hormone-Balancing Meal Plan",
+        "trigger_price": "$39",
+        "bonus_product": "Energy Restoration Guide",
+        "bonus_value": "$29",
+        "combined_value": "$68",
+        "cta": "Get the Hormone-Balancing Meal Plan + Energy Restoration Guide FREE"
+      }
+    ],
+    "hashtag_pools": {
+      "core": [
+        "#RevitalizeAndThrive", "#WomenOver45", "#MidlifeWellness", "#HormoneHealth",
+        "#WomenEmpowerment", "#LifeAfter45", "#MidlifeTransformation", "#HealthyAging",
+        "#WomenWellness", "#ThrivingAt50", "#SecondChapter", "#YouDeserveThis",
+        "#MidlifeWoman", "#WellnessJourney", "#FeelAmazingAgain"
+      ],
+      "hormone": [
+        "#HormoneBalance", "#BalanceHormones", "#MenopauseHealth", "#PerimenopauseSupport",
+        "#HormonesAndHealth", "#MidlifeHormones", "#EstrogenDominance", "#CortisolBalance"
+      ],
+      "sleep": [
+        "#MidlifeSleep", "#SleepFix", "#MenopauseSleep", "#BetterSleep",
+        "#SleepHealth", "#SleepBetter", "#FeelRested", "#TiredNoMore"
+      ],
+      "mindset": [
+        "#MidlifeMindset", "#MindsetReset", "#WomenOver50", "#MidlifeConfidence",
+        "#GrowthMindset", "#MindsetShift", "#ThrivingAt50", "#NeverTooLate"
+      ],
+      "nutrition": [
+        "#HormoneMealPlan", "#MenopauseNutrition", "#MidlifeNutrition",
+        "#AntiInflammatory", "#WellnessMeals", "#FoodAsMedicine"
+      ],
+      "strength": [
+        "#FitnessAfter45", "#WomenWhoLift", "#MidlifeFitness",
+        "#FunctionalFitness", "#WomenStrength", "#FitOver50"
+      ],
+      "energy": [
+        "#EnergyRestoration", "#MidlifeEnergy", "#FightFatigue",
+        "#NaturalEnergy", "#CortisolManagement", "#AdrenalHealth"
+      ],
+      "beauty": [
+        "#MidlifeBeauty", "#AgingGracefully", "#SkincareTips",
+        "#GlowingAt50", "#MidlifeSkin", "#NaturalBeauty"
+      ],
+      "membership": [
+        "#RevitalizeCircle", "#WomensCommunity", "#SupportSystem",
+        "#MidlifeSisterhood", "#WellnessTribe", "#AccountabilityGroup"
+      ]
+    },
+    "content_themes": [
+      "hormone balance",
+      "sleep optimization",
+      "mindset reset",
+      "energy restoration",
+      "nutrition and meal planning",
+      "strength and fitness after 45",
+      "stress and cortisol management",
+      "skincare and beauty",
+      "confidence and self-worth",
+      "perimenopause support",
+      "weight management",
+      "monthly membership and community"
+    ]
+  },
+  "reclaim": {
+    "name": "Reclaim and Rise",
+    "tagline": "Reclaim Your Drive. Rebuild Your Edge.",
+    "audience": "Men 45-55 -- high performers who built careers and families but now feel their edge slipping. Low energy, testosterone decline, brain fog, reduced strength, loss of drive. They do not want sympathy. They want a strategy.",
+    "voice": "Direct, peer-to-peer, performance-focused. No fluff. Evidence-based with specific mechanisms -- cortisol, testosterone, neuroscience. Man-to-man energy: you are a peer sharing what actually works, not a coach. Short declarative statements. Numbers when possible. Strong verbs. No passive language. No soft language. Urgency through logic, not emotion.",
+    "platforms": ["instagram", "youtube", "facebook"],
+    "image_style": "Professional men aged 45-55. Confident, sharp, high-performing. Clean environments: modern office, gym, morning routine. No women in frame. Performance-focused visuals: discipline, strength, focus, execution.",
+    "products": [
+      {
+        "name": "Complete Reclaim Reset Bundle",
+        "price_short": "$249",
+        "url": "rivitalize.gumroad.com/l/nxqlwr",
+        "cta": "Get the Complete Reclaim Reset Bundle",
+        "category": "flagship"
+      },
+      {
+        "name": "Reclaim Masterclass",
+        "price_short": "$149",
+        "url": "rivitalize.gumroad.com/l/masterclass-series",
+        "cta": "Access the Reclaim Masterclass",
+        "category": "premium"
+      },
+      {
+        "name": "Midlife Mindset Code",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/mindset-reset",
+        "cta": "Get the Midlife Mindset Code",
+        "category": "standalone"
+      },
+      {
+        "name": "Testosterone and Stamina Meal Plan",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/hormone-meal-plan",
+        "cta": "Get the 28-Day Testosterone Meal Plan",
+        "category": "standalone"
+      },
+      {
+        "name": "Strength Density and Longevity",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/strength-longevity",
+        "cta": "Get the Strength Protocol",
+        "category": "standalone"
+      },
+      {
+        "name": "Sleep Recovery Protocol",
+        "price_short": "$39",
+        "url": "rivitalize.gumroad.com/l/midlife-sleep-fix",
+        "cta": "Get the Sleep Recovery Protocol",
+        "category": "standalone"
+      },
+      {
+        "name": "Midlife Wellness Planner",
+        "price_short": "$19",
+        "url": "rivitalize.gumroad.com/l/wellness-planner",
+        "cta": "Get the Midlife Wellness Planner",
+        "category": "entry"
+      }
+    ],
+    "hashtag_pools": {
+      "core": [
+        "#ReclaimAndRise", "#MenOver45", "#MidlifeMen", "#RecoverYourDrive",
+        "#TestosteroneHealth", "#MensWellness", "#MensHealth", "#MidlifeRecalibration",
+        "#MenWhoThrive", "#StrengthAtMidlife", "#RecoverStrong", "#MidlifeReset",
+        "#MensTransformation"
+      ],
+      "testosterone": [
+        "#TestosteroneBoost", "#NaturalTestosterone", "#HormoneOptimization",
+        "#TestosteroneFix", "#MaleHormones", "#TestosteroneDecline", "#OptimizeHormones"
+      ],
+      "mindset": [
+        "#MensMindset", "#MindsetCode", "#MentalStrength",
+        "#NeuroscienceMindset", "#MindsetShift", "#MindsetReset"
+      ],
+      "strength": [
+        "#StrengthTraining", "#MidlifeFitness", "#MensStrength",
+        "#FunctionalStrength", "#BuildMuscle", "#TrainSmart"
+      ],
+      "sleep": [
+        "#MensSleep", "#SleepRecovery", "#SleepOptimization",
+        "#DeepSleep", "#RecoverySleep", "#SleepProtocol"
+      ],
+      "nutrition": [
+        "#TestosteroneFood", "#MensMealPlan", "#HormoneNutrition",
+        "#EatForHormones", "#MealPlanForMen", "#MenNutrition"
+      ]
+    },
+    "content_themes": [
+      "testosterone optimization",
+      "sleep recovery",
+      "strength and muscle density",
+      "mindset recalibration",
+      "nutrition for male hormones",
+      "stress and cortisol management",
+      "energy and cognitive performance",
+      "drive and motivation",
+      "midlife performance edge",
+      "confidence and identity"
+    ]
+  }
+}
