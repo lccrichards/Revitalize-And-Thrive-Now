@@ -111,5 +111,31 @@
       "verified": true
     },
     "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
+  },
+  {
+    "date": "2026-07-12 (Saturday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-12T01:01:19Z",
+    "revitalize": {
+      "product": "Skincare and Beauty Protocol",
+      "price": "$39",
+      "theme": "skincare and beauty",
+      "angle": "restoration_and_rest",
+      "ig_post_id": "18103111028152064",
+      "ig_permalink": "https://www.instagram.com/p/DarHMLaibMH/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "restoration_and_rest",
+      "ig_post_id": "17887946904415970",
+      "ig_permalink": "https://www.instagram.com/p/DarHMMFCdc1/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
