@@ -27,10 +27,10 @@
     "night": {
       "time_et": "10:00 PM",
       "cron_utc": "0 2 * * *",
-      "angle": "restoration_and_rest",
-      "hook_style": "bedtime_or_tomorrow_prep",
+      "angle": "urgency_social_proof",
+      "hook_style": "social_proof_or_last_call",
       "product_tiers": ["standalone", "membership", "bundle"],
-      "tone": "The 10 PM wind-down. Soft, intimate, reflective. Name the end-of-day feeling — wired but exhausted, mind still racing, dreading another restless night. Protect tonight's rest so tomorrow starts stronger. Gentle CTA, specific price, full URL. Never hype; this is the quiet close of the day."
+      "tone": "The 10 PM last-call. Urgency plus social proof — a testimonial-style result or 'women/men are seeing this' framing, reflective before-bed tone, last-chance-today energy. The product is the proven solution. Specific price, full URL on their own lines. Confident, warm, never hype."
     }
   },
 
