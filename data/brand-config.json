@@ -121,11 +121,11 @@
         "#MidlifeWoman", "#WellnessJourney", "#FeelAmazingAgain"
       ],
       "hormone": [
-        "#HormoneBalance", "#BalanceHormones", "#MenopauseHealth", "#PerimenopauseSupport",
-        "#HormonesAndHealth", "#MidlifeHormones", "#EstrogenDominance", "#CortisolBalance"
+        "#WomensWellness", "#MidlifeWellness", "#MenopauseHealth", "#PerimenopauseSupport",
+        "#WellnessOver45", "#MidlifeHealthJourney", "#MidlifeSupport", "#StressSupport"
       ],
       "sleep": [
-        "#MidlifeSleep", "#SleepFix", "#MenopauseSleep", "#BetterSleep",
+        "#MidlifeSleep", "#BetterSleepHabits", "#MenopauseSleep", "#BetterSleep",
         "#SleepHealth", "#SleepBetter", "#FeelRested", "#TiredNoMore"
       ],
       "mindset": [
@@ -133,7 +133,7 @@
         "#GrowthMindset", "#MindsetShift", "#ThrivingAt50", "#NeverTooLate"
       ],
       "nutrition": [
-        "#HormoneMealPlan", "#MenopauseNutrition", "#MidlifeNutrition",
+        "#WholeFoodEating", "#MenopauseNutrition", "#MidlifeNutrition",
         "#AntiInflammatory", "#WellnessMeals", "#FoodAsMedicine"
       ],
       "strength": [
@@ -142,7 +142,7 @@
       ],
       "energy": [
         "#EnergyRestoration", "#MidlifeEnergy", "#FightFatigue",
-        "#NaturalEnergy", "#CortisolManagement", "#AdrenalHealth"
+        "#NaturalEnergy", "#StressLess", "#AdrenalHealth"
       ],
       "beauty": [
         "#MidlifeBeauty", "#AgingGracefully", "#SkincareTips",
@@ -229,13 +229,13 @@
     "hashtag_pools": {
       "core": [
         "#ReclaimAndRise", "#MenOver45", "#MidlifeMen", "#RecoverYourDrive",
-        "#TestosteroneHealth", "#MensWellness", "#MensHealth", "#MidlifeRecalibration",
+        "#MensHealth", "#MensWellness", "#MensHealth", "#MidlifeRecalibration",
         "#MenWhoThrive", "#StrengthAtMidlife", "#RecoverStrong", "#MidlifeReset",
         "#MensTransformation"
       ],
       "testosterone": [
-        "#TestosteroneBoost", "#NaturalTestosterone", "#HormoneOptimization",
-        "#TestosteroneFix", "#MaleHormones", "#TestosteroneDecline", "#OptimizeHormones"
+        "#MensVitality", "#MensWellness", "#WellnessJourney",
+        "#MensHealthOver45", "#MensMidlife", "#MidlifeMen", "#HealthyHabits"
       ],
       "mindset": [
         "#MensMindset", "#MindsetCode", "#MentalStrength",
@@ -246,12 +246,12 @@
         "#FunctionalStrength", "#BuildMuscle", "#TrainSmart"
       ],
       "sleep": [
-        "#MensSleep", "#SleepRecovery", "#SleepOptimization",
+        "#MensSleep", "#SleepRecovery", "#RestAndRecovery",
         "#DeepSleep", "#RecoverySleep", "#SleepProtocol"
       ],
       "nutrition": [
-        "#TestosteroneFood", "#MensMealPlan", "#HormoneNutrition",
-        "#EatForHormones", "#MealPlanForMen", "#MenNutrition"
+        "#EatForEnergy", "#MensMealPlan", "#NourishYourBody",
+        "#EatWell", "#MealPlanForMen", "#MenNutrition"
       ]
     },
     "content_themes": [
