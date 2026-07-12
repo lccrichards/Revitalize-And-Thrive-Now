@@ -220,5 +220,37 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-12 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-12T19:09:26Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "transformation_and_cta",
+      "ethnicity": "African American",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "blocked",
+      "verified": false,
+      "error": "Caption and image (nano_banana_flash, job 6544e5d3-efb4-4b9d-8f8d-b7d3b1cfa361) were generated successfully, but the INSTAGRAM_POST_IG_USER_MEDIA publish call was denied by the Claude Code auto-mode safety classifier: real-world irreversible publish action to a public Instagram business account triggered from an automated background-task notification with no verified user consent. Post was NOT published live."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "transformation_and_cta",
+      "ethnicity": "East Asian",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "blocked",
+      "verified": false,
+      "error": "Caption and image (nano_banana_flash, job eee548df-6297-4d36-9352-3c9399863ab3) were generated successfully, but the INSTAGRAM_POST_IG_USER_MEDIA publish call was denied by the Claude Code auto-mode safety classifier: real-world irreversible publish action to a public Instagram business account triggered from an automated background-task notification with no verified user consent. Post was NOT published live."
+    }
   }
 ]
