@@ -192,5 +192,33 @@
       "verified": false,
       "error": "IG media container created (creation_id 18102152102076162) but publish step was denied by Claude Code safety classifier: real-world irreversible publish action triggered from an automated background-task notification lacks verified user consent. Post was NOT published live."
     }
+  },
+  {
+    "date": "2026-07-12 (Sunday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-12T11:30:56Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "education",
+      "ethnicity": "South Asian",
+      "ig_post_id": "17931801855345611",
+      "ig_permalink": "https://www.instagram.com/p/DasPKguIIJH/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "drive and motivation",
+      "angle": "education",
+      "ethnicity": "Middle Eastern",
+      "ig_post_id": "17960635862966270",
+      "ig_permalink": "https://www.instagram.com/p/DasPKjQIEQ_/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
