@@ -133,6 +133,38 @@ def log_result(entry: dict):
         json.dump(log, f, indent=2)
 
 
+def _et_date_str() -> str:
+    return datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+
+
+def already_posted_today(slot: str) -> bool:
+    """True if a verified/posted entry for this slot already exists for today's ET date."""
+    if not LOG_PATH.exists():
+        return False
+    try:
+        with open(LOG_PATH) as f:
+            log = json.load(f)
+    except Exception:
+        return False
+    today = _et_date_str()
+    for e in log:
+        if e.get("slot") != slot:
+            continue
+        same_day = today in str(e.get("date", ""))
+        ts = str(e.get("timestamp_utc", ""))
+        if not same_day and ts:
+            try:
+                dt = datetime.fromisoformat(ts.replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York"))
+                same_day = dt.strftime("%Y-%m-%d") == today
+            except Exception:
+                pass
+        if same_day:
+            rev = e.get("revitalize", {})
+            if rev.get("verified") is True or rev.get("status") == "posted":
+                return True
+    return False
+
+
 def print_daily_brief(day: str, slot: str, brand_cfg: dict, orch_cfg: dict):
     """Print what Claude will execute today."""
     rev_rotation = orch_cfg["revitalize_rotation"][day]
@@ -144,6 +176,11 @@ def print_daily_brief(day: str, slot: str, brand_cfg: dict, orch_cfg: dict):
     print(f"\n{'='*60}")
     print(f"MASTER ORCHESTRATOR — {slot.upper()} SLOT")
     print(f"Day: {day.title()}  |  Time: {slot_info['time_et']} ET")
+    print(f"DATE (ET): {_et_date_str()}  (use this exact date in the log entry)")
+    if already_posted_today(slot):
+        print("POST GUARD: ALREADY POSTED TODAY -- DO NOT POST AGAIN. Skip this run and exit.")
+    else:
+        print(f"POST GUARD: OK to post -- no verified {slot} entry for {_et_date_str()} yet.")
     print(f"{'='*60}")
     print(f"\nREVITALIZE AND THRIVE NOW")
     print(f"  Theme   : {rev_rotation['theme']}")
