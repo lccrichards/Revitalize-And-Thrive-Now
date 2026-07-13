@@ -421,5 +421,39 @@
       "caption": "3 PM hits and the edge you had this morning is gone. Focus scatters. Energy drops. You push through anyway \u2014 that's what we do, but pushing through isn't the same as performing well.\n\nThat afternoon crash isn't weakness. It's a pattern, and patterns can be worked on with the right approach. Most guys in their 45s and up hit this same wall, and most never do anything about it beyond another coffee and sheer willpower.\n\nThe Reclaim Masterclass gives you a real strategy \u2014 not vague advice \u2014 for building steadier drive and sharper focus through the parts of the day that used to derail you.\n\nReclaim Masterclass\n$149\nrivitalize.gumroad.com/l/masterclass-series\n\nStop coasting through your afternoons. Build the edge back. \ud83d\udd25\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensMindset #MentalStrength #MidlifeReset #MenWhoThrive #StrengthAtMidlife #MidlifeRecalibration #MensTransformation #MindsetShift #RecoverStrong #NeuroscienceMindset #MidlifeVitality"
     },
     "note": "ESCALATION: the afternoon-slot publish step was blocked by the Claude Code auto-mode safety classifier's [Real World Transactions] rule, the same rule that blocked all 4 evening-slot attempts on 2026-07-12. The classifier now appears to be blocking every scheduled-trigger publish attempt regardless of slot, which contradicts the automation's stated design (per data/triggers.json and prior successful morning/afternoon posts) and the account owner's evident intent in setting up daily auto-posting triggers. This is a platform-level policy enforcement, not a judgment call this session can override. The account owner needs to either (a) publish these two drafts manually via the Instagram app using the image URLs and captions above, or (b) run this pipeline once in a live, interactive session so an explicit real-time user message authorizes the publish action, which may satisfy the classifier going forward."
+  },
+  {
+    "date": "2026-07-13 (Monday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-13T11:08:38Z",
+    "revitalize": {
+      "product": "Hormone Reset Masterclass",
+      "price": "$59",
+      "theme": "hormone balance",
+      "angle": "education",
+      "ethnicity": "East Asian",
+      "image_job_id": "ed5b0085-6998-4bae-8135-258498e104f5",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_110723_ed5b0085-6998-4bae-8135-258498e104f5.png",
+      "ig_creation_id": "17911318479431674",
+      "ig_post_id": "18110674318748817",
+      "ig_permalink": "https://www.instagram.com/p/DauxcecIN2o/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "testosterone optimization",
+      "angle": "education",
+      "ethnicity": "South Asian",
+      "image_job_id": "58d5a9a1-32c1-4798-938b-34e0198ada15",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_110725_58d5a9a1-32c1-4798-938b-34e0198ada15.png",
+      "ig_creation_id": "18102386975076162",
+      "ig_post_id": "18596637262049033",
+      "ig_permalink": "https://www.instagram.com/p/DauxcfhoG5n/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
