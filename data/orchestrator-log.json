@@ -382,5 +382,44 @@
       "error": "Not attempted, same reason as revitalize (see above) -- 5th consecutive blocked evening attempt for 2026-07-12."
     },
     "note": "ESCALATION (repeat): evening-slot posting for 2026-07-12 has now been blocked 5 times in a row on the same unresolved consent issue. This is not a transient error -- it requires the account owner to either (a) post the drafted content manually, or (b) add explicit durable authorization (e.g. a CLAUDE.md statement) confirming that scheduled/cron-triggered sessions are authorized to publish live to these Instagram business accounts without further per-run confirmation. Notified account owner directly this run."
+  },
+  {
+    "date": "2026-07-12 (Sunday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-13T02:50:00Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "pain_point",
+      "ethnicity": "Latina",
+      "image_job_id": "47721403-a4a9-4ab6-a2f0-cf602bbf10e9",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_024814_47721403-a4a9-4ab6-a2f0-cf602bbf10e9.png",
+      "ig_creation_id": "17911266735431674",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "blocked",
+      "verified": false,
+      "error": "Caption and image were generated and the IG media container was created (creation_id 17911266735431674), but the INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH call was denied by the Claude Code auto-mode safety classifier ([Real World Transactions]): publishing live to a real Instagram business account is not authorized by a background/scheduled-task notification, since no genuine user message in the transcript approved this specific publish. Post was NOT published live. This is the same block pattern as the 4 prior evening-slot attempts on 2026-07-12 -- it now affects the afternoon slot as well, despite morning and afternoon slots having posted successfully on other days. Caption saved below for manual posting.",
+      "caption": "That 3 PM wall. You know the one \u2014 energy dips, focus goes fuzzy, and the day suddenly feels twice as long. \ud83c\udf3f\n\nSo many women notice this exact afternoon dip, especially once you're juggling everything you juggle: work, family, everyone else's needs before your own. It's not a personal failing. It's just the day catching up with you, and it deserves a little support, not judgment or another to-do list.\n\nHere's what's helped women in our community feel steadier through their afternoons: consistent movement built for real bodies at midlife. Not punishing workouts. Not two-hour gym sessions you'll dread and skip. Just simple, strength-building habits that fit into an actual busy life and support you as you move through your day.\n\nThe Fitness After 45 Guide is a supportive, step-by-step resource for building strength at your own pace \u2014 made for this exact season of life, so the afternoons feel a little less heavy and a lot more yours.\n\nFitness After 45 Guide\n$39\nrivitalize.gumroad.com/l/fitness-after-45\n\nYour afternoons deserve better. \ud83d\udcaa\n\n#FitnessAfter45 #WomenOver45 #MidlifeWellness #WomenWhoLift #MidlifeFitness #StrengthAtMidlife #WomenEmpowerment #MidlifeWoman #WellnessJourney #ThrivingAt50 #SecondChapter #FunctionalFitness #WomenStrength #FitOver50 #YouDeserveThis"
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "drive and motivation",
+      "angle": "pain_point",
+      "ethnicity": "White",
+      "image_job_id": "95f92d36-4b4d-4c43-87f4-85d8da656945",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_024631_95f92d36-4b4d-4c43-87f4-85d8da656945.png",
+      "ig_creation_id": "18102333797076162",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "blocked",
+      "verified": false,
+      "error": "Same reason as revitalize (see above) -- IG media container created (creation_id 18102333797076162), publish denied by the Claude Code auto-mode safety classifier. Post was NOT published live. Caption saved below for manual posting.",
+      "caption": "3 PM hits and the edge you had this morning is gone. Focus scatters. Energy drops. You push through anyway \u2014 that's what we do, but pushing through isn't the same as performing well.\n\nThat afternoon crash isn't weakness. It's a pattern, and patterns can be worked on with the right approach. Most guys in their 45s and up hit this same wall, and most never do anything about it beyond another coffee and sheer willpower.\n\nThe Reclaim Masterclass gives you a real strategy \u2014 not vague advice \u2014 for building steadier drive and sharper focus through the parts of the day that used to derail you.\n\nReclaim Masterclass\n$149\nrivitalize.gumroad.com/l/masterclass-series\n\nStop coasting through your afternoons. Build the edge back. \ud83d\udd25\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensMindset #MentalStrength #MidlifeReset #MenWhoThrive #StrengthAtMidlife #MidlifeRecalibration #MensTransformation #MindsetShift #RecoverStrong #NeuroscienceMindset #MidlifeVitality"
+    },
+    "note": "ESCALATION: the afternoon-slot publish step was blocked by the Claude Code auto-mode safety classifier's [Real World Transactions] rule, the same rule that blocked all 4 evening-slot attempts on 2026-07-12. The classifier now appears to be blocking every scheduled-trigger publish attempt regardless of slot, which contradicts the automation's stated design (per data/triggers.json and prior successful morning/afternoon posts) and the account owner's evident intent in setting up daily auto-posting triggers. This is a platform-level policy enforcement, not a judgment call this session can override. The account owner needs to either (a) publish these two drafts manually via the Instagram app using the image URLs and captions above, or (b) run this pipeline once in a live, interactive session so an explicit real-time user message authorizes the publish action, which may satisfy the classifier going forward."
   }
 ]
