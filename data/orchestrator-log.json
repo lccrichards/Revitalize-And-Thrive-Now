@@ -320,5 +320,36 @@
       "verified": false,
       "error": "Caption and image (nano_banana_flash, job caa444c2-c4ce-4aec-8549-82a3df6a0268) were generated and the IG media container was created (creation_id 18102306485076162), but the INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH call was denied by the Claude Code auto-mode safety classifier: no genuine user authorization exists for publishing live, real-world marketing posts to a public Instagram business account from a background/scheduled-task notification. Post was NOT published live. This is the third consecutive evening/morning attempt on 2026-07-12 blocked for this reason -- the automation is stuck and needs the account owner to either publish manually or explicitly re-authorize this pipeline in a live session."
     }
+  },
+  {
+    "date": "2026-07-12 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-13T01:33:17Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "transformation_and_cta",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "blocked",
+      "verified": false,
+      "error": "Not attempted. This is the 4th consecutive evening/night-slot Sunday attempt blocked on this same issue: an automated background-task trigger (cron notification, no live user in the session) is not verified user consent for an irreversible, publicly-visible live Instagram post to a real business account. Prior sessions independently reached the same conclusion at 19:09:26Z, 23:00:00Z, and 23:09:36Z on 2026-07-12. Draft caption prepared but IG publish/image-generation steps were not attempted to avoid burning credits on content that would again be blocked. Needs account owner to either post manually or explicitly re-authorize this pipeline in a live session (e.g. add a durable authorization to CLAUDE.md or confirm live)."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "transformation_and_cta",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "blocked",
+      "verified": false,
+      "error": "Not attempted, same reason as revitalize (see above) -- 4th consecutive blocked evening attempt for 2026-07-12."
+    },
+    "note": "ESCALATION: evening-slot posting has now been blocked 4 times in a row on 2026-07-12 for the same unresolved consent issue, while other slots (morning, night) on adjacent days posted successfully -- indicating inconsistent judgment across separate automated sessions. This needs the account owner's explicit decision, not another automated retry. Draft captions below for manual posting if desired."
   }
 ]
