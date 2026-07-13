@@ -455,5 +455,44 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-13 (Monday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-13T23:08:00Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "hormone balance",
+      "angle": "transformation_and_cta",
+      "ethnicity": "White",
+      "image_job_id": "2187f2f6-6917-45df-ab75-31cc42b2cce3",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_230716_2187f2f6-6917-45df-ab75-31cc42b2cce3.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "blocked",
+      "verified": false,
+      "error": "Image generated successfully, but the INSTAGRAM_POST_IG_USER_MEDIA call was denied by the Claude Code auto-mode safety classifier ([Real-World Transactions]): publishing to a live Instagram business account is not authorized by an automated background-task/cron notification, since no genuine live user message in this transcript approved this specific publish. Post was NOT published live. This is the same recurring block pattern documented for the 2026-07-12 evening/afternoon slots (5+ prior consecutive blocks) -- it persisted despite data/triggers.json documenting an account-owner-created ACTIVE cron trigger for this exact slot and many prior successful automated posts. Caption saved below for manual posting.",
+      "caption": "There's a version of you that feels rested, clear-headed, and steady in her own skin — not stretched thin by everyone else's needs. She's not a fantasy. She's who you get to be when you finally put something in place just for you. 🌿\n\nMaybe today was long. Maybe you're still running on fumes by the time everyone else is asleep. If that's familiar, consider this your gentle nudge: you don't have to figure out this next chapter alone, and you don't have to wait for the \"right\" time to start.\n\nThe Complete Wellness Bundle brings together everything we've built to support you through this season — hormonal support, better sleep, steadier energy, and real nutrition — in one guided resource designed for exactly where you are right now. Think of it as a soft landing for this season of life: practical, doable, and yours. It's not one more thing to add to your list. It's the thing that makes the rest of your list easier to carry.\n\nYou've spent so long taking care of everyone else. Tonight, consider taking care of you.\n\nComplete Wellness Bundle\n$149\nrivitalize.gumroad.com/l/complete-wellness-bundle\n\nYou deserve this next chapter. ✨\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #WomenWellness #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain #MidlifeSisterhood #WellnessTribe"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "testosterone optimization",
+      "angle": "transformation_and_cta",
+      "ethnicity": "African American",
+      "image_job_id": "b6ed394f-37de-44f1-8c08-029663c9b0c1",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_230733_b6ed394f-37de-44f1-8c08-029663c9b0c1.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "blocked",
+      "verified": false,
+      "error": "Same reason as revitalize (see above) -- IG media container creation was denied by the Claude Code auto-mode safety classifier before any container was created. Post was NOT published live. Caption saved below for manual posting.",
+      "caption": "You know the difference between coasting and operating at full capacity. Most guys stop noticing when they've drifted into the first one — until they catch themselves in a photo, or run out of gas halfway through a day that used to feel easy.\n\nThat edge isn't gone. It's just been buried under twenty years of putting everyone else's priorities first. Getting it back isn't about doing more. It's about doing the right things, consistently, with a real plan instead of guesswork. This isn't about turning back the clock. It's about performing like the man you already know you are.\n\nThe Complete Reclaim Reset Bundle is that plan — strength, sleep, focus, and mindset, built specifically for men rebuilding their edge at midlife. No fluff. No vague advice. Just a structured reset you can actually follow, built for the version of you that shows up, every day, without excuses.\n\nComplete Reclaim Reset Bundle\n$249\nrivitalize.gumroad.com/l/nxqlwr\n\nStop coasting. Rebuild the edge. 🔥\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MindsetShift #MidlifeFitness #TrainSmart"
+    },
+    "note": "ESCALATION: publish step blocked again by the Claude Code auto-mode safety classifier despite the account owner's documented ACTIVE cron trigger (data/triggers.json, trig_019RDVJEs19923UUsESafRWE) for this exact evening slot and a long history of successful automated posts on this branch. This is a recurring, unresolved conflict between the automation's intended design and the classifier's real-world-transaction policy. Needs the account owner to either publish these two drafts manually (images + captions above) or resolve the classifier conflict directly (e.g. contact Anthropic/Claude Code support, since durable repo-level authorization via triggers.json does not appear to satisfy the classifier)."
   }
 ]
