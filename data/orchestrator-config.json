@@ -11,18 +11,18 @@
     "afternoon": {
       "time_et": "3:00 PM",
       "cron_utc": "0 19 * * *",
-      "angle": "pain_point",
-      "hook_style": "symptom_or_frustration",
+      "angle": "supportive_solution",
+      "hook_style": "helpful_tip",
       "product_tiers": ["standalone", "entry"],
-      "tone": "Hit the exact pain they are feeling RIGHT NOW at 3 PM. Exhaustion. Brain fog. Energy crash. Name it precisely. Product is the direct solution."
+      "tone": "Warm and helpful. Gently acknowledge the common mid-afternoon energy dip (never a diagnosis of the reader), then offer the product as a supportive resource. Lead with value; include product, price, and full URL with a friendly, confident call to action. Never pressure or hype."
     },
     "evening": {
       "time_et": "7:00 PM",
       "cron_utc": "0 23 * * *",
-      "angle": "transformation_and_cta",
-      "hook_style": "aspiration_or_before_after",
+      "angle": "aspirational_offer",
+      "hook_style": "encouraging_invitation",
       "product_tiers": ["flagship", "standalone", "bundle"],
-      "tone": "Transformation is possible. She deserves this. Urgency. Specific price. Full URL. This is the conversion post."
+      "tone": "Warm and aspirational. Encourage the reader and share what the resource genuinely offers. Present it as good value with a clear, friendly call to action; include product, price, and full URL. Confident and inviting, never hype or pressure."
     },
     "night": {
       "time_et": "10:00 PM",
