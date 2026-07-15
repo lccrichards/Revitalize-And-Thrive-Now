@@ -631,5 +631,33 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-15 (Wednesday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-15T11:07:56Z",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "theme": "energy restoration",
+      "angle": "education",
+      "ethnicity": "South Asian",
+      "ig_post_id": "17884138503447457",
+      "ig_permalink": "https://www.instagram.com/p/Daz69MVoMYy/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "energy and cognitive performance",
+      "angle": "education",
+      "ethnicity": "White",
+      "ig_post_id": "17897398767539022",
+      "ig_permalink": "https://www.instagram.com/p/Daz69NjG6VJ/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
