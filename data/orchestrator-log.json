@@ -111,5 +111,31 @@
       "verified": true
     },
     "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
+  },
+  {
+    "date": "2026-07-15 (Wednesday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-16T02:09:08Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "energy restoration",
+      "angle": "urgency_social_proof",
+      "ig_post_id": "18111834310822200",
+      "ig_permalink": "https://www.instagram.com/p/Da1iItXGzmQ/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "urgency_social_proof",
+      "ig_post_id": "18122658727746929",
+      "ig_permalink": "https://www.instagram.com/p/Da1iI0gjaKA/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
