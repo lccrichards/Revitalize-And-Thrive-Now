@@ -720,5 +720,38 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-16 (Thursday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-07-16T16:06:30Z",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "format": "reel",
+      "ethnicity": "South Asian",
+      "video_job_id": "f3b9ed88-cf74-4f2b-a852-fc577baec7f6",
+      "ig_post_id": "18382538734204319",
+      "ig_permalink": "https://www.instagram.com/reel/Da3B3muEes9/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "format": "reel",
+      "ethnicity": "Middle Eastern",
+      "video_job_id": "7eed39ee-b317-4c65-b362-e64093a6af44",
+      "ig_post_id": "18096496313004478",
+      "ig_permalink": "https://www.instagram.com/reel/Da3B6REDJql/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel ('Dr. Alexander') is connected. Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
