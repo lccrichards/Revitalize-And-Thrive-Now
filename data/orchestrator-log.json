@@ -692,5 +692,33 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-16 (Thursday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-16T11:07:50Z",
+    "revitalize": {
+      "product": "The Mindset Bundle",
+      "price": "$49",
+      "theme": "mindset reset",
+      "angle": "education",
+      "ethnicity": "East Asian",
+      "ig_post_id": "17865140544600467",
+      "ig_permalink": "https://www.instagram.com/p/Da2fvCDoAhB/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "education",
+      "ethnicity": "Latino",
+      "ig_post_id": "18005993648936416",
+      "ig_permalink": "https://www.instagram.com/p/Da2fvCvIOro/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
