@@ -23,27 +23,35 @@
       "hook_style": "aspiration_or_before_after",
       "product_tiers": ["flagship", "standalone", "bundle"],
       "tone": "Transformation is possible. She deserves this. Urgency. Specific price. Full URL. This is the conversion post."
+    },
+    "night": {
+      "time_et": "10:00 PM",
+      "cron_utc": "0 2 * * *",
+      "angle": "urgency_social_proof",
+      "hook_style": "testimonial_urgency_before_bed",
+      "product_tiers": ["flagship", "standalone", "bundle"],
+      "tone": "Reflective, wind-down-before-bed energy. Lead with a testimonial-style result. Last-call-today urgency. Specific price. Full URL. This is the final conversion push of the day."
     }
   },
 
   "revitalize_rotation": {
-    "monday":    {"theme": "hormone balance",             "slot_products": {"morning": "Hormone Reset Masterclass", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle"}},
-    "tuesday":   {"theme": "sleep optimization",          "slot_products": {"morning": "The Midlife Sleep Fix", "afternoon": "The Midlife Sleep Fix", "evening": "The Midlife Sleep Fix"}},
-    "wednesday": {"theme": "energy restoration",          "slot_products": {"morning": "Energy Restoration Guide", "afternoon": "Energy Restoration Guide", "evening": "30-Day Wellness Transformation"}},
-    "thursday":  {"theme": "mindset reset",               "slot_products": {"morning": "The Mindset Bundle", "afternoon": "Stress Management Workbook", "evening": "The Revitalize Circle Monthly Membership"}},
-    "friday":    {"theme": "nutrition and meal planning", "slot_products": {"morning": "Nutrition Deep Dive", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle"}},
-    "saturday":  {"theme": "skincare and beauty",         "slot_products": {"morning": "Skincare and Beauty Protocol", "afternoon": "Skincare and Beauty Protocol", "evening": "The Revitalize Circle Monthly Membership"}},
-    "sunday":    {"theme": "strength and fitness after 45", "slot_products": {"morning": "Fitness After 45 Guide", "afternoon": "Fitness After 45 Guide", "evening": "30-Day Wellness Transformation"}}
+    "monday":    {"theme": "hormone balance",             "slot_products": {"morning": "Hormone Reset Masterclass", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle", "night": "Complete Wellness Bundle"}},
+    "tuesday":   {"theme": "sleep optimization",          "slot_products": {"morning": "The Midlife Sleep Fix", "afternoon": "The Midlife Sleep Fix", "evening": "The Midlife Sleep Fix", "night": "The Midlife Sleep Fix"}},
+    "wednesday": {"theme": "energy restoration",          "slot_products": {"morning": "Energy Restoration Guide", "afternoon": "Energy Restoration Guide", "evening": "30-Day Wellness Transformation", "night": "30-Day Wellness Transformation"}},
+    "thursday":  {"theme": "mindset reset",               "slot_products": {"morning": "The Mindset Bundle", "afternoon": "Stress Management Workbook", "evening": "The Revitalize Circle Monthly Membership", "night": "The Revitalize Circle Monthly Membership"}},
+    "friday":    {"theme": "nutrition and meal planning", "slot_products": {"morning": "Nutrition Deep Dive", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle", "night": "Complete Wellness Bundle"}},
+    "saturday":  {"theme": "skincare and beauty",         "slot_products": {"morning": "Skincare and Beauty Protocol", "afternoon": "Skincare and Beauty Protocol", "evening": "The Revitalize Circle Monthly Membership", "night": "The Revitalize Circle Monthly Membership"}},
+    "sunday":    {"theme": "strength and fitness after 45", "slot_products": {"morning": "Fitness After 45 Guide", "afternoon": "Fitness After 45 Guide", "evening": "30-Day Wellness Transformation", "night": "30-Day Wellness Transformation"}}
   },
 
   "reclaim_rotation": {
-    "monday":    {"theme": "testosterone optimization",       "slot_products": {"morning": "Reclaim Masterclass", "afternoon": "Testosterone and Stamina Meal Plan", "evening": "Complete Reclaim Reset Bundle"}},
-    "tuesday":   {"theme": "sleep recovery",                  "slot_products": {"morning": "Sleep Recovery Protocol", "afternoon": "Sleep Recovery Protocol", "evening": "Complete Reclaim Reset Bundle"}},
-    "wednesday": {"theme": "energy and cognitive performance","slot_products": {"morning": "Reclaim Masterclass", "afternoon": "Midlife Wellness Planner", "evening": "Complete Reclaim Reset Bundle"}},
-    "thursday":  {"theme": "mindset recalibration",           "slot_products": {"morning": "Midlife Mindset Code", "afternoon": "Midlife Mindset Code", "evening": "Reclaim Masterclass"}},
-    "friday":    {"theme": "nutrition for male hormones",     "slot_products": {"morning": "Testosterone and Stamina Meal Plan", "afternoon": "Testosterone and Stamina Meal Plan", "evening": "Complete Reclaim Reset Bundle"}},
-    "saturday":  {"theme": "strength and muscle density",     "slot_products": {"morning": "Strength Density and Longevity", "afternoon": "Strength Density and Longevity", "evening": "Complete Reclaim Reset Bundle"}},
-    "sunday":    {"theme": "drive and motivation",            "slot_products": {"morning": "Midlife Mindset Code", "afternoon": "Reclaim Masterclass", "evening": "Complete Reclaim Reset Bundle"}}
+    "monday":    {"theme": "testosterone optimization",       "slot_products": {"morning": "Reclaim Masterclass", "afternoon": "Testosterone and Stamina Meal Plan", "evening": "Complete Reclaim Reset Bundle", "night": "Complete Reclaim Reset Bundle"}},
+    "tuesday":   {"theme": "sleep recovery",                  "slot_products": {"morning": "Sleep Recovery Protocol", "afternoon": "Sleep Recovery Protocol", "evening": "Complete Reclaim Reset Bundle", "night": "Complete Reclaim Reset Bundle"}},
+    "wednesday": {"theme": "energy and cognitive performance","slot_products": {"morning": "Reclaim Masterclass", "afternoon": "Midlife Wellness Planner", "evening": "Complete Reclaim Reset Bundle", "night": "Complete Reclaim Reset Bundle"}},
+    "thursday":  {"theme": "mindset recalibration",           "slot_products": {"morning": "Midlife Mindset Code", "afternoon": "Midlife Mindset Code", "evening": "Reclaim Masterclass", "night": "Reclaim Masterclass"}},
+    "friday":    {"theme": "nutrition for male hormones",     "slot_products": {"morning": "Testosterone and Stamina Meal Plan", "afternoon": "Testosterone and Stamina Meal Plan", "evening": "Complete Reclaim Reset Bundle", "night": "Complete Reclaim Reset Bundle"}},
+    "saturday":  {"theme": "strength and muscle density",     "slot_products": {"morning": "Strength Density and Longevity", "afternoon": "Strength Density and Longevity", "evening": "Complete Reclaim Reset Bundle", "night": "Complete Reclaim Reset Bundle"}},
+    "sunday":    {"theme": "drive and motivation",            "slot_products": {"morning": "Midlife Mindset Code", "afternoon": "Reclaim Masterclass", "evening": "Complete Reclaim Reset Bundle", "night": "Complete Reclaim Reset Bundle"}}
   },
 
   "higgsfield": {
@@ -52,7 +60,8 @@
     "moods": {
       "morning": "energized and focused, morning light, fresh start energy",
       "afternoon": "determined despite fatigue, mid-day resilience, purposeful",
-      "evening": "transformed and glowing, relaxed confidence, end-of-day calm empowerment"
+      "evening": "transformed and glowing, relaxed confidence, end-of-day calm empowerment",
+      "night": "settled and reflective, low warm lamplight, wind-down calm confidence"
     },
     "revitalize_settings": {
       "hormone balance": "bright kitchen with herbal teas and whole foods on counter",
