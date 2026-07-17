@@ -907,5 +907,38 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-17 (Friday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-17T23:06:43Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "nutrition and meal planning",
+      "angle": "aspirational_offer",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260717_230525_4aa442eb-3c85-4b35-b0c3-9d41d83ed5b6.png",
+      "ig_post_id": "18015467285712924",
+      "ig_permalink": "https://www.instagram.com/p/Da6W2IWHY4x/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "nutrition for male hormones",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260717_230529_26b5fae5-e8e0-41c5-97d5-4cb34c473151.png",
+      "ig_post_id": "18223069639325845",
+      "ig_permalink": "https://www.instagram.com/p/Da6W2E8G3E3/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel (Dr. Alexander, youtube_luckie-mang) is connected. Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
