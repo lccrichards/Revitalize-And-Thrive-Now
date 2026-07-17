@@ -111,5 +111,30 @@
       "verified": true
     },
     "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
+  },
+  {
+    "date": "2026-07-16 (Thursday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-17T02:08:35Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "urgency_social_proof",
+      "ig_post_id": "18465040207119043",
+      "ig_permalink": "https://www.instagram.com/p/Da4G0Jamylh/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "urgency_social_proof",
+      "status": "failed",
+      "error": "Instagram API error (status 400) on INSTAGRAM_POST_IG_USER_MEDIA for ig_user_id 27634679816148097: 'Object with ID does not exist, cannot be loaded due to missing permissions, or does not support this operation.' Failed identically on initial attempt and retry \u2014 Composio connection instagram_medlar-slap shows active/matching account, so this looks like an IG Graph API-side permissions or token issue on the reclaim.and.rise.now business asset that needs manual reauth.",
+      "verified": false
+    }
   }
 ]
