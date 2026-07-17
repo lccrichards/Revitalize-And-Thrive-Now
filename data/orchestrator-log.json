@@ -844,5 +844,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-17 (Friday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-17T19:08:01Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "angle": "supportive_solution",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260717_190454_16ff9a26-f908-4423-b8a7-edf685fe65cc.png",
+      "ig_post_id": "18610997599039335",
+      "ig_permalink": "https://www.instagram.com/p/Da57a3VnZP7/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "supportive_solution",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260717_190456_bdfd0759-eae9-45de-9dee-fcb8eaa7a35d.png",
+      "ig_post_id": "18209686336353649",
+      "ig_permalink": "https://www.instagram.com/p/Da57a42m8Et/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
