@@ -781,5 +781,40 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-16 (Thursday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-17T00:00:37Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latina",
+      "image_job_id": "b576d899-9e39-43cc-9a14-6c01997576ad",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260716_235800_b576d899-9e39-43cc-9a14-6c01997576ad.png",
+      "ig_post_id": "18401257480087608",
+      "ig_permalink": "https://www.instagram.com/p/Da34OBEHVuh/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "aspirational_offer",
+      "ethnicity": "African American",
+      "image_job_id": "dc00aad4-cffc-4b2b-af52-8d49dcbb3352",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260716_235802_dc00aad4-cffc-4b2b-af52-8d49dcbb3352.png",
+      "ig_post_id": "18122637322718735",
+      "ig_permalink": "https://www.instagram.com/p/Da34OFVm_6e/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "ffmpeg not available in this environment; video generation script requires it. Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
