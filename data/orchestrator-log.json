@@ -874,5 +874,38 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-17 (Friday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-07-17T22:13:00Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "format": "reel",
+      "ethnicity": "White",
+      "video_job_id": "cae96f31-2e80-40e6-85c0-17e3d6e7f070",
+      "ig_post_id": "18105967676043117",
+      "ig_permalink": "https://www.instagram.com/reel/Da6QjYjAC6n/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "format": "reel",
+      "ethnicity": "East Asian",
+      "video_job_id": "7630410b-5d47-4c90-a1fb-739c5df578f0",
+      "ig_post_id": "18605651860016215",
+      "ig_permalink": "https://www.instagram.com/reel/Da6QlqHFcaA/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel ('Dr. Alexander', youtube_luckie-mang) is connected. Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
