@@ -970,5 +970,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-18 (Saturday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-18T11:05:41Z",
+    "revitalize": {
+      "product": "Skincare and Beauty Protocol",
+      "price": "$39",
+      "theme": "skincare and beauty",
+      "angle": "education",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_110447_771db16b-0ab3-47f7-9641-623366d15c07.png",
+      "ig_post_id": "18126522739711408",
+      "ig_permalink": "https://www.instagram.com/p/Da7pIJTIIcg/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "education",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_110449_7baa21ba-5e95-4a2e-8669-f4332f4b2399.png",
+      "ig_post_id": "17867967507632823",
+      "ig_permalink": "https://www.instagram.com/p/Da7pIH3oE7o/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
