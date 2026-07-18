@@ -1026,5 +1026,38 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-18 (Saturday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-18T23:06:21Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "skincare and beauty",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_230510_3607aeab-0a26-48bf-9e67-b75cad7bebd6.png",
+      "ig_post_id": "18126449689582085",
+      "ig_permalink": "https://www.instagram.com/p/Da87mFaHZG-/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "strength and muscle density",
+      "angle": "aspirational_offer",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_230512_834a4312-9817-47df-b5b7-4656bd4ce257.png",
+      "ig_post_id": "18137043445572743",
+      "ig_permalink": "https://www.instagram.com/p/Da87mEuneEM/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel is connected. Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
