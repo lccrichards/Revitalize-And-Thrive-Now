@@ -1000,5 +1000,31 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-18 (Saturday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-18T19:07:08Z",
+    "revitalize": {
+      "product": "Skincare and Beauty Protocol",
+      "price": "$39",
+      "theme": "skincare and beauty",
+      "angle": "supportive_solution",
+      "ig_post_id": "17882988351460515",
+      "ig_permalink": "https://www.instagram.com/p/Da8gKoTHR6c/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "supportive_solution",
+      "ig_post_id": "17974629018083246",
+      "ig_permalink": "https://www.instagram.com/p/Da8gKnuG0_D/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
