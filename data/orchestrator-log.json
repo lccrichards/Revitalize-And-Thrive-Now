@@ -940,5 +940,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-17 (Friday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-18T02:06:01Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "nutrition and meal planning",
+      "angle": "urgency_social_proof",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_020456_3b619817-4d6e-47db-a7a9-3c58ca254097.png",
+      "ig_post_id": "18108330712956274",
+      "ig_permalink": "https://www.instagram.com/p/Da6rX03jUec/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "urgency_social_proof",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_020457_3c2c3504-a1fd-495d-b957-fc46967ad2ff.png",
+      "ig_post_id": "17894982831368178",
+      "ig_permalink": "https://www.instagram.com/p/Da6rXyPjS-G/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
