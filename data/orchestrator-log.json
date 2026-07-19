@@ -111,5 +111,31 @@
       "verified": true
     },
     "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
+  },
+  {
+    "date": "2026-07-18 (Saturday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-19T02:07:50Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "skincare and beauty",
+      "angle": "urgency_social_proof",
+      "ig_post_id": "18117372865848614",
+      "ig_permalink": "https://www.instagram.com/p/Da9QX38DUpk/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "strength and muscle density",
+      "angle": "urgency_social_proof",
+      "ig_post_id": "18096292256580085",
+      "ig_permalink": "https://www.instagram.com/p/Da9QX4bIKig/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
