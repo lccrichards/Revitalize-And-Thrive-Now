@@ -1089,5 +1089,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-19 (Sunday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-19T19:06:26Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "supportive_solution",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_190510_32c4d44d-2007-4dd5-a4b8-ca631e638225.png",
+      "ig_post_id": "18136578121582619",
+      "ig_permalink": "https://www.instagram.com/p/Da_E8FYGycJ/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "drive and motivation",
+      "angle": "supportive_solution",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_190512_eea212e8-89b7-4a4b-bcda-d883453c8ca6.png",
+      "ig_post_id": "18108813769974016",
+      "ig_permalink": "https://www.instagram.com/p/Da_E8APG8Ju/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
