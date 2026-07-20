@@ -1178,5 +1178,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-20 (Monday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-20T11:07:46Z",
+    "revitalize": {
+      "product": "Hormone Reset Masterclass",
+      "price": "$59",
+      "theme": "hormone balance",
+      "angle": "education",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_110609_aa78fecb-a0ce-4a1f-9480-2d005655117d.png",
+      "ig_post_id": "18110061517962416",
+      "ig_permalink": "https://www.instagram.com/p/DbAy9CgoK_V/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "testosterone optimization",
+      "angle": "education",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_110612_4651ba89-9f33-4407-952e-b58fd02686fb.png",
+      "ig_post_id": "17998741589977194",
+      "ig_permalink": "https://www.instagram.com/p/DbAy9CvoF6s/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
