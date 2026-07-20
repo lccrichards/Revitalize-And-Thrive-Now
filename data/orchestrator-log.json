@@ -1270,5 +1270,38 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-20 (Monday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-20T23:08:15Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "hormone balance",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_230515_7e66289a-138d-4169-962a-ab2d51ad2769.png",
+      "ig_post_id": "18103638734157424",
+      "ig_permalink": "https://www.instagram.com/p/DbCFaEMG_vL/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "testosterone optimization",
+      "angle": "aspirational_offer",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_230516_2a65daa8-64ea-46c8-9f51-aaab6c55290b.png",
+      "ig_post_id": "18087678086556738",
+      "ig_permalink": "https://www.instagram.com/p/DbCFaHYGx7B/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel connected in Composio; only the Revitalize channel is connected. Skipped per best-effort YouTube step; Instagram post published and verified independently.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
