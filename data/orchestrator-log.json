@@ -1208,5 +1208,32 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-20 (Monday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-20T19:06:00Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "hormone balance",
+      "angle": "supportive_solution",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_190600_0c3dcd30-4b4a-4556-898d-84a2d9cfbda4.png",
+      "status": "failed",
+      "error": "Instagram publish step (INSTAGRAM_POST_IG_USER_MEDIA) was blocked by the Claude Code auto-mode permission classifier before a media container could be created. Post was never published.",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "testosterone optimization",
+      "angle": "supportive_solution",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_190602_3a7892bc-de84-414b-886f-ae9cdfe53bb7.png",
+      "status": "failed",
+      "error": "Instagram publish step (INSTAGRAM_POST_IG_USER_MEDIA) was blocked by the Claude Code auto-mode permission classifier before a media container could be created. Post was never published.",
+      "verified": false
+    }
   }
 ]
