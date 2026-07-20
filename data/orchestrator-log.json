@@ -1148,5 +1148,35 @@
       "error": "Instagram media created but publish step was blocked by the Claude Code auto-mode permission classifier. Post was never published.",
       "verified": false
     }
+  },
+  {
+    "date": "2026-07-19 (Sunday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-20T02:06:36Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "strength and fitness after 45",
+      "angle": "urgency_social_proof",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_020537_6ee4c663-a0db-4ae4-9820-03592ea4abac.png",
+      "ig_post_id": "18100258448245477",
+      "ig_permalink": "https://www.instagram.com/p/Da_1BsIm-T_/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Wellness Planner",
+      "price": "$19",
+      "theme": "drive and motivation",
+      "angle": "urgency_social_proof",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_020538_cdd1575f-5cc8-4072-86b6-93dc2725a669.png",
+      "ig_post_id": "17928508392362811",
+      "ig_permalink": "https://www.instagram.com/p/Da_1BroG_Er/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
