@@ -1235,5 +1235,40 @@
       "error": "Instagram publish step (INSTAGRAM_POST_IG_USER_MEDIA) was blocked by the Claude Code auto-mode permission classifier before a media container could be created. Post was never published.",
       "verified": false
     }
+  },
+  {
+    "date": "2026-07-20 (Monday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-07-20T22:17:20Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "hormone balance",
+      "format": "reel",
+      "ethnicity": "African American",
+      "video_job_id": "783a1eb4-810c-4bd2-8903-fef9665c743b",
+      "ig_creation_id": "17912489559431674",
+      "ig_post_id": "17920894413181998",
+      "ig_permalink": "https://www.instagram.com/reel/DbB_fj6DQZs/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "testosterone optimization",
+      "format": "reel",
+      "ethnicity": "Latino",
+      "video_job_id": "fab33db2-8d5d-4d75-9e1e-6581efe617c7",
+      "ig_creation_id": "18103695722076162",
+      "ig_post_id": "18110037403957988",
+      "ig_permalink": "https://www.instagram.com/reel/DbB_feYINQp/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel ('Dr. Alexander', youtube_luckie-mang) is connected. Instagram Reel published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
