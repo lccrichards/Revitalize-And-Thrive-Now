@@ -1303,5 +1303,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-21 (Monday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-21T02:06:48Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "hormone balance",
+      "angle": "urgency_social_proof",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_020547_521f516b-d525-4e38-8adb-d49307b1de35.png",
+      "ig_post_id": "17900256627491642",
+      "ig_permalink": "https://www.instagram.com/p/DbCZ2KJjdOL/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "testosterone optimization",
+      "angle": "urgency_social_proof",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_020548_3f3a6326-7773-4c0d-af86-06d819d9d6c3.png",
+      "ig_post_id": "18116574616917504",
+      "ig_permalink": "https://www.instagram.com/p/DbCZ2IYm6pu/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
