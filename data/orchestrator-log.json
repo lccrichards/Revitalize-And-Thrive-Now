@@ -1427,5 +1427,38 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-21 (Tuesday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-21T23:05:50Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_230440_b1f6d4b7-37f8-4c8f-bc6d-55dad3a308fa.png",
+      "ig_post_id": "17881947264613444",
+      "ig_permalink": "https://www.instagram.com/p/DbEp7N8G2gm/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "aspirational_offer",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_230443_8f3c2a59-67d9-437d-bbb4-56a91b3818f6.png",
+      "ig_post_id": "18091596383437658",
+      "ig_permalink": "https://www.instagram.com/p/DbEp7OdG3xG/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "ffmpeg and YouTube API tooling unavailable in this environment",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
