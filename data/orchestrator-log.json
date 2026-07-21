@@ -1397,5 +1397,35 @@
       "yt_status": "skipped",
       "yt_reason": "No Reclaim and Rise YouTube channel connected in Composio; only the Revitalize & Thrive Now channel (Dr. Alexander, UCIkVsuNrVulsB13pZ_iPFpw) is connected. Same limitation as prior runs (see 2026-07-20 evening entry)."
     }
+  },
+  {
+    "date": "2026-07-21 (Tuesday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-21T19:07:46Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "supportive_solution",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_190534_39110d40-8ced-4304-a02c-24085136e62e.png",
+      "ig_post_id": "18448524622187254",
+      "ig_permalink": "https://www.instagram.com/p/DbEOre4m-VF/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "angle": "supportive_solution",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_190536_a1053273-9f28-46ae-a4e6-71d47b4b919d.png",
+      "ig_post_id": "18065444645546611",
+      "ig_permalink": "https://www.instagram.com/p/DbEOrhInTkS/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
