@@ -1522,5 +1522,36 @@
       "verified": false,
       "error": "Instagram API error (status 401): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. Retried once, same error both times. Composio connection record shows active/status=active, but the underlying Meta access token is invalid and needs re-authorization."
     }
+  },
+  {
+    "date": "2026-07-22 (Wednesday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-07-22T22:15:00Z",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "theme": "energy restoration",
+      "format": "reel",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Skipped before video generation: pre-flight check (INSTAGRAM_GET_IG_USER_MEDIA) confirmed the Meta/Instagram access token is still invalidated (OAuthException code 190: session invalidated, password/session change). Identical error already logged for the 2026-07-22 afternoon slot minutes earlier -- not transient, requires manual re-authorization of the Meta connection in Composio. No video was generated since Revitalize has no other publish destination (no YouTube channel)."
+    },
+    "reclaim": {
+      "product": "Midlife Wellness Planner",
+      "price": "$19",
+      "theme": "energy and cognitive performance",
+      "format": "reel",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel (youtube_luckie-mang, Dr. Alexander) is connected -- same limitation as all prior video slots.",
+      "status": "failed",
+      "verified": false,
+      "error": "Skipped before video generation: pre-flight check confirmed the same Meta/Instagram access token invalidation (OAuthException code 190) affecting the Revitalize account. Since Instagram (the only currently-connected destination for Reclaim video) is blocked and YouTube is not connected for this brand, no video was generated to conserve Higgsfield credits."
+    }
   }
 ]
