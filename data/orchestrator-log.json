@@ -1490,5 +1490,37 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-22 (Wednesday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-22T19:06:00Z",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "theme": "energy restoration",
+      "angle": "supportive_solution",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260722_190430_d82d7620-82cc-4f2a-b2c7-e9c28a70eab0.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 401): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. Retried once, same error both times. Composio connection record shows active/status=active, but the underlying Meta access token is invalid and needs re-authorization."
+    },
+    "reclaim": {
+      "product": "Midlife Wellness Planner",
+      "price": "$19",
+      "theme": "energy and cognitive performance",
+      "angle": "supportive_solution",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260722_190433_1bdf65a9-f404-4f7b-a54a-044d6f4d9d9b.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 401): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. Retried once, same error both times. Composio connection record shows active/status=active, but the underlying Meta access token is invalid and needs re-authorization."
+    }
   }
 ]
