@@ -1460,5 +1460,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-22 (Wednesday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-22T11:07:52Z",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "theme": "energy restoration",
+      "angle": "education",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260722_110643_a0f8c80c-e3a5-4d6b-a040-811e0efb328c.png",
+      "ig_post_id": "18113050496284261",
+      "ig_permalink": "https://www.instagram.com/p/DbF8jmkoP-7/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "energy and cognitive performance",
+      "angle": "education",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260722_110646_bc5df24e-8973-4d26-a36e-494653dc80fa.png",
+      "ig_post_id": "18601100617035442",
+      "ig_permalink": "https://www.instagram.com/p/DbF8jl2IElK/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
