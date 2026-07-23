@@ -1619,5 +1619,36 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-23 (Thursday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-23T19:09:47Z",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "angle": "supportive_solution",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260723_190830_cd98c356-9a26-4f43-9031-4835e35633fb.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error both times. Same persistent failure signature as the 2026-07-22 afternoon/video/night slots and the 2026-07-23 video slot (5 consecutive failures) -- scoped to the Revitalize Instagram Business account permissions/link, not the Composio connection generally (Reclaim, same connection, posts successfully). Requires manual re-authorization of the Revitalize Meta/Instagram connection in Composio."
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "supportive_solution",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260723_190834_5ca7676a-99f9-4c69-bc35-379bb26d4aa9.png",
+      "ig_post_id": "17961332627965305",
+      "ig_permalink": "https://www.instagram.com/p/DbJYejRm-M9/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
