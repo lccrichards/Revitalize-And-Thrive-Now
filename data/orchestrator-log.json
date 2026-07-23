@@ -1585,5 +1585,39 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-23 (Thursday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-07-23T16:15:24Z",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "format": "reel",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Skipped before video generation: preflight INSTAGRAM_GET_IG_USER_MEDIA on ig_user_id 27164026169935796 (revitalize_thrive_now, instagram_cardin-bulgar) failed with Instagram API Error (code 100): 'Object with ID does not exist, cannot be loaded due to missing permissions, or does not support this operation.' Same failure signature persists from the 2026-07-22 afternoon/video/night slots (3 consecutive failures) -- this is not transient and requires manual re-authorization of the Revitalize Meta/Instagram connection in Composio. No Higgsfield video was generated for Revitalize to conserve credits, since Reclaim (same Composio connection, different IG account) posts successfully, confirming the issue is scoped to the Revitalize IG account link/permissions, not the Composio connection generally."
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "format": "reel",
+      "ethnicity": "East Asian",
+      "video_job_id": "cc3ddc6c-5c23-45ab-b1d6-81e0c144294f",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260723_161220_cc3ddc6c-5c23-45ab-b1d6-81e0c144294f.mp4",
+      "ig_creation_id": "18104165876076162",
+      "ig_post_id": "18093574034634837",
+      "ig_permalink": "https://www.instagram.com/reel/DbJEh4kgeN3/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize & Thrive Now channel (youtube_luckie-mang, 'Dr. Alexander', UCIkVsuNrVulsB13pZ_iPFpw) is connected -- same limitation as all prior video slots. Instagram Reel published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
