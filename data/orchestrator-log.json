@@ -1553,5 +1553,37 @@
       "verified": false,
       "error": "Skipped before video generation: pre-flight check confirmed the same Meta/Instagram access token invalidation (OAuthException code 190) affecting the Revitalize account. Since Instagram (the only currently-connected destination for Reclaim video) is blocked and YouTube is not connected for this brand, no video was generated to conserve Higgsfield credits."
     }
+  },
+  {
+    "date": "2026-07-22 (Wednesday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-23T02:07:30Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "energy restoration",
+      "angle": "urgency_social_proof",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260723_020639_36c770ff-6d66-4550-8e42-654cd9eb2af2.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error. Preflight INSTAGRAM_GET_IG_USER_MEDIA also fails (code 100). Reclaim account on the same Composio connection posts successfully, so this is scoped to the Revitalize Instagram Business account permissions/link -- requires manual re-authorization of the Revitalize Meta connection in Composio."
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "energy and cognitive performance",
+      "angle": "urgency_social_proof",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260723_020640_19b4d0b6-cf66-423e-a25d-8d3fa3f9f338.png",
+      "ig_post_id": "18124940038777396",
+      "ig_permalink": "https://www.instagram.com/p/DbHjgr7G0yU/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
