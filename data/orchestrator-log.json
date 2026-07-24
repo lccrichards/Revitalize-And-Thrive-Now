@@ -1712,5 +1712,35 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-24 (Friday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-07-24T22:17:00Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "format": "reel",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram connection alias 'instagram_cardin-bulgar' (meant for Revitalize) is actually authenticated to the Reclaim and Rise account (ig_user_id 27634679816148097, @reclaim.and.rise.now) instead of Revitalize's ig_user_id 27164026169935796. INSTAGRAM_POST_IG_USER_MEDIA returned 400: 'Object with ID 27164026169935796 does not exist, cannot be loaded due to missing permissions, or does not support this operation'. Retried once, same error. Needs reconnection of the correct Instagram Business account for Revitalize via Composio. Fallback video was generated (higgsfield out of credits for video; used FFmpeg + generated image instead) but could not be posted."
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "format": "reel",
+      "ig_post_id": "18112635554513947",
+      "ig_permalink": "https://www.instagram.com/reel/DbMSldfkdRQ/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "posted",
+      "verified": true,
+      "yt_error": "Connected YouTube account (alias youtube_luckie-mang) is channel 'Dr. Alexander' (customUrl @dr.alexander-wellness, id UCIkVsuNrVulsB13pZ_iPFpw) -- the Revitalize brand channel, not Reclaim's UCreclaimandriseNOW. No correct Reclaim YouTube connection available; skipped upload to avoid posting Reclaim content to the wrong channel."
+    }
   }
 ]
