@@ -1771,5 +1771,34 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-25 (Saturday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-25T11:21:00Z",
+    "revitalize": {
+      "product": "Skincare and Beauty Protocol",
+      "price": "$39",
+      "theme": "skincare and beauty",
+      "angle": "education",
+      "ethnicity": "African American",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400) on INSTAGRAM_POST_IG_USER_MEDIA: Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Root cause confirmed via COMPOSIO_MANAGE_CONNECTIONS list: both Instagram connection aliases ('instagram_cardin-bulgar' meant for Revitalize and 'instagram_medlar-slap' meant for Reclaim) are authenticated to the same underlying account (username reclaim.and.rise.now, id 27634679816148097). There is no active Composio Instagram connection to Revitalize's actual account (ig_user_id 27164026169935796). Retried once, same error. Requires the user to reconnect the correct Revitalize Instagram Business account via Composio -- this cannot be fixed by retrying."
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "education",
+      "ethnicity": "White",
+      "ig_post_id": "18620383369041921",
+      "ig_permalink": "https://www.instagram.com/p/DbNsX_YIKtj/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
