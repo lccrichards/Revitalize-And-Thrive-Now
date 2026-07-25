@@ -1800,5 +1800,36 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-24 (Friday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-25T16:50:17Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "angle": "supportive_solution",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260725_164816_0e931fea-4d55-46b5-bb4a-3a11b3fa0006.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error both times. Persistent failure ongoing since 2026-07-22 afternoon across every Revitalize slot logged since -- confirmed not transient, requires manual re-authorization of the Revitalize Meta/Instagram connection in Composio. Reclaim, same Composio connection, different IG account, continues to post successfully."
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "supportive_solution",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260725_164806_778e149b-afa7-4ae5-9e3c-a70d7a773310.png",
+      "ig_post_id": "18382307035167585",
+      "ig_permalink": "https://www.instagram.com/p/DbOSDQZIGIh/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
