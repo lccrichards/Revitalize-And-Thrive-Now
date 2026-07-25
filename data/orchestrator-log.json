@@ -1742,5 +1742,34 @@
       "verified": true,
       "yt_error": "Connected YouTube account (alias youtube_luckie-mang) is channel 'Dr. Alexander' (customUrl @dr.alexander-wellness, id UCIkVsuNrVulsB13pZ_iPFpw) -- the Revitalize brand channel, not Reclaim's UCreclaimandriseNOW. No correct Reclaim YouTube connection available; skipped upload to avoid posting Reclaim content to the wrong channel."
     }
+  },
+  {
+    "date": "2026-07-24 (Friday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-25T02:06:22+0000",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "nutrition and meal planning",
+      "angle": "urgency_social_proof",
+      "ethnicity": "Middle Eastern",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "error": "Instagram API error (status 400) on INSTAGRAM_POST_IG_USER_MEDIA: Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error.",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "urgency_social_proof",
+      "ethnicity": "South Asian",
+      "ig_post_id": "17880143976486814",
+      "ig_permalink": "https://www.instagram.com/p/DbMs8wnDQGi/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
