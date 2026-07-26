@@ -1863,5 +1863,37 @@
       "verified": false,
       "error": "Higgsfield image generation failed: 'Out of credits in the selected workspace' (balance check confirmed 0 credits, plan: plus). Attempted twice, same error both times. No creative could be generated, so no Instagram post was attempted for Reclaim this slot. This blocks image generation for BOTH brands going forward until the Higgsfield workspace is topped up or the plan is upgraded -- the Revitalize image above only completed because its job was already queued at the moment credits hit zero."
     }
+  },
+  {
+    "date": "2026-07-26 (Sunday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-26T11:00:00Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "education",
+      "ethnicity": null,
+      "image_url": null,
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Skipped before generation: Higgsfield balance check confirmed 0 credits (plan: plus), same as logged for every slot since 2026-07-25 night. No image could be generated. Also confirmed via COMPOSIO_MANAGE_CONNECTIONS (list) that both Instagram connection aliases ('instagram_cardin-bulgar' and 'instagram_medlar-slap') still resolve to the SAME underlying account (username reclaim.and.rise.now, id 27634679816148097) -- no active Composio connection exists to Revitalize's actual Instagram Business account (ig_user_id 27164026169935796). This is a second, independent blocker on top of the credits issue. Both require manual user action: top up/upgrade the Higgsfield workspace, and disconnect/reconnect the correct Revitalize Instagram Business account in Composio. Not fixable by retrying."
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "drive and motivation",
+      "angle": "education",
+      "ethnicity": null,
+      "image_url": null,
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Skipped before generation: Higgsfield balance check confirmed 0 credits (plan: plus). No creative could be generated, so no Instagram post was attempted for Reclaim this slot. Blocks image generation for BOTH brands until the Higgsfield workspace is topped up or the plan is upgraded."
+    }
   }
 ]
