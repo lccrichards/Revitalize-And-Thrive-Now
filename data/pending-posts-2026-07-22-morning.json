@@ -1,0 +1,28 @@
+[
+  {
+    "brand": "revitalize",
+    "product": "Energy Restoration Guide",
+    "price": "$29",
+    "url": "rivitalize.gumroad.com/l/energy-restoration",
+    "image_url": "",
+    "caption": "",
+    "title": "Energy Restoration Guide \u2014 Revitalize",
+    "slot": "morning",
+    "tone": "Authority and credibility. Teach something real. Build trust. CTA is secondary to value.",
+    "date": "2026-07-22",
+    "status": "pending"
+  },
+  {
+    "brand": "reclaim",
+    "product": "Reclaim Masterclass",
+    "price": "$149",
+    "url": "rivitalize.gumroad.com/l/masterclass-series",
+    "image_url": "",
+    "caption": "",
+    "title": "Reclaim Masterclass \u2014 Reclaim",
+    "slot": "morning",
+    "tone": "Authority and credibility. Teach something real. Build trust. CTA is secondary to value.",
+    "date": "2026-07-22",
+    "status": "pending"
+  }
+]

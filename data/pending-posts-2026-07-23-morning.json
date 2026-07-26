@@ -1,0 +1,28 @@
+[
+  {
+    "brand": "revitalize",
+    "product": "The Mindset Bundle",
+    "price": "$49",
+    "url": "rivitalize.gumroad.com/l/mindset-bundle",
+    "image_url": "",
+    "caption": "",
+    "title": "The Mindset Bundle \u2014 Revitalize",
+    "slot": "morning",
+    "tone": "Authority and credibility. Teach something real. Build trust. CTA is secondary to value.",
+    "date": "2026-07-23",
+    "status": "pending"
+  },
+  {
+    "brand": "reclaim",
+    "product": "Midlife Mindset Code",
+    "price": "$39",
+    "url": "rivitalize.gumroad.com/l/mindset-reset",
+    "image_url": "",
+    "caption": "",
+    "title": "Midlife Mindset Code \u2014 Reclaim",
+    "slot": "morning",
+    "tone": "Authority and credibility. Teach something real. Build trust. CTA is secondary to value.",
+    "date": "2026-07-23",
+    "status": "pending"
+  }
+]
