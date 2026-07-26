@@ -1831,5 +1831,37 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-25 (Saturday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-26T02:07:44Z",
+    "revitalize": {
+      "product": "Skincare and Beauty Protocol",
+      "price": "$39",
+      "theme": "skincare and beauty",
+      "angle": "urgency_social_proof",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260726_020638_cec70465-2bbf-47da-befd-aa5f5bc0ae73.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400) on INSTAGRAM_POST_IG_USER_MEDIA: Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error both times. Persistent failure ongoing since 2026-07-22 across every Revitalize slot logged since -- confirmed via COMPOSIO_MANAGE_CONNECTIONS that both Instagram connection aliases ('instagram_cardin-bulgar' and 'instagram_medlar-slap') resolve to the SAME underlying account (username reclaim.and.rise.now, id 27634679816148097); there is no active Composio connection to Revitalize's actual Instagram account (ig_user_id 27164026169935796). Requires the user to manually disconnect/reconnect the correct Revitalize Instagram Business account in Composio -- not fixable by retrying."
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "urgency_social_proof",
+      "ethnicity": "East Asian",
+      "image_url": null,
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Higgsfield image generation failed: 'Out of credits in the selected workspace' (balance check confirmed 0 credits, plan: plus). Attempted twice, same error both times. No creative could be generated, so no Instagram post was attempted for Reclaim this slot. This blocks image generation for BOTH brands going forward until the Higgsfield workspace is topped up or the plan is upgraded -- the Revitalize image above only completed because its job was already queued at the moment credits hit zero."
+    }
   }
 ]
