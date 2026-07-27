@@ -1926,5 +1926,37 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-26 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-27T02:19:00Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-07-26-evening.json",
+      "compliant": true,
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "not_posted",
+      "verified": false,
+      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-26-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-07-26-evening.json",
+      "compliant": true,
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "not_posted",
+      "verified": false,
+      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-26-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
+    }
   }
 ]
