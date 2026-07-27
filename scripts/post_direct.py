@@ -13,9 +13,16 @@ Two API keys to set:
   export PEXELS_API_KEY=your_pexels_key        # optional, free at pexels.com/api
 
 Your Composio connections (already active — do not change):
-  Revitalize Instagram  : revitalize_thrive_now_business  (IG 27164026169935796)
+  Revitalize Instagram  : revitalize_thrive_now_real       (IG 27164026169935796)
   Reclaim    Instagram  : reclaim_and_rise_now             (IG 27634679816148097)
   Revitalize Facebook   : revitalize_thrive_now_business
+
+  NOTE: The old alias "revitalize_thrive_now_business" (account instagram_cardin-bulgar)
+  was found to be misconfigured — it actually pointed at the Reclaim IG account
+  (27634679816148097), not Revitalize's. It has been renamed to
+  "DEPRECATED_do_not_use_wrong_account" in Composio and replaced by
+  "revitalize_thrive_now_real" (account instagram_walrus-waac), which correctly
+  resolves to Revitalize's real account (27164026169935796). Fixed 2026-07-27.
 
 Usage:
   # Post 1 post to Instagram right now
@@ -78,7 +85,7 @@ BRAND_FALLBACK_IMAGE = {
 # Composio entity IDs — already connected, no token setup needed
 COMPOSIO_CONFIG = {
     "revitalize": {
-        "ig_entity_id": "revitalize_thrive_now_business",
+        "ig_entity_id": "revitalize_thrive_now_real",
         "ig_user_id":   "27164026169935796",
         "fb_entity_id": "revitalize_thrive_now_business",
         "fb_page_id":   None,  # fetched automatically on first FB post

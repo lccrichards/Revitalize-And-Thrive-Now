@@ -1,6 +1,23 @@
 {
   "note": "Persistent daily triggers created via mcp__Claude_Code_Remote__create_trigger. To recreate any trigger, open a new Claude Code session and ask: 'Create the [morning/afternoon/evening] orchestrator trigger from data/triggers.json'. All three push results to branch claude/laughing-darwin-cQTwH — this is the actual live working branch (confirmed via git branch --show-current), NOT claude/mcp-image-generation-tool-oehbfz.",
-  "last_verified": "2026-07-10T14:40:00Z",
+  "last_verified": "2026-07-27T22:30:00Z",
+  "composio_alias_incident_2026-07-27": {
+    "summary": "Both Composio Instagram aliases (instagram_cardin-bulgar, labeled 'revitalize_thrive_now_business', and instagram_medlar-slap, labeled 'reclaim_and_rise_now') were OAuth-connected to the same underlying Instagram account (ig_user_id 27634679816148097, username reclaim.and.rise.now). There was no connection at all to Revitalize's real account (ig_user_id 27164026169935796, username revitalize_thrive_now). This caused 15+ consecutive Revitalize posting failures starting 2026-07-22.",
+    "fix": "A new Composio Instagram connection was authorized for the real Revitalize account: alias 'revitalize_thrive_now_real', Composio account_id 'instagram_walrus-waac', ig_user_id 27164026169935796 (verified). The old broken connection (instagram_cardin-bulgar) was renamed to 'DEPRECATED_do_not_use_wrong_account' to prevent accidental reuse — it still resolves to the Reclaim account and must never be used for Revitalize again.",
+    "warning_account_type": "Both Instagram connections currently report account_type: PRIVATE. Instagram Graph API posting tools (INSTAGRAM_POST_IG_USER_MEDIA) require a Business or Creator account linked to a Facebook Page. If revitalize_thrive_now is still a Personal/Private account, posts may keep failing even with the corrected alias — verify account type in Instagram settings.",
+    "triggers_fixed_in_place": [
+      "trig_016rAJRivpmtaJnGSKPAWKCw (Morning Post 7 AM ET) — updated to use alias revitalize_thrive_now_real",
+      "trig_01SeVcKi4k8hCkViYAeQj3HP (Afternoon Post 3 PM ET) — updated to use alias revitalize_thrive_now_real",
+      "trig_019RDVJEs19923UUsESafRWE (Evening Post 7 PM ET) — updated to use alias revitalize_thrive_now_real"
+    ],
+    "triggers_still_broken_needs_manual_fix": [
+      "trig_01JPVgRV8sjg8ReqhfVdabJX (Night Post 10 PM ET, cron '3 2 * * *') — still references instagram_cardin-bulgar for Revitalize",
+      "trig_01CgQzhz6pk6Ji5JRe23Bxzh (Video Reel Wed 6 PM ET, cron '0 22 * * 1-5') — still references instagram_cardin-bulgar for Revitalize",
+      "trig_01GYWvVcUxzCbq3xSHNnn16t (Video Reel Thursday 12 PM ET, cron '0 16 * * 4') — still references instagram_cardin-bulgar for Revitalize",
+      "trig_01EMKhtFGaobzrdxvsJaWdzD (Video Reel Tuesday 12 PM ET, cron '0 16 * * 2') — still references instagram_cardin-bulgar for Revitalize"
+    ],
+    "why_not_auto_fixed": "These 4 triggers were created via 'http_api' rather than by an agent session (via create_trigger), so both update_trigger and delete_trigger are blocked for this session with: 'Agents can only update/delete routines they created.' This is a hard platform permission boundary. Fix requires either: (a) the account owner editing/recreating these 4 triggers directly (e.g. via the Claude Code web/app UI or the API that originally created them), replacing every 'instagram_cardin-bulgar' reference with 'revitalize_thrive_now_real', or (b) asking a Claude Code session to run create_trigger for 4 new replacement triggers with the corrected prompt and then manually deleting the old 4 via the UI."
+  },
   "triggers": [
     {
       "id": "trig_016rAJRivpmtaJnGSKPAWKCw",
@@ -9,7 +26,7 @@
       "status": "ACTIVE",
       "slot": "morning",
       "angle": "education",
-      "prompt_summary": "Education/authority slot. Uses morning product from daily rotation. Generates Higgsfield women image for Revitalize, men image for Reclaim. Posts via Composio to both Instagram accounts using explicit account aliases (instagram_cardin-bulgar, instagram_medlar-slap). Verifies each post is live via INSTAGRAM_GET_IG_MEDIA before logging. No explicit Facebook call — Revitalize IG auto-syncs to Facebook."
+      "prompt_summary": "Education/authority slot. Uses morning product from daily rotation. Generates Higgsfield women image for Revitalize, men image for Reclaim. Posts via Composio to both Instagram accounts using explicit account aliases (revitalize_thrive_now_real, instagram_medlar-slap). Verifies each post is live via INSTAGRAM_GET_IG_MEDIA before logging. No explicit Facebook call — Revitalize IG auto-syncs to Facebook."
     },
     {
       "id": "trig_01SeVcKi4k8hCkViYAeQj3HP",
@@ -18,7 +35,7 @@
       "status": "ACTIVE",
       "slot": "afternoon",
       "angle": "pain_point",
-      "prompt_summary": "Pain-point slot. 3 PM crash content. Uses afternoon product from daily rotation. Same verified posting pattern as morning trigger."
+      "prompt_summary": "Pain-point slot. 3 PM crash content. Uses afternoon product from daily rotation. Same verified posting pattern as morning trigger, using alias revitalize_thrive_now_real for Revitalize."
     },
     {
       "id": "trig_019RDVJEs19923UUsESafRWE",
@@ -27,7 +44,36 @@
       "status": "ACTIVE",
       "slot": "evening",
       "angle": "transformation_and_cta",
-      "prompt_summary": "Conversion/transformation slot. Same verified posting pattern as morning/afternoon, plus best-effort YouTube video upload for Reclaim (does not block Instagram logging on failure)."
+      "prompt_summary": "Conversion/transformation slot. Same verified posting pattern as morning/afternoon, using alias revitalize_thrive_now_real for Revitalize, plus best-effort YouTube video upload for Reclaim (does not block Instagram logging on failure)."
+    },
+    {
+      "id": "trig_01JPVgRV8sjg8ReqhfVdabJX",
+      "name": "RTN + Reclaim — Night Post (10 PM ET)",
+      "cron_expression": "3 2 * * *",
+      "status": "ACTIVE — STILL USES BROKEN ALIAS instagram_cardin-bulgar for Revitalize, needs manual fix (see composio_alias_incident_2026-07-27)",
+      "slot": "night",
+      "angle": "urgency_social_proof"
+    },
+    {
+      "id": "trig_01CgQzhz6pk6Ji5JRe23Bxzh",
+      "name": "RTN + Reclaim — Video Reel (Wed 6pm ET)",
+      "cron_expression": "0 22 * * 1-5",
+      "status": "ACTIVE — STILL USES BROKEN ALIAS instagram_cardin-bulgar for Revitalize, needs manual fix (see composio_alias_incident_2026-07-27)",
+      "slot": "video"
+    },
+    {
+      "id": "trig_01GYWvVcUxzCbq3xSHNnn16t",
+      "name": "RTN + Reclaim — Video Reel (Thursday 12 PM ET)",
+      "cron_expression": "0 16 * * 4",
+      "status": "ACTIVE — STILL USES BROKEN ALIAS instagram_cardin-bulgar for Revitalize, needs manual fix (see composio_alias_incident_2026-07-27)",
+      "slot": "video"
+    },
+    {
+      "id": "trig_01EMKhtFGaobzrdxvsJaWdzD",
+      "name": "RTN + Reclaim — Video Reel (Tuesday 12 PM ET)",
+      "cron_expression": "0 16 * * 2",
+      "status": "ACTIVE — STILL USES BROKEN ALIAS instagram_cardin-bulgar for Revitalize, needs manual fix (see composio_alias_incident_2026-07-27)",
+      "slot": "video"
     }
   ],
   "superseded_triggers": {

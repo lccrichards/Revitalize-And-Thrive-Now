@@ -70,7 +70,7 @@ def post_to_instagram_revitalize(caption, image_url=None):
 
     orch_config = load_configs()[1]
     ig_user_id = orch_config["composio"]["revitalize"]["ig_user_id"]
-    account_alias = "instagram_cardin-bulgar"  # From previous session fix
+    account_alias = "revitalize_thrive_now_real"  # Fixed 2026-07-27: old alias pointed at Reclaim's account
 
     print(f"  IG User ID: {ig_user_id}")
     print(f"  Account Alias: {account_alias}")
