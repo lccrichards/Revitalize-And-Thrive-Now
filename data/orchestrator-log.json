@@ -1895,5 +1895,36 @@
       "verified": false,
       "error": "Skipped before generation: Higgsfield balance check confirmed 0 credits (plan: plus). No creative could be generated, so no Instagram post was attempted for Reclaim this slot. Blocks image generation for BOTH brands until the Higgsfield workspace is topped up or the plan is upgraded."
     }
+  },
+  {
+    "date": "2026-07-26 (Sunday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-27T02:08:26Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "strength and fitness after 45",
+      "angle": "urgency_social_proof",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_020646_bf4ae55f-27eb-469a-bcf3-def15be783e9.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400) on INSTAGRAM_POST_IG_USER_MEDIA: Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error both times. Persistent failure ongoing since 2026-07-22 across every Revitalize slot logged since -- confirmed via COMPOSIO_MANAGE_CONNECTIONS (list) that both Instagram connection aliases ('instagram_cardin-bulgar' meant for Revitalize and 'instagram_medlar-slap' meant for Reclaim) resolve to the SAME underlying account (username reclaim.and.rise.now, id 27634679816148097). No active Composio connection exists to Revitalize's actual Instagram Business account (ig_user_id 27164026169935796). Requires manual reconnection/re-authorization of the correct Revitalize Meta Business Instagram account via Composio -- cannot be fixed from this session."
+    },
+    "reclaim": {
+      "product": "Midlife Wellness Planner",
+      "price": "$19",
+      "theme": "drive and motivation",
+      "angle": "urgency_social_proof",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_020646_33381484-63fa-4992-b494-6ba393b14c08.png",
+      "ig_post_id": "18088987286401908",
+      "ig_permalink": "https://www.instagram.com/p/DbR2xuajZXz/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
