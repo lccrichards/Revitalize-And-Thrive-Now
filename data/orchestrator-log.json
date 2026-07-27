@@ -1958,5 +1958,36 @@
       "verified": false,
       "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-26-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
     }
+  },
+  {
+    "date": "2026-07-25 (Saturday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-27T12:10:14Z",
+    "revitalize": {
+      "product": "Skincare and Beauty Protocol",
+      "price": "$39",
+      "theme": "skincare and beauty",
+      "angle": "supportive_solution",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_120809_b7dae796-c8e9-4447-b0e0-13abaaaaeb1d.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error both times. Persistent failure ongoing since 2026-07-22 afternoon across every Revitalize slot logged since -- confirmed not transient, requires manual re-authorization of the Revitalize Meta/Instagram connection in Composio (both 'instagram_cardin-bulgar' and 'instagram_medlar-slap' aliases currently authenticate to the same underlying Reclaim account). Reclaim, same Composio connection, different IG account, continues to post successfully."
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "supportive_solution",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_120818_445bd42a-1ee7-40ba-800a-a22426bf7f7d.png",
+      "ig_post_id": "17930379792359305",
+      "ig_permalink": "https://www.instagram.com/p/DbS7k0yIJD-/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
