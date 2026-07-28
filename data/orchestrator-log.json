@@ -2185,5 +2185,37 @@
       "verified": true,
       "note": "YouTube uploaded to account 'youtube_jute-golem' (channel UCvBwWMJzRWUCC3VCzxLBQ8g, 'Reclaim & Rise Now'); the standing template's channel id 'UCreclaimandriseNOW' is a placeholder, not the real bound channel."
     }
+  },
+  {
+    "date": "2026-07-27 (Monday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-28T18:45:49Z",
+    "note": "Posted late due to session interruption (worker restarts); this fulfills the Monday 2026-07-27 morning slot content generated earlier (see prior not_posted entry same date/slot).",
+    "revitalize": {
+      "product": "Hormone Reset Masterclass",
+      "price": "$59",
+      "theme": "hormone balance",
+      "angle": "education",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_120648_9efba3a4-8350-45e9-959f-89a75617422a.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram API error (status 400) on INSTAGRAM_POST_IG_USER_MEDIA: Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Confirmed via COMPOSIO_MANAGE_CONNECTIONS (list) that both Instagram connection aliases ('instagram_cardin-bulgar' meant for Revitalize and 'instagram_medlar-slap' meant for Reclaim) resolve to the SAME underlying account (username reclaim.and.rise.now, id 27634679816148097) via Composio. No active Composio connection exists to Revitalize's actual Instagram Business account (ig_user_id 27164026169935796). Persistent failure ongoing since 2026-07-22 across every Revitalize slot attempted via Composio. Requires manual reconnection/re-authorization of the correct Revitalize Meta Business Instagram account within Composio -- cannot be fixed from this session."
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "testosterone optimization",
+      "angle": "education",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_121743_81d72d30-ca05-41a5-b9c4-382a6efc2461.png",
+      "ig_post_id": "18100443986461701",
+      "ig_permalink": "https://www.instagram.com/p/DbS8tRGIP8L/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
