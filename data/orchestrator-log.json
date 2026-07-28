@@ -2031,33 +2031,30 @@
   {
     "date": "2026-07-27 (Monday ET)",
     "slot": "evening",
-    "timestamp_utc": "2026-07-27T23:00:00Z",
+    "timestamp_utc": "2026-07-28T00:45:32Z",
     "revitalize": {
       "product": "Complete Wellness Bundle",
       "price": "$149",
       "theme": "hormone balance",
       "angle": "aspirational_offer",
-      "caption_file": "data/pending-posts-2026-07-27-evening.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-27-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
+      "ig_post_id": "18091910963636955",
+      "ig_permalink": "https://www.instagram.com/p/DbUSGxCm-rA/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
     },
     "reclaim": {
       "product": "Complete Reclaim Reset Bundle",
       "price": "$249",
       "theme": "testosterone optimization",
       "angle": "aspirational_offer",
-      "caption_file": "data/pending-posts-2026-07-27-evening.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-27-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
+      "ig_post_id": "18028098830838524",
+      "ig_permalink": "https://www.instagram.com/p/DbUSGuwjdxw/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize & Thrive Now channel (youtube_luckie-mang, Dr. Alexander, UCIkVsuNrVulsB13pZ_iPFpw) is active, confirmed via COMPOSIO_MANAGE_CONNECTIONS list. Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
     }
   }
 ]
