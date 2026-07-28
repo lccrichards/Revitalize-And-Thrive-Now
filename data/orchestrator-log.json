@@ -2251,5 +2251,31 @@
       "verified": false,
       "error": "Meta-compliant supportive afternoon caption generated and saved to data/pending-posts-2026-07-28-afternoon.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires BUFFER_API_KEY to be exported for automated posting."
     }
+  },
+  {
+    "date": "2026-07-28",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-28T20:25:53Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "supportive_solution",
+      "ig_post_id": "17900098677507394",
+      "ig_permalink": "https://www.instagram.com/p/DbWWy99HWtT/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "angle": "supportive_solution",
+      "ig_post_id": "18121626343834084",
+      "ig_permalink": "https://www.instagram.com/p/DbWR6txHQba/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
