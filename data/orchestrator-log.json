@@ -2056,5 +2056,37 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-27 (Monday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-07-27T11:00:00Z",
+    "revitalize": {
+      "product": "Hormone Reset Masterclass",
+      "price": "$59",
+      "theme": "hormone balance",
+      "angle": "education",
+      "caption_file": "data/pending-posts-2026-07-27-morning.json",
+      "compliant": true,
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "not_posted",
+      "verified": false,
+      "error": "Meta-compliant educational morning caption generated and saved to data/pending-posts-2026-07-27-morning.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "testosterone optimization",
+      "angle": "education",
+      "caption_file": "data/pending-posts-2026-07-27-morning.json",
+      "compliant": true,
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "not_posted",
+      "verified": false,
+      "error": "Meta-compliant educational morning caption generated and saved to data/pending-posts-2026-07-27-morning.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
+    }
   }
 ]
