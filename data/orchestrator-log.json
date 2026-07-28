@@ -2149,5 +2149,41 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-28",
+    "slot": "video",
+    "timestamp_utc": "2026-07-28T16:12:30Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "format": "reel",
+      "ethnicity": "Middle Eastern",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260728_160650_5f3e5af9-40d0-4343-a4d2-acac825b6ca6.mp4",
+      "ig_creation_id": "17913638886431674",
+      "ig_post_id": "18115746931899867",
+      "ig_permalink": "https://www.instagram.com/reel/DbV7-oQDIiJ/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "note": "Used corrected Instagram alias 'instagram_walrus-waac' (ig_user_id 27164026169935796, revitalize_thrive_now); 'instagram_cardin-bulgar' in the standing template is deprecated/repointed to the Reclaim account. Verified via INSTAGRAM_GET_IG_MEDIA before logging."
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "format": "reel",
+      "ethnicity": "White",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260728_160651_5629a15a-8a57-4d03-b0ed-e1be93cd0b36.mp4",
+      "ig_creation_id": "18105039410076162",
+      "ig_post_id": "18139518115564191",
+      "ig_permalink": "https://www.instagram.com/reel/DbV7-t7EoWA/",
+      "yt_video_id": "Ic_TOb97PUc",
+      "yt_status": "posted",
+      "status": "posted",
+      "verified": true,
+      "note": "YouTube uploaded to account 'youtube_jute-golem' (channel UCvBwWMJzRWUCC3VCzxLBQ8g, 'Reclaim & Rise Now'); the standing template's channel id 'UCreclaimandriseNOW' is a placeholder, not the real bound channel."
+    }
   }
 ]
