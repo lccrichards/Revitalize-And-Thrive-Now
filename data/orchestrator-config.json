@@ -99,7 +99,10 @@
       "fb_entity_id": "revitalize_thrive_now_business",
       "fb_page_id": "130419383084779",
       "fb_account_id": "act_1234567890",
-      "platforms": ["instagram", "facebook"]
+      "yt_channel_id": "UCIkVsuNrVulsB13pZ_iPFpw",
+      "yt_composio_account": "Revitalize & Thrive Now",
+      "yt_enabled": true,
+      "platforms": ["instagram", "facebook", "youtube"]
     },
     "reclaim": {
       "ig_entity_id": "reclaim_and_rise_now",
@@ -107,7 +110,8 @@
       "ig_account_id": "18095676897118726",
       "fb_entity_id": null,
       "fb_page_id": null,
-      "yt_channel_id": "UCreclaimandriseNOW",
+      "yt_channel_id": "UCvBwWMJzRWUCC3VCzxLBQ8g",
+      "yt_composio_account": "Reclaim & Rise",
       "yt_enabled": true,
       "platforms": ["instagram", "youtube"]
     }
@@ -128,7 +132,8 @@
       "background_music_volume": 0.7
     },
     "reclaim_channel": {
-      "id": "UCreclaimandriseNOW",
+      "id": "UCvBwWMJzRWUCC3VCzxLBQ8g",
+      "composio_account": "Reclaim & Rise",
       "category": "22",
       "default_playlist": "Evening Posts"
     }
