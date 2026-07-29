@@ -13,6 +13,7 @@ TRIGGER SCHEDULE (ET):
   Morning   7:00 AM  — education / authority / trust-building
   Afternoon 3:00 PM  — pain point / problem awareness
   Evening   7:00 PM  — transformation / CTA / conversion
+  Night     10:00 PM — urgency / social proof / last-call conversion
 
 PLATFORMS:
   Instagram — via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH
@@ -158,7 +159,7 @@ if __name__ == "__main__":
     # When run directly, print the daily brief so Claude knows what to execute
     import sys
     slot_arg = sys.argv[1] if len(sys.argv) > 1 else None
-    slot = slot_arg if slot_arg in ("morning", "afternoon", "evening") else get_time_slot()
+    slot = slot_arg if slot_arg in ("morning", "afternoon", "evening", "night") else get_time_slot()
     day = get_day_name()
 
     brand_cfg, orch_cfg = load_configs()
