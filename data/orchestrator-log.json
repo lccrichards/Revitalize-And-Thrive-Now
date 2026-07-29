@@ -2341,5 +2341,25 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-29 (Wednesday ET)",
+    "slot": "morning",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "theme": "energy restoration",
+      "angle": "education",
+      "status": "generated_not_posted",
+      "note": "Captions generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "energy and cognitive performance",
+      "angle": "education",
+      "status": "generated_not_posted",
+      "note": "Captions generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    }
   }
 ]
