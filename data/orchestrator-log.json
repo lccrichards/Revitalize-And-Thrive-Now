@@ -2361,5 +2361,31 @@
       "status": "generated_not_posted",
       "note": "Captions generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-07-29",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-29T17:10:54Z",
+    "status": "DUPLICATE_POST_INCIDENT",
+    "note": "This run began before a mid-session worker restart; the guard check at the start of the run (against 2026-07-28) correctly showed no verified evening post yet. After the restart, this session resumed and proceeded directly to image generation and publishing WITHOUT re-running the POST GUARD / re-fetching origin first. In the interim, another session had already completed and pushed the real, legitimate 2026-07-28 evening post (see the entry dated 2026-07-28 evening, timestamp_utc 2026-07-28T23:34:05Z, ig_post_id 18112306612752746 / 18050485916788807). This session then generated new images and PUBLISHED A SECOND, DUPLICATE evening post to both live Instagram accounts. There is no Instagram media-delete tool available via Composio (only FACEBOOK_DELETE_POST exists, which does not apply to the IG post objects) so these duplicate posts could NOT be programmatically removed. Manual review/deletion via the Instagram app is recommended if the duplicate is undesired.",
+    "duplicate_posts_created_this_run": {
+      "revitalize": {
+        "product": "The Midlife Sleep Fix",
+        "price": "$39",
+        "ig_post_id": "18099003401192358",
+        "ig_permalink": "https://www.instagram.com/p/DbYl93Rm3ee/",
+        "account": "instagram_walrus-waac (ig_user_id 27164026169935796)",
+        "verified": true
+      },
+      "reclaim": {
+        "product": "Complete Reclaim Reset Bundle",
+        "price": "$249",
+        "ig_post_id": "18074205053449479",
+        "ig_permalink": "https://www.instagram.com/p/DbYl92Em4RX/",
+        "account": "instagram_medlar-slap (ig_user_id 27634679816148097)",
+        "verified": true
+      }
+    },
+    "additional_issue_found": "Commit c52fcc1 (\"Replace all ThriveCart/Gumroad links with Stripe Payment Links\") migrated the live website checkout links (e.g. sleep-fix.html) from Gumroad to Stripe (e.g. https://buy.stripe.com/cNieVcdy2eXKbriel5aAw05 for The Midlife Sleep Fix), but data/brand-config.json -- the source of truth this orchestrator reads for caption URLs -- was NOT updated and still lists the old rivitalize.gumroad.com URLs. Both this duplicate post and the legitimate 2026-07-28 evening post likely used the now-stale Gumroad URL in the caption text. Recommend updating data/brand-config.json product URLs to match the new Stripe Payment Links before the next scheduled run."
   }
 ]
