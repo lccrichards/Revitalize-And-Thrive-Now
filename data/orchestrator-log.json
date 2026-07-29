@@ -111,5 +111,31 @@
       "verified": true
     },
     "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
+  },
+  {
+    "date": "2026-07-29 (Wednesday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-07-29T02:08:51Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "urgency_social_proof",
+      "ig_post_id": "17990145732009342",
+      "ig_permalink": "https://www.instagram.com/p/DbXAb6cm_KT/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "urgency_social_proof",
+      "ig_post_id": "18120793204746093",
+      "ig_permalink": "https://www.instagram.com/p/DbXAYb1m0Wg/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
