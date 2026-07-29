@@ -2361,5 +2361,29 @@
       "status": "generated_not_posted",
       "note": "Captions generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-07-29 (Wednesday ET)",
+    "slot": "afternoon",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "theme": "energy restoration",
+      "angle": "supportive_solution",
+      "caption_file": "data/pending-posts-2026-07-29-afternoon.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    },
+    "reclaim": {
+      "product": "Midlife Wellness Planner",
+      "price": "$19",
+      "theme": "energy and cognitive performance",
+      "angle": "supportive_solution",
+      "caption_file": "data/pending-posts-2026-07-29-afternoon.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    }
   }
 ]
