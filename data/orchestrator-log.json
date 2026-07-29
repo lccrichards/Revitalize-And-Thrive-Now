@@ -2385,5 +2385,29 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-07-29 (Wednesday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-07-29-evening.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant aspirational evening caption generated & saved; dry-run validation passed; Buffer posting skipped (BUFFER_API_KEY not set)"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-07-29-evening.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant aspirational evening caption generated & saved; dry-run validation passed; Buffer posting skipped (BUFFER_API_KEY not set)"
+    }
   }
 ]
