@@ -2387,5 +2387,32 @@
       }
     },
     "additional_issue_found": "Commit c52fcc1 (\"Replace all ThriveCart/Gumroad links with Stripe Payment Links\") migrated the live website checkout links (e.g. sleep-fix.html) from Gumroad to Stripe (e.g. https://buy.stripe.com/cNieVcdy2eXKbriel5aAw05 for The Midlife Sleep Fix), but data/brand-config.json -- the source of truth this orchestrator reads for caption URLs -- was NOT updated and still lists the old rivitalize.gumroad.com URLs. Both this duplicate post and the legitimate 2026-07-28 evening post likely used the now-stale Gumroad URL in the caption text. Recommend updating data/brand-config.json product URLs to match the new Stripe Payment Links before the next scheduled run."
+  },
+  {
+    "date": "2026-07-29 (Wednesday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-07-29T18:52:33Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "supportive_solution",
+      "ig_post_id": "18260947762306113",
+      "ig_permalink": "https://www.instagram.com/p/DbYzKnIGwB8/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "drive and motivation",
+      "angle": "supportive_solution",
+      "ig_post_id": "18612398479001994",
+      "ig_permalink": "https://www.instagram.com/p/DbYzKmnnelH/",
+      "status": "posted",
+      "verified": true
+    },
+    "note": "Script's own POST GUARD output was stale, reporting DATE (ET) 2026-07-26 despite real-world date 2026-07-29 -- date field here corrected to the real date so future guard checks match. CONFIRMED at publish time that data/brand-config.json is stale per the issue already flagged in the prior (2026-07-29 evening DUPLICATE_POST_INCIDENT) entry: the Revitalize caption's URL, rivitalize.gumroad.com/l/fitness-after-45, returns HTTP 404 (dead link) -- verified via direct fetch. The Reclaim caption's URL, rivitalize.gumroad.com/l/masterclass-series, and its price ($149) are also stale: commit c52fcc1 migrated masterclass-series.html to Stripe (https://buy.stripe.com/3cIcN451wdTG7b26SDaAw09) at a new price of $197. Both posts already went live with these incorrect URL/price before this was discovered; Instagram has no supported caption-edit API and Composio has no IG media-delete tool, so this could not be corrected programmatically. User notified. brand-config.json needs a full audit against the 43 Stripe-migrated links before the next scheduled run."
   }
 ]
