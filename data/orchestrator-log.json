@@ -2464,5 +2464,38 @@
       "verified": true
     },
     "note": "Fixed stale brand-config.json checkout URL for both night-slot products before posting (see commit 9564b93) -- prior sessions today had flagged this as a blocker (dead Gumroad link) affecting the afternoon post and causing the video/evening slots to be skipped. Also corrected the Composio account id for Revitalize from the CLAUDE.md-listed alias 'instagram_cardin-bulgar' (not found) to the current active connection 'instagram_walrus-waac', same ig_user_id 27164026169935796."
+  },
+  {
+    "date": "2026-07-26 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-07-29T23:22:45Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260728_145836_65da97e0-5f72-4341-9b90-8c4944ea1765.png",
+      "ig_post_id": "17950987686227653",
+      "ig_permalink": "https://www.instagram.com/p/DbZQ6EbnYmx/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "note": "Late/delayed run (session interrupted by worker restarts); previous attempt for this date/slot was not_posted (Buffer). This is the first verified live post for 2026-07-26 evening. Also first post using the corrected Revitalize IG connection (alias instagram_walrus-waac / revitalize_thrive_now_real, ig_user_id 27164026169935796) after the prior instagram_cardin-bulgar alias was found broken."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260728_145844_fc06b3aa-c580-489e-9446-068ddd4639e9.png",
+      "ig_post_id": "18109049483095401",
+      "ig_permalink": "https://www.instagram.com/p/DbZQ6FtHVsD/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
