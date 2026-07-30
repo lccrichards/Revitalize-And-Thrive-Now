@@ -2497,5 +2497,37 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-30 (Thursday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-07-30T16:16:30Z",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "format": "reel",
+      "ethnicity": "Latina",
+      "video_job_id": "5ac59081-23a7-4963-8396-9fd60405e900",
+      "ig_post_id": "18383594728163087",
+      "ig_permalink": "https://www.instagram.com/reel/DbbF6M0jY24/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "format": "reel",
+      "ethnicity": "East Asian",
+      "video_job_id": "dfd2bd72-de78-44be-b43f-21428c77b172",
+      "ig_post_id": "18341665945267036",
+      "ig_permalink": "https://www.instagram.com/reel/DbbF684DRWC/",
+      "yt_video_id": "aDlzsZ6DuY0",
+      "yt_status": "posted",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
