@@ -2435,5 +2435,34 @@
     "timestamp_utc": "2026-07-29T23:59:00Z",
     "status": "skipped",
     "reason": "Repeated the skip decision from the prior 2026-07-29 evening run (timestamp_utc 2026-07-29T23:06:09Z): scripts/master_orchestrator.py POST GUARD again reported \"OK to post\" for 2026-07-29 evening, but this guard is confirmed blind to the same-day DUPLICATE_POST_INCIDENT entry (timestamp_utc 2026-07-29T17:10:54Z), which already published live duplicate evening content to BOTH real Instagram business accounts today (Revitalize ig_post_id 18099003401192358 / https://www.instagram.com/p/DbYl93Rm3ee/; Reclaim ig_post_id 18074205053449479 / https://www.instagram.com/p/DbYl92Em4RX/), on top of the legitimate 2026-07-28 evening post. A third evening-labeled live post in under 24 hours would compound the duplicate-posting incident. Separately, data/brand-config.json still has not been updated: it still lists pre-migration Gumroad URLs/prices (e.g. 30-Day Wellness Transformation at rivitalize.gumroad.com/l/nlkuz, Complete Reclaim Reset Bundle at rivitalize.gumroad.com/l/nxqlwr) while the live site was migrated to Stripe checkout in commit cca3579/c52fcc1; this has already caused at least one confirmed dead/mispriced checkout link to go out (2026-07-29 afternoon post, and the video-slot skip confirmed a live 9 vs 9 mismatch on a different product). Three prior sessions today (DUPLICATE_POST_INCIDENT, video skip, evening skip) have all flagged that brand-config.json needs auditing against the live Stripe-migrated site before any further scheduled run proceeds; that fix still has not been made, and the POST GUARD still has not been fixed to recognize DUPLICATE_POST_INCIDENT as an already-posted state. No images were generated, no post was made to Instagram. Recommend: (a) fix master_orchestrator.py POST GUARD to treat DUPLICATE_POST_INCIDENT / any live-verified sub-entry as already-posted for that slot+date, (b) audit and update data/brand-config.json product URLs/prices against the live Stripe-migrated site, (c) decide whether to manually delete the 2026-07-29 duplicate Instagram posts, before automated evening/night/video runs resume."
+  },
+  {
+    "date": "2026-07-29",
+    "slot": "night",
+    "timestamp_utc": "2026-07-30T02:10:34Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "energy restoration",
+      "angle": "urgency_social_proof",
+      "ethnicity": "East Asian",
+      "ig_post_id": "17904902910463432",
+      "ig_permalink": "https://www.instagram.com/p/DbZlbEWG5-2/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "energy and cognitive performance",
+      "angle": "urgency_social_proof",
+      "ethnicity": "South Asian",
+      "ig_post_id": "18177946009418231",
+      "ig_permalink": "https://www.instagram.com/p/DbZlXvFjdTE/",
+      "status": "posted",
+      "verified": true
+    },
+    "note": "Fixed stale brand-config.json checkout URL for both night-slot products before posting (see commit 9564b93) -- prior sessions today had flagged this as a blocker (dead Gumroad link) affecting the afternoon post and causing the video/evening slots to be skipped. Also corrected the Composio account id for Revitalize from the CLAUDE.md-listed alias 'instagram_cardin-bulgar' (not found) to the current active connection 'instagram_walrus-waac', same ig_user_id 27164026169935796."
   }
 ]
