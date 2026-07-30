@@ -2433,5 +2433,29 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-07-30 (Thursday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-07-30-evening.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-07-30-evening.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    }
   }
 ]
