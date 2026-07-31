@@ -2589,5 +2589,34 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-07-30",
+    "slot": "night",
+    "timestamp_utc": "2026-07-31T02:06:47Z",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "angle": "urgency_social_proof",
+      "ethnicity": "South Asian",
+      "ig_post_id": "18127790585493678",
+      "ig_permalink": "https://www.instagram.com/p/DbcJyd_oK6l/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "urgency_social_proof",
+      "ethnicity": "White",
+      "ig_post_id": "18109137940956907",
+      "ig_permalink": "https://www.instagram.com/p/DbcJynljUH5/",
+      "status": "posted",
+      "verified": true
+    },
+    "note": "Revitalize account alias in CLAUDE.md (instagram_cardin-bulgar) is stale/not found in active Composio connections; used current active alias instagram_walrus-waac (same ig_user_id 27164026169935796), consistent with prior night-slot session fix on 2026-07-29."
   }
 ]
