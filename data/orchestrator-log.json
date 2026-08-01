@@ -1,27 +1,6 @@
 [
   {
     "date": "2026-07-09 (Thursday ET)",
-    "slot": "morning",
-    "revitalize": {
-      "product": "The Mindset Bundle",
-      "price": "$97",
-      "theme": "mindset reset",
-      "angle": "education",
-      "ig_post_id": "18070414394402143",
-      "fb_post_id": "1029294466942140_122113748984693190",
-      "status": "posted"
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$67",
-      "theme": "mindset recalibration",
-      "angle": "education",
-      "ig_post_id": "18120075106836750",
-      "status": "posted"
-    }
-  },
-  {
-    "date": "2026-07-09 (Thursday ET)",
     "slot": "afternoon",
     "revitalize": {
       "product": "Stress Management Workbook",
@@ -2660,6 +2639,36 @@
       "ig_permalink": "https://www.instagram.com/p/DbedMzuHd6g/",
       "yt_video_id": null,
       "yt_status": "skipped",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-07-31 (Friday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-08-01T02:07:35Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "nutrition and meal planning",
+      "angle": "urgency_social_proof",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260801_020554_966c99f0-3234-495a-871d-f3dff9f186fe.png",
+      "ig_post_id": "18485451982110094",
+      "ig_permalink": "https://www.instagram.com/p/DbeurZNDSdM/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "urgency_social_proof",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260801_020555_ba35819b-3205-4799-837f-5532959d4d0e.png",
+      "ig_post_id": "18137881129586518",
+      "ig_permalink": "https://www.instagram.com/p/DbeuoWdjWM0/",
       "status": "posted",
       "verified": true
     }
