@@ -2481,5 +2481,25 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-01 (Saturday ET)",
+    "slot": "morning",
+    "revitalize": {
+      "product": "Skincare and Beauty Protocol",
+      "price": "$39",
+      "theme": "skincare and beauty",
+      "angle": "education",
+      "status": "generated_not_posted",
+      "note": "Captions generated and saved to pending-posts-2026-08-01-morning.json. Not posted: BUFFER_API_KEY not set in environment."
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "education",
+      "status": "generated_not_posted",
+      "note": "Captions generated and saved to pending-posts-2026-08-01-morning.json. Not posted: BUFFER_API_KEY not set in environment."
+    }
   }
 ]
