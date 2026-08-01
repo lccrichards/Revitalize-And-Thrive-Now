@@ -2,32 +2,6 @@
   {
     "date": "2026-07-12 (Saturday ET)",
     "slot": "night",
-    "timestamp_utc": "2026-07-12T01:01:19Z",
-    "revitalize": {
-      "product": "Skincare and Beauty Protocol",
-      "price": "$39",
-      "theme": "skincare and beauty",
-      "angle": "restoration_and_rest",
-      "ig_post_id": "18103111028152064",
-      "ig_permalink": "https://www.instagram.com/p/DarHMLaibMH/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "strength and muscle density",
-      "angle": "restoration_and_rest",
-      "ig_post_id": "17887946904415970",
-      "ig_permalink": "https://www.instagram.com/p/DarHMMFCdc1/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-12 (Saturday ET)",
-    "slot": "night",
     "timestamp_utc": "2026-07-12T02:11:00Z",
     "revitalize": {
       "product": "Skincare and Beauty Protocol",
@@ -2681,6 +2655,39 @@
       "angle": "supportive_solution",
       "ig_post_id": "18576155614066777",
       "ig_permalink": "https://www.instagram.com/p/DbgjPUkG40t/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-01",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-01T23:07:32Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "skincare and beauty",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260801_230548_4332ca7d-37be-4b59-a8db-1d13c5c77b9c.png",
+      "ig_post_id": "18102064250187880",
+      "ig_permalink": "https://www.instagram.com/p/Dbg-2OmG9EB/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "strength and muscle density",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260801_230552_eb65db8c-c1ba-4d59-a7c3-5b0a669725c9.png",
+      "ig_post_id": "18000056576976936",
+      "ig_permalink": "https://www.instagram.com/p/Dbg-2VNnSpZ/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "evening slot - not the scheduled Tue/Thu video reel day",
       "status": "posted",
       "verified": true
     }
