@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-12 (Saturday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-12T02:17:02Z",
-    "revitalize": {
-      "product": "Skincare and Beauty Protocol",
-      "price": "$39",
-      "theme": "skincare and beauty",
-      "angle": "education",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "blocked",
-      "verified": false,
-      "error": "IG media container created (creation_id 17911105818431674) but publish step was denied by Claude Code safety classifier: real-world irreversible publish action triggered from an automated background-task notification lacks verified user consent. Post was NOT published live."
-    },
-    "reclaim": {
-      "product": "Strength Density and Longevity",
-      "price": "$39",
-      "theme": "strength and muscle density",
-      "angle": "education",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "status": "blocked",
-      "verified": false,
-      "error": "IG media container created (creation_id 18102152102076162) but publish step was denied by Claude Code safety classifier: real-world irreversible publish action triggered from an automated background-task notification lacks verified user consent. Post was NOT published live."
-    }
-  },
-  {
-    "date": "2026-07-12 (Sunday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-12T11:30:56Z",
-    "revitalize": {
-      "product": "Fitness After 45 Guide",
-      "price": "$39",
-      "theme": "strength and fitness after 45",
-      "angle": "education",
-      "ethnicity": "South Asian",
-      "ig_post_id": "17931801855345611",
-      "ig_permalink": "https://www.instagram.com/p/DasPKguIIJH/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "drive and motivation",
-      "angle": "education",
-      "ethnicity": "Middle Eastern",
-      "ig_post_id": "17960635862966270",
-      "ig_permalink": "https://www.instagram.com/p/DasPKjQIEQ_/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-12 (Sunday ET)",
     "slot": "evening",
     "timestamp_utc": "2026-07-12T19:09:26Z",
@@ -2727,6 +2671,37 @@
       "status": "failed",
       "verified": false,
       "note": "IG media container was created successfully (creation_id above), but the INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH call was blocked by the Claude Code auto-mode permission classifier ('Blocked by classifier') on two consecutive attempts -- not a Composio/API error. No image was actually published live. Checkout URL (rivitalize.gumroad.com/l/mindset-reset) verified live (HTTP 200), no substitution needed."
+    }
+  },
+  {
+    "date": "2026-08-02",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-02T15:26:26Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ethnicity": "South Asian",
+      "ig_post_id": "18600627844049540",
+      "ig_permalink": "https://www.instagram.com/p/DbiuTs2oAXW/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ethnicity": "White",
+      "ig_post_id": "18085247390656197",
+      "ig_permalink": "https://www.instagram.com/p/DbiuW05IHfp/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "ffmpeg not available and no local audio asset in repo",
+      "status": "posted",
+      "verified": true
     }
   }
 ]
