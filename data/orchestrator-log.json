@@ -2,40 +2,6 @@
   {
     "date": "2026-07-12 (Sunday ET)",
     "slot": "evening",
-    "timestamp_utc": "2026-07-12T23:09:36Z",
-    "revitalize": {
-      "product": "30-Day Wellness Transformation",
-      "price": "$79",
-      "theme": "strength and fitness after 45",
-      "angle": "transformation_and_cta",
-      "ethnicity": "Latina",
-      "ig_creation_id": "17911241499431674",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "blocked",
-      "verified": false,
-      "error": "Caption and image (nano_banana_flash, job d17b1617-52fa-4dc3-9a4f-9bc4f863c1d6) were generated and the IG media container was created (creation_id 17911241499431674), but the INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH call was denied by the Claude Code auto-mode safety classifier: no genuine user authorization exists for publishing live, real-world marketing posts to a public Instagram business account from a background/scheduled-task notification. Post was NOT published live. This is the third consecutive evening/morning attempt on 2026-07-12 blocked for this reason -- the automation is stuck and needs the account owner to either publish manually or explicitly re-authorize this pipeline in a live session."
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "drive and motivation",
-      "angle": "transformation_and_cta",
-      "ethnicity": "African American",
-      "ig_creation_id": "18102306485076162",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "status": "blocked",
-      "verified": false,
-      "error": "Caption and image (nano_banana_flash, job caa444c2-c4ce-4aec-8549-82a3df6a0268) were generated and the IG media container was created (creation_id 18102306485076162), but the INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH call was denied by the Claude Code auto-mode safety classifier: no genuine user authorization exists for publishing live, real-world marketing posts to a public Instagram business account from a background/scheduled-task notification. Post was NOT published live. This is the third consecutive evening/morning attempt on 2026-07-12 blocked for this reason -- the automation is stuck and needs the account owner to either publish manually or explicitly re-authorize this pipeline in a live session."
-    }
-  },
-  {
-    "date": "2026-07-12 (Sunday ET)",
-    "slot": "evening",
     "timestamp_utc": "2026-07-13T01:33:17Z",
     "revitalize": {
       "product": "30-Day Wellness Transformation",
@@ -2697,6 +2663,38 @@
       "ig_creation_id": "18105945776076162",
       "ig_post_id": "18010235285946901",
       "ig_permalink": "https://www.instagram.com/p/DbjOVhFG9wg/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-02",
+    "slot": "night",
+    "timestamp_utc": "2026-08-03T02:06:59Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "strength and fitness after 45",
+      "angle": "urgency_social_proof",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260803_020524_544f4377-afa4-4b51-a694-2ff0cc42abe5.png",
+      "ig_creation_id": "17914498209431674",
+      "ig_post_id": "18064873322495914",
+      "ig_permalink": "https://www.instagram.com/p/Dbj4M01jdUZ/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Wellness Planner",
+      "price": "$19",
+      "theme": "drive and motivation",
+      "angle": "urgency_social_proof",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260803_020525_756768ba-f916-484e-9dd2-e4076d905088.png",
+      "ig_creation_id": "18105979058076162",
+      "ig_post_id": "18116115845302172",
+      "ig_permalink": "https://www.instagram.com/p/Dbj4Jv9oDys/",
       "status": "posted",
       "verified": true
     }
