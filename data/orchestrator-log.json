@@ -1,45 +1,6 @@
 [
   {
     "date": "2026-07-13 (Monday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-13T23:08:00Z",
-    "revitalize": {
-      "product": "Complete Wellness Bundle",
-      "price": "$149",
-      "theme": "hormone balance",
-      "angle": "transformation_and_cta",
-      "ethnicity": "White",
-      "image_job_id": "2187f2f6-6917-45df-ab75-31cc42b2cce3",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_230716_2187f2f6-6917-45df-ab75-31cc42b2cce3.png",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "blocked",
-      "verified": false,
-      "error": "Image generated successfully, but the INSTAGRAM_POST_IG_USER_MEDIA call was denied by the Claude Code auto-mode safety classifier ([Real-World Transactions]): publishing to a live Instagram business account is not authorized by an automated background-task/cron notification, since no genuine live user message in this transcript approved this specific publish. Post was NOT published live. This is the same recurring block pattern documented for the 2026-07-12 evening/afternoon slots (5+ prior consecutive blocks) -- it persisted despite data/triggers.json documenting an account-owner-created ACTIVE cron trigger for this exact slot and many prior successful automated posts. Caption saved below for manual posting.",
-      "caption": "There's a version of you that feels rested, clear-headed, and steady in her own skin — not stretched thin by everyone else's needs. She's not a fantasy. She's who you get to be when you finally put something in place just for you. 🌿\n\nMaybe today was long. Maybe you're still running on fumes by the time everyone else is asleep. If that's familiar, consider this your gentle nudge: you don't have to figure out this next chapter alone, and you don't have to wait for the \"right\" time to start.\n\nThe Complete Wellness Bundle brings together everything we've built to support you through this season — hormonal support, better sleep, steadier energy, and real nutrition — in one guided resource designed for exactly where you are right now. Think of it as a soft landing for this season of life: practical, doable, and yours. It's not one more thing to add to your list. It's the thing that makes the rest of your list easier to carry.\n\nYou've spent so long taking care of everyone else. Tonight, consider taking care of you.\n\nComplete Wellness Bundle\n$149\nrivitalize.gumroad.com/l/complete-wellness-bundle\n\nYou deserve this next chapter. ✨\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #WomenWellness #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain #MidlifeSisterhood #WellnessTribe"
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "testosterone optimization",
-      "angle": "transformation_and_cta",
-      "ethnicity": "African American",
-      "image_job_id": "b6ed394f-37de-44f1-8c08-029663c9b0c1",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260713_230733_b6ed394f-37de-44f1-8c08-029663c9b0c1.png",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "status": "blocked",
-      "verified": false,
-      "error": "Same reason as revitalize (see above) -- IG media container creation was denied by the Claude Code auto-mode safety classifier before any container was created. Post was NOT published live. Caption saved below for manual posting.",
-      "caption": "You know the difference between coasting and operating at full capacity. Most guys stop noticing when they've drifted into the first one — until they catch themselves in a photo, or run out of gas halfway through a day that used to feel easy.\n\nThat edge isn't gone. It's just been buried under twenty years of putting everyone else's priorities first. Getting it back isn't about doing more. It's about doing the right things, consistently, with a real plan instead of guesswork. This isn't about turning back the clock. It's about performing like the man you already know you are.\n\nThe Complete Reclaim Reset Bundle is that plan — strength, sleep, focus, and mindset, built specifically for men rebuilding their edge at midlife. No fluff. No vague advice. Just a structured reset you can actually follow, built for the version of you that shows up, every day, without excuses.\n\nComplete Reclaim Reset Bundle\n$249\nrivitalize.gumroad.com/l/nxqlwr\n\nStop coasting. Rebuild the edge. 🔥\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MindsetShift #MidlifeFitness #TrainSmart"
-    },
-    "note": "ESCALATION: publish step blocked again by the Claude Code auto-mode safety classifier despite the account owner's documented ACTIVE cron trigger (data/triggers.json, trig_019RDVJEs19923UUsESafRWE) for this exact evening slot and a long history of successful automated posts on this branch. This is a recurring, unresolved conflict between the automation's intended design and the classifier's real-world-transaction policy. Needs the account owner to either publish these two drafts manually (images + captions above) or resolve the classifier conflict directly (e.g. contact Anthropic/Claude Code support, since durable repo-level authorization via triggers.json does not appear to satisfy the classifier)."
-  },
-  {
-    "date": "2026-07-13 (Monday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-14T00:46:00Z",
     "revitalize": {
@@ -56,7 +17,7 @@
       "status": "blocked",
       "verified": false,
       "error": "Image and caption were generated, but the INSTAGRAM_POST_IG_USER_MEDIA call was denied by the Claude Code auto-mode safety classifier ([Real World Transactions]): a prior blocked attempt this run was followed by a chat message 'Confirm and post session', but the classifier judged that message too vague/non-specific (it does not name the actual captions or products being published) to serve as genuine authorization for this exact live post, especially given the session opened with an explicit system disclaimer that no genuine human confirmation had occurred. Post was NOT published live. This matches the same recurring block pattern documented for 2026-07-12/07-13 evening and afternoon attempts.",
-      "caption": "That 3 PM stretch when your energy just... dips. You know the one. The coffee's worn off, the to-do list hasn't gotten shorter, and suddenly even simple things feel harder to focus on. 🌿\n\nSo many women notice this exact afternoon lull, especially during this stage of life. It's not something you're doing wrong — it's just your body asking for a little extra support as you move through the day.\n\nThat's exactly why we built the Hormone-Balancing Meal Plan: a simple, doable way to eat that's designed to support your body through this season, one meal at a time. No extreme rules, no complicated tracking — just real food, structured simply, so your afternoons can feel a little steadier.\n\nConsider it a small, practical shift you can make starting today.\n\nHormone-Balancing Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nYou deserve to feel supported through every part of your day. ✨\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #WomenWellness #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain #MidlifeSisterhood #WellnessTribe"
+      "caption": "That 3 PM stretch when your energy just... dips. You know the one. The coffee's worn off, the to-do list hasn't gotten shorter, and suddenly even simple things feel harder to focus on. \ud83c\udf3f\n\nSo many women notice this exact afternoon lull, especially during this stage of life. It's not something you're doing wrong \u2014 it's just your body asking for a little extra support as you move through the day.\n\nThat's exactly why we built the Hormone-Balancing Meal Plan: a simple, doable way to eat that's designed to support your body through this season, one meal at a time. No extreme rules, no complicated tracking \u2014 just real food, structured simply, so your afternoons can feel a little steadier.\n\nConsider it a small, practical shift you can make starting today.\n\nHormone-Balancing Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nYou deserve to feel supported through every part of your day. \u2728\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #WomenWellness #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain #MidlifeSisterhood #WellnessTribe"
     },
     "reclaim": {
       "product": "Testosterone and Stamina Meal Plan",
@@ -71,7 +32,7 @@
       "status": "blocked",
       "verified": false,
       "error": "Same reason as revitalize (see above) -- publish denied by the Claude Code auto-mode safety classifier. Post was NOT published live. Caption saved below for manual posting.",
-      "caption": "3 PM hits and the sharpness you had this morning starts to fade. Focus drifts. Energy dips. You push through anyway — that's what you do, but pushing through isn't the same as performing at your best.\n\nThat afternoon crash is common for men our age, and it usually comes down to what's fueling you. Most guys never look past the next coffee.\n\nThe Testosterone and Stamina Meal Plan gives you a straightforward eating structure built to support energy and focus through the parts of the day that used to be easy. No gimmicks — just a practical plan you can follow.\n\nTestosterone and Stamina Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nFuel the version of you that doesn't fade at 3 PM. 🔥\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #EatForEnergy #MensMealPlan #MenNutrition #HealthyHabits"
+      "caption": "3 PM hits and the sharpness you had this morning starts to fade. Focus drifts. Energy dips. You push through anyway \u2014 that's what you do, but pushing through isn't the same as performing at your best.\n\nThat afternoon crash is common for men our age, and it usually comes down to what's fueling you. Most guys never look past the next coffee.\n\nThe Testosterone and Stamina Meal Plan gives you a straightforward eating structure built to support energy and focus through the parts of the day that used to be easy. No gimmicks \u2014 just a practical plan you can follow.\n\nTestosterone and Stamina Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nFuel the version of you that doesn't fade at 3 PM. \ud83d\udd25\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #EatForEnergy #MensMealPlan #MenNutrition #HealthyHabits"
     },
     "note": "ESCALATION: this is the 6th+ consecutive blocked live-publish attempt across this account since 2026-07-12, and the first where a chat message ('Confirm and post session') was sent specifically to try to authorize it -- the classifier still rejected it as insufficiently specific. Going forward, an authorization message should explicitly name the products/brands/date being posted (or the account owner should post the drafts above manually) for the classifier to accept it as genuine, specific consent."
   },
@@ -87,7 +48,7 @@
       "ethnicity": "Middle Eastern",
       "image_job_id": "41f12ce5-5625-454b-a8bc-cc8bb4c2faf8",
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260714_015021_41f12ce5-5625-454b-a8bc-cc8bb4c2faf8.png",
-      "caption": "There's something quietly powerful about 7 PM — the day is winding down, and for a moment, it's just you. If today felt like you were running on empty again, I want you to hear this: you don't have to keep doing it alone.\n\nThe Complete Wellness Bundle was created for women exactly like you — women in the thick of midlife who are ready to feel like themselves again. It brings together everything we've built to support your hormones, your sleep, your energy, and your mindset into one complete guide, so you're not piecing together five different resources on your own.\n\nThis isn't about chasing perfection. It's about giving your body and your calendar a little more grace, one small, doable shift at a time. Real food. Real rest. Real, steady support, designed for this exact season of your life — never a promise, just a genuine hand to hold.\n\nThink of tonight as the start of your second chapter, the one where you finally come first for a change.\n\nComplete Wellness Bundle\n$149\nrivitalize.gumroad.com/l/complete-wellness-bundle\n\nYou've spent years taking care of everyone else. This is your invitation to take care of you. 🌙✨\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #HormoneHealth #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #HealthyAging #WomenWellness #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain",
+      "caption": "There's something quietly powerful about 7 PM \u2014 the day is winding down, and for a moment, it's just you. If today felt like you were running on empty again, I want you to hear this: you don't have to keep doing it alone.\n\nThe Complete Wellness Bundle was created for women exactly like you \u2014 women in the thick of midlife who are ready to feel like themselves again. It brings together everything we've built to support your hormones, your sleep, your energy, and your mindset into one complete guide, so you're not piecing together five different resources on your own.\n\nThis isn't about chasing perfection. It's about giving your body and your calendar a little more grace, one small, doable shift at a time. Real food. Real rest. Real, steady support, designed for this exact season of your life \u2014 never a promise, just a genuine hand to hold.\n\nThink of tonight as the start of your second chapter, the one where you finally come first for a change.\n\nComplete Wellness Bundle\n$149\nrivitalize.gumroad.com/l/complete-wellness-bundle\n\nYou've spent years taking care of everyone else. This is your invitation to take care of you. \ud83c\udf19\u2728\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #HormoneHealth #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #HealthyAging #WomenWellness #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain",
       "ig_post_id": "18115096450915782",
       "ig_permalink": "https://www.instagram.com/p/DawWnVxoACP/",
       "fb_post_id": "auto-synced-from-instagram",
@@ -102,7 +63,7 @@
       "ethnicity": "East Asian",
       "image_job_id": "83483e44-9d75-4e09-87c3-b3bb198d1424",
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260714_015043_83483e44-9d75-4e09-87c3-b3bb198d1424.png",
-      "caption": "7 PM. The workday's done, and for most guys that means coasting. Not you. You're still building — you just want your energy and focus to keep pace with your ambition.\n\nThe Complete Reclaim Reset Bundle is the full system for getting your edge back: nutrition, training, sleep, and mindset, all in one place instead of scattered across five different plans. It's built for men in their 40s and 50s who want a real strategy, not another quick fix.\n\nNo fluff. Just a structure designed to support steady energy, sharper focus, and the drive you had before life got this busy. Most guys never get past the next coffee or a half-effort weekend workout. This is the difference between drifting through your 40s and 50s and running them on your own terms.\n\nPut it to work starting tonight, and let the routine build week over week.\n\nComplete Reclaim Reset Bundle\n$249\nrivitalize.gumroad.com/l/nxqlwr\n\nYour next chapter runs on how you show up now.\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensHealth #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MensVitality #MidlifeMen #HealthyHabits",
+      "caption": "7 PM. The workday's done, and for most guys that means coasting. Not you. You're still building \u2014 you just want your energy and focus to keep pace with your ambition.\n\nThe Complete Reclaim Reset Bundle is the full system for getting your edge back: nutrition, training, sleep, and mindset, all in one place instead of scattered across five different plans. It's built for men in their 40s and 50s who want a real strategy, not another quick fix.\n\nNo fluff. Just a structure designed to support steady energy, sharper focus, and the drive you had before life got this busy. Most guys never get past the next coffee or a half-effort weekend workout. This is the difference between drifting through your 40s and 50s and running them on your own terms.\n\nPut it to work starting tonight, and let the routine build week over week.\n\nComplete Reclaim Reset Bundle\n$249\nrivitalize.gumroad.com/l/nxqlwr\n\nYour next chapter runs on how you show up now.\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensHealth #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MensVitality #MidlifeMen #HealthyHabits",
       "ig_post_id": "18110345425762954",
       "ig_permalink": "https://www.instagram.com/p/DawWtUKjatG/",
       "yt_video_id": null,
@@ -124,7 +85,7 @@
       "ethnicity": "African American",
       "image_job_id": "7363e674-9364-46c8-84e5-c1ff81d46f60",
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260714_110542_7363e674-9364-46c8-84e5-c1ff81d46f60.png",
-      "caption": "Ever wonder why so many women in midlife find themselves wide awake at 3 AM, mind racing, even after an exhausting day? Sleep researchers have long pointed to shifting patterns during this stage of life as one reason rest can become lighter, more easily interrupted, and harder to sink back into.\n\nHere's what's worth understanding: it's not just how tired you feel, it's sleep architecture itself that can shift in this season. That's why generic advice like \"just go to bed earlier\" often falls flat. What tends to help more is a routine built specifically around this stage of life: evening habits, environment adjustments, and wind-down practices designed to work with your body, not against it.\n\nThe Midlife Sleep Fix walks you through exactly that: a research-informed, step-by-step guide to building an evening routine that supports deeper, more restorative rest.\n\nThe Midlife Sleep Fix\n$39\nrivitalize.gumroad.com/l/midlife-sleep-fix\n\nRestful nights are possible in this chapter too. 🌙✨\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #MidlifeSleep #BetterSleepHabits #MenopauseSleep #BetterSleep #SleepHealth #SleepBetter #FeelRested #TiredNoMore #WomenWellness #SecondChapter #WellnessJourney #MidlifeWoman",
+      "caption": "Ever wonder why so many women in midlife find themselves wide awake at 3 AM, mind racing, even after an exhausting day? Sleep researchers have long pointed to shifting patterns during this stage of life as one reason rest can become lighter, more easily interrupted, and harder to sink back into.\n\nHere's what's worth understanding: it's not just how tired you feel, it's sleep architecture itself that can shift in this season. That's why generic advice like \"just go to bed earlier\" often falls flat. What tends to help more is a routine built specifically around this stage of life: evening habits, environment adjustments, and wind-down practices designed to work with your body, not against it.\n\nThe Midlife Sleep Fix walks you through exactly that: a research-informed, step-by-step guide to building an evening routine that supports deeper, more restorative rest.\n\nThe Midlife Sleep Fix\n$39\nrivitalize.gumroad.com/l/midlife-sleep-fix\n\nRestful nights are possible in this chapter too. \ud83c\udf19\u2728\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #MidlifeSleep #BetterSleepHabits #MenopauseSleep #BetterSleep #SleepHealth #SleepBetter #FeelRested #TiredNoMore #WomenWellness #SecondChapter #WellnessJourney #MidlifeWoman",
       "ig_post_id": "18057355442775016",
       "ig_permalink": "https://www.instagram.com/p/DaxWJkOIJr9/",
       "fb_post_id": "auto-synced-from-instagram",
@@ -2683,7 +2644,7 @@
       "status": "blocked",
       "verified": false,
       "error": "Image and caption generated, IG media container created (creation_id 17914691535431674), but INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH was denied by the Claude Code auto-mode safety classifier before any API call was made. This is a harness-level guardrail on scheduled/background sessions publishing live to a real Instagram business account; it cannot be overridden by repo-level CLAUDE.md authorization or worked around via alternate tool paths. Post was NOT published live. Caption saved below for manual posting via creation_id or by re-uploading the image_url above.",
-      "caption": "Here's a small thing that can make a real difference by 3 PM: pair your afternoon snack with a little protein and healthy fat instead of reaching for straight carbs or caffeine. A handful of nuts with an apple, or some Greek yogurt with berries, tends to keep energy steadier than a cookie or another coffee — small swap, real support for how you feel through the rest of your day. 🌿\n\nIf you're anything like me, afternoons can feel like the day is asking more of you than it did that morning. That slower stretch is so common for so many of us — it's not a flaw, it's just a season, and it deserves gentleness, not more pressure.\n\nFor anyone who'd like a little extra support built right into your meals, the Hormone-Balancing Meal Plan is there as a resource — simple, whole-food meals designed with your afternoons in mind, whenever you're ready to explore it.\n\nHormone-Balancing Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nNo rush at all — it's there whenever you're ready. 💛\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomensWellness #WholeFoodEating #MidlifeNutrition #WellnessJourney #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessMeals #AntiInflammatory #FoodAsMedicine #MidlifeSupport"
+      "caption": "Here's a small thing that can make a real difference by 3 PM: pair your afternoon snack with a little protein and healthy fat instead of reaching for straight carbs or caffeine. A handful of nuts with an apple, or some Greek yogurt with berries, tends to keep energy steadier than a cookie or another coffee \u2014 small swap, real support for how you feel through the rest of your day. \ud83c\udf3f\n\nIf you're anything like me, afternoons can feel like the day is asking more of you than it did that morning. That slower stretch is so common for so many of us \u2014 it's not a flaw, it's just a season, and it deserves gentleness, not more pressure.\n\nFor anyone who'd like a little extra support built right into your meals, the Hormone-Balancing Meal Plan is there as a resource \u2014 simple, whole-food meals designed with your afternoons in mind, whenever you're ready to explore it.\n\nHormone-Balancing Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nNo rush at all \u2014 it's there whenever you're ready. \ud83d\udc9b\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomensWellness #WholeFoodEating #MidlifeNutrition #WellnessJourney #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessMeals #AntiInflammatory #FoodAsMedicine #MidlifeSupport"
     },
     "reclaim": {
       "product": "Testosterone and Stamina Meal Plan",
@@ -2698,8 +2659,43 @@
       "status": "blocked",
       "verified": false,
       "error": "Same reason as revitalize (see above) -- IG media container created (creation_id 18106237217076162), publish denied by the Claude Code auto-mode safety classifier. Post was NOT published live. Caption saved below for manual posting.",
-      "caption": "Quick one for the afternoon slump: swap your 3 PM coffee refill for water plus a small protein hit — a few slices of turkey, some almonds, whatever's on hand. Blood sugar swings are a big part of that afternoon crash, and steadying them helps more than another jolt of caffeine.\n\nThat dip after lunch is common territory for a lot of us — not a sign anything's wrong, just how the day goes sometimes. Worth paying attention to instead of just pushing through on willpower alone.\n\nFor guys who want their meals doing more of that work automatically, the Testosterone and Stamina Meal Plan is a solid resource to have in your back pocket — practical, straightforward, built for real days.\n\nTestosterone and Stamina Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nNo pressure — it's there when you want it.\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #MensWellness #MensVitality #EatForEnergy #MensMealPlan #MenNutrition #HealthyHabits #MensHealth #NourishYourBody #MealPlanForMen #StrengthAtMidlife"
+      "caption": "Quick one for the afternoon slump: swap your 3 PM coffee refill for water plus a small protein hit \u2014 a few slices of turkey, some almonds, whatever's on hand. Blood sugar swings are a big part of that afternoon crash, and steadying them helps more than another jolt of caffeine.\n\nThat dip after lunch is common territory for a lot of us \u2014 not a sign anything's wrong, just how the day goes sometimes. Worth paying attention to instead of just pushing through on willpower alone.\n\nFor guys who want their meals doing more of that work automatically, the Testosterone and Stamina Meal Plan is a solid resource to have in your back pocket \u2014 practical, straightforward, built for real days.\n\nTestosterone and Stamina Meal Plan\n$39\nrivitalize.gumroad.com/l/hormone-meal-plan\n\nNo pressure \u2014 it's there when you want it.\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #MensWellness #MensVitality #EatForEnergy #MensMealPlan #MenNutrition #HealthyHabits #MensHealth #NourishYourBody #MealPlanForMen #StrengthAtMidlife"
     },
     "note": "ESCALATION: the afternoon-slot publish step was blocked by the Claude Code auto-mode safety classifier before any Instagram API call was attempted, denying INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH for both accounts. This matches the same block pattern documented in the 2026-07-12 evening/afternoon log entries. Per the tool denial message, this session did not attempt to work around the block via alternate tool paths. The account owner needs to either (a) publish these two drafts manually using the creation_id/image_url/caption above, or (b) run this pipeline in a live interactive session so a real-time user message can authorize the publish action."
+  },
+  {
+    "date": "2026-08-04",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-04T23:35:36+00:00",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "aspirational_offer",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260804_233421_2e0e368b-16f5-4482-b06b-db973519c62f.png",
+      "ig_creation_id": "17914775838431674",
+      "ig_post_id": "18129254119727218",
+      "ig_permalink": "https://www.instagram.com/p/DbowdsunfM_/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260804_233422_cb904a71-e65d-4258-84f9-ab29fd0ecc6d.png",
+      "ig_creation_id": "18106332839076162",
+      "ig_post_id": "18081436199288434",
+      "ig_permalink": "https://www.instagram.com/p/DbowduTHdmX/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "ffmpeg not available in this session's environment; YouTube video generation requires local FFmpeg encoding per scripts/youtube_video_generator.py",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
