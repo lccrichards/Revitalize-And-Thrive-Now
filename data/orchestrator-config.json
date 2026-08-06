@@ -38,9 +38,9 @@
     "monday":    {"theme": "hormone balance",             "slot_products": {"morning": "Hormone Reset Masterclass", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle", "night": "The Midlife Sleep Fix"}},
     "tuesday":   {"theme": "sleep optimization",          "slot_products": {"morning": "The Midlife Sleep Fix", "afternoon": "The Midlife Sleep Fix", "evening": "The Midlife Sleep Fix", "night": "The Midlife Sleep Fix"}},
     "wednesday": {"theme": "energy restoration",          "slot_products": {"morning": "Energy Restoration Guide", "afternoon": "Energy Restoration Guide", "evening": "30-Day Wellness Transformation", "night": "The Midlife Sleep Fix"}},
-    "thursday":  {"theme": "mindset reset",               "slot_products": {"morning": "The Mindset Bundle", "afternoon": "Stress Management Workbook", "evening": "The Revitalize Circle Monthly Membership", "night": "Stress Management Workbook"}},
-    "friday":    {"theme": "nutrition and meal planning", "slot_products": {"morning": "Nutrition Deep Dive", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle", "night": "The Revitalize Circle Monthly Membership"}},
-    "saturday":  {"theme": "skincare and beauty",         "slot_products": {"morning": "Skincare and Beauty Protocol", "afternoon": "Skincare and Beauty Protocol", "evening": "The Revitalize Circle Monthly Membership", "night": "Skincare and Beauty Protocol"}},
+    "thursday":  {"theme": "mindset reset",               "slot_products": {"morning": "The Mindset Bundle", "afternoon": "The Mindset Bundle", "evening": "The Revitalize Circle Monthly Membership", "night": "The Mindset Bundle"}},
+    "friday":    {"theme": "nutrition and meal planning", "slot_products": {"morning": "Hormone-Balancing Meal Plan", "afternoon": "Hormone-Balancing Meal Plan", "evening": "Complete Wellness Bundle", "night": "The Revitalize Circle Monthly Membership"}},
+    "saturday":  {"theme": "wellness essentials",         "slot_products": {"morning": "Complete Wellness Bundle", "afternoon": "Complete Wellness Bundle", "evening": "The Revitalize Circle Monthly Membership", "night": "Complete Wellness Bundle"}},
     "sunday":    {"theme": "strength and fitness after 45", "slot_products": {"morning": "Fitness After 45 Guide", "afternoon": "Fitness After 45 Guide", "evening": "30-Day Wellness Transformation", "night": "The Revitalize Circle Monthly Membership"}}
   },
 

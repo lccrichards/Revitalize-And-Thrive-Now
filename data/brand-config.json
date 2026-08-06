@@ -9,29 +9,29 @@
     "products": [
       {
         "name": "30-Day Wellness Transformation",
-        "price_short": "$79",
-        "url": "rivitalize.gumroad.com/l/nlkuz",
+        "price_short": "$97",
+        "url": "https://buy.stripe.com/28E3cu3Xsg1O8f6gtdaAw01",
         "cta": "Get the 30-Day Wellness Transformation",
         "category": "flagship"
       },
       {
         "name": "Complete Wellness Bundle",
-        "price_short": "$149",
-        "url": "rivitalize.gumroad.com/l/complete-wellness-bundle",
+        "price_short": "$297",
+        "url": "https://buy.stripe.com/3cI5kC0LgaHu7b2el5aAw0d",
         "cta": "Get the Complete Wellness Bundle",
         "category": "flagship"
       },
       {
         "name": "The Revitalize Circle Monthly Membership",
-        "price_short": "$97/month",
-        "url": "rivitalize.gumroad.com/l/revitalize-circle",
+        "price_short": "$27/month",
+        "url": "https://buy.stripe.com/9B6cN465AcPCanedh1aAw0u",
         "cta": "Join The Revitalize Circle",
         "category": "membership"
       },
       {
         "name": "Hormone Reset Masterclass",
-        "price_short": "$59",
-        "url": "rivitalize.gumroad.com/l/hormone-reset-masterclass",
+        "price_short": "$197",
+        "url": "https://buy.stripe.com/3cIcN451wdTG7b26SDaAw09",
         "cta": "Get the Hormone Reset Masterclass",
         "category": "premium"
       },
@@ -46,50 +46,29 @@
       {
         "name": "Hormone-Balancing Meal Plan",
         "price_short": "$39",
-        "url": "rivitalize.gumroad.com/l/hormone-meal-plan",
+        "url": "https://buy.stripe.com/fZufZg9hM16UfHy5OzaAw03",
         "cta": "Get the Hormone-Balancing Meal Plan",
         "category": "standalone",
         "bundle_bonus": "Energy Restoration Guide (FREE)"
       },
       {
         "name": "The Mindset Bundle",
-        "price_short": "$49",
-        "url": "rivitalize.gumroad.com/l/mindset-bundle",
+        "price_short": "$97",
+        "url": "https://buy.stripe.com/28EbJ0gKe3f252U3GraAw0c",
         "cta": "Get The Mindset Bundle",
-        "category": "standalone"
-      },
-      {
-        "name": "Nutrition Deep Dive",
-        "price_short": "$49",
-        "url": "rivitalize.gumroad.com/l/nutrition-deep-dive",
-        "cta": "Get the Nutrition Deep Dive",
-        "category": "standalone"
-      },
-      {
-        "name": "Stress Management Workbook",
-        "price_short": "$39",
-        "url": "rivitalize.gumroad.com/l/stress-management",
-        "cta": "Get the Stress Management Workbook",
-        "category": "standalone"
-      },
-      {
-        "name": "Skincare and Beauty Protocol",
-        "price_short": "$39",
-        "url": "rivitalize.gumroad.com/l/skincare-beauty",
-        "cta": "Get the Skincare and Beauty Protocol",
         "category": "standalone"
       },
       {
         "name": "Fitness After 45 Guide",
         "price_short": "$39",
-        "url": "rivitalize.gumroad.com/l/fitness-after-45",
+        "url": "https://buy.stripe.com/28E6oG2To4j62UM2CnaAw04",
         "cta": "Get the Fitness After 45 Guide",
         "category": "standalone"
       },
       {
         "name": "Energy Restoration Guide",
-        "price_short": "$29",
-        "url": "rivitalize.gumroad.com/l/energy-restoration",
+        "price_short": "$37",
+        "url": "https://buy.stripe.com/dRm9AS9hMcPCgLC1yjaAw0e",
         "cta": "Get the Energy Restoration Guide",
         "category": "entry",
         "bundle_note": "FREE when you purchase The Midlife Sleep Fix or Hormone-Balancing Meal Plan"
@@ -100,16 +79,16 @@
         "trigger_product": "The Midlife Sleep Fix",
         "trigger_price": "$39",
         "bonus_product": "Energy Restoration Guide",
-        "bonus_value": "$29",
-        "combined_value": "$68",
+        "bonus_value": "$37",
+        "combined_value": "$76",
         "cta": "Get The Midlife Sleep Fix + Energy Restoration Guide FREE"
       },
       {
         "trigger_product": "Hormone-Balancing Meal Plan",
         "trigger_price": "$39",
         "bonus_product": "Energy Restoration Guide",
-        "bonus_value": "$29",
-        "combined_value": "$68",
+        "bonus_value": "$37",
+        "combined_value": "$76",
         "cta": "Get the Hormone-Balancing Meal Plan + Energy Restoration Guide FREE"
       }
     ],
@@ -161,7 +140,6 @@
       "nutrition and meal planning",
       "strength and fitness after 45",
       "stress and cortisol management",
-      "skincare and beauty",
       "confidence and self-worth",
       "perimenopause support",
       "weight management",
@@ -179,49 +157,49 @@
       {
         "name": "Complete Reclaim Reset Bundle",
         "price_short": "$249",
-        "url": "rivitalize.gumroad.com/l/nxqlwr",
+        "url": "https://buy.stripe.com/6oUdR8eC602Q7b2dh1aAw0i",
         "cta": "Get the Complete Reclaim Reset Bundle",
         "category": "flagship"
       },
       {
         "name": "Reclaim Masterclass",
-        "price_short": "$149",
-        "url": "rivitalize.gumroad.com/l/masterclass-series",
+        "price_short": "$197",
+        "url": "https://buy.stripe.com/fZu6oGbpUbLy52U1yjaAw0j",
         "cta": "Access the Reclaim Masterclass",
         "category": "premium"
       },
       {
         "name": "Midlife Mindset Code",
         "price_short": "$39",
-        "url": "rivitalize.gumroad.com/l/mindset-reset",
+        "url": "https://buy.stripe.com/14AfZg79E6refHy1yjaAw0k",
         "cta": "Get the Midlife Mindset Code",
         "category": "standalone"
       },
       {
         "name": "Testosterone and Stamina Meal Plan",
         "price_short": "$39",
-        "url": "rivitalize.gumroad.com/l/hormone-meal-plan",
+        "url": "https://buy.stripe.com/7sY9AS0LgbLycvmb8TaAw0l",
         "cta": "Get the 28-Day Testosterone Meal Plan",
         "category": "standalone"
       },
       {
         "name": "Strength Density and Longevity",
         "price_short": "$39",
-        "url": "rivitalize.gumroad.com/l/strength-longevity",
+        "url": "https://buy.stripe.com/5kQ8wOgKe6rebri6SDaAw0m",
         "cta": "Get the Strength Protocol",
         "category": "standalone"
       },
       {
         "name": "Sleep Recovery Protocol",
         "price_short": "$39",
-        "url": "https://buy.stripe.com/cNieVcdy2eXKbriel5aAw05",
+        "url": "https://buy.stripe.com/4gM28qdy28zmdzqa4PaAw0n",
         "cta": "Get the Sleep Recovery Protocol",
         "category": "standalone"
       },
       {
         "name": "Midlife Wellness Planner",
         "price_short": "$19",
-        "url": "rivitalize.gumroad.com/l/wellness-planner",
+        "url": "https://buy.stripe.com/9B6dR851w8zm9jael5aAw0p",
         "cta": "Get the Midlife Wellness Planner",
         "category": "entry"
       }
