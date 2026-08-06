@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "source": "Emotional-content strategy research — recurring visual styles & high-demand mental-wellness angles, compiled 2026-08-06",
+    "core_principle": "Generic affirmations underperform. The strongest posts name a specific, articulable felt experience the viewer has had but may not have put words to. Every caption's opening line should create self-recognition, permission, or a productive contradiction — never a vague affirmation.",
+    "visual_principle": "Avoid making every image purely serene. The strongest visuals open with visible tension (a closed door, a divided reflection, floating obligations, an empty chair) and resolve it by the final impression. Resolution, not just calm, is the payoff.",
+    "compliance_note": "Every hook, visual concept, and caption drawn from this file still must pass the Meta/Instagram compliance rules already defined in each trigger routine — no medical claims, no diagnosing the reader, no 'cures'/'heals'/'permanently resets' language, no fabricated statistics or testimonials. Nervous-system and grief content is a supportive practice, never a treatment or cure. If a hook below reads as clinical or absolute, soften it in the actual caption (e.g. 'may help your body settle' rather than 'resets your nervous system')."
+  },
+
+  "hook_templates": [
+    "Most people think ___, but…",
+    "You do not have to ___ before you…",
+    "___ does not always look like…",
+    "The moment you realize…",
+    "You are allowed to…",
+    "This is what ___ can look like.",
+    "You can be grateful and still…",
+    "Your body may be telling you…",
+    "If you have been feeling ___, this may be why.",
+    "The strongest version of you may need…"
+  ],
+
+  "visual_styles": {
+    "face_led_authority": {
+      "description": "A single trusted presenter speaks directly to camera or appears in a tightly-edited interview-style clip. Credibility comes from the face; captions carry the message without sound.",
+      "ai_adaptation": "Use a consistent, natural-looking digital presenter. Avoid over-polished skin, artificial gestures, or futuristic backgrounds that read as manufactured.",
+      "best_for": ["reels", "talking-creator video"]
+    },
+    "minimal_editorial_quote": {
+      "description": "One emotionally resonant sentence over paper textures, muted backgrounds, book pages, or restrained lifestyle footage — reflective, 'choose yourself' style posts.",
+      "ai_adaptation": "Cream paper, subtle film grain, serif typography, slow shadows, window light, handwritten accents, one symbolic object.",
+      "best_for": ["static image posts", "carousel"]
+    },
+    "cinematic_emotional_metaphor": {
+      "description": "Rather than literally depicting an emotion, the image visualizes the internal experience: hesitation at a doorway, carrying invisible weight, smiling while exhausted, surrounded by unfinished obligations.",
+      "ai_adaptation": "Create visually impossible but emotionally recognizable scenes — this is where generative imagery outperforms ordinary stock photography.",
+      "best_for": ["static image posts", "reels"]
+    },
+    "candid_vulnerability": {
+      "description": "Unscripted-feeling disclosures about panic, grief, body commentary, loneliness, overwhelm.",
+      "ai_adaptation": "Never fabricate a fake personal testimony. Use narrated composite stories, clearly framed reflections, or symbolic first-person storytelling only.",
+      "best_for": ["reels"]
+    },
+    "what_it_looks_like_vs_feels_like": {
+      "description": "Split between the competent, composed external image and the overloaded internal one — especially effective for high-functioning anxiety, burnout, grief, people-pleasing.",
+      "ai_adaptation": "Split screens, mirrored characters, transparent layers, double exposure, or a polished exterior paired with a chaotic shadow world.",
+      "best_for": ["static image posts", "carousel"]
+    }
+  },
+
+  "palette": {
+    "alabaster_cream": "emotional safety and space",
+    "blush_rose": "humanity and softness",
+    "muted_gold": "transformation and spiritual illumination",
+    "sage": "grounding and regulation",
+    "warm_ink": "authority without visual harshness"
+  },
+
+  "day_rotation": {
+    "monday": "anxiety_begin_before_ready",
+    "tuesday": "high_functioning_burnout",
+    "wednesday": "boundaries_and_outgrowing",
+    "thursday": "body_first_nervous_system",
+    "friday": "emotional_duality",
+    "saturday": "anxiety_begin_before_ready",
+    "sunday": "high_functioning_burnout"
+  },
+
+  "angles": {
+    "revitalize": {
+      "anxiety_begin_before_ready": {
+        "title": "Anxiety: Begin Before You Feel Ready",
+        "core_promise": "You can move while uncertainty is still present — you do not have to wait for fear to disappear before you act.",
+        "visual_style": "cinematic_emotional_metaphor",
+        "hooks": [
+          "You do not have to feel fearless before you move.",
+          "Anxiety grows in the space between knowing and beginning.",
+          "Waiting to feel ready may be what keeps you stuck.",
+          "Your next step does not require your fear's permission."
+        ],
+        "visual_concept": "A sophisticated woman, approximately 40-55, stands before a glowing doorway. Her shadow remains frozen behind her while her physical body steps forward into light. Papers labeled 'What if?' dissolve into light around her.",
+        "best_formats": ["12-20 second reel", "three-scene visual metaphor", "five-slide carousel"]
+      },
+      "high_functioning_burnout": {
+        "title": "High-Functioning Burnout: The Hidden Cost of Being Strong",
+        "core_promise": "Exhaustion is not evidence of inadequacy; it may be evidence of prolonged over-functioning.",
+        "visual_style": "what_it_looks_like_vs_feels_like",
+        "hooks": [
+          "Burnout does not always look like falling apart.",
+          "Sometimes burnout looks like being dependable for too long.",
+          "You are not lazy. You have been carrying too much.",
+          "Rest may not work when the life exhausting you remains unchanged."
+        ],
+        "visual_concept": "A professionally dressed woman sits calmly at a desk while dozens of translucent calendars, notifications, family responsibilities, and emotional demands orbit around her. With each breath, the objects gently fall away.",
+        "best_formats": ["what people see / what I feel split screen", "narrated reel", "diagnostic-style carousel: 'Quiet Signs You Are Carrying Too Much'"]
+      },
+      "boundaries_and_outgrowing": {
+        "title": "Boundaries, Healthy Love, and Outgrowing Access",
+        "core_promise": "Healing changes the relationships, behaviors, and environments you can continue tolerating.",
+        "visual_style": "cinematic_emotional_metaphor",
+        "hooks": [
+          "Healing changes who still has access to you.",
+          "Not everyone who knew the old you can accompany the healed you.",
+          "A boundary is not revenge. It is clarity.",
+          "You can love someone and still close the door.",
+          "Outgrowing a relationship does not erase what it once meant."
+        ],
+        "visual_concept": "A woman walks through an archway into a blooming garden. Behind her is a dim room filled with old photographs and open doors. She does not destroy the past; she simply closes the gate gently.",
+        "best_formats": ["cinematic transformation reel", "spoken-word narration", "carousel of boundary scripts", "symbolic still with a strong caption"]
+      },
+      "body_first_nervous_system": {
+        "title": "Body-First Healing and Nervous-System Micro-Resets",
+        "core_promise": "Sometimes the body needs evidence of safety before the mind can receive another affirmation.",
+        "visual_style": "cinematic_emotional_metaphor",
+        "hooks": [
+          "Your mind may not be where healing begins.",
+          "You cannot always think your way out of a body that feels unsafe.",
+          "Before you solve the problem, help your body leave emergency mode.",
+          "Try this when your thoughts are moving faster than your breath."
+        ],
+        "visual_concept": "A luminous wave travels from the woman's feet through her chest and into her brain. A chaotic red-gold energy field gradually becomes soft sage and rose-colored light as she breathes.",
+        "best_formats": ["20-second guided reset", "visual breathing loop", "three-step grounding carousel", "calming save-and-replay reel"],
+        "compliance_flag": "Present as a supportive practice only. Never claim a breathing exercise heals trauma or permanently resets the nervous system."
+      },
+      "emotional_duality": {
+        "title": "\"I Am Fine\" Stories: Grief, Panic, and Emotional Duality",
+        "core_promise": "Conflicting emotions do not make you ungrateful, weak, or broken.",
+        "visual_style": "candid_vulnerability",
+        "hooks": [
+          "You can be grateful and grieving at the same time.",
+          "A beautiful life can still contain painful days.",
+          "Sometimes 'I'm fine' means 'I do not know where to begin.'",
+          "Healing does not require you to stop missing what was lost.",
+          "Strength and sadness can live in the same body."
+        ],
+        "visual_concept": "A woman holds two bouquets: one blooming and one releasing petals. Sunlight falls on one side of her face while gentle rain falls on the other. The visual communicates integration, not despair.",
+        "best_formats": ["spoken-word reel", "anonymous composite story", "poetic carousel", "community prompt inviting two-emotions-at-once replies"]
+      }
+    },
+
+    "reclaim": {
+      "anxiety_begin_before_ready": {
+        "title": "Anxiety: Begin Before You Feel Ready",
+        "core_promise": "You can move while uncertainty is still present — you do not have to wait for fear to disappear before you act.",
+        "visual_style": "cinematic_emotional_metaphor",
+        "hooks": [
+          "You do not have to feel fearless before you move.",
+          "Anxiety grows in the space between knowing and beginning.",
+          "Waiting to feel ready may be what keeps you stuck.",
+          "Your next step does not require your fear's permission."
+        ],
+        "visual_concept": "A composed man, approximately 40-55, stands before a glowing doorway. His shadow remains frozen mid-stride behind him while his physical body steps forward into light. Papers labeled 'What if?' dissolve into light around him.",
+        "best_formats": ["12-20 second reel", "three-scene visual metaphor", "five-slide carousel"]
+      },
+      "high_functioning_burnout": {
+        "title": "High-Functioning Burnout: The Hidden Cost of Being Strong",
+        "core_promise": "Exhaustion is not evidence of inadequacy; it may be evidence of prolonged over-functioning.",
+        "visual_style": "what_it_looks_like_vs_feels_like",
+        "hooks": [
+          "Burnout does not always look like falling apart.",
+          "Sometimes burnout looks like being dependable for too long.",
+          "You are not lazy. You have been carrying too much.",
+          "Rest may not work when the life exhausting you remains unchanged."
+        ],
+        "visual_concept": "A composed man in business-casual attire sits at a desk while dozens of translucent calendars, notifications, obligations, and expectations orbit around him. With each breath, the objects gently fall away.",
+        "best_formats": ["what people see / what I feel split screen", "narrated reel", "diagnostic-style carousel: 'Quiet Signs You Are Carrying Too Much'"]
+      },
+      "boundaries_and_outgrowing": {
+        "title": "Boundaries and Outgrowing What No Longer Fits",
+        "core_promise": "Growth changes the relationships, obligations, and environments you can continue tolerating.",
+        "visual_style": "cinematic_emotional_metaphor",
+        "hooks": [
+          "Growth changes who still has access to you.",
+          "Not everyone who knew the old you can accompany the man you're becoming.",
+          "A boundary is not revenge. It is clarity.",
+          "You can respect someone and still close the door.",
+          "Outgrowing a relationship does not erase what it once meant."
+        ],
+        "visual_concept": "A man walks through an archway into an open, sunlit field. Behind him is a dim room filled with old photographs and closed doors. He does not slam the gate; he closes it steadily and keeps walking.",
+        "best_formats": ["cinematic transformation reel", "spoken-word narration", "carousel of boundary scripts", "symbolic still with a strong caption"]
+      },
+      "body_first_nervous_system": {
+        "title": "Body-First Recovery and Nervous-System Micro-Resets",
+        "core_promise": "Sometimes the body needs evidence of safety before the mind can think its way to calm.",
+        "visual_style": "cinematic_emotional_metaphor",
+        "hooks": [
+          "Your mind may not be where recovery begins.",
+          "You cannot always think your way out of a body that feels on edge.",
+          "Before you solve the problem, help your body stand down.",
+          "Try this when your thoughts are moving faster than your breath."
+        ],
+        "visual_concept": "A luminous current travels from a man's feet through his chest and into his mind. A chaotic red-gold tension gradually settles into calm sage and deep-blue light as his breathing steadies.",
+        "best_formats": ["20-second guided reset", "visual breathing loop", "three-step grounding carousel", "calming save-and-replay reel"],
+        "compliance_flag": "Present as a supportive practice only. Never claim a breathing exercise heals trauma or permanently resets the nervous system."
+      },
+      "emotional_duality": {
+        "title": "\"I'm Good\" Stories: Grief, Pressure, and Emotional Duality",
+        "core_promise": "Conflicting emotions do not make you ungrateful, weak, or broken.",
+        "visual_style": "candid_vulnerability",
+        "hooks": [
+          "You can be proud of your life and still be grieving something in it.",
+          "A good life can still contain painful days.",
+          "Sometimes 'I'm good' means 'I don't know where to begin.'",
+          "Moving forward does not require you to stop missing what was lost.",
+          "Strength and grief can live in the same body."
+        ],
+        "visual_concept": "A man holds two objects: a trophy catching the light and a folded letter he has not reread in years. Sunlight touches one side of his face; quiet shadow rests on the other — not sorrow, integration.",
+        "best_formats": ["spoken-word reel", "anonymous composite story", "poetic carousel", "community prompt inviting two-emotions-at-once replies"]
+      }
+    }
+  },
+
+  "pilot_series": {
+    "title": "What Strength Really Looks Like",
+    "note": "Available as an optional 5-episode limited run (e.g. mapped across one week's slots) if a dedicated push is wanted later. Not wired into the daily rotation by default.",
+    "episodes": [
+      "Strength can look like asking for help.",
+      "Strength can look like disappointing someone.",
+      "Strength can look like resting before the breakdown.",
+      "Strength can look like grieving without explaining yourself.",
+      "Strength can look like beginning while still afraid."
+    ]
+  }
+}
