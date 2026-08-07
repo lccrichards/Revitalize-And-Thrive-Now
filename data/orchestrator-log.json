@@ -1,34 +1,6 @@
 [
   {
     "date": "2026-07-15 (Wednesday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-15T11:07:56Z",
-    "revitalize": {
-      "product": "Energy Restoration Guide",
-      "price": "$29",
-      "theme": "energy restoration",
-      "angle": "education",
-      "ethnicity": "South Asian",
-      "ig_post_id": "17884138503447457",
-      "ig_permalink": "https://www.instagram.com/p/Daz69MVoMYy/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Reclaim Masterclass",
-      "price": "$149",
-      "theme": "energy and cognitive performance",
-      "angle": "education",
-      "ethnicity": "White",
-      "ig_post_id": "17897398767539022",
-      "ig_permalink": "https://www.instagram.com/p/Daz69NjG6VJ/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-15 (Wednesday ET)",
     "slot": "video",
     "timestamp_utc": "2026-07-15T22:13:55Z",
     "revitalize": {
@@ -2682,6 +2654,42 @@
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260807_125603_0d17c503-df78-44ec-9ad3-2031ffbfc0a1.png",
       "status": "failed",
       "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27634679816148097' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once (media container creation step), same error on both attempts, before any container could be created. Matches the same failure signature seen on 2026-07-21/22 for this account -- suggests the Composio connection for Reclaim and Rise IG needs re-authorization.",
+      "verified": false
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-07T23:19:54Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "nutrition and meal planning",
+      "angle": "aspirational_offer",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260807_231754_c9da860c-6bec-4345-9d45-82f5a5cda765.png",
+      "ig_post_id": "18138243886536874",
+      "ig_permalink": "https://www.instagram.com/p/Dbwc_8Vndpv/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "nutrition for male hormones",
+      "angle": "aspirational_offer",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260807_231759_a9d3ee8e-edcb-4858-8eb2-6cfcf1da00c5.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "Instagram post creation failed (see error); YouTube step skipped since Reclaim publish never succeeded.",
+      "status": "failed",
+      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27634679816148097' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once (per policy), identical error both times, despite this same ig_user_id posting successfully for the 2026-08-06 evening slot -- appears to be a transient Meta/Composio permissions issue on the Reclaim connection, needs investigation before next scheduled run.",
       "verified": false
     }
   }
