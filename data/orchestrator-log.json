@@ -2573,5 +2573,29 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-06 (Thursday ET)",
+    "slot": "morning",
+    "revitalize": {
+      "product": "The Mindset Bundle",
+      "price": "$49",
+      "theme": "mindset reset",
+      "angle": "education",
+      "caption_file": "data/pending-posts-2026-08-06-morning.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant educational morning caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "education",
+      "caption_file": "data/pending-posts-2026-08-06-morning.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant educational morning caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    }
   }
 ]
