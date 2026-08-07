@@ -5,6 +5,29 @@
     "composio"
   ],
   "permissions": {
-    "defaultMode": "acceptEdits"
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash",
+      "mcp__higgsfield__generate_image",
+      "mcp__higgsfield__generate_image_batch",
+      "mcp__higgsfield__generate_video",
+      "mcp__higgsfield__job_display",
+      "mcp__higgsfield__jobs_wait",
+      "mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL",
+      "mcp__Composio__COMPOSIO_GET_TOOL_SCHEMAS"
+    ]
+  },
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Bash",
+      "mcp__higgsfield__generate_image",
+      "mcp__higgsfield__generate_image_batch",
+      "mcp__higgsfield__generate_video",
+      "mcp__higgsfield__job_display",
+      "mcp__higgsfield__jobs_wait",
+      "mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL",
+      "mcp__Composio__COMPOSIO_GET_TOOL_SCHEMAS"
+    ]
   }
 }
