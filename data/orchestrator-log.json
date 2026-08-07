@@ -2597,5 +2597,29 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant educational morning caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-06 (Thursday ET)",
+    "slot": "afternoon",
+    "revitalize": {
+      "product": "Stress Management Workbook",
+      "price": "$39",
+      "theme": "mindset reset",
+      "angle": "supportive_solution",
+      "caption_file": "data/pending-posts-2026-08-06-afternoon.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "supportive_solution",
+      "caption_file": "data/pending-posts-2026-08-06-afternoon.json",
+      "compliant": true,
+      "status": "generated_not_posted",
+      "note": "Meta-compliant supportive afternoon caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
+    }
   }
 ]
