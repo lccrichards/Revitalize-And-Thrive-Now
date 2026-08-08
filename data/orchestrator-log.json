@@ -1,39 +1,6 @@
 [
   {
     "date": "2026-07-16 (Thursday ET)",
-    "slot": "video",
-    "timestamp_utc": "2026-07-16T16:06:30Z",
-    "revitalize": {
-      "product": "Stress Management Workbook",
-      "price": "$39",
-      "theme": "mindset reset",
-      "format": "reel",
-      "ethnicity": "South Asian",
-      "video_job_id": "f3b9ed88-cf74-4f2b-a852-fc577baec7f6",
-      "ig_post_id": "18382538734204319",
-      "ig_permalink": "https://www.instagram.com/reel/Da3B3muEes9/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "mindset recalibration",
-      "format": "reel",
-      "ethnicity": "Middle Eastern",
-      "video_job_id": "7eed39ee-b317-4c65-b362-e64093a6af44",
-      "ig_post_id": "18096496313004478",
-      "ig_permalink": "https://www.instagram.com/reel/Da3B6REDJql/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel ('Dr. Alexander') is connected. Instagram post published and verified independently of this step.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-16 (Thursday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-16T19:06:54Z",
     "revitalize": {
@@ -2695,6 +2662,38 @@
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260808_115003_11254afa-a0fc-4f9e-bcce-6f0b18aec087.png",
       "ig_post_id": "18021005456909759",
       "ig_permalink": "https://www.instagram.com/p/Dbx_IkoIGxF/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-07 (Friday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-08-08T18:47:11Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$27/month",
+      "theme": "nutrition and meal planning",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260808_022759_fd7a6038-d109-4925-8354-0b4df5cd4406.png",
+      "ig_post_id": "18107794775016649",
+      "ig_permalink": "https://www.instagram.com/p/DbyiICiG2hm/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260808_181559_2e45e38d-afd8-433b-b370-f7e981c64b4d.png",
+      "ig_post_id": "18132434251556646",
+      "ig_permalink": "https://www.instagram.com/p/Dbyge8km_-j/",
       "status": "posted",
       "verified": true
     }
