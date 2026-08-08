@@ -1,34 +1,6 @@
 [
   {
     "date": "2026-07-16 (Thursday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-16T19:06:54Z",
-    "revitalize": {
-      "product": "Stress Management Workbook",
-      "price": "$39",
-      "theme": "mindset reset",
-      "angle": "supportive_solution",
-      "ethnicity": "White",
-      "ig_post_id": "18180324121407064",
-      "ig_permalink": "https://www.instagram.com/p/Da3Wjrjm0MD/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "mindset recalibration",
-      "angle": "supportive_solution",
-      "ethnicity": "East Asian",
-      "ig_post_id": "17989653263829259",
-      "ig_permalink": "https://www.instagram.com/p/Da3WjtFHZhK/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-16 (Thursday ET)",
     "slot": "evening",
     "timestamp_utc": "2026-07-17T00:00:37Z",
     "revitalize": {
@@ -2696,6 +2668,42 @@
       "ig_permalink": "https://www.instagram.com/p/Dbyge8km_-j/",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-07 (Friday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-07T19:10:00Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "angle": "supportive_solution",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260807_191047_ae71d5df-040d-4fb2-b727-2f815bf90fde.png",
+      "ig_creation_id": "17915184831431674",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram media created (creation_id 17915184831431674) but INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH was blocked by the Claude Code auto-mode permission classifier (publish action denied, retried once, still denied). Post was never published. Same recurring issue as 2026-07-19, 2026-07-20, and 2026-07-22 log entries."
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "supportive_solution",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260807_191052_96847d27-7342-41b8-8ff1-b8ead532e806.png",
+      "ig_creation_id": "18106801652076162",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Instagram media created (creation_id 18106801652076162) but INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH was blocked by the Claude Code auto-mode permission classifier (publish action denied, retried once, still denied). Post was never published. Same recurring issue as 2026-07-19, 2026-07-20, and 2026-07-22 log entries."
     }
   }
 ]
