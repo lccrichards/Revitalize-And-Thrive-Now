@@ -2645,5 +2645,39 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-09 (Sunday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ethnicity": "Black",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260809_233430_d27e6697-0ac0-43a9-996f-f0a59223a44f.png",
+      "ig_post_id": "17976747527904156",
+      "ig_permalink": "https://www.instagram.com/p/Db1oeeiGw1C/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "yt_video_id": null,
+      "yt_status": "not_applicable",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260809_233434_61a07f95-f356-4431-8d23-910a173485c1.png",
+      "ig_post_id": "18278414791294525",
+      "ig_permalink": "https://www.instagram.com/p/Db1oeh4HYPt/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "YouTube (UCvBwWMJzRWUCC3VCzxLBQ8g) is connected, but full narrated video production is handled by the dedicated Tue/Thu video reel slot, not the evening image-post cadence; skipped this best-effort step rather than rush a low-effort video to a real channel. Instagram post published and verified independently.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
