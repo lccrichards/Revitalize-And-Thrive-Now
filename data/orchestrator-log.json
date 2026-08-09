@@ -1,34 +1,6 @@
 [
   {
     "date": "2026-07-17 (Friday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-17T11:06:51+00:00",
-    "revitalize": {
-      "product": "Nutrition Deep Dive",
-      "price": "$49",
-      "theme": "nutrition and meal planning",
-      "angle": "education",
-      "ethnicity": "Middle Eastern",
-      "ig_post_id": "18108725050974259",
-      "ig_permalink": "https://www.instagram.com/p/Da5EdyHoLqz/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Testosterone and Stamina Meal Plan",
-      "price": "$39",
-      "theme": "nutrition for male hormones",
-      "angle": "education",
-      "ethnicity": "South Asian",
-      "ig_post_id": "18127199011646967",
-      "ig_permalink": "https://www.instagram.com/p/Da5EdxgILvj/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-17 (Friday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-17T19:08:01Z",
     "revitalize": {
@@ -2699,6 +2671,38 @@
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260808_191210_a434c63b-3d2e-4c78-a9af-f106f2832e43.png",
       "ig_post_id": "17979886998098736",
       "ig_permalink": "https://www.instagram.com/p/DbylrTbHZvr/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-09 (Sunday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-08-09T11:49:35Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260809_114731_dfe8bce4-551a-474d-9595-d684743ec01c.png",
+      "ig_post_id": "18171110527435670",
+      "ig_permalink": "https://www.instagram.com/p/Db0Xmx0IDSk/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "drive and motivation",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260809_114735_1d4451e2-b029-4e15-8ec3-f16e8f591c4d.png",
+      "ig_post_id": "18126841066672660",
+      "ig_permalink": "https://www.instagram.com/p/Db0XmwioK35/",
       "status": "posted",
       "verified": true
     }
