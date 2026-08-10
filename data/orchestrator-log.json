@@ -1,72 +1,6 @@
 [
   {
     "date": "2026-07-17 (Friday ET)",
-    "slot": "video",
-    "timestamp_utc": "2026-07-17T22:13:00Z",
-    "revitalize": {
-      "product": "Hormone-Balancing Meal Plan",
-      "price": "$39",
-      "theme": "nutrition and meal planning",
-      "format": "reel",
-      "ethnicity": "White",
-      "video_job_id": "cae96f31-2e80-40e6-85c0-17e3d6e7f070",
-      "ig_post_id": "18105967676043117",
-      "ig_permalink": "https://www.instagram.com/reel/Da6QjYjAC6n/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Testosterone and Stamina Meal Plan",
-      "price": "$39",
-      "theme": "nutrition for male hormones",
-      "format": "reel",
-      "ethnicity": "East Asian",
-      "video_job_id": "7630410b-5d47-4c90-a1fb-739c5df578f0",
-      "ig_post_id": "18605651860016215",
-      "ig_permalink": "https://www.instagram.com/reel/Da6QlqHFcaA/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel ('Dr. Alexander', youtube_luckie-mang) is connected. Instagram post published and verified independently of this step.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-17 (Friday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-17T23:06:43Z",
-    "revitalize": {
-      "product": "Complete Wellness Bundle",
-      "price": "$149",
-      "theme": "nutrition and meal planning",
-      "angle": "aspirational_offer",
-      "ethnicity": "African American",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260717_230525_4aa442eb-3c85-4b35-b0c3-9d41d83ed5b6.png",
-      "ig_post_id": "18015467285712924",
-      "ig_permalink": "https://www.instagram.com/p/Da6W2IWHY4x/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "nutrition for male hormones",
-      "angle": "aspirational_offer",
-      "ethnicity": "Latino",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260717_230529_26b5fae5-e8e0-41c5-97d5-4cb34c473151.png",
-      "ig_post_id": "18223069639325845",
-      "ig_permalink": "https://www.instagram.com/p/Da6W2E8G3E3/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel (Dr. Alexander, youtube_luckie-mang) is connected. Instagram post published and verified independently of this step.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-17 (Friday ET)",
     "slot": "night",
     "timestamp_utc": "2026-07-18T02:06:01Z",
     "revitalize": {
@@ -2740,6 +2674,43 @@
       "ig_permalink": "https://www.instagram.com/p/Db3B_vLIEsB/",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-10 (Monday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-08-10T22:26:40Z",
+    "note": "Draft only \u2014 not published live. Review and publish manually (Instagram app, Composio dashboard) or approve in a live chat session.",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "hormone balance",
+      "angle": "reel",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Latina",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_220826_8972d709-15b3-4919-be4e-b7f50772fa7b.mp4",
+      "ig_creation_id": null,
+      "caption": "You don't have to feel fearless before you begin. \ud83c\udf3f\n\nThat truth changed everything for me. Anxiety doesn't wait for a convenient moment to show up \u2014 and if you've been waiting to feel \"ready\" before you take care of yourself, this is your permission to start anyway.\n\nThe Complete Wellness Bundle is everything I lean on: reset rituals, whole-food nutrition guidance, and gentle movement practices designed for where you are right now \u2014 not some future version of you. It's the toolkit I return to on the mornings when getting out of bed feels like the hardest part.\n\nYou deserve support that meets you exactly as you are today. This is your second chapter, and it can start before you feel ready. \ud83d\udc9b\n\nComplete Wellness Bundle\n$297\nhttps://buy.stripe.com/3cI5kC0LgaHu7b2el5aAw0d\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #HealthyAging #WomenWellness #ThrivingAt50 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain",
+      "status": "failed",
+      "error": "Video generated successfully (Higgsfield seedance_2_0), but INSTAGRAM_POST_IG_USER_MEDIA (media container / creation_id step) was blocked by the Claude Code auto-mode permission classifier for the Revitalize account (instagram_walrus-waac, ig_user_id 27164026169935796). Retried once, same block both times. No creation_id was generated; nothing was posted or drafted on Instagram for Revitalize this run. Reclaim on the same Composio connection succeeded, so this is scoped to the classifier's handling of this specific call, not a Composio/API failure."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "testosterone optimization",
+      "angle": "reel",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Middle Eastern",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_220836_afb6f0a4-2a72-4998-b2a4-6be0a611eca6.mp4",
+      "ig_creation_id": "18107335139076162",
+      "caption": "You don't need to feel ready before you move. Waiting for certainty is what keeps most men stuck \u2014 not the uncertainty itself.\n\nThe Complete Reclaim Reset Bundle is the system I run every morning: training structure, nutrition strategy, and recovery protocols built for men who still have work to do and no patience for fluff. No theory. No guesswork. Just the framework that keeps you sharp, disciplined, and in motion when life doesn't slow down for you.\n\nMost men wait for motivation. The ones who move first build the edge everyone else is still talking about. If you've been waiting for the right moment to start, this is it.\n\nComplete Reclaim Reset Bundle\n$249\nhttps://buy.stripe.com/6oUdR8eC602Q7b2dh1aAw0i\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MensMindset #MentalStrength",
+      "youtube": {
+        "title": "Complete Reclaim Reset Bundle: My Morning Routine",
+        "yt_video_id": null,
+        "yt_status": "not_uploaded",
+        "note": "Not uploaded per instructions \u2014 rendered video_url available above for the owner to upload manually if desired."
+      },
+      "status": "draft_ready"
     }
   }
 ]
