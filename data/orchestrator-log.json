@@ -2708,5 +2708,38 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-08-10 (Monday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-10T12:39:05Z",
+    "note": "Run was loaded for the 2026-08-09 (Sunday) 3 PM ET afternoon slot per the config output captured at LOAD CONFIG time, but a worker restart delayed execution until after the session crossed midnight ET into Monday 2026-08-10 (~08:38 ET). Logged under the actual Monday post date so the guard's timestamp-based same-day check does not skip the true 2026-08-10 3 PM ET afternoon slot later today. Content below reflects the Sunday rotation (Fitness After 45 Guide / Reclaim Masterclass, high_functioning_burnout emotional angle) rather than Monday's scheduled rotation.",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "supportive_solution",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_123411_a3662e55-5abb-4534-8ace-eeb06d07d8a2.png",
+      "ig_post_id": "18098283500203933",
+      "ig_permalink": "https://www.instagram.com/p/Db3B_uqINPE/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$197",
+      "theme": "drive and motivation",
+      "angle": "supportive_solution",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_123419_9b18b378-ad73-4845-a58e-8cace0eb350f.png",
+      "ig_post_id": "17931358497366048",
+      "ig_permalink": "https://www.instagram.com/p/Db3B_vLIEsB/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
