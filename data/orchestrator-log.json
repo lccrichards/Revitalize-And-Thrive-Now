@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-10 (Monday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "hormone balance",
+      "angle": "aspirational_offer",
+      "ig_media_id": "18054834680562702",
+      "ig_permalink": "https://www.instagram.com/p/Db4NacNnQM7/",
+      "image_ethnicity": "White",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "fb_post_id": "auto-synced-from-instagram",
+      "note": "Live Instagram post published via Composio (INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH) and verified via INSTAGRAM_GET_IG_MEDIA."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "testosterone optimization",
+      "angle": "aspirational_offer",
+      "ig_media_id": "17889542703427162",
+      "ig_permalink": "https://www.instagram.com/p/Db4NaelnQBG/",
+      "image_ethnicity": "South Asian",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "fb_post_id": "auto-synced-from-instagram",
+      "yt_status": "skipped - no supported pipeline to stage a Higgsfield-generated video into Composio's YouTube upload (requires s3key-backed file, not a URL); best-effort only, does not block IG posting",
+      "note": "Live Instagram post published via Composio (INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH) and verified via INSTAGRAM_GET_IG_MEDIA."
+    }
   }
 ]
