@@ -2712,5 +2712,40 @@
       },
       "status": "draft_ready"
     }
+  },
+  {
+    "date": "2026-08-10 (Monday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-10T23:55:32Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "hormone balance",
+      "angle": "aspirational_offer",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_230842_28e08abd-d4b4-4401-972a-f10b35e6f94e.png",
+      "ig_post_id": "17903137341323758",
+      "ig_permalink": "https://www.instagram.com/p/Db4PXTmHSZh/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "testosterone optimization",
+      "angle": "aspirational_offer",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_231856_15dfa61e-abe8-43c6-ba9a-aec24b8e68ea.png",
+      "ig_post_id": "18224529691322723",
+      "ig_permalink": "https://www.instagram.com/p/Db4PXSkGyOe/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "ffmpeg not available in this environment for video overlay generation; Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
