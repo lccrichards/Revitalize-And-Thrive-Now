@@ -1,36 +1,6 @@
 [
   {
     "date": "2026-07-19 (Sunday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-19T19:06:26Z",
-    "revitalize": {
-      "product": "Fitness After 45 Guide",
-      "price": "$39",
-      "theme": "strength and fitness after 45",
-      "angle": "supportive_solution",
-      "ethnicity": "African American",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_190510_32c4d44d-2007-4dd5-a4b8-ca631e638225.png",
-      "ig_post_id": "18136578121582619",
-      "ig_permalink": "https://www.instagram.com/p/Da_E8FYGycJ/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Reclaim Masterclass",
-      "price": "$149",
-      "theme": "drive and motivation",
-      "angle": "supportive_solution",
-      "ethnicity": "South Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_190512_eea212e8-89b7-4a4b-bcda-d883453c8ca6.png",
-      "ig_post_id": "18108813769974016",
-      "ig_permalink": "https://www.instagram.com/p/Da_E8APG8Ju/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-19 (Sunday ET)",
     "slot": "evening",
     "timestamp_utc": "2026-07-19T23:10:00Z",
     "revitalize": {
@@ -2751,6 +2721,38 @@
       "status": "failed",
       "verified": false,
       "error": "INSTAGRAM_POST_IG_USER_MEDIA was blocked by the Claude Code auto-mode permission classifier before a media container could be created (reason: 'Blocked by classifier', no further detail given). This is a harness-level permission block, not an Instagram/Meta API error. An earlier media container for this same slot (creation_id 18107204957076162) had been successfully created but expired (publish attempt returned 'requested resource does not exist, code 24') due to a long delay from repeated worker restarts during this run; recreation was then blocked by the same classifier. This is a recurring, persistent issue -- the same classifier block on this exact action is already logged on 2026-07-19, 2026-07-20, 2026-07-22, and 2026-08-07. Requires the repository owner to either adjust the Claude Code auto-mode permission settings for this Composio/Instagram publish action, or manually approve/publish this post."
+    }
+  },
+  {
+    "date": "2026-08-11 (Tuesday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-11T19:11:50Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "supportive_solution",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260811_190812_474db0b7-2af2-4ce7-9ec7-dd3faa377557.png",
+      "ig_post_id": "17928161814384625",
+      "ig_permalink": "https://www.instagram.com/p/Db6T1UlG36G/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "angle": "supportive_solution",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260811_190817_157586c3-1a70-4fb2-b999-fca2dd41a247.png",
+      "ig_post_id": "17865462039641762",
+      "ig_permalink": "https://www.instagram.com/p/Db6T1UInaU3/",
+      "status": "posted",
+      "verified": true
     }
   }
 ]
