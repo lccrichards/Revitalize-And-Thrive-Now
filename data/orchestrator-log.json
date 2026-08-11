@@ -1,35 +1,6 @@
 [
   {
     "date": "2026-07-19 (Sunday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-19T23:10:00Z",
-    "revitalize": {
-      "product": "30-Day Wellness Transformation",
-      "price": "$79",
-      "theme": "strength and fitness after 45",
-      "angle": "aspirational_offer",
-      "ethnicity": "Latina",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_230448_63220369-137c-4659-8ab7-9355188655e6.png",
-      "ig_creation_id": "17912335605431674",
-      "status": "failed",
-      "error": "Instagram media created but INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH was blocked by the Claude Code auto-mode permission classifier (publish action denied, retried once, still denied). Post was never published.",
-      "verified": false
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "drive and motivation",
-      "angle": "aspirational_offer",
-      "ethnicity": "Middle Eastern",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_230451_0e286d28-95a9-4282-9090-b15fea231098.png",
-      "ig_creation_id": "18103533425076162",
-      "status": "failed",
-      "error": "Instagram media created but publish step was blocked by the Claude Code auto-mode permission classifier. Post was never published.",
-      "verified": false
-    }
-  },
-  {
-    "date": "2026-07-19 (Sunday ET)",
     "slot": "night",
     "timestamp_utc": "2026-07-20T02:06:36Z",
     "revitalize": {
@@ -2751,6 +2722,43 @@
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260811_190817_157586c3-1a70-4fb2-b999-fca2dd41a247.png",
       "ig_post_id": "17865462039641762",
       "ig_permalink": "https://www.instagram.com/p/Db6T1UInaU3/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-11 (Tuesday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-11T23:17:49Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "aspirational_offer",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260811_231544_6ffcdec1-2895-41d1-9d04-45633251dc14.png",
+      "ig_creation_id": "17915810742431674",
+      "ig_post_id": "17971481859065992",
+      "ig_permalink": "https://www.instagram.com/p/Db6v9azHcdh/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "aspirational_offer",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260811_231549_d6348d3f-1c63-4e51-b473-02e0adef1d91.png",
+      "ig_creation_id": "18107487503076162",
+      "ig_post_id": "18156493159491382",
+      "ig_permalink": "https://www.instagram.com/p/Db6v9fwm38u/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "Image-only evening slot; no video generated this run.",
       "status": "posted",
       "verified": true
     }
