@@ -2719,5 +2719,42 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-08-10 (Monday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-10T23:05:51Z",
+    "status": "DUPLICATE_FLAGGED_FOR_REVIEW",
+    "note": "ERROR/DUPLICATE: This run's POST GUARD and config read happened during Sunday 2026-08-09's cycle, but multiple worker/session restarts delayed actual execution across real wall-clock time, and the images/captions were generated from stale (Sunday) rotation data. By the time Instagram publish executed, another (correct) orchestrator run had already posted -- or posted shortly after -- Monday's real evening content at 2026-08-10T23:55:32Z (ig_post_id 17903137341323758 / 18224529691322723, product 'Complete Wellness Bundle' / 'Complete Reclaim Reset Bundle', logged in the commit 'Evening post: Monday - Revitalize + Reclaim (verified live)'). This entry's posts (below) went live ~50 minutes earlier, at 23:05:51Z, using the WRONG/stale product for Revitalize (30-Day Wellness Transformation $97 instead of Monday's correct Complete Wellness Bundle $297) -- resulting in TWO evening posts on both brands' feeds for Monday 2026-08-10. Both posts were individually verified live via INSTAGRAM_GET_IG_MEDIA at time of posting, but this is a duplicate/erroneous extra post caused by a race between concurrent/delayed orchestrator sessions, not an intended second evening slot. Flagging for the account owner to review and decide whether to delete the duplicate posts -- no deletion was performed by this run.",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$97",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260809_235403_abe7c4e9-604e-4734-975e-a723441fcc63.png",
+      "ig_post_id": "18149184553518953",
+      "ig_permalink": "https://www.instagram.com/p/Db4J0QXG0Pb/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted_duplicate_wrong_product",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260809_235407_f616a5ce-28bf-4af8-8697-19f97e6a03c4.png",
+      "ig_post_id": "18202898650317813",
+      "ig_permalink": "https://www.instagram.com/p/Db4J0SdHSHm/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "Image-only evening slot; no video generated this run.",
+      "status": "posted_duplicate",
+      "verified": true
+    }
   }
 ]
