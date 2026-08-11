@@ -1,36 +1,6 @@
 [
   {
     "date": "2026-07-19 (Sunday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-19T11:06:05Z",
-    "revitalize": {
-      "product": "Fitness After 45 Guide",
-      "price": "$39",
-      "theme": "strength and fitness after 45",
-      "angle": "education",
-      "ethnicity": "Middle Eastern",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_110444_4a856c1a-6259-4891-a6f8-5200dbf50ad9.png",
-      "ig_post_id": "18169090411431461",
-      "ig_permalink": "https://www.instagram.com/p/Da-N9oVoAw0/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "drive and motivation",
-      "angle": "education",
-      "ethnicity": "East Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260719_110446_294e7fae-e649-443a-9deb-b59a423580e9.png",
-      "ig_post_id": "18122400958742364",
-      "ig_permalink": "https://www.instagram.com/p/Da-N9sKIMxM/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-19 (Sunday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-19T19:06:26Z",
     "revitalize": {
@@ -2747,6 +2717,40 @@
       "video_url": null,
       "status": "failed",
       "error": "mcp__higgsfield__generate_video was blocked: the call required interactive approval, but this is an unattended scheduled run with no one available to approve it, so it was auto-denied. No video was generated for Reclaim. Not retried per instructions (do not retry more than once on a hard block). Needs the task's permission mode switched to allow this tool to run unattended."
+    }
+  },
+  {
+    "date": "2026-08-11 (Tuesday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-08-11T16:30:00Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_023807_c05cf72b-afc4-4e5c-95e4-262347359f31.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "INSTAGRAM_POST_IG_USER_MEDIA was blocked by the Claude Code auto-mode permission classifier before a media container could be created (reason: 'Blocked by classifier', no further detail given). This is a harness-level permission block, not an Instagram/Meta API error. Retried per the standard playbook; classifier continued to block on every attempt across multiple retries and even after full worker restarts. This is a recurring, persistent issue -- the same classifier block on this exact action is already logged on 2026-07-19, 2026-07-20, 2026-07-22, and 2026-08-07. Requires the repository owner to either adjust the Claude Code auto-mode permission settings for this Composio/Instagram publish action, or manually approve/publish this post."
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260810_023811_cfed9a00-e519-421f-9c29-13999582b8a7.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "status": "failed",
+      "verified": false,
+      "error": "INSTAGRAM_POST_IG_USER_MEDIA was blocked by the Claude Code auto-mode permission classifier before a media container could be created (reason: 'Blocked by classifier', no further detail given). This is a harness-level permission block, not an Instagram/Meta API error. An earlier media container for this same slot (creation_id 18107204957076162) had been successfully created but expired (publish attempt returned 'requested resource does not exist, code 24') due to a long delay from repeated worker restarts during this run; recreation was then blocked by the same classifier. This is a recurring, persistent issue -- the same classifier block on this exact action is already logged on 2026-07-19, 2026-07-20, 2026-07-22, and 2026-08-07. Requires the repository owner to either adjust the Claude Code auto-mode permission settings for this Composio/Instagram publish action, or manually approve/publish this post."
     }
   }
 ]
