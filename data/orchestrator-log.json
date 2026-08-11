@@ -1,64 +1,5 @@
 [
   {
-    "date": "2026-07-18 (Saturday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-18T19:07:08Z",
-    "revitalize": {
-      "product": "Skincare and Beauty Protocol",
-      "price": "$39",
-      "theme": "skincare and beauty",
-      "angle": "supportive_solution",
-      "ig_post_id": "17882988351460515",
-      "ig_permalink": "https://www.instagram.com/p/Da8gKoTHR6c/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Strength Density and Longevity",
-      "price": "$39",
-      "theme": "strength and muscle density",
-      "angle": "supportive_solution",
-      "ig_post_id": "17974629018083246",
-      "ig_permalink": "https://www.instagram.com/p/Da8gKnuG0_D/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-18 (Saturday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-18T23:06:21Z",
-    "revitalize": {
-      "product": "The Revitalize Circle Monthly Membership",
-      "price": "$97/month",
-      "theme": "skincare and beauty",
-      "angle": "aspirational_offer",
-      "ethnicity": "Latina",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_230510_3607aeab-0a26-48bf-9e67-b75cad7bebd6.png",
-      "ig_post_id": "18126449689582085",
-      "ig_permalink": "https://www.instagram.com/p/Da87mFaHZG-/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "strength and muscle density",
-      "angle": "aspirational_offer",
-      "ethnicity": "White",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_230512_834a4312-9817-47df-b5b7-4656bd4ce257.png",
-      "ig_post_id": "18137043445572743",
-      "ig_permalink": "https://www.instagram.com/p/Da87mEuneEM/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel is connected. Instagram post published and verified independently of this step.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-19 (Sunday ET)",
     "slot": "morning",
     "timestamp_utc": "2026-07-19T11:06:05Z",
@@ -2755,6 +2696,57 @@
       "yt_reason": "Image-only evening slot; no video generated this run.",
       "status": "posted_duplicate",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-11 (Tuesday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-08-11T16:20:47Z",
+    "status": "failed",
+    "note": "Draft-generation routine aborted before video creation.",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "reel",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "East Asian",
+      "caption": "Sometimes burnout doesn't look like falling apart. It looks like showing up for everyone else while running on empty \u2014 and still being the one everyone calls dependable. \ud83c\udf19\n\nI used to think exhaustion meant something was wrong with me. It doesn't. It usually just means I've been over-functioning for way too long without giving my body permission to actually rest.\n\nSleep is where I finally started to change that. The Midlife Sleep Fix is the routine I lean on every single night \u2014 simple, doable steps that help me wind down instead of lying there wired and exhausted at the same time. It's not a miracle. It's just support, built for where I actually am.\n\nYou don't have to earn your rest. You're allowed to put yourself on the list tonight.\n\nThe Midlife Sleep Fix\n$39\nhttps://buy.stripe.com/cNieVcdy2eXKbriel5aAw05\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #MidlifeSleep #BetterSleepHabits #SleepHealth #FeelRested #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #ThrivingAt50 #FeelAmazingAgain",
+      "monologue_script": "Sometimes burnout looks like being dependable for far too long. That's why every night I use The Midlife Sleep Fix \u2014 the wind-down routine I follow to actually put the day down before I try to sleep.",
+      "on_screen_beats": [
+        "Burnout isn't falling apart. It's over-functioning.",
+        "This is the sleep routine I actually use.",
+        "Simple support, not a miracle.",
+        "The Midlife Sleep Fix \u2014 link in bio."
+      ],
+      "video_url": null,
+      "status": "failed",
+      "error": "mcp__higgsfield__generate_video was blocked: the call required interactive approval, but this is an unattended scheduled run with no one available to approve it, so it was auto-denied. No video was generated for Revitalize. Not retried per instructions (do not retry more than once on a hard block). Needs the task's permission mode switched to allow this tool to run unattended."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "reel",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "African American",
+      "caption": "You're not lazy. You've been carrying too much for too long.\n\nMost guys write off their exhaustion as weakness. It's not weakness \u2014 it's the cost of running on empty while still showing up for everything and everyone. I hit that wall. What changed it wasn't pushing harder. It was rebuilding the fundamentals: how I train, how I eat, how I recover.\n\nThe Complete Reclaim Reset Bundle is the system I run now \u2014 training structure, nutrition strategy, and recovery protocols built for guys who still have work to do. No fluff. No guesswork. Just the framework.\n\nIf you've been carrying too much, stop calling it laziness. Start rebuilding.\n\nComplete Reclaim Reset Bundle\n$249\nhttps://buy.stripe.com/6oUdR8eC602Q7b2dh1aAw0i\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MensSleep #SleepRecovery #RestAndRecovery",
+      "monologue_script": "You're not lazy. You've been carrying too much for too long. That's why I run the Complete Reclaim Reset Bundle \u2014 training structure, nutrition strategy, and recovery protocols built for guys who still have work to do.",
+      "on_screen_beats": [
+        "You're not lazy. You're overloaded.",
+        "This is the recovery system I run.",
+        "No fluff. Just the framework.",
+        "Complete Reclaim Reset Bundle \u2014 link in bio."
+      ],
+      "youtube": {
+        "title": "The Recovery System I Actually Run | Complete Reclaim Reset",
+        "yt_video_id": null,
+        "yt_status": "not_uploaded",
+        "note": "No video was generated this run, so nothing is available to upload."
+      },
+      "video_url": null,
+      "status": "failed",
+      "error": "mcp__higgsfield__generate_video was blocked: the call required interactive approval, but this is an unattended scheduled run with no one available to approve it, so it was auto-denied. No video was generated for Reclaim. Not retried per instructions (do not retry more than once on a hard block). Needs the task's permission mode switched to allow this tool to run unattended."
     }
   }
 ]
