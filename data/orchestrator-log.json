@@ -1,65 +1,5 @@
 [
   {
-    "date": "2026-07-17 (Friday ET)",
-    "slot": "night",
-    "timestamp_utc": "2026-07-18T02:06:01Z",
-    "revitalize": {
-      "product": "The Revitalize Circle Monthly Membership",
-      "price": "$97/month",
-      "theme": "nutrition and meal planning",
-      "angle": "urgency_social_proof",
-      "ethnicity": "East Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_020456_3b619817-4d6e-47db-a7a9-3c58ca254097.png",
-      "ig_post_id": "18108330712956274",
-      "ig_permalink": "https://www.instagram.com/p/Da6rX03jUec/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "nutrition for male hormones",
-      "angle": "urgency_social_proof",
-      "ethnicity": "Middle Eastern",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_020457_3c2c3504-a1fd-495d-b957-fc46967ad2ff.png",
-      "ig_post_id": "17894982831368178",
-      "ig_permalink": "https://www.instagram.com/p/Da6rXyPjS-G/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-18 (Saturday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-18T11:05:41Z",
-    "revitalize": {
-      "product": "Skincare and Beauty Protocol",
-      "price": "$39",
-      "theme": "skincare and beauty",
-      "angle": "education",
-      "ethnicity": "South Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_110447_771db16b-0ab3-47f7-9641-623366d15c07.png",
-      "ig_post_id": "18126522739711408",
-      "ig_permalink": "https://www.instagram.com/p/Da7pIJTIIcg/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Strength Density and Longevity",
-      "price": "$39",
-      "theme": "strength and muscle density",
-      "angle": "education",
-      "ethnicity": "African American",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260718_110449_7baa21ba-5e95-4a2e-8669-f4332f4b2399.png",
-      "ig_post_id": "17867967507632823",
-      "ig_permalink": "https://www.instagram.com/p/Da7pIH3oE7o/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-18 (Saturday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-18T19:07:08Z",
@@ -2744,6 +2684,38 @@
       "yt_video_id": null,
       "yt_status": "skipped",
       "yt_reason": "ffmpeg not available in this environment for video overlay generation; Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-11 (Tuesday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-08-11T11:38:02Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260811_113412_65114694-3fb2-4c17-9929-e9ccb0fb4f1b.png",
+      "ig_post_id": "18164138116418040",
+      "ig_permalink": "https://www.instagram.com/p/Db5f5dMIEzn/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260811_113418_e834600b-7579-4af1-b4b3-ca01fb740b14.png",
+      "ig_post_id": "17895564018604288",
+      "ig_permalink": "https://www.instagram.com/p/Db5f5d3oMoo/",
       "status": "posted",
       "verified": true
     }
