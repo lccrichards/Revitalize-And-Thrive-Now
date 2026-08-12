@@ -2741,8 +2741,7 @@
     "date": "2026-08-12 (Wednesday ET)",
     "slot": "video",
     "timestamp_utc": "2026-08-12T22:15:00Z",
-    "status": "draft_ready",
-    "note": "Draft only \u2014 not published live. Review and publish manually (Instagram app, Composio dashboard) or approve in a live chat session.",
+    "status": "posted",
     "revitalize": {
       "product": "30-Day Wellness Transformation",
       "price": "$97",
@@ -2754,7 +2753,11 @@
       "ig_creation_id": "17915952738431674",
       "caption": "Healing changes who still has access to you. \ud83c\udf3f\n\nNot everyone who knew the old version of you can walk with the version you're becoming \u2014 and that's not something to grieve, it's something to expect.\n\nInside the 30-Day Wellness Transformation, I share the daily practices that have helped me protect my energy and hold gentle boundaries: morning rituals, simple check-ins, and the small resets I return to whenever old patterns try to pull me back in. It's not about cutting people off. It's about finally choosing what \u2014 and who \u2014 gets your energy.\n\nYou're allowed to outgrow what no longer fits. You're allowed to close a door gently and keep walking toward your second chapter.\n\n30-Day Wellness Transformation\n$97\nhttps://buy.stripe.com/28E3cu3Xsg1O8f6gtdaAw01\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #ThrivingAt50 #MidlifeTransformation #HealthyAging #FeelAmazingAgain",
       "monologue_script": "Healing changes who still has access to you. Inside the 30-Day Wellness Transformation, I share the daily practices I use to protect my energy and hold gentle boundaries \u2014 the routine I return to whenever old patterns try to pull me back in.",
-      "status": "draft_ready"
+      "status": "posted",
+      "ig_post_id": "18110997385978925",
+      "ig_permalink": "https://www.instagram.com/reel/Db9NUqrjho1/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "verified": true
     },
     "reclaim": {
       "product": "Complete Reclaim Reset Bundle",
@@ -2769,8 +2772,11 @@
       "monologue_script": "Growth changes who still has access to you. Inside the Complete Reclaim Reset Bundle, I break down the framework I use to protect my time and energy \u2014 boundary scripts, morning structure, and the recovery practices I run when old habits try to pull me back.",
       "yt_video_id": null,
       "yt_status": "not_uploaded",
-      "yt_reason": "Draft-only run per instructions \u2014 YouTube upload not performed. video_url recorded above for manual upload by the owner if desired.",
-      "status": "draft_ready"
+      "yt_reason": "Instagram Reel published and verified independently; YouTube upload not performed this run (video_url recorded for manual upload if desired).",
+      "status": "posted",
+      "ig_post_id": "18172638871384786",
+      "ig_permalink": "https://www.instagram.com/reel/Db9NUlZDpdm/",
+      "verified": true
     }
   }
 ]
