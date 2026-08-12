@@ -1,36 +1,6 @@
 [
   {
     "date": "2026-07-20 (Monday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-20T11:07:46Z",
-    "revitalize": {
-      "product": "Hormone Reset Masterclass",
-      "price": "$59",
-      "theme": "hormone balance",
-      "angle": "education",
-      "ethnicity": "East Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_110609_aa78fecb-a0ce-4a1f-9480-2d005655117d.png",
-      "ig_post_id": "18110061517962416",
-      "ig_permalink": "https://www.instagram.com/p/DbAy9CgoK_V/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Reclaim Masterclass",
-      "price": "$149",
-      "theme": "testosterone optimization",
-      "angle": "education",
-      "ethnicity": "African American",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_110612_4651ba89-9f33-4407-952e-b58fd02686fb.png",
-      "ig_post_id": "17998741589977194",
-      "ig_permalink": "https://www.instagram.com/p/DbAy9CvoF6s/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-20 (Monday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-20T19:06:00Z",
     "revitalize": {
@@ -2765,6 +2735,42 @@
       "ig_permalink": "https://www.instagram.com/p/Db8FiZVIBn_/",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-08-12T22:15:00Z",
+    "status": "draft_ready",
+    "note": "Draft only \u2014 not published live. Review and publish manually (Instagram app, Composio dashboard) or approve in a live chat session.",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$97",
+      "theme": "energy restoration",
+      "angle": "reel",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "Middle Eastern",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260812_220805_4f0bf9fd-022b-42a5-8546-91439a8fd65e.mp4",
+      "ig_creation_id": "17915952738431674",
+      "caption": "Healing changes who still has access to you. \ud83c\udf3f\n\nNot everyone who knew the old version of you can walk with the version you're becoming \u2014 and that's not something to grieve, it's something to expect.\n\nInside the 30-Day Wellness Transformation, I share the daily practices that have helped me protect my energy and hold gentle boundaries: morning rituals, simple check-ins, and the small resets I return to whenever old patterns try to pull me back in. It's not about cutting people off. It's about finally choosing what \u2014 and who \u2014 gets your energy.\n\nYou're allowed to outgrow what no longer fits. You're allowed to close a door gently and keep walking toward your second chapter.\n\n30-Day Wellness Transformation\n$97\nhttps://buy.stripe.com/28E3cu3Xsg1O8f6gtdaAw01\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #ThrivingAt50 #MidlifeTransformation #HealthyAging #FeelAmazingAgain",
+      "monologue_script": "Healing changes who still has access to you. Inside the 30-Day Wellness Transformation, I share the daily practices I use to protect my energy and hold gentle boundaries \u2014 the routine I return to whenever old patterns try to pull me back in.",
+      "status": "draft_ready"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "reel",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "Latino",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260812_220809_4acf1674-7974-4e6d-9be2-fc225580e0da.mp4",
+      "ig_creation_id": "18107643704076162",
+      "caption": "Growth changes who still has access to you.\n\nNot everyone who knew the old you can keep pace with the man you're building. That's not a loss. That's clarity.\n\nInside the Complete Reclaim Reset Bundle, I break down the exact framework I use to protect my time, my energy, and my focus \u2014 boundary scripts for work and family, morning structure that sets the tone before anyone else gets a piece of you, and the recovery practices I run when old obligations try to pull you back into the same cycle. No fluff. Just the system, laid out step by step.\n\nYou don't owe access to everyone who had it before. Build the standard. Hold the line.\n\nComplete Reclaim Reset Bundle\n$249\nhttps://buy.stripe.com/6oUdR8eC602Q7b2dh1aAw0i\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #MidlifeReset #MensTransformation #MensMindset #MentalStrength",
+      "monologue_script": "Growth changes who still has access to you. Inside the Complete Reclaim Reset Bundle, I break down the framework I use to protect my time and energy \u2014 boundary scripts, morning structure, and the recovery practices I run when old habits try to pull me back.",
+      "yt_video_id": null,
+      "yt_status": "not_uploaded",
+      "yt_reason": "Draft-only run per instructions \u2014 YouTube upload not performed. video_url recorded above for manual upload by the owner if desired.",
+      "status": "draft_ready"
     }
   }
 ]
