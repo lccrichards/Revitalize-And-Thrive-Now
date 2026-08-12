@@ -1,35 +1,5 @@
 [
   {
-    "date": "2026-07-19 (Sunday ET)",
-    "slot": "night",
-    "timestamp_utc": "2026-07-20T02:06:36Z",
-    "revitalize": {
-      "product": "The Revitalize Circle Monthly Membership",
-      "price": "$97/month",
-      "theme": "strength and fitness after 45",
-      "angle": "urgency_social_proof",
-      "ethnicity": "White",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_020537_6ee4c663-a0db-4ae4-9820-03592ea4abac.png",
-      "ig_post_id": "18100258448245477",
-      "ig_permalink": "https://www.instagram.com/p/Da_1BsIm-T_/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Midlife Wellness Planner",
-      "price": "$19",
-      "theme": "drive and motivation",
-      "angle": "urgency_social_proof",
-      "ethnicity": "Latino",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_020538_cdd1575f-5cc8-4072-86b6-93dc2725a669.png",
-      "ig_post_id": "17928508392362811",
-      "ig_permalink": "https://www.instagram.com/p/Da_1BroG_Er/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-20 (Monday ET)",
     "slot": "morning",
     "timestamp_utc": "2026-07-20T11:07:46Z",
@@ -2759,6 +2729,40 @@
       "yt_video_id": null,
       "yt_status": "skipped",
       "yt_reason": "Image-only evening slot; no video generated this run.",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-08-12T11:45:31Z",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$37",
+      "theme": "energy restoration",
+      "angle": "education",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260812_114332_3cdbabd6-eed9-4638-b64a-ac6da597d587.png",
+      "ig_creation_id": "17915872737431674",
+      "ig_post_id": "17874751785553500",
+      "ig_permalink": "https://www.instagram.com/p/Db8FiTVoPDa/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$197",
+      "theme": "energy and cognitive performance",
+      "angle": "education",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260812_114336_56e09d11-0345-4138-ac52-d8c88c07b2c8.png",
+      "ig_creation_id": "18107566604076162",
+      "ig_post_id": "18215553184340414",
+      "ig_permalink": "https://www.instagram.com/p/Db8FiZVIBn_/",
       "status": "posted",
       "verified": true
     }
