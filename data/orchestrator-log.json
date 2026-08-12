@@ -1,33 +1,6 @@
 [
   {
     "date": "2026-07-20 (Monday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-20T19:06:00Z",
-    "revitalize": {
-      "product": "Hormone-Balancing Meal Plan",
-      "price": "$39",
-      "theme": "hormone balance",
-      "angle": "supportive_solution",
-      "ethnicity": "South Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_190600_0c3dcd30-4b4a-4556-898d-84a2d9cfbda4.png",
-      "status": "failed",
-      "error": "Instagram publish step (INSTAGRAM_POST_IG_USER_MEDIA) was blocked by the Claude Code auto-mode permission classifier before a media container could be created. Post was never published.",
-      "verified": false
-    },
-    "reclaim": {
-      "product": "Testosterone and Stamina Meal Plan",
-      "price": "$39",
-      "theme": "testosterone optimization",
-      "angle": "supportive_solution",
-      "ethnicity": "Middle Eastern",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_190602_3a7892bc-de84-414b-886f-ae9cdfe53bb7.png",
-      "status": "failed",
-      "error": "Instagram publish step (INSTAGRAM_POST_IG_USER_MEDIA) was blocked by the Claude Code auto-mode permission classifier before a media container could be created. Post was never published.",
-      "verified": false
-    }
-  },
-  {
-    "date": "2026-07-20 (Monday ET)",
     "slot": "video",
     "timestamp_utc": "2026-07-20T22:17:20Z",
     "revitalize": {
@@ -2777,6 +2750,38 @@
       "ig_post_id": "18172638871384786",
       "ig_permalink": "https://www.instagram.com/reel/Db9NUlZDpdm/",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-12T23:19:00Z",
+    "status": "failed",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$97",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260812_231836_150126fb-4ecb-4691-9650-a553e6b94472.png",
+      "caption": "A boundary is not revenge. It is clarity.\n\nAs you heal, you may notice something surprising: not everyone from your old life fits comfortably into this new one. That's not something to feel guilty about \u2014 it's often a sign that you're growing into a woman who knows her own needs. Healing has a way of quietly changing which relationships, habits, and environments you're still willing to make room for.\n\nIf you've felt that pull lately \u2014 the urge to protect your peace, your energy, your time \u2014 you're not imagining it, and you are not alone in it.\n\nThe 30-Day Wellness Transformation was designed to support exactly this kind of season. Inside, you'll find daily practices, gentle structure, and simple tools meant to help you reconnect with yourself, steady your energy, and build a routine that makes it easier to hold your boundaries with confidence instead of guilt.\n\nYou don't have to have it all figured out. You just have to be willing to begin, one day and one small shift at a time.\n\nIf this is the season you've been waiting for, consider this your invitation to start.\n\n30-Day Wellness Transformation\n$97\nhttps://buy.stripe.com/28E3cu3Xsg1O8f6gtdaAw01\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #ThrivingAt50 #MidlifeTransformation #HealthyAging #FeelAmazingAgain #MidlifeSisterhood \ud83c\udf3f\u2728",
+      "status": "failed",
+      "error": "Image generated successfully, but INSTAGRAM_POST_IG_USER_MEDIA was denied by the Claude Code auto-mode safety classifier before any Instagram API call was made (retried once, same block both times). This matches the same harness-level guardrail documented in earlier log entries (e.g. 2026-07-xx afternoon/evening) that blocks scheduled/background sessions from publishing live to a real Instagram business account; it cannot be overridden by repo-level CLAUDE.md authorization or worked around via alternate tool paths. Post was NOT published live. Caption and image saved above for manual posting via the image_url, or by re-running this workflow in a live interactive session where the user can authorize the publish action in real time.",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260812_231841_19b412b7-a24c-4bd3-bb3d-035637bfce83.png",
+      "caption": "A boundary is not revenge. It is clarity.\n\nGrowth changes who still has access to you. As you build discipline and reclaim your edge, some relationships, obligations, and old habits stop fitting the man you're becoming. That's not something to apologize for. It's proof the work is real.\n\nIf you've felt that pull lately, less patience for what drains you, more clarity on what deserves your time, that's not burnout talking. That's growth.\n\nThe Complete Reclaim Reset Bundle was built to support this exact stage: frameworks for protecting your time and energy, morning structure that sets the tone before anyone else gets a piece of you, and recovery practices for the days old patterns try to pull you back.\n\nNo fluff. Just a system you can actually run.\n\nYou don't owe access to everyone who had it before. Build the standard. Hold the line.\n\nComplete Reclaim Reset Bundle\n$249\nhttps://buy.stripe.com/6oUdR8eC602Q7b2dh1aAw0i\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #MidlifeReset #MensTransformation #MensMindset #MentalStrength #MensHealthOver45",
+      "status": "failed",
+      "error": "Image generated successfully, but INSTAGRAM_POST_IG_USER_MEDIA was denied by the Claude Code auto-mode safety classifier before any Instagram API call was made (retried once, same block both times). Same harness-level guardrail as Revitalize above -- not an Instagram/Composio API error, not fixable from this session. Post was NOT published live. Caption and image saved above for manual posting or a live interactive session.",
+      "verified": false
     }
   }
 ]
