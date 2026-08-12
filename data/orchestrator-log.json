@@ -2645,5 +2645,39 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-12T23:35:06Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_job_id": "cec85ec8-0f84-467e-865f-2ae7dcdcf1d7",
+      "ig_post_id": "18089030408215063",
+      "ig_permalink": "https://www.instagram.com/p/Db9WxC5oLwj/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "compliant": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "ethnicity": "South Asian",
+      "image_job_id": "5b2b2066-2622-4d4e-834e-82effba7cff8",
+      "ig_post_id": "18137010841611197",
+      "ig_permalink": "https://www.instagram.com/p/Db9WxBGICAT/",
+      "status": "posted",
+      "verified": true,
+      "compliant": true,
+      "yt_status": "skipped"
+    },
+    "note": "Evening image posts published live via Composio to both IG accounts and verified via INSTAGRAM_GET_IG_MEDIA. YouTube upload skipped for evening slot (reserved for Tue/Thu video reel per CLAUDE.md); first Higgsfield revitalize image was flagged nsfw and regenerated successfully on retry."
   }
 ]
