@@ -1,36 +1,6 @@
 [
   {
     "date": "2026-07-21 (Tuesday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-21T11:06:45Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "angle": "education",
-      "ethnicity": "Latina",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_110537_3181c9b4-7038-4d8b-ade7-bb1dc0148ff6.png",
-      "ig_post_id": "17957851547981569",
-      "ig_permalink": "https://www.instagram.com/p/DbDXoYsoIXA/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "sleep recovery",
-      "angle": "education",
-      "ethnicity": "East Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_110540_0227a72d-6baf-4aeb-9e04-4d3d77150ef0.png",
-      "ig_post_id": "18038248046643032",
-      "ig_permalink": "https://www.instagram.com/p/DbDXoX-oPpk/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-21 (Tuesday ET)",
     "slot": "video",
     "timestamp_utc": "2026-07-21T16:11:00Z",
     "revitalize": {
@@ -2787,6 +2757,40 @@
       "youtube_description": "Your mind isn't where recovery begins.\n\nYou can't think your way out of a body that's stuck in fight-or-flight. No mindset hack changes that if your nervous system never gets the signal to stand down first.\n\nThat's the core of the Reclaim Masterclass \u2014 the framework I use to recalibrate under real pressure. Breath mechanics, stress-response training, and a system for resetting before the next demand hits. Not theory. Not fluff. A method built for men who run high-stakes days and need their edge back on command.\n\nYou already know how to push through \u2014 this is the recovery side you've been ignoring. This is the exact process I walk through daily.\n\nReclaim Masterclass\n$197\nhttps://buy.stripe.com/fZu6oGbpUbLy52U1yjaAw0j\n\nLearn more: https://buy.stripe.com/fZu6oGbpUbLy52U1yjaAw0j",
       "status": "draft_ready",
       "verified": false
+    }
+  },
+  {
+    "date": "2026-08-13 (Thursday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-13T20:38:41Z",
+    "revitalize": {
+      "product": "The Mindset Bundle",
+      "price": "$97",
+      "theme": "mindset reset",
+      "angle": "supportive_solution",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_203725_68c37b2f-f267-4410-bf51-3c8447399f04.png",
+      "ig_creation_id": "17916102051431674",
+      "ig_post_id": "18085565828299537",
+      "ig_permalink": "https://www.instagram.com/p/Db_nXN-HfQA/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "supportive_solution",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_203730_1308832c-f73d-4a72-bb7a-8e74301a1479.png",
+      "ig_creation_id": "18107821175076162",
+      "ig_post_id": "18022790870855439",
+      "ig_permalink": "https://www.instagram.com/p/Db_nXToHROL/",
+      "status": "posted",
+      "verified": true
     }
   }
 ]
