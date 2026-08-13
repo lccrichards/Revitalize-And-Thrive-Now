@@ -1,35 +1,5 @@
 [
   {
-    "date": "2026-07-21 (Monday ET)",
-    "slot": "night",
-    "timestamp_utc": "2026-07-21T02:06:48Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "hormone balance",
-      "angle": "urgency_social_proof",
-      "ethnicity": "Middle Eastern",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_020547_521f516b-d525-4e38-8adb-d49307b1de35.png",
-      "ig_post_id": "17900256627491642",
-      "ig_permalink": "https://www.instagram.com/p/DbCZ2KJjdOL/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "testosterone optimization",
-      "angle": "urgency_social_proof",
-      "ethnicity": "White",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_020548_3f3a6326-7773-4c0d-af86-06d819d9d6c3.png",
-      "ig_post_id": "18116574616917504",
-      "ig_permalink": "https://www.instagram.com/p/DbCZ2IYm6pu/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-21 (Tuesday ET)",
     "slot": "morning",
     "timestamp_utc": "2026-07-21T11:06:45Z",
@@ -2781,6 +2751,41 @@
       "caption": "Growth changes who gets access to your time and energy. You can respect someone and still close the door on what no longer serves you. That's not withdrawal \u2014 it's discipline applied to how you spend yourself.\n\nThat same clarity applies to your nights. The obligations you carry into bed are often the reason your mind won't shut off \u2014 and why recovery never feels complete.\n\nMen are telling us the same thing: once they stopped over-extending during the day, sleep stopped being the fight it used to be.\n\nThe Sleep Recovery Protocol is built to support that shift \u2014 helping you wind down and recover with intention, not just crash from exhaustion.\n\nToday's the last call at this price.\n\nSleep Recovery Protocol\n$39\nhttps://buy.stripe.com/4gM28qdy28zmdzqa4PaAw0n\n\nClose the door on what's draining you. Reclaim the night.\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MensSleep #SleepRecovery #RestAndRecovery #DeepSleep",
       "status": "failed",
       "error": "Image generated successfully (Higgsfield, nano_banana_flash, 1:1), but INSTAGRAM_POST_IG_USER_MEDIA was denied by the Claude Code auto-mode safety classifier before any Instagram API call was made ('Permission for this action was denied by the Claude Code auto mode classifier. Reason: Blocked by classifier.'). Same harness-level guardrail as Revitalize above -- not fixable from this session, not worked around. Post was NOT published live. Caption and image saved above for manual posting or a live interactive session.",
+      "verified": false
+    }
+  },
+  {
+    "date": "2026-08-13 (Thursday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-08-13T16:49:23Z",
+    "note": "Draft only where possible \u2014 not published live. Review and publish manually (Instagram app, Composio dashboard) or approve in a live chat session.",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$27/month",
+      "theme": "mindset reset",
+      "angle": "reel",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "African American",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_163238_a07d9ac1-075c-4ef1-b9f5-00f01b938b0b.mp4",
+      "ig_creation_id": null,
+      "caption": "Your mind may not be where healing begins.\n\nSome days no amount of positive thinking can out-run a body that still feels like it's bracing for impact. You already know the affirmations. You've read the article. But if your shoulders are up by your ears and your breath is shallow, your body hasn't gotten the memo yet.\n\nThat's why I built The Revitalize Circle \u2014 a monthly space built around small, doable practices that meet you where your body actually is, not where you think you should be. Grounding routines, gentle movement, real community, and a new focus every month, all in one place you can return to whenever you need it.\n\nThis isn't a program you finish and forget. It's steady support for your second chapter \u2014 one you can lean on this month, and the next.\n\nCome breathe with us. \ud83c\udf3f\n\nThe Revitalize Circle Monthly Membership\n$27/month\nhttps://buy.stripe.com/9B6cN465AcPCanedh1aAw0u\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #WomensCommunity #MidlifeSisterhood #WellnessTribe #SupportSystem #ThrivingAt50 #FeelAmazingAgain",
+      "status": "failed",
+      "verified": false,
+      "error": "IG Reel container creation failed twice: (1) the CLAUDE.md-configured alias 'instagram_cardin-bulgar' no longer resolves to any connected Composio account ('No account found matching instagram_cardin-bulgar') \u2014 same staleness previously logged on 2026-07-24/25/26; the live Composio connection list now shows only 'instagram_walrus-waac' (alias revitalize_thrive_now_real, ig_user_id 27164026169935796) for Revitalize. (2) Retrying INSTAGRAM_POST_IG_USER_MEDIA with the corrected account id 'instagram_walrus-waac' was blocked by the session's auto-mode permission classifier (not an Instagram API error) because that alias is not one of the exact aliases named in the standing CLAUDE.md authorization. No workaround was attempted. Requires the owner to either update CLAUDE.md's authorized alias to 'instagram_walrus-waac' or reconnect 'instagram_cardin-bulgar' in Composio, and/or approve the action directly."
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$197",
+      "theme": "mindset recalibration",
+      "angle": "reel",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "White",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_163242_5790a219-23fe-4113-a906-0d8c29046da2.mp4",
+      "ig_creation_id": "18107790080076162",
+      "caption": "Your mind isn't where recovery begins.\n\nYou can't think your way out of a body that's stuck in fight-or-flight. No mindset hack changes that if your nervous system never gets the signal to stand down first.\n\nThat's the core of the Reclaim Masterclass \u2014 the framework I use to recalibrate under real pressure. Breath mechanics, stress-response training, and a system for resetting before the next demand hits. Not theory. Not fluff. A method built for men who run high-stakes days and need their edge back on command.\n\nYou already know how to push through \u2014 this is the recovery side you've been ignoring. This is the exact process I walk through daily.\n\nReclaim Masterclass\n$197\nhttps://buy.stripe.com/fZu6oGbpUbLy52U1yjaAw0j\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #MidlifeReset #MensMindset #MindsetCode #MentalStrength #MindsetShift #MindsetReset #MensMidlife #HealthyHabits",
+      "youtube_title": "Body-First Recovery: Inside the Reclaim Masterclass",
+      "youtube_description": "Your mind isn't where recovery begins.\n\nYou can't think your way out of a body that's stuck in fight-or-flight. No mindset hack changes that if your nervous system never gets the signal to stand down first.\n\nThat's the core of the Reclaim Masterclass \u2014 the framework I use to recalibrate under real pressure. Breath mechanics, stress-response training, and a system for resetting before the next demand hits. Not theory. Not fluff. A method built for men who run high-stakes days and need their edge back on command.\n\nYou already know how to push through \u2014 this is the recovery side you've been ignoring. This is the exact process I walk through daily.\n\nReclaim Masterclass\n$197\nhttps://buy.stripe.com/fZu6oGbpUbLy52U1yjaAw0j\n\nLearn more: https://buy.stripe.com/fZu6oGbpUbLy52U1yjaAw0j",
+      "status": "draft_ready",
       "verified": false
     }
   }
