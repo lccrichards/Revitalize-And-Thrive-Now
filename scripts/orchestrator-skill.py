@@ -87,11 +87,11 @@ class OrchestratorPost:
         # Check for existing post this slot + day
         for entry in log:
             if entry.get("date", "").startswith(self.et_date_str):
-                for brand in self.brands:
-                    if entry.get(brand, {}).get("slot") == self.slot:
-                        print(f"⚠️  POST GUARD: Already posted {self.slot} on {self.et_date_str}")
-                        print(f"   Skipping to prevent duplicates.")
-                        return True
+                # Slot is at top level, not nested per brand
+                if entry.get("slot") == self.slot:
+                    print(f"⚠️  POST GUARD: Already posted {self.slot} slot on {self.et_date_str}")
+                    print(f"   Skipping to prevent duplicates.")
+                    return True
         return False
 
     def get_product(self, brand: str) -> Dict:
