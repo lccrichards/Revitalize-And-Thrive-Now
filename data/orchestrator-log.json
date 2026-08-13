@@ -2645,5 +2645,37 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-13 (Thursday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "aspirational_offer",
+      "image_job_id": "f9914304-69c8-43f8-8f0b-6fb82b9d376e",
+      "creation_id": "17916114339431674",
+      "media_id": "18276949072295958",
+      "permalink": "https://www.instagram.com/p/Db_8IwEGzhR/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA"
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "aspirational_offer",
+      "image_job_id": "24106d9e-ad2c-42b5-8af2-8a7846a20308",
+      "creation_id": "18107837531076162",
+      "media_id": "18207575575361427",
+      "permalink": "https://www.instagram.com/p/Db_8IwRHRv9/",
+      "status": "posted",
+      "verified": true,
+      "yt_status": "skipped_not_attempted",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA"
+    }
   }
 ]
