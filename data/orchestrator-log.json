@@ -1,41 +1,6 @@
 [
   {
     "date": "2026-07-20 (Monday ET)",
-    "slot": "video",
-    "timestamp_utc": "2026-07-20T22:17:20Z",
-    "revitalize": {
-      "product": "Hormone-Balancing Meal Plan",
-      "price": "$39",
-      "theme": "hormone balance",
-      "format": "reel",
-      "ethnicity": "African American",
-      "video_job_id": "783a1eb4-810c-4bd2-8903-fef9665c743b",
-      "ig_creation_id": "17912489559431674",
-      "ig_post_id": "17920894413181998",
-      "ig_permalink": "https://www.instagram.com/reel/DbB_fj6DQZs/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Testosterone and Stamina Meal Plan",
-      "price": "$39",
-      "theme": "testosterone optimization",
-      "format": "reel",
-      "ethnicity": "Latino",
-      "video_job_id": "fab33db2-8d5d-4d75-9e1e-6581efe617c7",
-      "ig_creation_id": "18103695722076162",
-      "ig_post_id": "18110037403957988",
-      "ig_permalink": "https://www.instagram.com/reel/DbB_feYINQp/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize channel ('Dr. Alexander', youtube_luckie-mang) is connected. Instagram Reel published and verified independently of this step.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-20 (Monday ET)",
     "slot": "evening",
     "timestamp_utc": "2026-07-20T23:08:15Z",
     "revitalize": {
@@ -2782,6 +2747,42 @@
       "status": "failed",
       "error": "Image generated successfully, but INSTAGRAM_POST_IG_USER_MEDIA was denied by the Claude Code auto-mode safety classifier before any Instagram API call was made (retried once, same block both times). Same harness-level guardrail as Revitalize above -- not an Instagram/Composio API error, not fixable from this session. Post was NOT published live. Caption and image saved above for manual posting or a live interactive session.",
       "verified": false
+    }
+  },
+  {
+    "date": "2026-08-13 (Thursday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-08-13T11:56:04Z",
+    "revitalize": {
+      "product": "The Mindset Bundle",
+      "price": "$97",
+      "theme": "mindset reset",
+      "angle": "education",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_113629_17c7f94c-cd10-47bc-88e3-b98b08a18976.png",
+      "caption": "Your mind may not be where healing actually begins.\n\nResearch in nervous system science keeps circling back to the same insight: the body often needs to feel safe before the mind can settle into a new thought. That's why so many of us can recite an affirmation and still feel wired, restless, unconvinced -- the words are right, but the body hasn't caught up yet. Many women in midlife describe this exact gap: knowing what they \"should\" think, while their shoulders stay tense and their breath stays shallow.\n\nThis is one of the ideas at the heart of The Mindset Bundle. It's not about forcing positivity -- it's about giving your nervous system simple, supportive practices (breathing, grounding, gentle reframing) designed to help your mind actually receive the shift you're working toward. When the body leads and the mind follows, mindset work stops feeling like a fight with yourself.\n\nYou don't have to talk yourself into calm. You can build it, one small practice at a time, starting today.\n\nThe Mindset Bundle\n$97\nhttps://buy.stripe.com/28EbJ0gKe3f252U3GraAw0c\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #MidlifeMindset #MindsetReset #WomenEmpowerment #LifeAfter45 #SecondChapter #ThrivingAt50 #MidlifeWoman #WellnessJourney #GrowthMindset #MindsetShift #NeverTooLate #YouDeserveThis",
+      "ig_creation_id": "17916036066431674",
+      "ig_post_id": "18477878782129040",
+      "ig_permalink": "https://www.instagram.com/p/Db-prxZIAHV/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "education",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_113635_b45f9c0b-971b-4bc9-ae33-1a8b76d6b042.png",
+      "caption": "Your mind may not be where recovery begins.\n\nNervous system research is consistent on this: the body often needs evidence of safety before the mind can think its way to calm. You can have the right strategy, the right goals, even the right mindset on paper, and still feel wired, because the signal hasn't reached your body yet. That gap is why willpower alone rarely holds under real pressure.\n\nThe Midlife Mindset Code is built around this order -- practical, body-first tools designed to help settle the system first, so the mental framework you're already running actually holds under stress instead of collapsing by 3pm. No fluff. No forced positivity. Just the sequence that works, backed by how the nervous system actually operates.\n\nIf your thoughts have been outrunning your breath lately, this is where you start.\n\nMidlife Mindset Code\n$39\nhttps://buy.stripe.com/14AfZg79E6refHy1yjaAw0k\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #MensMindset #MindsetCode #MentalStrength #MindsetShift #MindsetReset #MenWhoThrive #StrengthAtMidlife #MidlifeReset #RecoverYourDrive #MensWellness #MidlifeRecalibration",
+      "ig_creation_id": "18107742815076162",
+      "ig_post_id": "18112143763974157",
+      "ig_permalink": "https://www.instagram.com/p/Db-pru_oOhI/",
+      "status": "posted",
+      "verified": true
     }
   }
 ]
