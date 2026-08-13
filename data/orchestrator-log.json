@@ -1,69 +1,5 @@
 [
   {
-    "date": "2026-07-08 (Tuesday ET)",
-    "slot": "evening",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "angle": "transformation_and_cta",
-      "image_job_id": "3d6ea145-fe11-474d-844a-8b6e03577b1c",
-      "post_id": "18148319500509250",
-      "status": "posted"
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "sleep recovery",
-      "angle": "transformation_and_cta",
-      "image_job_id": "40a6ce97-8b7e-4f31-ba5d-acf42f92e212",
-      "post_id": "18125729599710222",
-      "status": "posted"
-    }
-  },
-  {
-    "date": "2026-07-09 (Thursday ET)",
-    "slot": "morning",
-    "revitalize": {
-      "product": "The Mindset Bundle",
-      "price": "$97",
-      "theme": "mindset reset",
-      "angle": "education",
-      "ig_post_id": "18070414394402143",
-      "fb_post_id": "1029294466942140_122113748984693190",
-      "status": "posted"
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$67",
-      "theme": "mindset recalibration",
-      "angle": "education",
-      "ig_post_id": "18120075106836750",
-      "status": "posted"
-    }
-  },
-  {
-    "date": "2026-07-09 (Thursday ET)",
-    "slot": "afternoon",
-    "revitalize": {
-      "product": "Stress Management Workbook",
-      "price": "$39",
-      "theme": "mindset reset",
-      "angle": "pain_point",
-      "ig_post_id": "18073906865364501",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted"
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "mindset recalibration",
-      "angle": "pain_point",
-      "ig_post_id": "18027822083834164",
-      "status": "posted"
-    }
-  },
-  {
     "date": "2026-07-09 (Thursday ET)",
     "slot": "evening",
     "revitalize": {
@@ -2645,5 +2581,87 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "evening",
+    "timestamp": "2026-08-12T22:00:10.725857-04:00",
+    "executed_by": "manual trigger",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "url": "rivitalize.gumroad.com/l/nlkuz",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "hook_style": "encouraging_invitation",
+      "status": "ready_for_execution"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "url": "rivitalize.gumroad.com/l/nxqlwr",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "hook_style": "encouraging_invitation",
+      "status": "ready_for_execution"
+    },
+    "approval_given_at": "2026-08-12T22:00:10.726099-04:00"
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "evening",
+    "timestamp": "2026-08-12T22:00:13.319035-04:00",
+    "executed_by": "manual trigger",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "url": "rivitalize.gumroad.com/l/nlkuz",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "hook_style": "encouraging_invitation",
+      "status": "ready_for_execution"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "url": "rivitalize.gumroad.com/l/nxqlwr",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "hook_style": "encouraging_invitation",
+      "status": "ready_for_execution"
+    },
+    "approval_given_at": "2026-08-12T22:00:13.319117-04:00"
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "morning",
+    "timestamp": "2026-08-12T22:00:19.072534-04:00",
+    "executed_by": "manual trigger",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "url": "rivitalize.gumroad.com/l/energy-restoration",
+      "theme": "energy restoration",
+      "angle": "education",
+      "hook_style": "research_stat_or_question",
+      "status": "ready_for_execution"
+    },
+    "approval_given_at": "2026-08-12T22:00:19.072589-04:00"
+  },
+  {
+    "date": "2026-08-12 (Wednesday ET)",
+    "slot": "morning",
+    "timestamp": "2026-08-12T22:00:26.890463-04:00",
+    "executed_by": "manual trigger",
+    "revitalize": {
+      "product": "Energy Restoration Guide",
+      "price": "$29",
+      "url": "rivitalize.gumroad.com/l/energy-restoration",
+      "theme": "energy restoration",
+      "angle": "education",
+      "hook_style": "research_stat_or_question",
+      "status": "ready_for_execution"
+    },
+    "approval_given_at": "2026-08-12T22:00:26.890635-04:00"
   }
 ]
