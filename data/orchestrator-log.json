@@ -1,38 +1,5 @@
 [
   {
-    "date": "2026-07-20 (Monday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-20T23:08:15Z",
-    "revitalize": {
-      "product": "Complete Wellness Bundle",
-      "price": "$149",
-      "theme": "hormone balance",
-      "angle": "aspirational_offer",
-      "ethnicity": "East Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_230515_7e66289a-138d-4169-962a-ab2d51ad2769.png",
-      "ig_post_id": "18103638734157424",
-      "ig_permalink": "https://www.instagram.com/p/DbCFaEMG_vL/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "testosterone optimization",
-      "angle": "aspirational_offer",
-      "ethnicity": "South Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260720_230516_2a65daa8-64ea-46c8-9f51-aaab6c55290b.png",
-      "ig_post_id": "18087678086556738",
-      "ig_permalink": "https://www.instagram.com/p/DbCFaHYGx7B/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel connected in Composio; only the Revitalize channel is connected. Skipped per best-effort YouTube step; Instagram post published and verified independently.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-21 (Monday ET)",
     "slot": "night",
     "timestamp_utc": "2026-07-21T02:06:48Z",
@@ -2783,6 +2750,38 @@
       "ig_permalink": "https://www.instagram.com/p/Db-pru_oOhI/",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-13 (Thursday ET)",
+    "slot": "night",
+    "timestamp_utc": "2026-08-13T02:06:00Z",
+    "status": "failed",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "energy restoration",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_124640_fec99a44-348b-444c-9b8a-057115e9bb09.png",
+      "caption": "Healing doesn't always look dramatic. Sometimes it's simply choosing not to let old patterns follow you into bed anymore.\n\nTonight, before you turn off the lamp \u2014 ask yourself what you're still carrying that isn't yours to hold. A boundary isn't punishment. It's clarity. And clarity is what lets your body finally exhale.\n\nMany women in this season tell us the same thing: the moment they stopped over-functioning for everyone else, their nights changed too. Racing thoughts softened. Rest felt possible again.\n\nThe Midlife Sleep Fix was designed to support exactly that \u2014 helping your body settle into rest as you release what no longer serves you. It's not a fix for everything. It's a gentle, guided tool for the nights your mind won't stop.\n\nToday's the last call to grab it at this price.\n\nThe Midlife Sleep Fix\n$39\nhttps://buy.stripe.com/cNieVcdy2eXKbriel5aAw05\n\nYou deserve rest that isn't earned through exhaustion. Close the door gently tonight, and let yourself finally settle. \ud83c\udf19\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #FeelAmazingAgain #MidlifeSleep #BetterSleepHabits #SleepBetter #FeelRested #TiredNoMore #ThrivingAt50",
+      "status": "failed",
+      "error": "Image generated successfully (Higgsfield, nano_banana_flash, 1:1), but INSTAGRAM_POST_IG_USER_MEDIA was denied by the Claude Code auto-mode safety classifier before any Instagram API call was made ('Permission for this action was denied by the Claude Code auto mode classifier. Reason: Blocked by classifier.'). This is the same harness-level guardrail documented in the 2026-08-11 night and 2026-08-12 evening entries -- it cannot be overridden by repo-level CLAUDE.md authorization and was not worked around, per the classifier's own guidance not to attempt to bypass the intent behind the denial. Post was NOT published live. Caption and image saved above for manual posting via image_url, or by re-running in a live interactive session where a human can authorize the publish action in real time.",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "energy and cognitive performance",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_124649_aa886839-81e8-40fb-ab89-63dc99e4b31b.png",
+      "caption": "Growth changes who gets access to your time and energy. You can respect someone and still close the door on what no longer serves you. That's not withdrawal \u2014 it's discipline applied to how you spend yourself.\n\nThat same clarity applies to your nights. The obligations you carry into bed are often the reason your mind won't shut off \u2014 and why recovery never feels complete.\n\nMen are telling us the same thing: once they stopped over-extending during the day, sleep stopped being the fight it used to be.\n\nThe Sleep Recovery Protocol is built to support that shift \u2014 helping you wind down and recover with intention, not just crash from exhaustion.\n\nToday's the last call at this price.\n\nSleep Recovery Protocol\n$39\nhttps://buy.stripe.com/4gM28qdy28zmdzqa4PaAw0n\n\nClose the door on what's draining you. Reclaim the night.\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #MensTransformation #MensSleep #SleepRecovery #RestAndRecovery #DeepSleep",
+      "status": "failed",
+      "error": "Image generated successfully (Higgsfield, nano_banana_flash, 1:1), but INSTAGRAM_POST_IG_USER_MEDIA was denied by the Claude Code auto-mode safety classifier before any Instagram API call was made ('Permission for this action was denied by the Claude Code auto mode classifier. Reason: Blocked by classifier.'). Same harness-level guardrail as Revitalize above -- not fixable from this session, not worked around. Post was NOT published live. Caption and image saved above for manual posting or a live interactive session.",
+      "verified": false
     }
   }
 ]
