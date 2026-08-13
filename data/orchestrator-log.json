@@ -2792,5 +2792,40 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-08-13 (Thursday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-13T22:42:41Z",
+    "duplicate_note": "DUPLICATE POST: an earlier afternoon run (see entry above, timestamp_utc 2026-08-13T20:38:41Z) already published this slot for both brands before this session's guard check could see it (worker process restart mid-run). Both posts below are also live and verified -- this was not intentional, flagged for owner review / possible manual deletion of one duplicate per brand.",
+    "revitalize": {
+      "product": "The Mindset Bundle",
+      "price": "$97",
+      "theme": "mindset reset",
+      "angle": "supportive_solution",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_195402_eab037ce-f411-480a-bfee-4224d1f7029e.png",
+      "ig_creation_id": "17916110052431674",
+      "ig_post_id": "17977028523000189",
+      "ig_permalink": "https://www.instagram.com/p/Db_1iHGIO8q/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Midlife Mindset Code",
+      "price": "$39",
+      "theme": "mindset recalibration",
+      "angle": "supportive_solution",
+      "emotional_angle": "body_first_nervous_system",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260813_195406_990e56ed-5fe7-4de2-906f-9e88cc0b6de6.png",
+      "ig_creation_id": "18107832986076162",
+      "ig_post_id": "18119062382301520",
+      "ig_permalink": "https://www.instagram.com/p/Db_1iEuHfFD/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
