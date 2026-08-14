@@ -1,70 +1,6 @@
 [
   {
     "date": "2026-07-21 (Tuesday ET)",
-    "slot": "video",
-    "timestamp_utc": "2026-07-21T16:11:00Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "format": "reel",
-      "ethnicity": "South Asian",
-      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_160648_3e55c8b8-1d8c-45a0-b76c-f69b046e98e0.mp4",
-      "ig_post_id": "18121219051828029",
-      "ig_permalink": "https://www.instagram.com/reel/DbD6XQxjCue/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "sleep recovery",
-      "format": "reel",
-      "ethnicity": "White",
-      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_160642_8160c680-0351-49e3-8848-6b427bb1d7bf.mp4",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "status": "failed",
-      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27634679816148097' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error on both attempts, despite the connected account (reclaim_and_rise_now / IG 27634679816148097) being active and correctly mapped -- suggests Reels/video publishing is not permitted for this account even though image posting works.",
-      "verified": false,
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel connected in Composio; only the Revitalize & Thrive Now channel (Dr. Alexander, UCIkVsuNrVulsB13pZ_iPFpw) is connected. Same limitation as prior runs (see 2026-07-20 evening entry)."
-    }
-  },
-  {
-    "date": "2026-07-21 (Tuesday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-21T19:07:46Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "angle": "supportive_solution",
-      "ethnicity": "White",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_190534_39110d40-8ced-4304-a02c-24085136e62e.png",
-      "ig_post_id": "18448524622187254",
-      "ig_permalink": "https://www.instagram.com/p/DbEOre4m-VF/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "sleep recovery",
-      "angle": "supportive_solution",
-      "ethnicity": "Middle Eastern",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260721_190536_a1053273-9f28-46ae-a4e6-71d47b4b919d.png",
-      "ig_post_id": "18065444645546611",
-      "ig_permalink": "https://www.instagram.com/p/DbEOrhInTkS/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-21 (Tuesday ET)",
     "slot": "evening",
     "timestamp_utc": "2026-07-21T23:05:50Z",
     "revitalize": {
@@ -2824,6 +2760,40 @@
       "ig_creation_id": "18107832986076162",
       "ig_post_id": "18119062382301520",
       "ig_permalink": "https://www.instagram.com/p/Db_1iEuHfFD/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-14 (Friday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-08-14T11:39:33Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "angle": "education",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260814_113000_29f8f5d0-eef7-43ae-bc82-bfe6313d55ae.png",
+      "ig_creation_id": "17916197310431674",
+      "ig_post_id": "18093535454553774",
+      "ig_permalink": "https://www.instagram.com/p/DcBNfqCIOrR/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "education",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260814_112939_c38e9ad4-1952-4aaf-a1a1-d7d7b3687dcc.png",
+      "ig_creation_id": "18107912078076162",
+      "ig_post_id": "17901751773485039",
+      "ig_permalink": "https://www.instagram.com/p/DcBNfsGIKAt/",
       "status": "posted",
       "verified": true
     }
