@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-14 (Friday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "nutrition and meal planning",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27164026169935796",
+      "media_id": "18101301920249175",
+      "permalink": "https://www.instagram.com/p/DcCgTd9HXPI/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH, verified via INSTAGRAM_GET_IG_MEDIA."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "nutrition for male hormones",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27634679816148097",
+      "media_id": "18087578480648326",
+      "permalink": "https://www.instagram.com/p/DcCgTe8IPA9/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "yt_status": "skipped_no_reliable_staging_tool",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH, verified via INSTAGRAM_GET_IG_MEDIA. YouTube best-effort upload skipped this run -- no reliable URL-to-file staging tool available for YOUTUBE_MULTIPART_UPLOAD_VIDEO; did not block Instagram posting/logging."
+    }
   }
 ]
