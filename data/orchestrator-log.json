@@ -1,36 +1,6 @@
 [
   {
     "date": "2026-07-22 (Wednesday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-22T11:07:52Z",
-    "revitalize": {
-      "product": "Energy Restoration Guide",
-      "price": "$29",
-      "theme": "energy restoration",
-      "angle": "education",
-      "ethnicity": "East Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260722_110643_a0f8c80c-e3a5-4d6b-a040-811e0efb328c.png",
-      "ig_post_id": "18113050496284261",
-      "ig_permalink": "https://www.instagram.com/p/DbF8jmkoP-7/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Reclaim Masterclass",
-      "price": "$149",
-      "theme": "energy and cognitive performance",
-      "angle": "education",
-      "ethnicity": "Latino",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260722_110646_bc5df24e-8973-4d26-a36e-494653dc80fa.png",
-      "ig_post_id": "18601100617035442",
-      "ig_permalink": "https://www.instagram.com/p/DbF8jl2IElK/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-22 (Wednesday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-22T19:06:00Z",
     "revitalize": {
@@ -2797,6 +2767,42 @@
       "ig_creation_id": "18107912078076162",
       "ig_post_id": "17901751773485039",
       "ig_permalink": "https://www.instagram.com/p/DcBNfsGIKAt/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-14 (Friday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-15T00:26:11Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "nutrition and meal planning",
+      "angle": "aspirational_offer",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260815_002518_6f3f56a8-96ca-43bd-82f7-8be94957f95b.png",
+      "ig_creation_id": "17916298422431674",
+      "ig_post_id": "18114118009960711",
+      "ig_permalink": "https://www.instagram.com/p/DcCmMWwG62A/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "nutrition for male hormones",
+      "angle": "aspirational_offer",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260814_232546_9de2e26b-4716-4a21-b106-56ab003597da.png",
+      "ig_creation_id": "18108019520076162",
+      "ig_post_id": "18023182514891438",
+      "ig_permalink": "https://www.instagram.com/p/DcCfhJInWbZ/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
       "status": "posted",
       "verified": true
     }
