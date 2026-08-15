@@ -2645,5 +2645,43 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-15 (Saturday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "skincare and beauty",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-08-15-evening.json",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "ig_user_id": "27164026169935796",
+      "ig_media_id": "18119293946476694",
+      "permalink": "https://www.instagram.com/p/DcFFL9Hm6C1/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "image_model": "nano_banana_flash",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "strength and muscle density",
+      "angle": "aspirational_offer",
+      "caption_file": "data/pending-posts-2026-08-15-evening.json",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "ig_user_id": "27634679816148097",
+      "ig_media_id": "17949529920031011",
+      "permalink": "https://www.instagram.com/p/DcFFL8QHZqv/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "image_model": "nano_banana_flash",
+      "yt_status": "skipped",
+      "yt_note": "Best-effort YouTube upload not attempted this run: no direct pipeline available to stage a Higgsfield-hosted video URL into Composio file storage for YOUTUBE_MULTIPART_UPLOAD_VIDEO (requires an s3key-backed object). Did not block Instagram posting/logging.",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA."
+    }
   }
 ]
