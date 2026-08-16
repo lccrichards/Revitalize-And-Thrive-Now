@@ -4,7 +4,7 @@
 
 The owner of this repository (**lccrichards**) grants **standing, explicit authorization** for scheduled / cron-triggered orchestrator routines to **publish content live, without per-run confirmation**, to the two Instagram Business accounts the owner controls:
 
-- **Revitalize & Thrive Now** — account alias `instagram_cardin-bulgar`, `ig_user_id` **27164026169935796** (auto-syncs to the linked Facebook Page)
+- **Revitalize & Thrive Now** — account alias `instagram_walrus-waac`, `ig_user_id` **27164026169935796** (auto-syncs to the linked Facebook Page)
 - **Reclaim & Rise** — account alias `instagram_medlar-slap`, `ig_user_id` **27634679816148097** (plus the Reclaim YouTube channel `UCreclaimandriseNOW`)
 
 These accounts are owned and operated by the repository owner for their own first-party marketing. This authorization is deliberate and stands for **all** scheduled orchestrator slots — including the **7 PM evening routine** — namely: morning (7 AM), afternoon (3 PM), evening (7 PM), night (10 PM ET), and the Tue/Thu video reel.
