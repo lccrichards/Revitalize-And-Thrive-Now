@@ -2795,6 +2795,37 @@
   },
   {
     "date": "2026-08-15 (Saturday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-16T00:00:00Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "wellness essentials",
+      "angle": "supportive_solution",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260815_191541_180dda5a-d36d-4632-9426-92f804e048aa.png",
+      "ig_creation_id": "17916492312431674",
+      "status": "failed",
+      "error": "Publish step (INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH) blocked by the Claude Code auto mode safety classifier after two attempts; media container was created but never published. Nothing went live.",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "supportive_solution",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260815_191546_d76bfc85-a825-4828-a29c-c6758e121240.png",
+      "ig_creation_id": "18108196040076162",
+      "status": "failed",
+      "error": "Publish step (INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH) blocked by the Claude Code auto mode safety classifier after two attempts; media container was created but never published. Nothing went live.",
+      "verified": false
+    }
+  },
+  {
+    "date": "2026-08-15 (Saturday ET)",
     "slot": "night",
     "timestamp_utc": "2026-08-16T01:29:47Z",
     "revitalize": {
