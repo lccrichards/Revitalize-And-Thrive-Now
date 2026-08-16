@@ -2645,5 +2645,41 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-16 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-16T23:36:33Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_job_id": "be6ec690-a4c4-45e7-90ea-254c5f935044",
+      "ig_post_id": "18051175658727034",
+      "ig_permalink": "https://www.instagram.com/p/DcHqEueneDH/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "compliant": true,
+      "note": "Caption hashtags were %23-encoded per tool guidance and rendered literally (e.g. %23RevitalizeAndThrive) instead of as #hashtags; Instagram captions cannot be edited post-publish, so working hashtags were added as a corrective comment (id 18361535659244756) instead."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ethnicity": "White",
+      "image_job_id": "d76500b1-0631-4b45-81c3-c80ccf9ed43e",
+      "ig_post_id": "17972053862932264",
+      "ig_permalink": "https://www.instagram.com/p/DcHqErcnb9a/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "compliant": true,
+      "yt_status": "skipped",
+      "note": "Caption hashtags were %23-encoded per tool guidance and rendered literally instead of as #hashtags; working hashtags added as a corrective comment (id 18065789084538179) instead."
+    }
   }
 ]
