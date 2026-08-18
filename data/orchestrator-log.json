@@ -2676,7 +2676,9 @@
       "compliant": true,
       "verified": true,
       "status": "posted",
-      "yt_status": "not_attempted"
+      "yt_status": "failed",
+      "yt_video_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260818_233604_a9bde6d4-dea1-4162-8e5b-a9eb9df053eb.mp4",
+      "yt_note": "Video generated successfully via Higgsfield (seedance_2_5, omni_reference, 10s 1080p 16:9). YouTube upload skipped: YOUTUBE_MULTIPART_UPLOAD_VIDEO requires a Composio-staged file reference (s3key), and no available tool could stage an external Higgsfield URL into Composio storage for video files. Did not block Instagram posting/logging per instructions."
     }
   }
 ]
