@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-18 (Tuesday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27164026169935796",
+      "container_id": "17917075380431674",
+      "media_id": "17890570044672057",
+      "permalink": "https://www.instagram.com/p/DcMzesVG9Wf/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "compliant": true,
+      "verified": true,
+      "status": "posted",
+      "note": "Posted live via Composio (INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH), verified via INSTAGRAM_GET_IG_MEDIA. Corrective comment added with properly rendered hashtags after caption hashtags posted with a literal %23 prefix instead of #."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "sleep recovery",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27634679816148097",
+      "container_id": "18108795455076162",
+      "media_id": "18117436652511396",
+      "permalink": "https://www.instagram.com/p/DcMzer_G6pB/",
+      "compliant": true,
+      "verified": true,
+      "status": "posted",
+      "yt_status": "not_attempted"
+    }
   }
 ]
