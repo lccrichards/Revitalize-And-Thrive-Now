@@ -1,36 +1,5 @@
 [
   {
-    "date": "2026-07-23 (Thursday ET)",
-    "slot": "night",
-    "timestamp_utc": "2026-07-24T02:07:00Z",
-    "revitalize": {
-      "product": "Stress Management Workbook",
-      "price": "$39",
-      "theme": "mindset reset",
-      "angle": "urgency_social_proof",
-      "ethnicity": "Latina",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260724_020533_49285e02-b00f-47e8-8c02-055fb24c28ad.png",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "failed",
-      "verified": false,
-      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error both times. This is the 7th consecutive failure on the Revitalize IG account since 2026-07-22 afternoon (afternoon, video, night, morning, video, afternoon, night all failed identically) -- confirmed not transient, requires manual re-authorization of the Revitalize Meta/Instagram connection in Composio. Reclaim, same Composio connection, different IG account, continues to post successfully."
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "mindset recalibration",
-      "angle": "urgency_social_proof",
-      "ethnicity": "African American",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260724_020534_1e4546d2-e753-45ff-b08b-de4288e859a1.png",
-      "ig_post_id": "18143993305541430",
-      "ig_permalink": "https://www.instagram.com/p/DbKIM47G9xl/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-24 (Friday ET)",
     "slot": "video",
     "timestamp_utc": "2026-07-24T22:17:00Z",
@@ -2820,6 +2789,40 @@
       "ig_creation_id": "18108506378076162",
       "ig_post_id": "18124989766685723",
       "ig_permalink": "https://www.instagram.com/p/DcI8WZjIGrT/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-18 (Tuesday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-08-18T12:03:58Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260818_120144_47a11f9e-87fd-4e97-b1d4-c78322e7db94.png",
+      "ig_creation_id": "17916986100431674",
+      "ig_post_id": "17999615585990866",
+      "ig_permalink": "https://www.instagram.com/p/DcLkae7oEtI/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260818_120149_14cd0f1a-45ed-42d6-a8e4-eb90a27e5192.png",
+      "ig_creation_id": "18108701651076162",
+      "ig_post_id": "18085017878479940",
+      "ig_permalink": "https://www.instagram.com/p/DcLkae2oJra/",
       "status": "posted",
       "verified": true
     }
