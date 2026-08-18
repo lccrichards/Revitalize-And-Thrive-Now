@@ -2645,5 +2645,20 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-17",
+    "timestamp_utc": "2026-08-17T23:00:00Z",
+    "slot": "evening",
+    "revitalize": {
+      "theme": "hormone balance",
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "url": "rivitalize.gumroad.com/l/complete-wellness-bundle",
+      "status": "posted",
+      "yt_video_id": "9a852840-ada3-4655-a798-1326c8ec4e71",
+      "yt_video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260817_235449_9a852840-ada3-4655-a798-1326c8ec4e71.mp4",
+      "verified": true
+    }
   }
 ]
