@@ -1,36 +1,6 @@
 [
   {
     "date": "2026-07-24 (Friday ET)",
-    "slot": "video",
-    "timestamp_utc": "2026-07-24T22:17:00Z",
-    "revitalize": {
-      "product": "Hormone-Balancing Meal Plan",
-      "price": "$39",
-      "theme": "nutrition and meal planning",
-      "format": "reel",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "failed",
-      "verified": false,
-      "error": "Instagram connection alias 'instagram_cardin-bulgar' (meant for Revitalize) is actually authenticated to the Reclaim and Rise account (ig_user_id 27634679816148097, @reclaim.and.rise.now) instead of Revitalize's ig_user_id 27164026169935796. INSTAGRAM_POST_IG_USER_MEDIA returned 400: 'Object with ID 27164026169935796 does not exist, cannot be loaded due to missing permissions, or does not support this operation'. Retried once, same error. Needs reconnection of the correct Instagram Business account for Revitalize via Composio. Fallback video was generated (higgsfield out of credits for video; used FFmpeg + generated image instead) but could not be posted."
-    },
-    "reclaim": {
-      "product": "Testosterone and Stamina Meal Plan",
-      "price": "$39",
-      "theme": "nutrition for male hormones",
-      "format": "reel",
-      "ig_post_id": "18112635554513947",
-      "ig_permalink": "https://www.instagram.com/reel/DbMSldfkdRQ/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "status": "posted",
-      "verified": true,
-      "yt_error": "Connected YouTube account (alias youtube_luckie-mang) is channel 'Dr. Alexander' (customUrl @dr.alexander-wellness, id UCIkVsuNrVulsB13pZ_iPFpw) -- the Revitalize brand channel, not Reclaim's UCreclaimandriseNOW. No correct Reclaim YouTube connection available; skipped upload to avoid posting Reclaim content to the wrong channel."
-    }
-  },
-  {
-    "date": "2026-07-24 (Friday ET)",
     "slot": "night",
     "timestamp_utc": "2026-07-25T02:06:22+0000",
     "revitalize": {
@@ -2823,6 +2793,43 @@
       "ig_creation_id": "18108701651076162",
       "ig_post_id": "18085017878479940",
       "ig_permalink": "https://www.instagram.com/p/DcLkae2oJra/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-08-19",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-19T15:00:45Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$97",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260819_145831_996e3d14-8945-40a5-81a5-d8b0c9cf7c4e.png",
+      "ig_creation_id": "17917235703431674",
+      "ig_post_id": "18114097081756789",
+      "ig_permalink": "https://www.instagram.com/p/DcOdbpMIIlv/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "emotional_angle": "boundaries_and_outgrowing",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260819_145840_3d2eae4b-8f63-4bf6-babb-91ebc3dae09b.png",
+      "ig_creation_id": "18108964049076162",
+      "ig_post_id": "17910081834460600",
+      "ig_permalink": "https://www.instagram.com/p/DcOdcfDIKNf/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "Evening slot published a static 1:1 image, not a video; no video asset was generated for this slot so nothing was uploaded to YouTube.",
       "status": "posted",
       "verified": true
     }
