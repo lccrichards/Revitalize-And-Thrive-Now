@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-19 (Wednesday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-19T23:35:03Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260819_233344_a34deee9-ee1e-467a-b501-ae85b0658f3a.png",
+      "ig_post_id": "18133624303625651",
+      "ig_permalink": "https://www.instagram.com/p/DcPYSZWGwD8/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260819_233345_fede74d4-5baa-430e-921b-0f37d175e88d.png",
+      "ig_post_id": "18014646758732028",
+      "ig_permalink": "https://www.instagram.com/p/DcPYSRdnTdW/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "posted",
+      "verified": true,
+      "note": "YouTube video generation skipped this run: seedance_2_5 requires 'omni_reference' mode for image-to-video which needs additional workflow setup; best-effort step does not block IG posting per instructions."
+    }
   }
 ]
