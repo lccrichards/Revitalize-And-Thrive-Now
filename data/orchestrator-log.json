@@ -2645,5 +2645,40 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-20 (Thursday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "aspirational_offer",
+      "status": "posted",
+      "verified": true,
+      "platform": "instagram",
+      "ig_user_id": "27164026169935796",
+      "media_id": "18352282297221917",
+      "permalink": "https://www.instagram.com/p/DcR9c90HYTK/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "image_source": "higgsfield nano_banana_flash",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA."
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "aspirational_offer",
+      "status": "posted",
+      "verified": true,
+      "platform": "instagram",
+      "ig_user_id": "27634679816148097",
+      "media_id": "18181622716412381",
+      "permalink": "https://www.instagram.com/p/DcR9c62m32J/",
+      "image_source": "higgsfield nano_banana_flash",
+      "yt_status": "skipped_this_cycle",
+      "yt_note": "Best-effort YouTube upload skipped: requires staging a generated video into Composio storage (s3key) which was not completed this cycle; does not block Instagram posting.",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA."
+    }
   }
 ]
