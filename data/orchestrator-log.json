@@ -2645,5 +2645,37 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-22 (Saturday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-22T23:34:46Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "skincare and beauty",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "ig_post_id": "18045799502812841",
+      "ig_permalink": "https://www.instagram.com/p/DcXGrVQne08/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "note": "Caption hashtags were sent %23-encoded per tool schema guidance but posted literally as '%23Tag' text instead of rendering as '#Tag' -- Graph API caption field takes raw text, not URL-encoded text. Instagram does not support editing a published caption via API, so this could not be corrected post-publish. All required elements (product, price, URL) are correct and intact; only the hashtag block is visually broken."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "strength and muscle density",
+      "angle": "aspirational_offer",
+      "ethnicity": "White",
+      "ig_post_id": "17976551532113266",
+      "ig_permalink": "https://www.instagram.com/p/DcXGrWiHTok/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "posted",
+      "verified": true,
+      "note": "Same hashtag-encoding issue as Revitalize post (see note there); product/price/URL correct."
+    }
   }
 ]
