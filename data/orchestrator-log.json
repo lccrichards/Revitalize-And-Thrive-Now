@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-23 (Sunday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27164026169935796",
+      "media_id": "18062963546771684",
+      "permalink": "https://www.instagram.com/p/DcZrdJyHcal/",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "fb_post_id": "auto-synced-from-instagram",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA. Image via Higgsfield nano_banana_2, 1:1."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27634679816148097",
+      "media_id": "18009970382959377",
+      "permalink": "https://www.instagram.com/p/DcZrdP6nZSy/",
+      "compliant": true,
+      "status": "posted",
+      "verified": true,
+      "fb_post_id": "auto-synced-from-instagram",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA. Image via Higgsfield nano_banana_2, 1:1.",
+      "yt_status": "pending"
+    }
   }
 ]
