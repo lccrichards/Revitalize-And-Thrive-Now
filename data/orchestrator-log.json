@@ -2676,7 +2676,8 @@
       "verified": true,
       "fb_post_id": "auto-synced-from-instagram",
       "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA. Image via Higgsfield nano_banana_2, 1:1.",
-      "yt_status": "pending"
+      "yt_status": "failed",
+      "yt_note": "Higgsfield seedance_2_5 video generation job failed (best-effort, non-blocking); Instagram post unaffected."
     }
   }
 ]
