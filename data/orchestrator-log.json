@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-24 (Monday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "url": "https://rivitalize.gumroad.com/l/complete-wellness-bundle",
+      "theme": "hormone balance",
+      "angle": "aspirational_offer",
+      "image_job_id": "ebc35c90-669c-4ca7-8de9-f65f64c6cc39",
+      "container_id": "17918129067431674",
+      "ig_post_id": "18109001096028849",
+      "permalink": "https://www.instagram.com/p/DccQUQWnfSP/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "verified": true,
+      "status": "posted"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "url": "https://rivitalize.gumroad.com/l/nxqlwr",
+      "theme": "testosterone optimization",
+      "angle": "aspirational_offer",
+      "image_job_id": "f8411537-9461-48ba-907d-fe5a0416f249",
+      "container_id": "18109799396076162",
+      "ig_post_id": "17959151403193834",
+      "permalink": "https://www.instagram.com/p/DccQUPXnZaJ/",
+      "verified": true,
+      "status": "posted",
+      "yt_status": "skipped"
+    },
+    "note": "Caption hashtags were %23-encoded per the Composio tool schema hint; Instagram did not decode them, so both live captions show literal \"%23Tag\" text instead of \"#Tag\". Not fixable via API (IG captions are not editable post-publish through Composio/Graph tools available here) -- flagged for manual caption edit in-app, and future runs should pass raw \"#\" characters instead."
   }
 ]
