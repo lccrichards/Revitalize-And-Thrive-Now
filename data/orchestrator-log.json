@@ -1,54 +1,5 @@
 [
   {
-    "date": "2026-07-09 (Thursday ET)",
-    "slot": "evening",
-    "revitalize": {
-      "product": "The Revitalize Circle Monthly Membership",
-      "price": "$97/month",
-      "theme": "mindset reset",
-      "angle": "transformation_and_cta",
-      "ig_post_id": "17973160578097456",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted"
-    },
-    "reclaim": {
-      "product": "Reclaim Masterclass",
-      "price": "$149",
-      "theme": "mindset recalibration",
-      "angle": "transformation_and_cta",
-      "ig_post_id": "17958425313170429",
-      "yt_status": "video-generation-pending",
-      "status": "posted"
-    }
-  },
-  {
-    "date": "2026-07-10 (Friday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-10T11:29:56Z",
-    "revitalize": {
-      "product": "Nutrition Deep Dive",
-      "price": "$49",
-      "theme": "nutrition and meal planning",
-      "angle": "education",
-      "ig_post_id": "18432289171123760",
-      "ig_permalink": "https://www.instagram.com/p/DanFixRoEqz/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Testosterone and Stamina Meal Plan",
-      "price": "$39",
-      "theme": "nutrition for male hormones",
-      "angle": "education",
-      "ig_post_id": "17957328639173669",
-      "ig_permalink": "https://www.instagram.com/p/DanFiwoIAqL/",
-      "status": "posted",
-      "verified": true
-    },
-    "note": "Posted manually \u2014 the 7 AM trigger (trig_013nTwRNxw1PGMjNexa3ufQw) fired at 11:04:12Z but its spawned session failed silently again (no commit/log produced), matching the July 9 3 PM failure pattern."
-  },
-  {
     "date": "2026-07-12 (Saturday ET)",
     "slot": "night",
     "timestamp_utc": "2026-07-12T01:01:19Z",
@@ -2656,6 +2607,52 @@
       "status": "pending_image_import",
       "verified": false,
       "notes": "Image generation in progress, video generation pending"
+    }
+  },
+  {
+    "date": "2026-08-23 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-23T23:00:00Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "url": "rivitalize.gumroad.com/l/nlkuz",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "status": "pending_generation",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "url": "rivitalize.gumroad.com/l/nxqlwr",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "status": "pending_generation",
+      "verified": false
+    }
+  },
+  {
+    "date": "2026-08-24 (Monday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-08-24T11:00:00Z",
+    "revitalize": {
+      "product": "Hormone Reset Masterclass",
+      "price": "$59",
+      "url": "rivitalize.gumroad.com/l/hormone-reset-masterclass",
+      "theme": "hormone balance",
+      "angle": "education",
+      "status": "pending_generation",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "url": "rivitalize.gumroad.com/l/masterclass-series",
+      "theme": "testosterone optimization",
+      "angle": "education",
+      "status": "pending_generation",
+      "verified": false
     }
   }
 ]
