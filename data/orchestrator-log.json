@@ -2,32 +2,6 @@
   {
     "date": "2026-07-12 (Saturday ET)",
     "slot": "night",
-    "timestamp_utc": "2026-07-12T01:01:19Z",
-    "revitalize": {
-      "product": "Skincare and Beauty Protocol",
-      "price": "$39",
-      "theme": "skincare and beauty",
-      "angle": "restoration_and_rest",
-      "ig_post_id": "18103111028152064",
-      "ig_permalink": "https://www.instagram.com/p/DarHMLaibMH/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "strength and muscle density",
-      "angle": "restoration_and_rest",
-      "ig_post_id": "17887946904415970",
-      "ig_permalink": "https://www.instagram.com/p/DarHMMFCdc1/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-12 (Saturday ET)",
-    "slot": "night",
     "timestamp_utc": "2026-07-12T02:11:00Z",
     "revitalize": {
       "product": "Skincare and Beauty Protocol",
@@ -2651,6 +2625,29 @@
       "url": "rivitalize.gumroad.com/l/masterclass-series",
       "theme": "testosterone optimization",
       "angle": "education",
+      "status": "pending_generation",
+      "verified": false
+    }
+  },
+  {
+    "date": "2026-08-24 (Monday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-24T19:00:00Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "url": "rivitalize.gumroad.com/l/hormone-meal-plan",
+      "theme": "hormone balance",
+      "angle": "supportive_solution",
+      "status": "pending_generation",
+      "verified": false
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "url": "rivitalize.gumroad.com/l/hormone-meal-plan",
+      "theme": "testosterone optimization",
+      "angle": "supportive_solution",
       "status": "pending_generation",
       "verified": false
     }
