@@ -1,27 +1,6 @@
 [
   {
     "date": "2026-07-09 (Thursday ET)",
-    "slot": "afternoon",
-    "revitalize": {
-      "product": "Stress Management Workbook",
-      "price": "$39",
-      "theme": "mindset reset",
-      "angle": "pain_point",
-      "ig_post_id": "18073906865364501",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted"
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "mindset recalibration",
-      "angle": "pain_point",
-      "ig_post_id": "18027822083834164",
-      "status": "posted"
-    }
-  },
-  {
-    "date": "2026-07-09 (Thursday ET)",
     "slot": "evening",
     "revitalize": {
       "product": "The Revitalize Circle Monthly Membership",
@@ -2648,6 +2627,35 @@
       "yt_url": "https://www.youtube.com/watch?v=_qOlRyTeF0c",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-23 (Sunday ET)",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-08-23T19:00:00Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "url": "rivitalize.gumroad.com/l/fitness-after-45",
+      "theme": "strength and fitness after 45",
+      "angle": "supportive_solution",
+      "yt_video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260823_195212_2676546c-082f-4083-aa3e-53325bc9c6db.mp4",
+      "yt_video_id": "2676546c-082f-4083-aa3e-53325bc9c6db",
+      "yt_channel_id": "UCIkVsuNrVulsB13pZ_iPFpw",
+      "status": "pending_upload",
+      "verified": false,
+      "notes": "Video generated but upload blocked by Composio s3key staging issue. Video URL: https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260823_195212_2676546c-082f-4083-aa3e-53325bc9c6db.mp4"
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "url": "rivitalize.gumroad.com/l/masterclass-series",
+      "theme": "drive and motivation",
+      "angle": "supportive_solution",
+      "yt_video_id": "f43bf11a-d4a2-408a-b393-da6394c3c657",
+      "status": "pending_image_import",
+      "verified": false,
+      "notes": "Image generation in progress, video generation pending"
     }
   }
 ]
