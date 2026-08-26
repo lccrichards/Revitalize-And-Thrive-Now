@@ -2645,5 +2645,35 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-26 (Wednesday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-26T23:34:33Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "image_job_id": "98fd9a14-bf26-4189-970d-7e2f95cf4cbf",
+      "ig_post_id": "18279829939293525",
+      "ig_permalink": "https://www.instagram.com/p/DchZ1HfGyqo/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "image_job_id": "4fd4efd7-e3b3-4d24-9457-c66cb5b82a54",
+      "ig_post_id": "18109791323127939",
+      "ig_permalink": "https://www.instagram.com/p/DchZ1JnnXZX/",
+      "status": "posted",
+      "verified": true,
+      "yt_status": "pending_at_log_time",
+      "yt_note": "Video generation (Higgsfield seedance_2_5, job 763e9574-4ea3-464f-a945-ffe87b437fd4) was still in_progress after multiple polls; YouTube upload is best-effort and does not block this Instagram log entry."
+    }
   }
 ]
