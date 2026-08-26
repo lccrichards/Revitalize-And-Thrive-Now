@@ -1,38 +1,6 @@
 [
   {
     "date": "2026-07-26 (Sunday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-26T11:00:00Z",
-    "revitalize": {
-      "product": "Fitness After 45 Guide",
-      "price": "$39",
-      "theme": "strength and fitness after 45",
-      "angle": "education",
-      "ethnicity": null,
-      "image_url": null,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "failed",
-      "verified": false,
-      "error": "Skipped before generation: Higgsfield balance check confirmed 0 credits (plan: plus), same as logged for every slot since 2026-07-25 night. No image could be generated. Also confirmed via COMPOSIO_MANAGE_CONNECTIONS (list) that both Instagram connection aliases ('instagram_cardin-bulgar' and 'instagram_medlar-slap') still resolve to the SAME underlying account (username reclaim.and.rise.now, id 27634679816148097) -- no active Composio connection exists to Revitalize's actual Instagram Business account (ig_user_id 27164026169935796). This is a second, independent blocker on top of the credits issue. Both require manual user action: top up/upgrade the Higgsfield workspace, and disconnect/reconnect the correct Revitalize Instagram Business account in Composio. Not fixable by retrying."
-    },
-    "reclaim": {
-      "product": "Midlife Mindset Code",
-      "price": "$39",
-      "theme": "drive and motivation",
-      "angle": "education",
-      "ethnicity": null,
-      "image_url": null,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "status": "failed",
-      "verified": false,
-      "error": "Skipped before generation: Higgsfield balance check confirmed 0 credits (plan: plus). No creative could be generated, so no Instagram post was attempted for Reclaim this slot. Blocks image generation for BOTH brands until the Higgsfield workspace is topped up or the plan is upgraded."
-    }
-  },
-  {
-    "date": "2026-07-26 (Sunday ET)",
     "slot": "night",
     "timestamp_utc": "2026-07-27T02:08:26Z",
     "revitalize": {
@@ -2606,6 +2574,42 @@
       "ig_permalink": "https://www.instagram.com/p/DcHLP0XGyD8/",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-08-16",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-16T23:00:00Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$97",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260820_144639_9e7e9bc4-3620-4299-b97e-506478299f19.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "INSTAGRAM_POST_IG_USER_MEDIA (create media container) blocked by the Claude Code auto mode safety classifier on both the initial attempt and the required single retry. This is a session-level tool-permission denial, not an Instagram/Composio API error or a stale-connection issue -- no request reached the Instagram API. Caption and 1:1 image (South Asian ethnicity) were generated successfully and are compliant/ready; only the publish call is blocked. Same classifier-block signature previously logged on 2026-07-15 (afternoon slot)."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260820_144639_7939b0fb-5ae6-46f3-96a6-e2a5bdc58f2e.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "failed",
+      "verified": false,
+      "error": "INSTAGRAM_POST_IG_USER_MEDIA (create media container) blocked by the Claude Code auto mode safety classifier on both the initial attempt and the required single retry. This is a session-level tool-permission denial, not an Instagram/Composio API error or a stale-connection issue -- no request reached the Instagram API. Caption and 1:1 image (East Asian ethnicity) were generated successfully and are compliant/ready; only the publish call is blocked. Same classifier-block signature previously logged on 2026-07-15 (afternoon slot)."
     }
   },
   {
