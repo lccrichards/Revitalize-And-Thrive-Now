@@ -2645,5 +2645,42 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-27 (Thursday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "mindset reset",
+      "angle": "aspirational_offer",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260827_233423_48049584-9ffc-4625-ab92-fe84c0f6225d.png",
+      "ig_user_id": "27164026169935796",
+      "media_id": "17896751439595288",
+      "permalink": "https://www.instagram.com/p/Dcj-tg1G9uB/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "compliant": true,
+      "verified": true,
+      "status": "posted",
+      "note": "Published live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA."
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$149",
+      "theme": "mindset recalibration",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260827_233424_7560bf82-a09f-4dd9-81a3-09a85b508091.png",
+      "ig_user_id": "27634679816148097",
+      "media_id": "17929812786388077",
+      "permalink": "https://www.instagram.com/p/Dcj-tZSGztf/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "compliant": true,
+      "verified": true,
+      "status": "posted",
+      "note": "Published live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH; verified via INSTAGRAM_GET_IG_MEDIA.",
+      "yt_status": "not_attempted"
+    }
   }
 ]
