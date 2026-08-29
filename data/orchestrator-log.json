@@ -2645,5 +2645,36 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-29 (Saturday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$97/month",
+      "theme": "skincare and beauty",
+      "angle": "aspirational_offer",
+      "image_job_id": "2fa3ec29-3955-4e47-951c-8fd0de8fc84c",
+      "container_id": "17918909670431674",
+      "post_id": "18631745842034387",
+      "permalink": "https://www.instagram.com/p/DcpIS6eHe9N/",
+      "status": "posted",
+      "verified": true,
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH and verified via INSTAGRAM_GET_IG_MEDIA. Caption hashtags rendered literally as %23Tag instead of #Tag (tool doc's HTML-encoding instruction was not decoded server-side); posted a corrective comment (id 17912822967451277) with clean #hashtags since Instagram captions cannot be edited after publish. Caption body/product/price/URL unaffected."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "strength and muscle density",
+      "angle": "aspirational_offer",
+      "image_job_id": "48154c26-febc-42fc-baeb-5bda7afd480d",
+      "container_id": "18110548142076162",
+      "post_id": "17909606574461529",
+      "permalink": "https://www.instagram.com/p/DcpITGkHelI/",
+      "status": "posted",
+      "verified": true,
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA -> PUBLISH and verified via INSTAGRAM_GET_IG_MEDIA. Caption hashtags rendered literally as %23Tag instead of #Tag (tool doc's HTML-encoding instruction was not decoded server-side); posted a corrective comment (id 18064372163773506) with clean #hashtags since Instagram captions cannot be edited after publish. Caption body/product/price/URL unaffected.",
+      "yt_status": "not_attempted_this_run"
+    }
   }
 ]
