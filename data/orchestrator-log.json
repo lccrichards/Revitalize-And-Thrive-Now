@@ -2645,5 +2645,40 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-30 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-08-30T23:36:08Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260830_233350_e28e0ac7-2869-4f2b-8a9b-5f3ff508bcff.png",
+      "ig_creation_id": "17919062214431674",
+      "ig_post_id": "17964985686157437",
+      "ig_permalink": "https://www.instagram.com/p/DcrtMaNHfpt/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260830_233356_c549102d-ed9f-4717-bcf7-6c3c5a94bbdb.png",
+      "ig_creation_id": "18110703920076162",
+      "ig_post_id": "18084695009437602",
+      "ig_permalink": "https://www.instagram.com/p/DcrtMTHnQ6E/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "Evening slot is a static image post (no video generated); YouTube upload applies to the Tue/Thu video reel slot only, consistent with prior evening-slot log entries.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
