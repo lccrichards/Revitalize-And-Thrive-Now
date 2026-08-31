@@ -2645,5 +2645,44 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-08-31 (Monday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "hormone balance",
+      "angle": "aspirational_offer",
+      "ethnicity": "Black",
+      "image_job_id": "7b7306ec-e0ca-4844-a9dc-e46bffc9e2c8",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260831_233317_7b7306ec-e0ca-4844-a9dc-e46bffc9e2c8.png",
+      "caption": "There's a version of you that feels rested, clear-headed, and completely at home in your own skin \u2014 and she's closer than you think.\n\nIf you've been putting everyone else first for years, tonight is a good night to put something down for yourself. Not another to-do list item. Something that actually supports you: your sleep, your energy, your mindset, your plate.\n\nThat's exactly why we built the Complete Wellness Bundle \u2014 everything in one place, so you're not piecing together five different plans late at night, wondering if any of it actually fits your life. Meal guidance made for how your body feels right now. A sleep approach that respects how tired you actually are. Mindset tools for the days your inner critic won't quiet down. All of it together, at a price that respects your time, your energy, and your budget.\n\nThis is for the woman who's ready to stop surviving her days and start enjoying her evenings again. Your second chapter isn't waiting for permission \u2014 it's waiting for you to say yes to yourself, tonight.\n\nComplete Wellness Bundle\n$149\nrivitalize.gumroad.com/l/complete-wellness-bundle\n\nReady when you are.",
+      "ig_creation_id": "17919220350431674",
+      "ig_post_id": "17935728141373010",
+      "ig_permalink": "https://www.instagram.com/p/DcuR08ym3iE/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "testosterone optimization",
+      "angle": "aspirational_offer",
+      "ethnicity": "Hispanic",
+      "image_job_id": "878ee091-17f3-46ea-b50f-8401a0a0fc5a",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260831_233319_878ee091-17f3-46ea-b50f-8401a0a0fc5a.png",
+      "caption": "You know the feeling. You used to close out the day with something left in the tank. Lately you're closing it out running on fumes \u2014 and telling yourself that's just what 45+ looks like.\n\nIt's not. It's a signal. Sleep, recovery, training, and nutrition are all connected, and when one slips, the rest follow, whether you notice it right away or not.\n\nThe Complete Reclaim Reset Bundle puts the full system back under your control: a training approach built for how your body recovers now, nutrition built around your routine, sleep protocols that work with your schedule, and the mindset framework to execute without white-knuckling it every single day.\n\nNo fluff. No 47-step morning routine. Just the mechanisms that matter, laid out so you can start tonight instead of overthinking it for another month.\n\nYou built your career and your family on discipline. Apply the same standard here.\n\nComplete Reclaim Reset Bundle\n$249\nrivitalize.gumroad.com/l/nxqlwr\n\nYour edge isn't gone. Go get it.",
+      "ig_creation_id": "18110845103076162",
+      "ig_post_id": "18369953575209755",
+      "ig_permalink": "https://www.instagram.com/p/DcuR0-InTRn/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "yt_reason": "Reclaim & Rise Now YouTube channel (youtube_jute-golem, @reclaimrisenow) is connected, but full video generation/upload was not attempted for this evening image-post run; reserved for the dedicated Tue/Thu video reel slot per orchestrator schedule. Instagram post published and verified independently of this step.",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
