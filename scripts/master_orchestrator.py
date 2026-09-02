@@ -41,6 +41,10 @@ When this trigger fires, Claude must:
        Call mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL:
        INSTAGRAM_POST_IG_USER_MEDIA (create container)
        then INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH (publish)
+       NOTE: pass hashtags as literal "#tag" in the caption, NOT URL-encoded
+       "%23tag" -- despite the tool schema's stated example, this account's
+       Graph API version does not decode %23 back to # and the literal
+       "%23" text will show in the published caption (confirmed 2026-09-02).
   h) For Facebook (Revitalize only):
        Call mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL:
        FACEBOOK_CREATE_PHOTO_POST with image URL and caption

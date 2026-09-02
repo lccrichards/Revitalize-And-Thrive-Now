@@ -2645,5 +2645,37 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-09-02 (Wednesday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-09-02T23:35:06Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "energy restoration",
+      "angle": "aspirational_offer",
+      "ethnicity": "White",
+      "ig_post_id": "18113445274792647",
+      "ig_permalink": "https://www.instagram.com/p/DczbdlJmy8y/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "note": "Caption hashtags rendered literally as %23 text per Composio tool guidance to URL-encode '#'; corrected via follow-up comment (id 18149555836465931) with proper hashtags."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "energy and cognitive performance",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "ig_post_id": "18113015572792530",
+      "ig_permalink": "https://www.instagram.com/p/Dczbdj3DfdP/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "posted",
+      "verified": true,
+      "note": "Caption hashtags rendered literally as %23 text per Composio tool guidance to URL-encode '#'; corrected via follow-up comment (id 18162665437421772) with proper hashtags."
+    }
   }
 ]
