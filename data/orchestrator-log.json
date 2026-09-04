@@ -1,37 +1,5 @@
 [
   {
-    "date": "2026-07-26 (Sunday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-27T02:19:00Z",
-    "revitalize": {
-      "product": "30-Day Wellness Transformation",
-      "price": "$79",
-      "theme": "strength and fitness after 45",
-      "angle": "aspirational_offer",
-      "caption_file": "data/pending-posts-2026-07-26-evening.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-26-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "drive and motivation",
-      "angle": "aspirational_offer",
-      "caption_file": "data/pending-posts-2026-07-26-evening.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-26-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
-    }
-  },
-  {
     "date": "2026-07-25 (Saturday ET)",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-27T12:10:14Z",
@@ -2811,5 +2779,39 @@
     "timestamp_utc": "2026-09-03T11:00:00Z",
     "status": "skipped",
     "reason": "Morning slot triggered on schedule. POST GUARD confirmed OK to post (no verified morning entry yet for 2026-09-03). Revitalize theme/product: mindset reset / The Mindset Bundle. Reclaim theme/product: mindset recalibration / Midlife Mindset Code. However, the Composio MCP server failed to connect this session (ProtocolError dialing the MCP endpoint) before any generation or publish step was attempted, so none of the INSTAGRAM_POST_IG_USER_MEDIA / _PUBLISH / INSTAGRAM_GET_IG_MEDIA tools were available. Retried the tool lookup once after a 15s pause; still unavailable. No Higgsfield images were generated and no publish was attempted for either brand, since a completed post could not be verified without Composio. This matches the repeated Composio/Higgsfield connection instability already noted in the 2026-08-26 night-slot log entry -- recommend investigating why this MCP connection keeps failing in the cron/session runtime. Once Composio is reachable again, run scripts/master_orchestrator.py morning fresh (date/guard will need re-checking) to post."
+  },
+  {
+    "date": "2026-09-04",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-09-04T19:07:18Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "angle": "supportive_solution",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260904_190443_4391854f-14cc-4434-99b8-404e09390801.png",
+      "ig_creation_id": "17919817938431674",
+      "ig_post_id": "18408950293083510",
+      "ig_permalink": "https://www.instagram.com/p/Dc4GYEaHc5c/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "supportive_solution",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260904_190446_c49234f6-5d7e-411d-aea0-20cff1546c8b.png",
+      "ig_creation_id": "18111406640076162",
+      "ig_post_id": "17893424010671714",
+      "ig_permalink": "https://www.instagram.com/p/Dc4GYAAnU8F/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
