@@ -1,36 +1,5 @@
 [
   {
-    "date": "2026-07-25 (Saturday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-27T12:10:14Z",
-    "revitalize": {
-      "product": "Skincare and Beauty Protocol",
-      "price": "$39",
-      "theme": "skincare and beauty",
-      "angle": "supportive_solution",
-      "ethnicity": "South Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_120809_b7dae796-c8e9-4447-b0e0-13abaaaaeb1d.png",
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "failed",
-      "verified": false,
-      "error": "Instagram API error (status 400): Unsupported post request. Object with ID '27164026169935796' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Retried once, same error both times. Persistent failure ongoing since 2026-07-22 afternoon across every Revitalize slot logged since -- confirmed not transient, requires manual re-authorization of the Revitalize Meta/Instagram connection in Composio (both 'instagram_cardin-bulgar' and 'instagram_medlar-slap' aliases currently authenticate to the same underlying Reclaim account). Reclaim, same Composio connection, different IG account, continues to post successfully."
-    },
-    "reclaim": {
-      "product": "Strength Density and Longevity",
-      "price": "$39",
-      "theme": "strength and muscle density",
-      "angle": "supportive_solution",
-      "ethnicity": "Middle Eastern",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_120818_445bd42a-1ee7-40ba-800a-a22426bf7f7d.png",
-      "ig_post_id": "17930379792359305",
-      "ig_permalink": "https://www.instagram.com/p/DbS7k0yIJD-/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-27 (Monday ET)",
     "slot": "video",
     "timestamp_utc": "2026-07-27T22:17:06Z",
@@ -2812,6 +2781,37 @@
       "ig_permalink": "https://www.instagram.com/p/Dc4GYAAnU8F/",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-09-04 (Friday ET)",
+    "slot": "video",
+    "timestamp_utc": "2026-09-04T22:08:23Z",
+    "status": "draft_ready",
+    "note": "Draft only \u2014 not published live. Review and publish manually (Instagram app, Composio dashboard) or approve in a live chat session.",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "nutrition and meal planning",
+      "angle": "reel",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "White",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260904_220210_e007f220-0b98-4819-ba0f-a2d0308bb95c.mp4",
+      "ig_creation_id": "17919833880431674",
+      "caption": "You can be grateful and grieving at the same time. \ud83c\udf3f\n\nMaybe today looked good on paper \u2014 the family taken care of, the to-do list moving \u2014 but underneath it, something still feels unfinished. A beautiful life can still contain painful days, and that doesn't make you ungrateful. It makes you human.\n\nThe Complete Wellness Bundle isn't about pretending everything is fine. It's a full system \u2014 meal plans, gentle movement, and mindset support \u2014 built for the days you're holding two things at once: thankful and tired, hopeful and heavy. You don't have to sort your feelings into the right order before you take care of yourself.\n\nStrength and sadness can live in the same body. Support can live there too. \ud83d\udc9b\n\nComplete Wellness Bundle\n$297\nhttps://buy.stripe.com/3cI5kC0LgaHu7b2el5aAw0d\n\n#RevitalizeAndThrive #WomenOver45 #MidlifeWellness #WomenEmpowerment #LifeAfter45 #MidlifeTransformation #SecondChapter #YouDeserveThis #MidlifeWoman #WellnessJourney #ThrivingAt50 #WholeFoodEating #WellnessMeals #FoodAsMedicine #NeverTooLate",
+      "status": "draft_ready"
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "nutrition for male hormones",
+      "angle": "reel",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "African American",
+      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260904_220212_c39e3649-a131-48ed-b449-97ba338eee9b.mp4",
+      "ig_creation_id": "18111424190076162",
+      "caption": "You can be proud of your life and still be grieving something in it.\n\nA good life can still contain painful days. That doesn't make you weak, and it doesn't mean you're doing it wrong. Sometimes \"I'm good\" just means you don't know where to begin.\n\nThe Complete Reclaim Reset Bundle is what I use to keep moving anyway \u2014 nutrition built for real energy, strength training that fits a real schedule, and recovery protocols for the nights your mind won't slow down. Moving forward doesn't require you to stop missing what was lost. It just requires the next step.\n\nStrength and grief can live in the same body. So can progress.\n\nComplete Reclaim Reset Bundle\n$249\nhttps://buy.stripe.com/6oUdR8eC602Q7b2dh1aAw0i\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensHealth #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #EatForEnergy #MensMealPlan #NourishYourBody #MealPlanForMen",
+      "status": "draft_ready"
     }
   }
 ]
