@@ -2645,5 +2645,35 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-09-04 (Friday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-09-04T23:35:24Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "nutrition and meal planning",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "ig_post_id": "17909218152469897",
+      "ig_permalink": "https://www.instagram.com/p/Dc4lFDyHTuQ/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "nutrition for male hormones",
+      "angle": "aspirational_offer",
+      "ethnicity": "Middle Eastern",
+      "ig_post_id": "18214346341350794",
+      "ig_permalink": "https://www.instagram.com/p/Dc4lFFTnXJb/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
