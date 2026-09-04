@@ -1,44 +1,6 @@
 [
   {
     "date": "2026-07-27 (Monday ET)",
-    "slot": "video",
-    "timestamp_utc": "2026-07-27T22:17:06Z",
-    "revitalize": {
-      "product": "Hormone-Balancing Meal Plan",
-      "price": "$39",
-      "theme": "hormone balance",
-      "format": "reel",
-      "ethnicity": "White",
-      "video_job_id": "c6f4a400-7452-423d-acc6-f843b62ffd56",
-      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_221040_c6f4a400-7452-423d-acc6-f843b62ffd56.mp4",
-      "ig_creation_id": "17913528765431674",
-      "ig_post_id": "18020350499888766",
-      "ig_permalink": "https://www.instagram.com/reel/DbUBDdFjZyK/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true,
-      "note": "Used corrected Instagram alias 'instagram_walrus-waac' (ig_user_id 27164026169935796, revitalize_thrive_now) instead of the stale 'instagram_cardin-bulgar' referenced in the standing config -- that alias is now marked DEPRECATED and points to the Reclaim account. Preflight INSTAGRAM_GET_IG_USER_MEDIA confirmed the correct mapping before posting."
-    },
-    "reclaim": {
-      "product": "Testosterone and Stamina Meal Plan",
-      "price": "$39",
-      "theme": "testosterone optimization",
-      "format": "reel",
-      "ethnicity": "South Asian",
-      "video_job_id": "720435e6-9c14-4087-b92e-c86389ede789",
-      "video_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260727_221043_720435e6-9c14-4087-b92e-c86389ede789.mp4",
-      "ig_creation_id": "18104914649076162",
-      "ig_post_id": "17902481283495726",
-      "ig_permalink": "https://www.instagram.com/reel/DbUBD82AYKe/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize & Thrive Now channel (youtube_luckie-mang, 'Dr. Alexander', UCIkVsuNrVulsB13pZ_iPFpw) is connected -- confirmed via COMPOSIO_MANAGE_CONNECTIONS list, same limitation as all prior video slots. Instagram Reel published and verified independently of this step.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-27 (Monday ET)",
     "slot": "evening",
     "timestamp_utc": "2026-07-28T00:45:32Z",
     "revitalize": {
@@ -2813,5 +2775,12 @@
       "caption": "You can be proud of your life and still be grieving something in it.\n\nA good life can still contain painful days. That doesn't make you weak, and it doesn't mean you're doing it wrong. Sometimes \"I'm good\" just means you don't know where to begin.\n\nThe Complete Reclaim Reset Bundle is what I use to keep moving anyway \u2014 nutrition built for real energy, strength training that fits a real schedule, and recovery protocols for the nights your mind won't slow down. Moving forward doesn't require you to stop missing what was lost. It just requires the next step.\n\nStrength and grief can live in the same body. So can progress.\n\nComplete Reclaim Reset Bundle\n$249\nhttps://buy.stripe.com/6oUdR8eC602Q7b2dh1aAw0i\n\n#ReclaimAndRise #MenOver45 #MidlifeMen #RecoverYourDrive #MensHealth #MensWellness #MidlifeRecalibration #MenWhoThrive #StrengthAtMidlife #RecoverStrong #MidlifeReset #EatForEnergy #MensMealPlan #NourishYourBody #MealPlanForMen",
       "status": "draft_ready"
     }
+  },
+  {
+    "date": "2026-09-04 (Friday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-09-04T23:08:50Z",
+    "status": "skipped",
+    "reason": "POST GUARD confirmed OK to post for 2026-09-04 evening (Revitalize: Complete Wellness Bundle $297 / nutrition and meal planning; Reclaim: Complete Reclaim Reset Bundle $249 / nutrition for male hormones). Aspirational-offer captions were written and passed the compliance scan (no forbidden claims; Revitalize 183 words, Reclaim 153 words, 15 hashtags each). Two mcp__higgsfield__generate_image calls were submitted (model nano_banana_2 requested; server auto-substituted nano_banana_flash) -- Revitalize: East Asian woman, kitchen/meal-prep setting; Reclaim: Middle Eastern man, kitchen/meal-prep setting. Both jobs (ids 64fde979-2817-4ec4-8025-9fa60bb0f555 and 852417d6-8467-4590-92fb-b70fc3b09d37) stayed in mcp__higgsfield__job_display status 'waiting'/'queued' for over 30 minutes of active polling and never reached 'completed'. Cross-checked mcp__higgsfield__show_generations directly: neither job id appears anywhere in the generation history, meaning they never actually entered the real generation pipeline despite the job_display status object existing. This matches the same Higgsfield/Composio MCP instability already logged on 2026-08-26 (night slot, dozens of worker restarts, no generate_image call ever completed) and 2026-09-03 (morning slot, Composio ProtocolError). Rather than continue polling indefinitely or risk publishing with a stale/substitute image, no image was ever produced, so no Instagram or Facebook post was attempted for either brand. No git conflict: origin/claude/laughing-darwin-cQTwH was re-fetched immediately before this log write and matched local HEAD (5c15a7a), so no other session posted the 2026-09-04 evening slot in the interim. Recommend: (1) investigate why Higgsfield image jobs submitted via generate_image sometimes never leave 'queued'/'waiting' and never appear in show_generations -- this is now a recurring failure mode across multiple slots/days; (2) consider adding a bounded retry (e.g. resubmit generate_image once if job_display shows no progress after ~5 minutes) to the orchestrator script; (3) re-run scripts/master_orchestrator.py evening fresh once Higgsfield generation is confirmed healthy again today."
   }
 ]
