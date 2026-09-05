@@ -2791,5 +2791,37 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-09-05 (Saturday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$27/month",
+      "theme": "wellness essentials",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_job_id": "9005fca5-8995-4c1f-b9ce-53a35f6c8233",
+      "creation_id": "17919993471431674",
+      "media_id": "17900173452593038",
+      "ig_permalink": "https://www.instagram.com/p/Dc7KB2FmwYF/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "strength and muscle density",
+      "angle": "aspirational_offer",
+      "ethnicity": "Middle Eastern",
+      "image_job_id": "5e523db0-91c0-443d-874e-6b87e855b3b1",
+      "creation_id": "18111579320076162",
+      "media_id": "18106031150257985",
+      "ig_permalink": "https://www.instagram.com/p/Dc7KB5MHRFC/",
+      "status": "posted",
+      "verified": true,
+      "yt_status": "not_attempted (evening slot is IG-only per orchestrator instructions; YouTube is best-effort for the Tue/Thu video reel)"
+    }
   }
 ]
