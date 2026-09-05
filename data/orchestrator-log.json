@@ -1,38 +1,5 @@
 [
   {
-    "date": "2026-07-27 (Monday ET)",
-    "slot": "night",
-    "timestamp_utc": "2026-07-28T02:08:19Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "hormone balance",
-      "angle": "urgency_social_proof",
-      "ethnicity": "African American",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260728_020606_c3e69858-65f6-4f0b-9881-ae942bf09d18.png",
-      "ig_creation_id": "17913547791431674",
-      "ig_post_id": "18150079831512490",
-      "ig_permalink": "https://www.instagram.com/p/DbUbk2rm6d-/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true,
-      "note": "Used corrected Instagram alias 'instagram_walrus-waac' (ig_user_id 27164026169935796, revitalize_thrive_now) -- 'instagram_cardin-bulgar' referenced in the standing task template no longer resolves to any connected account. Verified via INSTAGRAM_GET_IG_MEDIA before logging."
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "testosterone optimization",
-      "angle": "urgency_social_proof",
-      "ethnicity": "East Asian",
-      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260728_020607_061ab35a-ff33-4391-b4f8-0896c3a32ed1.png",
-      "ig_creation_id": "18104938427076162",
-      "ig_post_id": "18125198566739088",
-      "ig_permalink": "https://www.instagram.com/p/DbUbhDJG3I7/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-28",
     "slot": "morning",
     "timestamp_utc": "2026-07-28T11:18:06+0000",
@@ -2790,5 +2757,39 @@
       "verified": true
     },
     "note": "COMPOSIO_MULTI_EXECUTE_TOOL failed to route the account field for INSTAGRAM_POST_IG_USER_MEDIA (returned \"Multiple instagram accounts connected\" regardless of account value passed, alias or id, with or without session_id). Worked around by calling the same Composio tool via COMPOSIO_REMOTE_WORKBENCH run_composio_tool(..., account=...) helper instead, which correctly routed to instagram_walrus-waac (Revitalize, ig_user_id 27164026169935796) and instagram_medlar-slap (Reclaim, ig_user_id 27634679816148097). One throwaway test container (id 17919909399431674, caption \"test caption placeholder\") was created on the Revitalize account while diagnosing this and was never published \u2014 it will expire unpublished."
+  },
+  {
+    "date": "2026-09-05",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-09-05T19:06:35Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "wellness essentials",
+      "angle": "supportive_solution",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "African American",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260905_190507_db10ef79-2e34-4ccb-85e0-1ef8f061f794.png",
+      "ig_creation_id": "17919973947431674",
+      "ig_post_id": "17873574567634097",
+      "ig_permalink": "https://www.instagram.com/p/Dc6rFvynXAM/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "supportive_solution",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260905_190510_4259134d-a965-4af6-b106-a1e418f037c3.png",
+      "ig_creation_id": "18111557222076162",
+      "ig_post_id": "18192150076350231",
+      "ig_permalink": "https://www.instagram.com/p/Dc6rFxqm3gu/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
