@@ -1,35 +1,6 @@
 [
   {
     "date": "2026-07-27 (Monday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-28T00:45:32Z",
-    "revitalize": {
-      "product": "Complete Wellness Bundle",
-      "price": "$149",
-      "theme": "hormone balance",
-      "angle": "aspirational_offer",
-      "ig_post_id": "18091910963636955",
-      "ig_permalink": "https://www.instagram.com/p/DbUSGxCm-rA/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "testosterone optimization",
-      "angle": "aspirational_offer",
-      "ig_post_id": "18028098830838524",
-      "ig_permalink": "https://www.instagram.com/p/DbUSGuwjdxw/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "yt_reason": "No Reclaim and Rise YouTube channel (UCreclaimandriseNOW) connected in Composio; only the Revitalize & Thrive Now channel (youtube_luckie-mang, Dr. Alexander, UCIkVsuNrVulsB13pZ_iPFpw) is active, confirmed via COMPOSIO_MANAGE_CONNECTIONS list. Instagram post published and verified independently of this step.",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
-    "date": "2026-07-27 (Monday ET)",
     "slot": "morning",
     "timestamp_utc": "2026-07-27T11:00:00Z",
     "revitalize": {
@@ -2782,5 +2753,39 @@
     "timestamp_utc": "2026-09-04T23:08:50Z",
     "status": "skipped",
     "reason": "POST GUARD confirmed OK to post for 2026-09-04 evening (Revitalize: Complete Wellness Bundle $297 / nutrition and meal planning; Reclaim: Complete Reclaim Reset Bundle $249 / nutrition for male hormones). Aspirational-offer captions were written and passed the compliance scan (no forbidden claims; Revitalize 183 words, Reclaim 153 words, 15 hashtags each). Two mcp__higgsfield__generate_image calls were submitted (model nano_banana_2 requested; server auto-substituted nano_banana_flash) -- Revitalize: East Asian woman, kitchen/meal-prep setting; Reclaim: Middle Eastern man, kitchen/meal-prep setting. Both jobs (ids 64fde979-2817-4ec4-8025-9fa60bb0f555 and 852417d6-8467-4590-92fb-b70fc3b09d37) stayed in mcp__higgsfield__job_display status 'waiting'/'queued' for over 30 minutes of active polling and never reached 'completed'. Cross-checked mcp__higgsfield__show_generations directly: neither job id appears anywhere in the generation history, meaning they never actually entered the real generation pipeline despite the job_display status object existing. This matches the same Higgsfield/Composio MCP instability already logged on 2026-08-26 (night slot, dozens of worker restarts, no generate_image call ever completed) and 2026-09-03 (morning slot, Composio ProtocolError). Rather than continue polling indefinitely or risk publishing with a stale/substitute image, no image was ever produced, so no Instagram or Facebook post was attempted for either brand. No git conflict: origin/claude/laughing-darwin-cQTwH was re-fetched immediately before this log write and matched local HEAD (5c15a7a), so no other session posted the 2026-09-04 evening slot in the interim. Recommend: (1) investigate why Higgsfield image jobs submitted via generate_image sometimes never leave 'queued'/'waiting' and never appear in show_generations -- this is now a recurring failure mode across multiple slots/days; (2) consider adding a bounded retry (e.g. resubmit generate_image once if job_display shows no progress after ~5 minutes) to the orchestrator script; (3) re-run scripts/master_orchestrator.py evening fresh once Higgsfield generation is confirmed healthy again today."
+  },
+  {
+    "date": "2026-09-04",
+    "slot": "night",
+    "timestamp_utc": "2026-09-05T02:07:45Z",
+    "revitalize": {
+      "product": "The Revitalize Circle Monthly Membership",
+      "price": "$27/month",
+      "theme": "nutrition and meal planning",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260905_020622_55866032-930b-4ee2-a073-877ce9a356a4.png",
+      "ig_creation_id": "17919852396431674",
+      "ig_post_id": "18486340618106442",
+      "ig_permalink": "https://www.instagram.com/p/Dc42dyAgL5M/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260905_020625_4cee0244-28fd-4500-a063-d2ee9962dc81.png",
+      "ig_creation_id": "18111442796076162",
+      "ig_post_id": "18157623739495221",
+      "ig_permalink": "https://www.instagram.com/p/Dc42dt0DXK7/",
+      "status": "posted",
+      "verified": true
+    }
   }
 ]
