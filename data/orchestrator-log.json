@@ -1,38 +1,6 @@
 [
   {
     "date": "2026-07-27 (Monday ET)",
-    "slot": "morning",
-    "timestamp_utc": "2026-07-27T11:00:00Z",
-    "revitalize": {
-      "product": "Hormone Reset Masterclass",
-      "price": "$59",
-      "theme": "hormone balance",
-      "angle": "education",
-      "caption_file": "data/pending-posts-2026-07-27-morning.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant educational morning caption generated and saved to data/pending-posts-2026-07-27-morning.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
-    },
-    "reclaim": {
-      "product": "Reclaim Masterclass",
-      "price": "$149",
-      "theme": "testosterone optimization",
-      "angle": "education",
-      "caption_file": "data/pending-posts-2026-07-27-morning.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant educational morning caption generated and saved to data/pending-posts-2026-07-27-morning.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG post was attempted. Requires the user to set BUFFER_API_KEY. Compliance scan passed (no prohibited medical/urgency phrases)."
-    }
-  },
-  {
-    "date": "2026-07-27 (Monday ET)",
     "slot": "night",
     "timestamp_utc": "2026-07-28T02:08:19Z",
     "revitalize": {
@@ -2787,5 +2755,40 @@
       "status": "posted",
       "verified": true
     }
+  },
+  {
+    "date": "2026-09-05",
+    "slot": "morning",
+    "timestamp_utc": "2026-09-05T11:10:52Z",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$297",
+      "theme": "wellness essentials",
+      "angle": "education",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260905_110543_253f9d74-8495-43cd-b041-b6397c202d87.png",
+      "ig_creation_id": "17919909510431674",
+      "ig_post_id": "18109901521841295",
+      "ig_permalink": "https://www.instagram.com/p/Dc50mNjG2UX/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Strength Density and Longevity",
+      "price": "$39",
+      "theme": "strength and muscle density",
+      "angle": "education",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260905_110546_df25f2b9-4c97-4889-bfc1-8189ac6c2514.png",
+      "ig_creation_id": "18111497600076162",
+      "ig_post_id": "18098414675367820",
+      "ig_permalink": "https://www.instagram.com/p/Dc50m7Lm5F3/",
+      "status": "posted",
+      "verified": true
+    },
+    "note": "COMPOSIO_MULTI_EXECUTE_TOOL failed to route the account field for INSTAGRAM_POST_IG_USER_MEDIA (returned \"Multiple instagram accounts connected\" regardless of account value passed, alias or id, with or without session_id). Worked around by calling the same Composio tool via COMPOSIO_REMOTE_WORKBENCH run_composio_tool(..., account=...) helper instead, which correctly routed to instagram_walrus-waac (Revitalize, ig_user_id 27164026169935796) and instagram_medlar-slap (Reclaim, ig_user_id 27634679816148097). One throwaway test container (id 17919909399431674, caption \"test caption placeholder\") was created on the Revitalize account while diagnosing this and was never published \u2014 it will expire unpublished."
   }
 ]
