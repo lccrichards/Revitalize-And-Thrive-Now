@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-09-06 (Sunday ET)",
+    "slot": "evening",
+    "timestamp_utc": "2026-09-06T23:37:17Z",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$79",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ethnicity": "Black",
+      "ig_post_id": "18126853114749391",
+      "ig_permalink": "https://www.instagram.com/p/Dc9u4kSG8E7/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true,
+      "note": "Caption hashtags rendered as literal %23 text on Instagram (percent-encoding did not convert); posted a follow-up comment with working hashtags to correct it."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ethnicity": "Hispanic",
+      "ig_post_id": "17907995895536070",
+      "ig_permalink": "https://www.instagram.com/p/Dc9u4W5m1m-/",
+      "status": "posted",
+      "verified": true,
+      "yt_video_id": null,
+      "yt_status": "failed",
+      "yt_note": "Video generated via Higgsfield (seedance_2_5) but could not be uploaded: Composio's YOUTUBE_UPLOAD_VIDEO/YOUTUBE_MULTIPART_UPLOAD_VIDEO tools require a file object with an internal s3key, and no Composio tool exists to convert a public video URL (Higgsfield CloudFront output) into that s3key. Local ffmpeg pipeline (scripts/youtube_video_generator.py) also unavailable \u2014 ffmpeg not installed in this environment. Did not block Instagram logging per instructions.",
+      "note": "Caption hashtags rendered as literal %23 text on Instagram (percent-encoding did not convert); posted a follow-up comment with working hashtags to correct it."
+    }
   }
 ]
