@@ -1,39 +1,5 @@
 [
   {
-    "date": "2026-07-28 (Tuesday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-28T19:01:26Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "angle": "supportive_solution",
-      "caption_file": "data/pending-posts-2026-07-28-afternoon.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant supportive afternoon caption generated and saved to data/pending-posts-2026-07-28-afternoon.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires BUFFER_API_KEY to be exported for automated posting."
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "sleep recovery",
-      "angle": "supportive_solution",
-      "caption_file": "data/pending-posts-2026-07-28-afternoon.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant supportive afternoon caption generated and saved to data/pending-posts-2026-07-28-afternoon.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires BUFFER_API_KEY to be exported for automated posting."
-    }
-  },
-  {
     "date": "2026-07-28",
     "slot": "afternoon",
     "timestamp_utc": "2026-07-28T20:25:53Z",
@@ -2788,6 +2754,40 @@
       "ethnicity": "African American",
       "ig_post_id": "18214140412356216",
       "ig_permalink": "https://www.instagram.com/p/Dc8ZCdmFVMP/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-09-06",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-09-06T19:06:21Z",
+    "revitalize": {
+      "product": "Fitness After 45 Guide",
+      "price": "$39",
+      "theme": "strength and fitness after 45",
+      "angle": "supportive_solution",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260906_190508_77446a3a-b256-4b60-8f95-1966d65d3bd9.png",
+      "ig_creation_id": "17920136061431674",
+      "ig_post_id": "17985578886102954",
+      "ig_permalink": "https://www.instagram.com/p/Dc9P20knW0a/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$197",
+      "theme": "drive and motivation",
+      "angle": "supportive_solution",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "Latino",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260906_190511_09682000-1f2e-4c14-8cc9-30b5acc5fff2.png",
+      "ig_creation_id": "18111715352076162",
+      "ig_post_id": "18425175250150770",
+      "ig_permalink": "https://www.instagram.com/p/Dc9P23uHfty/",
       "status": "posted",
       "verified": true
     }
