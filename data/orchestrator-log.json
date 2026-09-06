@@ -1,31 +1,5 @@
 [
   {
-    "date": "2026-07-28",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-28T20:25:53Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "angle": "supportive_solution",
-      "ig_post_id": "17900098677507394",
-      "ig_permalink": "https://www.instagram.com/p/DbWWy99HWtT/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Sleep Recovery Protocol",
-      "price": "$39",
-      "theme": "sleep recovery",
-      "angle": "supportive_solution",
-      "ig_post_id": "18121626343834084",
-      "ig_permalink": "https://www.instagram.com/p/DbWR6txHQba/",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-28 (Tuesday ET)",
     "slot": "evening",
     "timestamp_utc": "2026-07-28T23:00:19Z",
@@ -2790,6 +2764,41 @@
       "ig_permalink": "https://www.instagram.com/p/Dc9P23uHfty/",
       "status": "posted",
       "verified": true
+    }
+  },
+  {
+    "date": "2026-09-06",
+    "slot": "evening",
+    "timestamp_utc": "2026-09-06T23:08:07+0000",
+    "revitalize": {
+      "product": "30-Day Wellness Transformation",
+      "price": "$97",
+      "theme": "strength and fitness after 45",
+      "angle": "aspirational_offer",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260906_230638_8b642c32-7be3-4731-bc14-27fa4e75529d.png",
+      "ig_creation_id": "17920151736431674",
+      "ig_post_id": "18143239978561078",
+      "ig_permalink": "https://www.instagram.com/p/Dc9rhuincOI/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "drive and motivation",
+      "angle": "aspirational_offer",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260906_230641_ee659657-f986-4f79-b17e-9744e52bf75f.png",
+      "ig_creation_id": "18111733310076162",
+      "ig_post_id": "18157118614501014",
+      "ig_permalink": "https://www.instagram.com/p/Dc9rhxHm5Rg/",
+      "yt_video_id": null,
+      "yt_status": "skipped",
+      "status": "posted",
+      "verified": true,
+      "yt_reason": "youtube video generation not run for this evening slot"
     }
   }
 ]
