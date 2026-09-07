@@ -2,40 +2,6 @@
   {
     "date": "2026-07-28 (Tuesday ET)",
     "slot": "evening",
-    "timestamp_utc": "2026-07-28T23:00:19Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "angle": "aspirational_offer",
-      "caption_file": "data/pending-posts-2026-07-28-evening.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "fb_post_id": null,
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-28-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires BUFFER_API_KEY to be exported for automated posting."
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "sleep recovery",
-      "angle": "aspirational_offer",
-      "caption_file": "data/pending-posts-2026-07-28-evening.json",
-      "compliant": true,
-      "ig_post_id": null,
-      "ig_permalink": null,
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "status": "not_posted",
-      "verified": false,
-      "error": "Meta-compliant aspirational evening caption generated and saved to data/pending-posts-2026-07-28-evening.json, but NOT posted: BUFFER_API_KEY is not set in the cron environment, so scripts/auto_post_cross_platform.py could not authenticate to Buffer. No IG/FB post was attempted. Requires BUFFER_API_KEY to be exported for automated posting."
-    }
-  },
-  {
-    "date": "2026-07-28 (Tuesday ET)",
-    "slot": "evening",
     "timestamp_utc": "2026-07-28T23:34:05Z",
     "revitalize": {
       "product": "The Midlife Sleep Fix",
@@ -2799,6 +2765,36 @@
       "status": "posted",
       "verified": true,
       "yt_reason": "youtube video generation not run for this evening slot"
+    }
+  },
+  {
+    "date": "2026-09-07",
+    "slot": "morning",
+    "timestamp_utc": "2026-09-07T11:25:07Z",
+    "revitalize": {
+      "product": "Hormone Reset Masterclass",
+      "price": "$197",
+      "theme": "hormone balance",
+      "angle": "education",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "African American",
+      "ig_post_id": "18098853461042389",
+      "ig_permalink": "https://www.instagram.com/p/Dc-_4feoEVy/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Reclaim Masterclass",
+      "price": "$197",
+      "theme": "testosterone optimization",
+      "angle": "education",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Latino",
+      "ig_post_id": "18113371921942217",
+      "ig_permalink": "https://www.instagram.com/p/Dc-_4ezILg6/",
+      "status": "posted",
+      "verified": true
     }
   }
 ]
