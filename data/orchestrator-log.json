@@ -1,35 +1,5 @@
 [
   {
-    "date": "2026-07-28 (Tuesday ET)",
-    "slot": "evening",
-    "timestamp_utc": "2026-07-28T23:34:05Z",
-    "revitalize": {
-      "product": "The Midlife Sleep Fix",
-      "price": "$39",
-      "theme": "sleep optimization",
-      "angle": "aspirational_offer",
-      "ethnicity": "African American",
-      "ig_post_id": "18112306612752746",
-      "ig_permalink": "https://www.instagram.com/p/DbWuuljnbH-/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Complete Reclaim Reset Bundle",
-      "price": "$249",
-      "theme": "sleep recovery",
-      "angle": "aspirational_offer",
-      "ethnicity": "Latino",
-      "ig_post_id": "18050485916788807",
-      "ig_permalink": "https://www.instagram.com/p/DbWuuiUm2e_/",
-      "yt_video_id": null,
-      "yt_status": "skipped",
-      "status": "posted",
-      "verified": true
-    }
-  },
-  {
     "date": "2026-07-29 (Wednesday ET)",
     "slot": "morning",
     "revitalize": {
@@ -2793,6 +2763,40 @@
       "ethnicity": "Latino",
       "ig_post_id": "18113371921942217",
       "ig_permalink": "https://www.instagram.com/p/Dc-_4ezILg6/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-09-07",
+    "slot": "afternoon",
+    "timestamp_utc": "2026-09-07T19:07:13Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "hormone balance",
+      "angle": "supportive_solution",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Latina",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260907_190543_9bfd4959-2af0-42cd-b289-fc23c5a8cb59.png",
+      "ig_creation_id": "17920276815431674",
+      "ig_post_id": "18108597278146831",
+      "ig_permalink": "https://www.instagram.com/p/Dc_0wnem-MR/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "testosterone optimization",
+      "angle": "supportive_solution",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260907_190546_a1b2f261-4d6a-410c-82f0-1db966e6a5d3.png",
+      "ig_creation_id": "18111855731076162",
+      "ig_post_id": "18023124680877028",
+      "ig_permalink": "https://www.instagram.com/p/Dc_0wq3nWEl/",
       "status": "posted",
       "verified": true
     }
