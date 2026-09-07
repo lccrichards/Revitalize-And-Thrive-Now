@@ -2645,5 +2645,38 @@
       "status": "generated_not_posted",
       "note": "Meta-compliant aspirational evening caption generated & saved; Buffer posting skipped (BUFFER_API_KEY not set)"
     }
+  },
+  {
+    "date": "2026-09-07 (Monday ET)",
+    "slot": "evening",
+    "revitalize": {
+      "product": "Complete Wellness Bundle",
+      "price": "$149",
+      "theme": "hormone balance",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27164026169935796",
+      "media_id": "18016697870940356",
+      "permalink": "https://www.instagram.com/p/DdATj7qmwBP/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "compliant": true,
+      "verified": true,
+      "status": "posted",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH, verified via INSTAGRAM_GET_IG_MEDIA."
+    },
+    "reclaim": {
+      "product": "Complete Reclaim Reset Bundle",
+      "price": "$249",
+      "theme": "testosterone optimization",
+      "angle": "aspirational_offer",
+      "ig_user_id": "27634679816148097",
+      "media_id": "17892751542607924",
+      "permalink": "https://www.instagram.com/p/DdATj-LjRFy/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "compliant": true,
+      "verified": true,
+      "status": "posted",
+      "yt_status": "skipped - no file-staging pathway available in this session to move a Higgsfield-generated video into Composio storage for YOUTUBE_MULTIPART_UPLOAD_VIDEO (requires an s3key-staged file; no googledrive/uploadcare connection active). Instagram post completed and verified regardless (best-effort, non-blocking per instructions).",
+      "note": "Posted live via Composio INSTAGRAM_POST_IG_USER_MEDIA + PUBLISH, verified via INSTAGRAM_GET_IG_MEDIA."
+    }
   }
 ]
