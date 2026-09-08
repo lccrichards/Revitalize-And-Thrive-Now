@@ -2,13 +2,6 @@
   {
     "date": "2026-07-29",
     "slot": "evening",
-    "timestamp_utc": "2026-07-29T23:06:09Z",
-    "status": "skipped",
-    "reason": "Halted before generating/posting the evening slot. scripts/master_orchestrator.py's POST GUARD reported \"OK to post\" for 2026-07-29 evening, but that guard only matches entries with top-level status==\"posted\"/verified==True for the exact slot+date. It is blind to the earlier same-day DUPLICATE_POST_INCIDENT entry (timestamp_utc 2026-07-29T17:10:54Z), which already published live duplicate content to BOTH real Instagram business accounts under the \"evening\" label today (Revitalize ig_post_id 18099003401192358 / https://www.instagram.com/p/DbYl93Rm3ee/; Reclaim ig_post_id 18074205053449479 / https://www.instagram.com/p/DbYl92Em4RX/), on top of the legitimate 2026-07-28 evening post. Posting again today would be a third evening-labeled live post in 24 hours. Separately, that same incident and the later 2026-07-29 video-slot skip both flagged that data/brand-config.json still has pre-migration Gumroad URLs/prices while the live site was migrated to Stripe checkout (commit cca3579/c52fcc1); this already caused a confirmed dead 404 checkout link to go out on the 2026-07-29 afternoon post and likely on the duplicate evening posts too. Two prior sessions explicitly recommended auditing/fixing brand-config.json before the next scheduled run; that fix has still not been made. Given (1) confirmed duplicate live posting already occurred today and (2) the checkout-link data is still known-stale/broken, proceeding with another automated evening publish was judged unsafe. No images were generated, no post was made to Instagram. Recommend: (a) review/delete the duplicate 2026-07-29 posts manually in the Instagram app if undesired, (b) fix master_orchestrator.py's POST GUARD to also treat DUPLICATE_POST_INCIDENT / any live-verified sub-entry as \"already posted\" regardless of top-level status, (c) audit brand-config.json product URLs/prices against the live Stripe-migrated site before any further scheduled runs resume."
-  },
-  {
-    "date": "2026-07-29",
-    "slot": "evening",
     "timestamp_utc": "2026-07-29T23:59:00Z",
     "status": "skipped",
     "reason": "Repeated the skip decision from the prior 2026-07-29 evening run (timestamp_utc 2026-07-29T23:06:09Z): scripts/master_orchestrator.py POST GUARD again reported \"OK to post\" for 2026-07-29 evening, but this guard is confirmed blind to the same-day DUPLICATE_POST_INCIDENT entry (timestamp_utc 2026-07-29T17:10:54Z), which already published live duplicate evening content to BOTH real Instagram business accounts today (Revitalize ig_post_id 18099003401192358 / https://www.instagram.com/p/DbYl93Rm3ee/; Reclaim ig_post_id 18074205053449479 / https://www.instagram.com/p/DbYl92Em4RX/), on top of the legitimate 2026-07-28 evening post. A third evening-labeled live post in under 24 hours would compound the duplicate-posting incident. Separately, data/brand-config.json still has not been updated: it still lists pre-migration Gumroad URLs/prices (e.g. 30-Day Wellness Transformation at rivitalize.gumroad.com/l/nlkuz, Complete Reclaim Reset Bundle at rivitalize.gumroad.com/l/nxqlwr) while the live site was migrated to Stripe checkout in commit cca3579/c52fcc1; this has already caused at least one confirmed dead/mispriced checkout link to go out (2026-07-29 afternoon post, and the video-slot skip confirmed a live 9 vs 9 mismatch on a different product). Three prior sessions today (DUPLICATE_POST_INCIDENT, video skip, evening skip) have all flagged that brand-config.json needs auditing against the live Stripe-migrated site before any further scheduled run proceeds; that fix still has not been made, and the POST GUARD still has not been fixed to recognize DUPLICATE_POST_INCIDENT as an already-posted state. No images were generated, no post was made to Instagram. Recommend: (a) fix master_orchestrator.py POST GUARD to treat DUPLICATE_POST_INCIDENT / any live-verified sub-entry as already-posted for that slot+date, (b) audit and update data/brand-config.json product URLs/prices against the live Stripe-migrated site, (c) decide whether to manually delete the 2026-07-29 duplicate Instagram posts, before automated evening/night/video runs resume."
@@ -2848,6 +2841,36 @@
       "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260908_112012_a11a8603-a048-4480-a45b-a3263b5f98b5.png",
       "ig_post_id": "17994603933001047",
       "ig_permalink": "https://www.instagram.com/p/DdBkRPCoGkO/",
+      "status": "posted",
+      "verified": true
+    }
+  },
+  {
+    "date": "2026-09-04 (Friday ET)",
+    "slot": "morning",
+    "timestamp_utc": "2026-09-08T13:32:31Z",
+    "revitalize": {
+      "product": "Hormone-Balancing Meal Plan",
+      "price": "$39",
+      "theme": "nutrition and meal planning",
+      "angle": "education",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "Latina",
+      "ig_post_id": "18084846047279502",
+      "ig_permalink": "https://www.instagram.com/p/DdBzRHMoEQP/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Testosterone and Stamina Meal Plan",
+      "price": "$39",
+      "theme": "nutrition for male hormones",
+      "angle": "education",
+      "emotional_angle": "emotional_duality",
+      "ethnicity": "South Asian",
+      "ig_post_id": "17884837806618106",
+      "ig_permalink": "https://www.instagram.com/p/DdBzRGWm9BA/",
       "status": "posted",
       "verified": true
     }
