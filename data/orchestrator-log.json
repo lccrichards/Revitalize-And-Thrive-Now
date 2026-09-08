@@ -1,13 +1,6 @@
 [
   {
     "date": "2026-07-29",
-    "slot": "video",
-    "timestamp_utc": "2026-07-29T22:11:20Z",
-    "status": "skipped",
-    "reason": "Halted before generating/posting the video reel due to a real data-integrity risk found while loading config. data/brand-config.json still has pre-migration Gumroad URLs/prices for products, but the live site was migrated to Stripe checkout in commit cca3579/c52fcc1 (\"Replace all ThriveCart/Gumroad links with Stripe Payment Links\"). Confirmed live discrepancy on Midlife Wellness Planner (today Reclaim product): config says $19 at rivitalize.gumroad.com/l/wellness-planner, but the live wellness-planner.html page now shows $29 with Stripe checkout https://buy.stripe.com/eVq9AS51w6reeDu7WHaAw08. Additionally, today Revitalize product Energy Restoration Guide has no standalone product page on the live site (shop.html/index.html) -- it only appears as a free bundle bonus attached to other products, so its config URL likely does not resolve to a real standalone checkout. A prior session (see 2026-07-29 evening slot, DUPLICATE_POST_INCIDENT) already flagged this exact stale-config issue and explicitly recommended fixing brand-config.json before the next scheduled run; that fix was not made. Posting a Reel today with a broken or mispriced checkout link -- on the same day a duplicate post already went live -- was judged too risky to do unattended. No video was generated, no post was made to Instagram or YouTube. Recommend: (1) update data/brand-config.json product URLs/prices to match the live Stripe links site-wide, (2) decide whether Energy Restoration Guide should get its own standalone checkout page or be removed from the rotation as a standalone-sellable product, (3) review/decide on the duplicate evening posts from earlier today."
-  },
-  {
-    "date": "2026-07-29",
     "slot": "evening",
     "timestamp_utc": "2026-07-29T23:06:09Z",
     "status": "skipped",
@@ -2825,6 +2818,38 @@
       "status": "failed",
       "verified": false,
       "error": "Publish blocked by Claude Code auto-mode permission classifier (COMPOSIO_MULTI_EXECUTE_TOOL -> INSTAGRAM_POST_IG_USER_MEDIA denied twice, reason: \"Blocked by classifier\"). Caption/image prepared but never published."
+    }
+  },
+  {
+    "date": "2026-09-08",
+    "slot": "morning",
+    "timestamp_utc": "2026-09-08T11:21:36Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "sleep optimization",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "South Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260908_112009_04e2661f-80b3-4b30-8aa3-c33f2a173eac.png",
+      "ig_post_id": "18371480758213909",
+      "ig_permalink": "https://www.instagram.com/p/DdBkRM0oBlF/",
+      "fb_post_id": "auto-synced-from-instagram",
+      "status": "posted",
+      "verified": true
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "sleep recovery",
+      "angle": "education",
+      "emotional_angle": "high_functioning_burnout",
+      "ethnicity": "White",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260908_112012_a11a8603-a048-4480-a45b-a3263b5f98b5.png",
+      "ig_post_id": "17994603933001047",
+      "ig_permalink": "https://www.instagram.com/p/DdBkRPCoGkO/",
+      "status": "posted",
+      "verified": true
     }
   }
 ]
