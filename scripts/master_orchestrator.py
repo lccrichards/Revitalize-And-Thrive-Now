@@ -110,12 +110,44 @@ def get_bundle_note(brand_cfg: dict, product_name: str) -> str:
 
 def build_revitalize_caption(product: dict, theme: str, slot: str, orch_cfg: dict) -> str:
     """
-    Claude generates this inline when running the orchestrator.
-    This function is a template reference — actual generation happens via Claude.
+    Generate Revitalize caption using CTA formula: [HOOK] → [PRODUCT + PRICE] → [LINK] → [URGENCY].
+    Uses templates from orch_cfg["cta_formula"]["revitalize"] or generates on-brand variant.
     """
-    bundle_note = get_bundle_note({}, product["name"])
-    slot_tone = orch_cfg["schedule"][slot]["tone"]
-    return f"[Claude generates: theme={theme}, product={product['name']}, price={product['price_short']}, tone={slot_tone}, bundle={bundle_note}]"
+    cta_templates = orch_cfg.get("cta_formula", {}).get("revitalize", {}).get("templates", {})
+    shop_url = orch_cfg.get("cta_formula", {}).get("revitalize", {}).get("shop_url", "https://lccrichards.github.io/revitalize-and-thrive-now/shop.html")
+
+    # Map theme to template (sleep, hormone, energy)
+    theme_map = {"sleep optimization": "sleep", "hormone balance": "hormone", "energy restoration": "energy"}
+    template_key = theme_map.get(theme, "energy")
+
+    if template_key in cta_templates:
+        template = cta_templates[template_key]
+        return f"{template['hook']}\n\n{template['product']}\n👇\n{shop_url}\n\n{template['urgency']}\n\n{template['hashtags']}"
+    else:
+        # Fallback: Claude generates variant
+        slot_tone = orch_cfg["schedule"][slot]["tone"]
+        return f"[Claude generates on-brand variant: theme={theme}, product={product['name']}, price={product['price_short']}, tone={slot_tone}, shop_url={shop_url}]"
+
+
+def build_reclaim_caption(product: dict, theme: str, slot: str, orch_cfg: dict) -> str:
+    """
+    Generate Reclaim caption using CTA formula: [HOOK] → [PRODUCT + PRICE] → [LINK] → [URGENCY].
+    Uses templates from orch_cfg["cta_formula"]["reclaim"] or generates on-brand variant.
+    """
+    cta_templates = orch_cfg.get("cta_formula", {}).get("reclaim", {}).get("templates", {})
+    shop_url = orch_cfg.get("cta_formula", {}).get("reclaim", {}).get("shop_url", "https://reclaimandrisenow.com/shop.html")
+
+    # Map theme to template (testosterone, mindset, bundle)
+    theme_map = {"testosterone optimization": "testosterone", "mindset recalibration": "mindset", "drive and motivation": "bundle"}
+    template_key = theme_map.get(theme, "testosterone")
+
+    if template_key in cta_templates:
+        template = cta_templates[template_key]
+        return f"{template['hook']}\n\n{template['product']}\n👇\n{shop_url}\n\n{template['urgency']}\n\n{template['hashtags']}"
+    else:
+        # Fallback: Claude generates variant
+        slot_tone = orch_cfg["schedule"][slot]["tone"]
+        return f"[Claude generates on-brand variant: theme={theme}, product={product['name']}, price={product['price_short']}, tone={slot_tone}, shop_url={shop_url}]"
 
 
 def log_result(entry: dict):
