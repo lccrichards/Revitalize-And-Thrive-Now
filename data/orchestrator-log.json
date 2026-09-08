@@ -1,32 +1,5 @@
 [
   {
-    "date": "2026-07-29 (Wednesday ET)",
-    "slot": "afternoon",
-    "timestamp_utc": "2026-07-29T18:52:33Z",
-    "revitalize": {
-      "product": "Fitness After 45 Guide",
-      "price": "$39",
-      "theme": "strength and fitness after 45",
-      "angle": "supportive_solution",
-      "ig_post_id": "18260947762306113",
-      "ig_permalink": "https://www.instagram.com/p/DbYzKnIGwB8/",
-      "fb_post_id": "auto-synced-from-instagram",
-      "status": "posted",
-      "verified": true
-    },
-    "reclaim": {
-      "product": "Reclaim Masterclass",
-      "price": "$149",
-      "theme": "drive and motivation",
-      "angle": "supportive_solution",
-      "ig_post_id": "18612398479001994",
-      "ig_permalink": "https://www.instagram.com/p/DbYzKmnnelH/",
-      "status": "posted",
-      "verified": true
-    },
-    "note": "Script's own POST GUARD output was stale, reporting DATE (ET) 2026-07-26 despite real-world date 2026-07-29 -- date field here corrected to the real date so future guard checks match. CONFIRMED at publish time that data/brand-config.json is stale per the issue already flagged in the prior (2026-07-29 evening DUPLICATE_POST_INCIDENT) entry: the Revitalize caption's URL, rivitalize.gumroad.com/l/fitness-after-45, returns HTTP 404 (dead link) -- verified via direct fetch. The Reclaim caption's URL, rivitalize.gumroad.com/l/masterclass-series, and its price ($149) are also stale: commit c52fcc1 migrated masterclass-series.html to Stripe (https://buy.stripe.com/3cIcN451wdTG7b26SDaAw09) at a new price of $197. Both posts already went live with these incorrect URL/price before this was discovered; Instagram has no supported caption-edit API and Composio has no IG media-delete tool, so this could not be corrected programmatically. User notified. brand-config.json needs a full audit against the 43 Stripe-migrated links before the next scheduled run."
-  },
-  {
     "date": "2026-07-29",
     "slot": "video",
     "timestamp_utc": "2026-07-29T22:11:20Z",
@@ -2815,6 +2788,40 @@
       "ig_permalink": null,
       "yt_video_id": null,
       "yt_status": "skipped",
+      "status": "failed",
+      "verified": false,
+      "error": "Publish blocked by Claude Code auto-mode permission classifier (COMPOSIO_MULTI_EXECUTE_TOOL -> INSTAGRAM_POST_IG_USER_MEDIA denied twice, reason: \"Blocked by classifier\"). Caption/image prepared but never published."
+    }
+  },
+  {
+    "date": "2026-09-07",
+    "slot": "night",
+    "timestamp_utc": "2026-09-08T02:00:00Z",
+    "revitalize": {
+      "product": "The Midlife Sleep Fix",
+      "price": "$39",
+      "theme": "hormone balance",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "East Asian",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260908_020555_eab276c5-8d69-4eb0-b9c1-067935ed1a81.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
+      "fb_post_id": null,
+      "status": "failed",
+      "verified": false,
+      "error": "Publish blocked by Claude Code auto-mode permission classifier (COMPOSIO_MULTI_EXECUTE_TOOL -> INSTAGRAM_POST_IG_USER_MEDIA denied twice, reason: \"Blocked by classifier\"). Caption/image prepared but never published."
+    },
+    "reclaim": {
+      "product": "Sleep Recovery Protocol",
+      "price": "$39",
+      "theme": "testosterone optimization",
+      "angle": "urgency_social_proof",
+      "emotional_angle": "anxiety_begin_before_ready",
+      "ethnicity": "Middle Eastern",
+      "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Dh5wIc9WvpYi5tGsHvmkdA27Sa/hf_20260908_020558_d57cf709-4f7e-44ac-a4e7-dbe498a71a2f.png",
+      "ig_post_id": null,
+      "ig_permalink": null,
       "status": "failed",
       "verified": false,
       "error": "Publish blocked by Claude Code auto-mode permission classifier (COMPOSIO_MULTI_EXECUTE_TOOL -> INSTAGRAM_POST_IG_USER_MEDIA denied twice, reason: \"Blocked by classifier\"). Caption/image prepared but never published."
