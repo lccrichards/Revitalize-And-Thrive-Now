@@ -6,7 +6,8 @@
       "angle": "education",
       "hook_style": "research_stat_or_question",
       "product_tiers": ["flagship", "membership"],
-      "tone": "Authority and credibility. Teach something real. Build trust. CTA is secondary to value."
+      "tone": "Authority and credibility. Teach something real. Build trust. CTA is secondary to value.",
+      "cta_format": "DIRECT_CTA_FORMULA"
     },
     "afternoon": {
       "time_et": "3:00 PM",
@@ -14,7 +15,8 @@
       "angle": "supportive_solution",
       "hook_style": "helpful_tip",
       "product_tiers": ["standalone", "entry"],
-      "tone": "Warm and helpful. Gently acknowledge the common mid-afternoon energy dip (never a diagnosis of the reader), then offer the product as a supportive resource. Lead with value; include product, price, and full URL with a friendly, confident call to action. Never pressure or hype."
+      "tone": "Warm and helpful. Gently acknowledge the common mid-afternoon energy dip (never a diagnosis of the reader), then offer the product as a supportive resource. Lead with value; include product, price, and full URL with a friendly, confident call to action. Never pressure or hype.",
+      "cta_format": "DIRECT_CTA_FORMULA"
     },
     "evening": {
       "time_et": "7:00 PM",
@@ -22,7 +24,8 @@
       "angle": "aspirational_offer",
       "hook_style": "encouraging_invitation",
       "product_tiers": ["flagship", "standalone", "bundle"],
-      "tone": "Warm and aspirational. Encourage the reader and share what the resource genuinely offers. Present it as good value with a clear, friendly call to action; include product, price, and full URL. Confident and inviting, never hype or pressure."
+      "tone": "Warm and aspirational. Encourage the reader and share what the resource genuinely offers. Present it as good value with a clear, friendly call to action; include product, price, and full URL. Confident and inviting, never hype or pressure.",
+      "cta_format": "DIRECT_CTA_FORMULA"
     },
     "night": {
       "time_et": "10:00 PM",
@@ -30,7 +33,8 @@
       "angle": "urgency_social_proof",
       "hook_style": "social_proof_or_last_call",
       "product_tiers": ["standalone", "membership", "bundle"],
-      "tone": "The 10 PM last-call. Urgency plus social proof — a testimonial-style result or 'women/men are seeing this' framing, reflective before-bed tone, last-chance-today energy. The product is the proven solution. Specific price, full URL on their own lines. Confident, warm, never hype."
+      "tone": "The 10 PM last-call. Urgency plus social proof — a testimonial-style result or 'women/men are seeing this' framing, reflective before-bed tone, last-chance-today energy. The product is the proven solution. Specific price, full URL on their own lines. Confident, warm, never hype.",
+      "cta_format": "DIRECT_CTA_FORMULA"
     }
   },
 
@@ -88,6 +92,56 @@
       "drive and motivation": "reviewing goals or business plan, purposeful expression",
       "midlife performance edge": "boardroom or executive setting, commanding presence",
       "confidence and identity": "standing tall outdoors, early morning, purpose-driven"
+    }
+  },
+
+  "cta_formula": {
+    "description": "Direct CTA formula: [HOOK] → [PRODUCT + PRICE] → [LINK] → [URGENCY]. All posts must use direct shop URLs, never hub pages.",
+    "revitalize": {
+      "shop_url": "https://lccrichards.github.io/revitalize-and-thrive-now/shop.html",
+      "templates": {
+        "sleep": {
+          "hook": "💤 Better sleep tonight → better everything tomorrow.",
+          "product": "Get the Midlife Sleep Fix for $39",
+          "urgency": "Start tonight.",
+          "hashtags": "#HormoneBalance #WomenOver45 #MidlifeWellness #MidlifeHealth #WomenEmpowerment"
+        },
+        "hormone": {
+          "hook": "Your hormones are trying to tell you something. Let's listen.",
+          "product": "Get the Hormone-Balancing Meal Plan for $39",
+          "urgency": "This week, join thousands of women finally feeling better.",
+          "hashtags": "#HormoneBalance #WomenOver45 #MidlifeWellness"
+        },
+        "energy": {
+          "hook": "What if you had MORE energy on Friday than Monday?",
+          "product": "Get the 30-Day Wellness Transformation for $79",
+          "urgency": "Your reset starts now.",
+          "hashtags": "#HormoneBalance #WomenOver45 #MidlifeHealth"
+        }
+      }
+    },
+    "reclaim": {
+      "shop_url": "https://reclaimandrisenow.com/shop.html",
+      "templates": {
+        "testosterone": {
+          "hook": "Your testosterone didn't disappear. You just stopped doing what makes it rise.",
+          "product": "Get the Testosterone & Stamina Meal Plan for $39",
+          "urgency": "Science-based. No fluff. Results.",
+          "hashtags": "#MensHealth #Testosterone #MidlifeMen #PerformanceEdge #MenOver45"
+        },
+        "mindset": {
+          "hook": "Your edge didn't dull. You just accepted the wrong narrative.",
+          "product": "Get the Midlife Mindset Code for $39",
+          "urgency": "Reclaim it this week.",
+          "hashtags": "#MensHealth #Mindset #MidlifeMen #PerformanceEdge"
+        },
+        "bundle": {
+          "hook": "Everything you need to go from 'fading' to 'fired up.'",
+          "product": "Get the Complete Reclaim Reset Bundle for $249",
+          "urgency": "High performers don't do half measures.",
+          "hashtags": "#MensHealth #Testosterone #MidlifeMen #PerformanceEdge #MenOver45"
+        }
+      }
     }
   },
 
