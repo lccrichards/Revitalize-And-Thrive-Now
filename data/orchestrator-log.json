@@ -2751,5 +2751,20 @@
       "error": "Scheduled trigger 'Revitalize & Thrive — Night YouTube Post (10 PM ET)' fired at 02:02 UTC. HIGGSFIELD_API_KEY not configured. Orchestrator requires deployment."
     },
     "note": "TRIGGER FIRED BUT BLOCKED: Revitalize night YouTube routine. 5th trigger of daily cycle (Sep 7 ET). Queue at 10+ tasks. All daily slots blocked on same API key issue."
+  }  ,
+  {
+    "date": "2026-09-07 (Monday ET) / 2026-09-08 (Tuesday UTC)",
+    "slot": "night",
+    "timestamp_utc": "2026-09-08T02:03:18Z",
+    "reclaim": {
+      "product": "Midlife Wellness Planner",
+      "price": "$19",
+      "theme": "drive and motivation",
+      "angle": "urgency_social_proof",
+      "status": "blocked",
+      "verified": false,
+      "error": "Scheduled trigger 'Reclaim & Rise — Night YouTube Post (10 PM ET)' fired at 02:03 UTC. HIGGSFIELD_API_KEY not configured. Orchestrator requires deployment."
+    },
+    "note": "TRIGGER FIRED BUT BLOCKED: Reclaim night YouTube routine completes full daily cycle. 6 triggers total: afternoon (2), evening (2), night (2). Queue at 11+ tasks. All blocked on API key. Full 24-hour schedule verified working."
   }
 ]
